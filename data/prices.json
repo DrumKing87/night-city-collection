@@ -1,7 +1,23 @@
 {
-  "schema": 1,
-  "provider": "PokéWallet / Cardmarket",
-  "generatedAt": null,
+  "checkedThisRun": 1,
   "currency": "EUR",
-  "prices": {}
+  "generatedAt": "2026-11-03T21:21:44+00:00",
+  "mapped": 1,
+  "noPriceThisRun": 0,
+  "note": "Cardmarket EUR Trendpreise nach exaktem Druck und Finish; kein garantiert erzielbarer Verkaufspreis.",
+  "prices": {
+    "beta:β159": {
+      "amount": 51.99,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "foil",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T21:21:44+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    }
+  },
+  "provider": "PokéWallet / Cardmarket",
+  "schema": 1,
+  "total": 458,
+  "updatedThisRun": 1
 }
