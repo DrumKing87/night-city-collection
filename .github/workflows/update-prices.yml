@@ -1,0 +1,33 @@
+name: Cyberpunk TCG Marktpreise aktualisieren
+on:
+  schedule:
+    # 8 Teilaktualisierungen pro Tag; Free-API max. 100 Anfragen pro Stunde.
+    - cron: '19 0,3,6,9,12,15,18,21 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: night-city-price-updates
+  cancel-in-progress: false
+jobs:
+  prices:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Kartenwerte abrufen
+        env:
+          POKEWALLET_API_KEY: ${{ secrets.POKEWALLET_API_KEY }}
+        run: python scripts/update_prices.py
+      - name: Neue Preisdatei veröffentlichen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/prices.json data/card-map.json data/update-state.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update Cyberpunk prices [skip ci]"
+            git push
+          fi
