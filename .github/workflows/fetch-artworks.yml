@@ -1,0 +1,31 @@
+name: Fehlende Retail-Artworks spiegeln
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '25 3 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  artworks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Pillow installieren
+        run: pip install pillow
+      - name: Fehlende Retail-Artworks laden
+        run: python scripts/fetch_artworks.py
+      - name: Änderungen committen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/cards/retail data/artwork-report.json index.html scripts/fetch_artworks.py .github/workflows/fetch-artworks.yml
+          if ! git diff --cached --quiet; then
+            git commit -m "Mirror missing retail artworks [skip ci]"
+            git push
+          fi
