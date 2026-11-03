@@ -125,7 +125,7 @@ def build_card_index(cards):
       continue
     if info.get('product_type') == 'sealed': continue
     eid = ent.get('id')
-    if not isinstance(eid, str) or not re.fullmatch(r'(?:cpk_)?[a-f0-9]{64}', eid): continue
+    if not isinstance(eid, str) or not re.fullmatch(r'(?:cpk_[a-f0-9]{16,128}|[a-f0-9]{64})', eid): continue
     candidates.append({'id': eid, 'set_id': set_id, 'name': str(info.get('name')), 'number': str(info.get('card_number'))})
    if len(candidates) == 1: index[card['key']] = candidates[0]
    elif len(candidates) > 1: print(f'Mehrdeutiger Druck, nicht zugeordnet: {card["key"]}: {len(candidates)}')
@@ -167,10 +167,10 @@ def main():
  mapping = cache_data.get('mapping') or {}
  # Refresh the source mapping weekly to accommodate new retail releases.
  stamp = cache_data.get('generatedAt', '') or ''
- if not mapping or (dt.date.today() - dt.date.fromisoformat(stamp[:10])).days >= 7:
+ if cache_data.get('matcherVersion') != 2 or not mapping or len(mapping) < max(10, len(cards)//10) or (dt.date.today() - dt.date.fromisoformat(stamp[:10])).days >= 7:
   mapping = build_card_index(cards)
   if not mapping: raise RuntimeError('Kein eindeutiger Produktabgleich möglich; keine Preise geändert.')
-  dump_json(cache, {'mapping': mapping, 'generatedAt': TODAY, 'total': len(mapping)})
+  dump_json(cache, {'mapping': mapping, 'generatedAt': TODAY, 'total': len(mapping), 'matcherVersion': 2})
  keys = [c['key'] for c in cards if c['key'] in mapping]
  if not keys: raise RuntimeError('Kein einziges Kartenprodukt zugeordnet.')
  cursor = int(state.get('cursor', 0)) % len(keys)
