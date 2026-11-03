@@ -1,7 +1,7 @@
 {
   "checkedThisRun": 60,
   "currency": "EUR",
-  "generatedAt": "2026-11-03T21:26:51+00:00",
+  "generatedAt": "2026-11-03T22:55:06+00:00",
   "mapped": 391,
   "noPriceThisRun": 0,
   "note": "Cardmarket EUR Trendpreise nach exaktem Druck und Finish; kein garantiert erzielbarer Verkaufspreis.",
@@ -544,6 +544,546 @@
       "finish": "normal",
       "priceAsOf": "2026-11-03",
       "retrievedAt": "2026-11-03T21:26:51+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β062": {
+      "amount": 0.12,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β063": {
+      "amount": 3.36,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "foil",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β064": {
+      "amount": 0.21,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β065": {
+      "amount": 0.07,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-02",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β066": {
+      "amount": 0.15,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β067": {
+      "amount": 0.1,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-02",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β068": {
+      "amount": 0.13,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β069": {
+      "amount": 0.09,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-02",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β070": {
+      "amount": 0.11,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β071": {
+      "amount": 0.32,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "foil",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β072": {
+      "amount": 0.99,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "foil",
+      "priceAsOf": "2026-11-02",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β073": {
+      "amount": 0.35,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "foil",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β074": {
+      "amount": 0.41,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "foil",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β075": {
+      "amount": 0.53,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "foil",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β076": {
+      "amount": 0.05,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-01",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β077": {
+      "amount": 0.08,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-02",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β078": {
+      "amount": 0.09,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β079": {
+      "amount": 0.06,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β080": {
+      "amount": 0.08,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β081": {
+      "amount": 0.05,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-02",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β082": {
+      "amount": 0.07,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β083": {
+      "amount": 0.12,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β084": {
+      "amount": 0.04,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-02",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β085": {
+      "amount": 10.3,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "foil",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β086": {
+      "amount": 0.18,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β087": {
+      "amount": 0.06,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-02",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β088": {
+      "amount": 0.21,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "foil",
+      "priceAsOf": "2026-11-02",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β089": {
+      "amount": 0.18,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "foil",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β090": {
+      "amount": 0.09,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-02",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β091": {
+      "amount": 0.09,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β092": {
+      "amount": 0.06,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-02",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β093": {
+      "amount": 2.37,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "foil",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β094": {
+      "amount": 0.12,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-02",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β095": {
+      "amount": 0.12,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β096": {
+      "amount": 0.06,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-02",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β097": {
+      "amount": 0.1,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β098": {
+      "amount": 0.16,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "foil",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β099": {
+      "amount": 0.12,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "foil",
+      "priceAsOf": "2026-11-02",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β100": {
+      "amount": 0.13,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-02",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β101": {
+      "amount": 0.12,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β102": {
+      "amount": 0.16,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-02",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β103": {
+      "amount": 0.15,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-02",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β104": {
+      "amount": 0.07,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β105": {
+      "amount": 0.08,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β106": {
+      "amount": 0.63,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "foil",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β107": {
+      "amount": 0.44,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "foil",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β108": {
+      "amount": 0.87,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "foil",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β109": {
+      "amount": 17.92,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "foil",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β110": {
+      "amount": 0.36,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "foil",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β111": {
+      "amount": 0.13,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-02",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β112": {
+      "amount": 0.07,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-01",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β113": {
+      "amount": 0.07,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β114": {
+      "amount": 0.05,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-02",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β115": {
+      "amount": 0.12,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β116": {
+      "amount": 11.07,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "foil",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β117": {
+      "amount": 0.41,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "foil",
+      "priceAsOf": "2026-11-02",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β118": {
+      "amount": 0.15,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β119": {
+      "amount": 0.14,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "foil",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β120": {
+      "amount": 0.08,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-10-31",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "beta:β121": {
+      "amount": 0.09,
+      "currency": "EUR",
+      "date": "2026-11-03",
+      "finish": "normal",
+      "priceAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-03T22:55:06+00:00",
       "source": "PokéWallet / Cardmarket (Online)"
     },
     "beta:β159": {
