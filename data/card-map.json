@@ -1,12 +1,2353 @@
 {
-  "generatedAt": "2026-11-03T21:21:44+00:00",
+  "generatedAt": "2026-11-03T21:26:51+00:00",
   "mapping": {
+    "beta:β001": {
+      "id": "cpk_e8d45696340e4fc4135060220a4fb155654707004d996beb4eb8252f5459ddbc52e4e5ba1244752252249c7995",
+      "name": "Adam Smasher - Ender of Legends (Epic)",
+      "number": "B001",
+      "set_id": "24845"
+    },
+    "beta:β002": {
+      "id": "cpk_bb6a835bb127d810c326c59128644d5d0e2d6b3231c9c92411d19c2037dd34d471573e64face3cc68916728b85",
+      "name": "Dexter DeShawn - Off the Grid (Rare)",
+      "number": "B002",
+      "set_id": "24845"
+    },
+    "beta:β003": {
+      "id": "cpk_498ff8e2cd5a7e56285a8baca34a5b689308fe1e16fdb2a5e5a3c41f4ba075230d041f199ce936f44a57c70e64",
+      "name": "Johnny Silverhand - Rocking Renegade (Secret)",
+      "number": "B003",
+      "set_id": "24845"
+    },
+    "beta:β004": {
+      "id": "cpk_e93e198fea1f3db6ac31cda38545cc226013ba86e8b521e686d8c877f109f62fb041b447206ef8edf46e42d392",
+      "name": "Royce - Psycho on the Edge (Rare)",
+      "number": "B004",
+      "set_id": "24845"
+    },
+    "beta:β006": {
+      "id": "cpk_309b717580d5e59022075ac01b0abb4ed9273c5b813d0641ae5c21053f231ee7c7bb547939e4c4a14a30f2191d",
+      "name": "6th Street Recruits",
+      "number": "B006",
+      "set_id": "24845"
+    },
+    "beta:β007": {
+      "id": "cpk_a8e8f2f5ede03813bd6ecd1546760c6b209f3c4a1b99fe4f69f5d8a46d25e6d681eae16e20d0d72989ecf150e6",
+      "name": "Animals Wrecker",
+      "number": "B007",
+      "set_id": "24845"
+    },
+    "beta:β008": {
+      "id": "cpk_1f0356023e77a89cf53387f3f54d66c26a71cb8e56ab1b67f5c2a6aab6bde76893bd8ec4aa596f3b6af58de07d",
+      "name": "Chrome Fang",
+      "number": "B008",
+      "set_id": "24845"
+    },
+    "beta:β009": {
+      "id": "cpk_171d5c460fb39ff09571af78a8b739c048e8b5193287fff2ff894171d5e015b7680e83ad43a3416c1c32160ac4",
+      "name": "El Sombreron - La Venganza Lenta",
+      "number": "B009",
+      "set_id": "24845"
+    },
+    "beta:β010": {
+      "id": "cpk_43af011211df8cd627311b4458d17a6213ea034b7f6e6e530224289232a1240802705b7cdeba4f3e124e9fcb09",
+      "name": "Japantown Jonin",
+      "number": "B010",
+      "set_id": "24845"
+    },
+    "beta:β011": {
+      "id": "cpk_d2d9c6432509a6b651c7a5909db93c7cbd3237de57b06e8aec24a72bb6988a972ddfd27ddbc8d8a6c722f4495b",
+      "name": "Johnny Silverhand - Never Stop Fighting (Epic)",
+      "number": "B011",
+      "set_id": "24845"
+    },
+    "beta:β012": {
+      "id": "cpk_52668fa5bb9e91c7f86fd369e658c327d439f80996813018b3fb12090ea85a6bc6eb47f76fbc8d40a2fb3844fb",
+      "name": "Kerry Eurodyne - The Last Rockerboy",
+      "number": "B012",
+      "set_id": "24845"
+    },
+    "beta:β013": {
+      "id": "cpk_ccdd8bab7aee3bf3fe71e4e135bb11e5fc8a559ee7a2f3cfc416a24abacea45c7ee280ffdb0f089a30408fe384",
+      "name": "La Llorona - Ghost of the Past",
+      "number": "B013",
+      "set_id": "24845"
+    },
+    "beta:β014": {
+      "id": "cpk_d091a310689f2e924ab1be0308e412f5d098569278f914ed1ac78edf2a5f9c0d73811ae569a5b15d3bbaf77c0e",
+      "name": "Meredith Stout - Stone Cold Corpo",
+      "number": "B014",
+      "set_id": "24845"
+    },
+    "beta:β015": {
+      "id": "cpk_9e4b586dc95dc166e85da076f23c2be9fac679c791e6f7a77f1ec44741e25fca9d45dc93db8aecf8e1cb0fa516",
+      "name": "Octant",
+      "number": "B015",
+      "set_id": "24845"
+    },
+    "beta:β016": {
+      "id": "cpk_b47d57e6d5f68742e2791738439947d0bf7f709fe77a24afbc1ddaff3742c93e8cb021229fb3114b5ef2171f94",
+      "name": "Royce - Don't Call Me Simon",
+      "number": "B016",
+      "set_id": "24845"
+    },
+    "beta:β017": {
+      "id": "cpk_ad66aebcddb1e02bfbe7de32dd9ad9c08c6b45bdcc9ea1e7bbfe3429f05c033a7c1707462de52f0c8c7cd4adac",
+      "name": "Ruthless Lowlife",
+      "number": "B017",
+      "set_id": "24845"
+    },
+    "beta:β018": {
+      "id": "cpk_64d8620450a6e19c3f6ad8611d36ff22fe90132d374b631ddc1a56e7e35a756a58ec76cba65fe2a26e5df8d325",
+      "name": "Screw - Lovelorn Fool",
+      "number": "B018",
+      "set_id": "24845"
+    },
+    "beta:β019": {
+      "id": "cpk_6ab66d4294122afc0c117a338b8d03a4d92fc036702dc7046a4dba3ce7d9133a974b9715ae13a6b10b5184a23a",
+      "name": "Swordwise Huscle",
+      "number": "B019",
+      "set_id": "24845"
+    },
+    "beta:β020": {
+      "id": "cpk_fcc65fefe8f76a4ea212b74189f571b1d76941c3a6673d5b6afdea628fa5d44d5cae4f93d1479f60ef1f2d1155",
+      "name": "V - Roamer of the Badlands",
+      "number": "B020",
+      "set_id": "24845"
+    },
+    "beta:β021": {
+      "id": "cpk_56dc78e41c6fcb2f86563e46446ae29ea6411de36dd0d4a3719e1798d837eb27f82060d3a7efaedc418c7948a9",
+      "name": "Valentino Guerrera",
+      "number": "B021",
+      "set_id": "24845"
+    },
+    "beta:β022": {
+      "id": "cpk_f5723f640702305039721d7fb0941c4a9aa7eee9c8004dfbec667fedc8eee29d00b92247be032c9a11336c4f95",
+      "name": "Yorinobu Arasaka - Steel Dragon",
+      "number": "B022",
+      "set_id": "24845"
+    },
+    "beta:β023": {
+      "id": "cpk_f7360b13a70f1cc3e983746495dc24f4fe79a9779d2a17aaf51511a2f7d17a57bbe5be7b399c062fb8f0d2ade1",
+      "name": "Arasaka Emergency Radioport",
+      "number": "B023",
+      "set_id": "24845"
+    },
+    "beta:β024": {
+      "id": "cpk_76969e4b532d91b65b92251b5902574935da940bbdc251fa891b43d3163aa724c5f2422e96c7fec8828ebea9f6",
+      "name": "Deadman Transmitter",
+      "number": "B024",
+      "set_id": "24845"
+    },
+    "beta:β025": {
+      "id": "cpk_b0667086d04ac31fdb4ea545c7ca906b45d860289d6d3c8315cb4f3c445ee17ef596ba844e3d326df6c48e39c1",
+      "name": "Mantis Blades",
+      "number": "B025",
+      "set_id": "24845"
+    },
+    "beta:β026": {
+      "id": "cpk_e2e48836d3824ec7bfeb6314e82a28a5425f910865e32fb770c4ab21f24ee7a1113e20add93fc5b779329e2f9f",
+      "name": "Satori - Sword of Saburo",
+      "number": "B026",
+      "set_id": "24845"
+    },
+    "beta:β027": {
+      "id": "cpk_440ccac22b681270a2a64592d31537745f44588010e7db1094c93141da0a3144cc9f33d7730632efa4f1995fde",
+      "name": "All is Lost",
+      "number": "B027",
+      "set_id": "24845"
+    },
+    "beta:β028": {
+      "id": "cpk_7310199ff94f5e8ea8ca5dc551ad2d0716b2f9fe62c5217af4a76ca330e87d1585951b87147dec82ebfd12099e",
+      "name": "Appetite for Destruction",
+      "number": "B028",
+      "set_id": "24845"
+    },
+    "beta:β029": {
+      "id": "cpk_9718d189779110dea4bddbaec3c770c8702fdafa4a18fe951e73dc065b3f6b2b20fe6814818cfe6da9913fe622",
+      "name": "Bonnie and Clyde",
+      "number": "B029",
+      "set_id": "24845"
+    },
+    "beta:β030": {
+      "id": "cpk_d634afd88cf8c86a44eaa304524443c7ba4c76f1c0514007c17cf3cfa91af7ddc5628e9fc66eeba52c5e6c6b7c",
+      "name": "Carnage at the Colosseum",
+      "number": "B030",
+      "set_id": "24845"
+    },
+    "beta:β031": {
+      "id": "cpk_612f8a2847f8c80c17249ccdf41505be203315b5a69851c28043dbf06b19df7f1ad3d1be868dd4a81b1b3d4bd9",
+      "name": "Detonate",
+      "number": "B031",
+      "set_id": "24845"
+    },
+    "beta:β032": {
+      "id": "cpk_d073c6499c5caf88e657c328fece1603674f5eec5b11bae4c3128db336369f7770583c0ac786263c574431d5bf",
+      "name": "Gunpoint Diplomacy",
+      "number": "B032",
+      "set_id": "24845"
+    },
+    "beta:β033": {
+      "id": "cpk_571d268cb35d897d10ddc1879a620cec5a89b12d9a65ac31281585e192762fd417eaa2841fa527ac3048bc6795",
+      "name": "Industrial Assembly",
+      "number": "B033",
+      "set_id": "24845"
+    },
+    "beta:β034": {
+      "id": "cpk_e7f7a1c04ed489278be8b6a6de56e70528c1016b1681ef1f89084aaa2badc5d3534275eaa44dcab2205971468e",
+      "name": "Over the Edge",
+      "number": "B034",
+      "set_id": "24845"
+    },
+    "beta:β035": {
+      "id": "cpk_7276bfa9e6ec5ff8fe34a2d1423eb52e32d81385f2ceb7d2b064abd35cbe96a83c8c374ef55320890e098faa3d",
+      "name": "Shattered Memories",
+      "number": "B035",
+      "set_id": "24845"
+    },
+    "beta:β036": {
+      "id": "cpk_f176225a6c36fc45f4bca7c2174a529f5588bdbaa9293fd3ba809304a81e3b4e1f636f10335329537e1e594c20",
+      "name": "Dum Dum - Maelstrom Triggerman (Rare)",
+      "number": "B036",
+      "set_id": "24845"
+    },
+    "beta:β037": {
+      "id": "cpk_4b1ee6ae49724db9f550441fd711ea86928c741b2025cdaf84822c9d339df1d87f0a2eeb74754967402e21ffed",
+      "name": "Kerry Eurodyne - Axe, Attitude, Audience (Rare)",
+      "number": "B037",
+      "set_id": "24845"
+    },
+    "beta:β038": {
+      "id": "cpk_407757ae35bdc65d00e638bb63ba72f0e5976dd54d4e3295a43ddf3052ca226fc6ad9ab272eb0d94785790e3df",
+      "name": "Muamar Reyes - El Capitan (Rare)",
+      "number": "B038",
+      "set_id": "24845"
+    },
+    "beta:β039": {
+      "id": "cpk_221b24fe3a93e338c63e04888783f5445b661bd0c4c446333ecd9acc9447966fb02a1f6ee87e8b5aa792295133",
+      "name": "River Ward - Detective on the Hunt (Rare)",
+      "number": "B039",
+      "set_id": "24845"
+    },
+    "beta:β040": {
+      "id": "cpk_2203f9d0e80d1c4c880be5845ac7a8f115d07d255886e909067184dfa7dfcaecbdc5f57106dba7fea2eebc21e6",
+      "name": "Rogue Amendiares - Preem Solo (Rare)",
+      "number": "B040",
+      "set_id": "24845"
+    },
+    "beta:β041": {
+      "id": "cpk_ee2bb32c6d38b2aaa33d2d2527a9aec7240f8491eb57ae364d5d40cde11491ec4a0a6a57bd020213b55960696e",
+      "name": "Adam Smasher - Metal Over Meat (Epic)",
+      "number": "B041",
+      "set_id": "24845"
+    },
+    "beta:β042": {
+      "id": "cpk_8f89afe1890d22a10713b1c248a48dbcfe691daa2c2d14708a531b56372cccc6cb4d4ae9188e448de95b314518",
+      "name": "Alt Cunningham - Mother of Daemons (Rare)",
+      "number": "B042",
+      "set_id": "24845"
+    },
+    "beta:β043": {
+      "id": "cpk_9372d35eff214a80c0b4eb8b9511f50f125362ca9de3c7e694a92bbc141a69a208fb68bf87f98e814f5851aaa5",
+      "name": "Augmented Negotiators",
+      "number": "B043",
+      "set_id": "24845"
+    },
+    "beta:β044": {
+      "id": "cpk_2f1e3bfa4889d0555f1dae3e894088aa274669966cc27cec9899b90e49103513f2ece5cbece5d90c039fae9364",
+      "name": "Caliber - Totentanz's Top Dog",
+      "number": "B044",
+      "set_id": "24845"
+    },
+    "beta:β045": {
+      "id": "cpk_8c357def3b8493c9e4246b782ea2e5d220bdfc52633aac631f9ef9cbc876094e00289b3023489a7d9ef326123d",
+      "name": "Gilded Maton",
+      "number": "B045",
+      "set_id": "24845"
+    },
+    "beta:β046": {
+      "id": "cpk_180155b5c690d65eaac825a5055c342ffc9a1c66e5e6f11c57368278493b369b4957b39571af00c117b7a2de81",
+      "name": "Hanako Arasaka - In a Gilded Cage (Rare)",
+      "number": "B046",
+      "set_id": "24845"
+    },
+    "beta:β047": {
+      "id": "cpk_de8a0a3fb41edee137061e21f1b7314bdee2741b631c14f83d587bfbb3e184fb5c001c01da551e83bf8eb1b1f0",
+      "name": "Heywood Ripperdoc",
+      "number": "B047",
+      "set_id": "24845"
+    },
+    "beta:β048": {
+      "id": "cpk_0a9e6734547da2a47e3df08706d89fa4c0175466648ff3e3fa5277ad13bd26c996f869ef645b371185710ddba1",
+      "name": "Jackie Welles - Ride or Die Choom",
+      "number": "B048",
+      "set_id": "24845"
+    },
+    "beta:β049": {
+      "id": "cpk_87c8673a4b1bb1cd026d471f34af009c264c299063a9153bba630dd22462a9164937622c165b7db185a81caa54",
+      "name": "Maelstrom Goons",
+      "number": "B049",
+      "set_id": "24845"
+    },
+    "beta:β050": {
+      "id": "cpk_e9241b25d659872d0156de55606fd44f9a1f09265df29414ddfcac7d1f1162cbee65e46916b4a1abe9195924e6",
+      "name": "MaxTac Suppression Team",
+      "number": "B050",
+      "set_id": "24845"
+    },
+    "beta:β051": {
+      "id": "cpk_3bf8a21f790874896a69e16c672671b0f5f08002bdd215289043038a261540592ea8e1ffb6456c5e8d02d1961c",
+      "name": "Offduty Malfini",
+      "number": "B051",
+      "set_id": "24845"
+    },
+    "beta:β052": {
+      "id": "cpk_d3f111f4c09cca5d7e93a63b8ee4c4ab7289844afe2917324068986e4efe6cfe6ccc83609b4ec284a1975c57da",
+      "name": "Rockn' Rockerboy",
+      "number": "B052",
+      "set_id": "24845"
+    },
+    "beta:β053": {
+      "id": "cpk_f621cbb595df35fbb0e83b325de50ac49c1c66ccecee7725da1bfbf41efc0af18601dfe2c633454334ed2d4e5e",
+      "name": "Secondhand Bombus",
+      "number": "B053",
+      "set_id": "24845"
+    },
+    "beta:β054": {
+      "id": "cpk_c0ecca12283fe89c1c7e72a318866c6346b98006622f399ee91d9ef2acd915195e7ceb2d4db0bf65fd8e449623",
+      "name": "Sketchy Ripper",
+      "number": "B054",
+      "set_id": "24845"
+    },
+    "beta:β055": {
+      "id": "cpk_152529f0a535a2802f7a104acb40d50ffbf44bc48cade5686d07a7501145f431b2571cdadfea35e922e80eb555",
+      "name": "T-Bug - Amateur Philosopher",
+      "number": "B055",
+      "set_id": "24845"
+    },
+    "beta:β056": {
+      "id": "cpk_f99d36b4bf41fc8327c114db0d647b81660526c320572d8d3ba166581ca6f03bc33af9357d84f106562b1ae82b",
+      "name": "Trauma Team Operatives",
+      "number": "B056",
+      "set_id": "24845"
+    },
+    "beta:β057": {
+      "id": "cpk_0b978f6251b337e9d7d427b3e9905043d9c831b119ceaa4600871f8dde753bab073dd54df95c730a1864135d50",
+      "name": "Viktor Vektor - Drop Your Illusions",
+      "number": "B057",
+      "set_id": "24845"
+    },
+    "beta:β058": {
+      "id": "cpk_f45608db672f223da91ae1b2a8be39c57f9a203290624188438017e11cb726c429ece6cf6a702dffa182d43912",
+      "name": "Viktor Vektor - You Might Feel a Little Pinch",
+      "number": "B058",
+      "set_id": "24845"
+    },
+    "beta:β059": {
+      "id": "cpk_d896d88d74aa3779511289c616d6827080fcebb61665d547af368a0712ccc4db81cbbed377c503bbdc69822c4b",
+      "name": "Adrenaline Converter",
+      "number": "B059",
+      "set_id": "24845"
+    },
+    "beta:β060": {
+      "id": "cpk_fa6e029e90f6aeeb5d2c536c78c2341cc51c18186d3067be5a0fc86548be74a480952dca1858208c04b5e52917",
+      "name": "Gorilla Arms",
+      "number": "B060",
+      "set_id": "24845"
+    },
+    "beta:β061": {
+      "id": "cpk_d3b44d076e011284524be301289f6a71fa4f7d11df5b1d465b9215a75a46647ed308c47d301a2c70f3e940138d",
+      "name": "Kiroshi Optics",
+      "number": "B061",
+      "set_id": "24845"
+    },
+    "beta:β062": {
+      "id": "cpk_40d55135427d4f2527276f45ebe15c90439c6fdee348118b70655c04375f6d4212295dc34f94fe5ae3d8ee9e2d",
+      "name": "Mandibular Upgrade",
+      "number": "B062",
+      "set_id": "24845"
+    },
+    "beta:β063": {
+      "id": "cpk_e4718b6c5e5102cd39c8091bc9066334ccde5377e66768570d0a286d1a15543ea2308ba95623c223d6031cae1e",
+      "name": "The Relic - Experimental Biochip (Epic)",
+      "number": "B063",
+      "set_id": "24845"
+    },
+    "beta:β064": {
+      "id": "cpk_8e088cdbc9c57cad0738b4fb2b392fc4dce9974d455be2a90706e517bebd9d661d27ccddee6cf145f05cbf147a",
+      "name": "Zetatech Faceplate",
+      "number": "B064",
+      "set_id": "24845"
+    },
+    "beta:β065": {
+      "id": "cpk_9e904732c70012649c8fad19c52f63c3e85cbf771bfe1a940fe17f9b65f6e431cf7f5a63c31b79b4b5c8ada2af",
+      "name": "Afterparty at Lizzie's",
+      "number": "B065",
+      "set_id": "24845"
+    },
+    "beta:β066": {
+      "id": "cpk_834021e535765e040f91e79a7862d74cf09096aca65c3379444553381e49ecf47c060f26abee75d0a2057b2fd1",
+      "name": "Bootleg Black Sapphire Show",
+      "number": "B066",
+      "set_id": "24845"
+    },
+    "beta:β067": {
+      "id": "cpk_e6fd85d6d8be1feedc3cad92a4fd700281a8f0c9dda0a2e813e081f3238a3054baa488c27b32af04a15a7c05e4",
+      "name": "Cyberpsychosis",
+      "number": "B067",
+      "set_id": "24845"
+    },
+    "beta:β068": {
+      "id": "cpk_47fdd1529906311036b60af1c671371104154ee3976b94bc73dde80428889e6b08619bf6408125231cb0d20de4",
+      "name": "Live with the Aftermath",
+      "number": "B068",
+      "set_id": "24845"
+    },
+    "beta:β069": {
+      "id": "cpk_4d73fabd5acdf00cc55218be44991aa9d0c7f791d7ec8ecc2c60b22e781060d14c29313095dff9d1b3897f1a4a",
+      "name": "Safety Override",
+      "number": "B069",
+      "set_id": "24845"
+    },
+    "beta:β070": {
+      "id": "cpk_3c83b57bf90386f491b591ad962eff3e54cbcbf86f7f3dbf191980f0fa0bfeede91cc75304637a22ea17389e4d",
+      "name": "The Heist",
+      "number": "B070",
+      "set_id": "24845"
+    },
+    "beta:β071": {
+      "id": "cpk_233402a478b0380e85b0955289cf89ad7e672a27183a72987665b20e7b373735fc79868756e7527eee279bdffb",
+      "name": "Goro Takemura - Vengeful Bodyguard (Rare)",
+      "number": "B071",
+      "set_id": "24845"
+    },
+    "beta:β072": {
+      "id": "cpk_adb6b36eab69b30f81c52e5716bb34b999f4f1e4b637eca780732bd47cde757364546203dd9b51d8e55feeeb4f",
+      "name": "Hanako Arasaka - Daughter of the Emperor (Rare)",
+      "number": "B072",
+      "set_id": "24845"
+    },
+    "beta:β073": {
+      "id": "cpk_701cd48c7de565921d422215808a970842661522e5114ba5e5595edfe0662ddba5c6b0b07533447e759b67ada4",
+      "name": "Jackie Welles - Mama's Favorite (Rare)",
+      "number": "B073",
+      "set_id": "24845"
+    },
+    "beta:β074": {
+      "id": "cpk_c45f7a780975d75308b5f16ed682f8cca69e02226fa339faf8148e2ac00d9d3df5fcaa655743c85e365d02b784",
+      "name": "Padre - Man of the Cross (Rare)",
+      "number": "B074",
+      "set_id": "24845"
+    },
+    "beta:β075": {
+      "id": "cpk_d03009ab16092b0b1d6036ecfb05fb7464a000f0cd51ef611a851692b7fb7a11a3a7ed4a71a6af1fb2665489e0",
+      "name": "Panam Palmer - Nomad Cavalry (Epic)",
+      "number": "B075",
+      "set_id": "24845"
+    },
+    "beta:β076": {
+      "id": "cpk_9479bf81692cba4f0d27ad80889c2ebc887c1e8d9a7190ec379106e86b227e1893965203031d1bb8e24d36da4f",
+      "name": "Corpo Security",
+      "number": "B076",
+      "set_id": "24845"
+    },
+    "beta:β077": {
+      "id": "cpk_b277de7094fe3525c95df11cabdd52130e1331236df42b85cd03626654004e8e490b8715bd063107e9bb9192a9",
+      "name": "Emergency Atlus",
+      "number": "B077",
+      "set_id": "24845"
+    },
+    "beta:β078": {
+      "id": "cpk_55624b7abf0f6e4610188ed4b29cc08976c41176c926802b7c1b9b8b6bde118390180cca4164115ed990a10c39",
+      "name": "Field Operator",
+      "number": "B078",
+      "set_id": "24845"
+    },
+    "beta:β079": {
+      "id": "cpk_f810aefbbe522840166a8ae4db8803867ae511afd9c685f51b54f2ad4ba5043198698883d7ed53b02da2c8a604",
+      "name": "Maelstrom Zealots",
+      "number": "B079",
+      "set_id": "24845"
+    },
+    "beta:β080": {
+      "id": "cpk_a443aa9000a96a48cceb469488155519bca4d53ccc5f15d27aec95917896f033d5552f8a5a4511aaedebf5337f",
+      "name": "MaxTac AV",
+      "number": "B080",
+      "set_id": "24845"
+    },
+    "beta:β081": {
+      "id": "cpk_8729243be628c64e0ed927eb96152783c8334eac4f91682eeb5d0604538bc2e69cfdb4550ad66fd8f9eb0b2f9f",
+      "name": "MaxTac Heavy",
+      "number": "B081",
+      "set_id": "24845"
+    },
+    "beta:β082": {
+      "id": "cpk_9f2ab52872dea0eb14ee1575c55d0dcc70b07dc1abc39b4c5b257bd7b5b7e3202095b2cf13cf3a13642cb1a648",
+      "name": "MaxTac Squadron",
+      "number": "B082",
+      "set_id": "24845"
+    },
+    "beta:β083": {
+      "id": "cpk_aeeb6fe868828c82242a27ce8b3e5d985a1b9deb6bdb25c70604a6462fe6e0da07cd38328b8e1c057c5ddfe012",
+      "name": "Nadia - Fighting Through Grief",
+      "number": "B083",
+      "set_id": "24845"
+    },
+    "beta:β084": {
+      "id": "cpk_afa47bc462cef7760dd406270104c85ab846099168984b28f66524ec1d8cc89cec0df34d415cb04479b36f3f98",
+      "name": "Pacifica Netrunner",
+      "number": "B084",
+      "set_id": "24845"
+    },
+    "beta:β085": {
+      "id": "cpk_2d123517c76f83e20079d6a8c819653b0bdeadb447e395fcb48d721cbc7156ceed75503a222b163bf341da6aa7",
+      "name": "Panam Palmer - Strength Through Family (Secret)",
+      "number": "B085",
+      "set_id": "24845"
+    },
+    "beta:β086": {
+      "id": "cpk_f1969a2687b9ae99d99df0e3fbb6c9fa388fd04452e1388e3fdb42bf63e687dc44985a32b64986d1262a02a225",
+      "name": "Pepe Najarro - Working Doubles",
+      "number": "B086",
+      "set_id": "24845"
+    },
+    "beta:β087": {
+      "id": "cpk_41171a140a58998bf9f8692f31ada4a778b9877fe07ecc51f34da1a307ab1529695d74bfef162e37e04b7850ca",
+      "name": "Riding Nomad",
+      "number": "B087",
+      "set_id": "24845"
+    },
+    "beta:β088": {
+      "id": "cpk_faf64694df0e154da9cfb2c93c1321f039134446ee8e3ed42b12901ab08db5158416640927ef97116fa6d2e7b5",
+      "name": "Sandayu Oda - Hanako's Guardian (Rare)",
+      "number": "B088",
+      "set_id": "24845"
+    },
+    "beta:β089": {
+      "id": "cpk_b588649c82b335167f0c648b180c3ea40500eca2f1514148addb4d0e7ff1a8943c6b76f91407cea4a016a46762",
+      "name": "Saul Bright - Stormrider",
+      "number": "B089",
+      "set_id": "24845"
+    },
+    "beta:β090": {
+      "id": "cpk_7fe24d06dbfbfdaa273e4a4afea502ea5e52f97bdb954dc58641e3ae33190b39dbb8077841fec84ab58b2e2d4e",
+      "name": "Tyger's Whisper",
+      "number": "B090",
+      "set_id": "24845"
+    },
+    "beta:β091": {
+      "id": "cpk_44586cbc1cb8e8a7ecad278f260b67624484782488a035be2c069eb5224a58cfe1c6bfd7f2ff96d2c1ebeb5ffb",
+      "name": "Valentino Street Racer",
+      "number": "B091",
+      "set_id": "24845"
+    },
+    "beta:β092": {
+      "id": "cpk_5a3dcf5a48fef5ae1137d548cbd31c6d3d8bc0fe7be84795160f75c36e50fe08b61109d64d344834dd084e5c97",
+      "name": "Wraith Marauders",
+      "number": "B092",
+      "set_id": "24845"
+    },
+    "beta:β093": {
+      "id": "cpk_e977ca744bca45e3d0b066637d8f430a9da8385bc67b003daa0c0e8a30c5eb8a6115831eebda59e4022668079d",
+      "name": "Overwatch - Panam's Gift (Epic)",
+      "number": "B093",
+      "set_id": "24845"
+    },
+    "beta:β094": {
+      "id": "cpk_709ed96289c6e2caf9b0079a2221a49cb5ab64a13d77ac207888f93d4eef738e67b5804f22225eb11c5266b396",
+      "name": "Riot Shield",
+      "number": "B094",
+      "set_id": "24845"
+    },
+    "beta:β095": {
+      "id": "cpk_a44be2003c647abf4191250475e6f4c3f6d2c7433ebf741e8fc60ca66433550afb130876159ac860c8d0daea28",
+      "name": "Sandevistan",
+      "number": "B095",
+      "set_id": "24845"
+    },
+    "beta:β096": {
+      "id": "cpk_37cc5d68a7268694c1609c6cd5bb16d2078e7043f9dd4f1ba529ff43234c6c9aabd246f610a2c2d74421260f75",
+      "name": "Zetatech Berserk",
+      "number": "B096",
+      "set_id": "24845"
+    },
+    "beta:β097": {
+      "id": "cpk_4bda3504921ee1e10b28a8d820ffb666924073b667defc3eccd612a946987ae634b09a80176d5b7c5f73366ca2",
+      "name": "Corporate Surveillance",
+      "number": "B097",
+      "set_id": "24845"
+    },
+    "beta:β098": {
+      "id": "cpk_a14bce624eed494caae928ec451ebe03f4caff2b69a7613c25d39d73161b8b01d2e4d2d13fa341192fa49d4b39",
+      "name": "(Don't Fear) The Reaper",
+      "number": "B098",
+      "set_id": "24845"
+    },
+    "beta:β099": {
+      "id": "cpk_c1d4e22f91ee61342d40bc32a0834980492a11770d5857d3fdb549e3478f340552491d265f23b8dba37094c203",
+      "name": "Fool on the Hill",
+      "number": "B099",
+      "set_id": "24845"
+    },
+    "beta:β100": {
+      "id": "cpk_e4968ea6b17e5d7cc36d5eaaea5c2790fb7b36ffc87023d49ecce93b58166d2ab2df65597cb7f14a94ea44a84b",
+      "name": "Memory Relapse",
+      "number": "B100",
+      "set_id": "24845"
+    },
+    "beta:β101": {
+      "id": "cpk_58775ef9b1a010586ef0f5b3b3719863108051cb067c35f7725e0b30108e537215172233d06853b0424bad9d19",
+      "name": "Peace Offering",
+      "number": "B101",
+      "set_id": "24845"
+    },
+    "beta:β102": {
+      "id": "cpk_f6a17ccd2fb9ccbb15661f535162c8261611cad3f98dc792f2bc481dfad3bf469d94fbd59df8f6748a2449f31e",
+      "name": "Synapse Burnout",
+      "number": "B102",
+      "set_id": "24845"
+    },
+    "beta:β103": {
+      "id": "cpk_f572e1727c70b24fb3e023a20738a586b9fbc24fb739e5dab7eebefcab943baaa4debb823b3075962d2703af87",
+      "name": "Take Control",
+      "number": "B103",
+      "set_id": "24845"
+    },
+    "beta:β104": {
+      "id": "cpk_d99f160be04a82941f06f1ab03b9eb5fae2c0d79bfa9900d14156dfb1ae0b8d8dbf8a624b10dfac0b2a49f3cd6",
+      "name": "We Gotta Live Together",
+      "number": "B104",
+      "set_id": "24845"
+    },
+    "beta:β105": {
+      "id": "cpk_858fcee94e93f2f3eb970d4192554805c6c32df2da9e07bfb0e3a624f398c13edd18cf27b1796ad1ce6861fbfa",
+      "name": "Wild in the Streets",
+      "number": "B105",
+      "set_id": "24845"
+    },
+    "beta:β106": {
+      "id": "cpk_9911dcc42a11b058c61be5095b074ce00e8078f95ea559075fb7fcd2990b0b744c01b9d7cc7a575aa8ee8f1743",
+      "name": "Alt Cunningham - Soulkiller Architect (Rare)",
+      "number": "B106",
+      "set_id": "24845"
+    },
+    "beta:β107": {
+      "id": "cpk_f60c0d5dde343b9f45f13d451d5e3439d1833a02a883cfc637d0a25a3e2afc247652bc7d897df6b7ccbaa1b704",
+      "name": "Evelyn Parker - Beautiful Enigma (Rare)",
+      "number": "B107",
+      "set_id": "24845"
+    },
+    "beta:β108": {
+      "id": "cpk_115dafe0994045711d325ff21011ffb6ddddf6d89a5d36f6645c9ae6417973d04bcd45b15538e608ecb547ac2e",
+      "name": "Judy Alvarez - Braindance Maestro (Epic)",
+      "number": "B108",
+      "set_id": "24845"
+    },
+    "beta:β109": {
+      "id": "cpk_41135e654d4d0a66be0032ff818d775b93996f86558969712af5640a938914c59bdac2d3ba4b89dc0341554dce",
+      "name": "Sasha Yakovleva - Won't Let You Down (Secret)",
+      "number": "B109",
+      "set_id": "24845"
+    },
+    "beta:β110": {
+      "id": "cpk_433508cc11af29646b7ddb2b5f906af18dac6c25067dd599e62640a3327d25dab47181d65fe4b124584b69ee8b",
+      "name": "Wakako Okada - Peace and Harmony (Rare)",
+      "number": "B110",
+      "set_id": "24845"
+    },
+    "beta:β111": {
+      "id": "cpk_27cb3e48213f69869a833070c17f9cf7375cf774ba9784d68594e1e9d40d7cfdc9859a4ef4ee409d1d9f080466",
+      "name": "Delamain - Rideshare AI",
+      "number": "B111",
+      "set_id": "24845"
+    },
+    "beta:β112": {
+      "id": "cpk_125bd207fe26c0cae7242a6d1b0f114a5b8b8b83b87949ce39b54b22c3a78723181d53077d6c436696912b81aa",
+      "name": "Delamain Cab",
+      "number": "B112",
+      "set_id": "24845"
+    },
+    "beta:β113": {
+      "id": "cpk_8bb7589c96cfc231005a50b2d7866e509e11cfe26e8ad0730dce130fe425cfcdc7c8c5ef24e311f7420f02ec1e",
+      "name": "Evelyn Parker - Scheming Siren",
+      "number": "B113",
+      "set_id": "24845"
+    },
+    "beta:β114": {
+      "id": "cpk_c3414805bf4ed57aae3df934d60850a0708cfc9d089fd063ee462e4f1afe636c0660782eeefc846b1e962e5fb6",
+      "name": "Hacked Corpo",
+      "number": "B114",
+      "set_id": "24845"
+    },
+    "beta:β115": {
+      "id": "cpk_599deec82efc6d966c78a0419c67b4cbcd5845477b7cb0cd55d0cdf71de92ae9ce12cb26ce90961eb8f0f2d435",
+      "name": "Jacked-In Voodoo Boy",
+      "number": "B115",
+      "set_id": "24845"
+    },
+    "beta:β116": {
+      "id": "cpk_759d6413a3d182ad31599ae4338797d716c30911e3eab996e9469ecaf85f5465ddf0a2f1e6c41ed403cf3613c2",
+      "name": "Judy Alvarez - Nothing to Doubt (Secret)",
+      "number": "B116",
+      "set_id": "24845"
+    },
+    "beta:β117": {
+      "id": "cpk_9bb0e07a9d826f7786be02cfa55e277c72314e63751e330572b6acff0bd9a5360e292dd3154a890688f80a2e81",
+      "name": "Lizzy Wizzy - Delicate Weapon",
+      "number": "B117",
+      "set_id": "24845"
+    },
+    "beta:β118": {
+      "id": "cpk_5798246df8f47d9ad7dc60b8b9637e8c1036eca4c1369433ed7e170b673c763cebc7799392428c15d6180f897f",
+      "name": "Maman Brigitte - Spirit of Death",
+      "number": "B118",
+      "set_id": "24845"
+    },
+    "beta:β119": {
+      "id": "cpk_d97f63753ae169c9ff652e594e44549b3014782ba59f9998fdd97d2e740f0839c8c327279375931a96825d9f54",
+      "name": "Misty Olszewski - Mender of Broken Spirits",
+      "number": "B119",
+      "set_id": "24845"
+    },
+    "beta:β120": {
+      "id": "cpk_d7df1b7b364ea85e7f3ade7aa3758c0535f54f566c1ef553617c437ffab2f670c65579d765f867c4543117be5b",
+      "name": "Modded Kusanagi",
+      "number": "B120",
+      "set_id": "24845"
+    },
+    "beta:β121": {
+      "id": "cpk_59852673c3cbb368379d265bb43f9fff5f48ff691a43d0b6df78ee50d7a1dd93742873b16dd98316e25b707176",
+      "name": "Modded Muramasa",
+      "number": "B121",
+      "set_id": "24845"
+    },
+    "beta:β122": {
+      "id": "cpk_ebb4894d3591d3d799c289277d27eadc360c19906a8602e62f44032d309dcf7fb7a42bd2e98838789b13782e72",
+      "name": "Mox Inciters",
+      "number": "B122",
+      "set_id": "24845"
+    },
+    "beta:β123": {
+      "id": "cpk_221499fde0e3802492e0913a1cb263d74e326a7258ea2f245f81ef796e8fcd533e49901acd142e7d0bd00ed86b",
+      "name": "Placide - Voodoo Sentinel",
+      "number": "B123",
+      "set_id": "24845"
+    },
+    "beta:β124": {
+      "id": "cpk_5128d2dcecbef5d4283768df780037632903468897a91688a345c8b2916208e900f230f9303efe6f33918d48c1",
+      "name": "Psycho Squad",
+      "number": "B124",
+      "set_id": "24845"
+    },
+    "beta:β125": {
+      "id": "cpk_fb9926f5ac395be9f4c420d6c706a11cd7b29de4585605ecff57470bae832a191fd3fc6025fe1fb4516316ce40",
+      "name": "Rita Wheeler - No Stupid Questions",
+      "number": "B125",
+      "set_id": "24845"
+    },
+    "beta:β126": {
+      "id": "cpk_63e2ecf32b296849169a14e97e93b3bf992410f315a285368a160febe0237fe7e777c206fba18bc00812e92fb9",
+      "name": "Rogue Amendiares - Queen of the Afterlife (Epic)",
+      "number": "B126",
+      "set_id": "24845"
+    },
+    "beta:β127": {
+      "id": "cpk_b28d2c2778bad796d59078de80c153a04e42feea8bdd8b85040cef2d21d667135e16a2c6233903b12f3d4f8ca3",
+      "name": "Westbrook Netrunner",
+      "number": "B127",
+      "set_id": "24845"
+    },
+    "beta:β128": {
+      "id": "cpk_d63eb3affc031dfda41dcce76c3d4cfac6d508a5fd90948dc71c33a2bd0615f90db935a055c67fb8f528cfa9ef",
+      "name": "Dying Night - V's Pistol",
+      "number": "B128",
+      "set_id": "24845"
+    },
+    "beta:β129": {
+      "id": "cpk_4b73d55e2288004d4acd5f6f7bdb0f978942ac7269d46989880405eda0518b27242addd56502b75b99976eee80",
+      "name": "NetWatch Netdriver",
+      "number": "B129",
+      "set_id": "24845"
+    },
+    "beta:β130": {
+      "id": "cpk_de351211e867b0259068adaa9aacaba8770bb7c5f2c8be478ee853f62531309798ba85bd39a9fbcee6288f5a51",
+      "name": "Tetratronic Rippler",
+      "number": "B130",
+      "set_id": "24845"
+    },
+    "beta:β131": {
+      "id": "cpk_57518ea63de30541b48e8cc66f3a37e701ef37a268d314453cb844fa85095c12c1e603517fbee0c4f455100605",
+      "name": "Chrome Reverie",
+      "number": "B131",
+      "set_id": "24845"
+    },
+    "beta:β132": {
+      "id": "cpk_8724cea0e484645f963ec25aab5a49ad61791ae4a81bfd284d69f0b85a6fa4762583490fbfdab2516d94857e31",
+      "name": "Floor It",
+      "number": "B132",
+      "set_id": "24845"
+    },
+    "beta:β133": {
+      "id": "cpk_6095641450a6f13c4bcab8f7014abb1a06b503cc7706ab03e1ab044e483769e177b0e67e1e921be69b99e4242f",
+      "name": "Les Elemens",
+      "number": "B133",
+      "set_id": "24845"
+    },
+    "beta:β134": {
+      "id": "cpk_f9fe8502fff566884fd8dd34666a98eee5622417cdeed48210f9ac4a9bb61cde6a8bcac443c0ebcf94070d8ef4",
+      "name": "Nocturne OP55 N1",
+      "number": "B134",
+      "set_id": "24845"
+    },
+    "beta:β135": {
+      "id": "cpk_7847cc89195d7c3347b9bbeccbf9c62981782eac786b80a7c9b4e7efa5a616a6b24048b3f3109adf0498ba0b83",
+      "name": "Pyramid Song",
+      "number": "B135",
+      "set_id": "24845"
+    },
+    "beta:β136": {
+      "id": "cpk_fa208e6e520d438474cb04ab10d1604df9d28b4f598e33205036ac81e0ffdc1b04e653b25336c24b2c79fd3ed9",
+      "name": "Reboot Optics",
+      "number": "B136",
+      "set_id": "24845"
+    },
+    "beta:β137": {
+      "id": "cpk_fb94a8dab6adbc84f311ffc5cd5251d0c11b50cd4b906829407fd00be5f874b161b380f4911d916124e884a19c",
+      "name": "Three Mouths, One Desire",
+      "number": "B137",
+      "set_id": "24845"
+    },
+    "beta:β138": {
+      "id": "cpk_57c80e274058d48b64ae366bdf525eec09d9e8fed698b994eec12a197267f8cf96986415baa0580364dea24e0d",
+      "name": "Towerfall (Epic)",
+      "number": "B138",
+      "set_id": "24845"
+    },
+    "beta:β139": {
+      "id": "cpk_d171506d27b0941c365e0e3dc857fbc7fd316cd0dec478b184613feebc4ba9c3cfcc6c52b9ff602b91871950b2",
+      "name": "Trust No One",
+      "number": "B139",
+      "set_id": "24845"
+    },
+    "beta:β140": {
+      "id": "cpk_b795e8072791ad3771861f1271a9ba6bab617c62457a6327e1cedb45ee9768721e5d2b16f7cceb9c4e1645782e",
+      "name": "Unlikely Bond",
+      "number": "B140",
+      "set_id": "24845"
+    },
+    "beta:β141": {
+      "id": "cpk_f874e4798ac1c284bfcac29a47819f61af433fa277c739c452e9a22205de79206e33323b303862bc5d337d037c",
+      "name": "Adam Smasher - Ender of Legends (ILegend)",
+      "number": "B141",
+      "set_id": "24845"
+    },
+    "beta:β142": {
+      "id": "cpk_b601d60fe152ae455651aeb8cb16ee87a5259a42dc63f808aa17c7513b35cbb21a89deb9bacad6d41ac0085529",
+      "name": "Dexter DeShawn - Off the Grid (ILegend)",
+      "number": "B142",
+      "set_id": "24845"
+    },
+    "beta:β143": {
+      "id": "cpk_805baf9e58b724d3048e821c6994b6e4845bc508edbdd289f1d0ac88466fd311a87e9c9d382ec10989b527d668",
+      "name": "Royce - Psycho on the Edge (ILegend)",
+      "number": "B143",
+      "set_id": "24845"
+    },
+    "beta:β144": {
+      "id": "cpk_6aa20de061cb5630847c862b3c8d12a6f14f5e6a3c215f59dcecdcdc86193fb8b6c5448ab3e29ecd70c017d318",
+      "name": "V - Streetkid (ILegend)",
+      "number": "B144",
+      "set_id": "24845"
+    },
+    "beta:β145": {
+      "id": "cpk_861ee2b058aba145a0b586b9f405f75a8f057b4cb4466ca7d983ca7e52759d24558d5917cbba59631426ef2559",
+      "name": "Dum Dum - Maelstrom Triggerman (ILegend)",
+      "number": "B145",
+      "set_id": "24845"
+    },
+    "beta:β146": {
+      "id": "cpk_6f769b303894dc7b1a074ecb74aec95409b2207ef7efb853bb2acf1fd1dc79e6ebbe6c8fda8a9857651dee2c31",
+      "name": "Kerry Eurodyne - Axe, Attitude, Audience (ILegend)",
+      "number": "B146",
+      "set_id": "24845"
+    },
+    "beta:β147": {
+      "id": "cpk_fcc6cbf823dd7c08efe537db1f54d8da4679d15f8d2fae65495000e4a111b7fdf99d97690f2fafd373d6004efc",
+      "name": "Muamar Reyes - El Capitan (ILegend)",
+      "number": "B147",
+      "set_id": "24845"
+    },
+    "beta:β148": {
+      "id": "cpk_0e0b712b6402e5b4af408361041d953c7ec3a3073f10d62cdfb9b9f1252395c1809e596fbd96d688a11a844576",
+      "name": "River Ward - Detective on the Hunt (ILegend)",
+      "number": "B148",
+      "set_id": "24845"
+    },
+    "beta:β149": {
+      "id": "cpk_012d0da5bfcf245d8f4aefe59f10414e142d2ccaf1d9453ed94c3eca0db7e614b85af5a1482fcd74e2328450d7",
+      "name": "Rogue Amendiares - Preem Solo (ILegend)",
+      "number": "B149",
+      "set_id": "24845"
+    },
+    "beta:β150": {
+      "id": "cpk_c4e04e5c105db2589651a4ebec3c8e051cb81e1ba6086e70213d785107731a044ac6b9ce1b4bfca2106bd8da69",
+      "name": "Goro Takemura - Vengeful Bodyguard (ILegend)",
+      "number": "B150",
+      "set_id": "24845"
+    },
+    "beta:β151": {
+      "id": "cpk_fd2b83b2246b2a9823d8765abddd68816deb17581f68bf26c3d7edb592abf9afbe6386ecaf394199dd21ac9ae1",
+      "name": "Hanako Arasaka - Daughter of the Emperor (ILegend)",
+      "number": "B151",
+      "set_id": "24845"
+    },
+    "beta:β152": {
+      "id": "cpk_a3b63806e5e815d1a5078a331f8665f1f86b60fdca06c10feb473b96a6affe713abee9f2fb30ade56131231438",
+      "name": "Jackie Welles - Mama's Favorite (ILegend)",
+      "number": "B152",
+      "set_id": "24845"
+    },
+    "beta:β153": {
+      "id": "cpk_b31083f6b26a0ebe834d83489dd310dd1066e51536fc14bc7465bbfef81537562ef1dcac28aea4e89687d80484",
+      "name": "Padre - Man of the Cross (ILegend)",
+      "number": "B153",
+      "set_id": "24845"
+    },
+    "beta:β154": {
+      "id": "cpk_06b9834adf12df7f750134f4742c0748bb8c6edcb8cc28cbab0b00fa37e682437a7342ac94a8b9b115097c4687",
+      "name": "Panam Palmer - Nomad Cavalry (ILegend)",
+      "number": "B154",
+      "set_id": "24845"
+    },
+    "beta:β155": {
+      "id": "cpk_d6a207509dda5e1379fe838cdfff66ff33c77b8fe8d69d98704b8bc5d37fdc013eee0f89e4cd7ecd8f23d19b92",
+      "name": "Alt Cunningham - Soulkiller Architect (ILegend)",
+      "number": "B155",
+      "set_id": "24845"
+    },
+    "beta:β156": {
+      "id": "cpk_f287e4bb1fa64fe4f4882f0b37c45baab5c77c4c1c1414f70258a454271876cff285a5f1dcc2f244cc6abe653d",
+      "name": "Evelyn Parker - Beautiful Enigma (ILegend)",
+      "number": "B156",
+      "set_id": "24845"
+    },
+    "beta:β157": {
+      "id": "cpk_2f2dfa639049d91516ca5767dd0ab3ed6acdd588edfffcec221cc51c8136ec6aef060a1cfbbd5828be84d7fa28",
+      "name": "Judy Alvarez - Braindance Maestro (ILegend)",
+      "number": "B157",
+      "set_id": "24845"
+    },
+    "beta:β158": {
+      "id": "cpk_822cf738445fe3a24cbad6b2903b807de38554861e82adb088632a0fa707ae015d77467603d3a8a85468d94ac7",
+      "name": "Wakako Okada - Peace and Harmony (ILegend)",
+      "number": "B158",
+      "set_id": "24845"
+    },
     "beta:β159": {
       "id": "5bb6339b5e2c65151bf193d1ab1ff5aad680f2452855b28cc3ebfe5972048ece",
       "name": "Johnny Silverhand - Never Stop Fighting (V.2)",
       "number": "β159m",
       "set_id": "24845"
+    },
+    "beta:β168": {
+      "id": "cpk_8cf2b65cee51b0ae38c2e8cc450312a2858fde6d0542e4896096ce8e09bd778bab990acbae3bf90a0b376d82e6",
+      "name": "Johnny Silverhand - Rocking Renegade (ISecret)",
+      "number": "B168",
+      "set_id": "24845"
+    },
+    "beta:β169": {
+      "id": "cpk_0fb3213e45a23b40f3d7a3299ca38d9ad80167b184ab3eb8b1ec258f6e576f84f2e35919f0fa22000563c3941a",
+      "name": "Sasha Yakovleva - Won't Let You Down (ISecret)",
+      "number": "B169",
+      "set_id": "24845"
+    },
+    "beta:β170": {
+      "id": "cpk_3c4f4be16cb712f1245137c367b1e72b03191e118c3dd7af95ff02f78924b86acc6eec6efb7ba249119b347ed3",
+      "name": "Panam Palmer - Strength Through Family (ISecret)",
+      "number": "B170",
+      "set_id": "24845"
+    },
+    "beta:β171": {
+      "id": "cpk_49d358a9c71a9ac4e50371f944a248c8b59af9e21e88657b1077622c5f0b5a9842aae0fe65b0a981a92d7b93e4",
+      "name": "Judy Alvarez - Nothing to Doubt (ISecret)",
+      "number": "B171",
+      "set_id": "24845"
+    },
+    "boxtopper-beta:β001": {
+      "id": "cpk_1b35bbc24cbd02da711ce33394faf89926de40d6aa9223a6c70cbc7874746d64f1c08db1d6ebe68e531dbf9052",
+      "name": "Yorinobu Arasaka - Embracing Destruction",
+      "number": "B001",
+      "set_id": "24848"
+    },
+    "boxtopper-beta:β002": {
+      "id": "cpk_9f55a51193237416b59654090b2fed45b00092f4745143b759c7c0bae147e25b6e896941c1eeac43c7676790df",
+      "name": "Viktor Vektor - Sit Down and Relax",
+      "number": "B002",
+      "set_id": "24848"
+    },
+    "boxtopper-beta:β003": {
+      "id": "cpk_7304071ac7f3ea22bb7d69ea6bbfe2d37893e5b9a2deecd178a61e3fbd3f00b1943d5b7c29615c8ecff00e900b",
+      "name": "Goro Takemura - Hands Unclean",
+      "number": "B003",
+      "set_id": "24848"
+    },
+    "boxtopper-beta:β004": {
+      "id": "cpk_4a34f303400a5ec9e96d9283df8d872dab74c761499cdcad1301a1e6c219f8b1dc74b8d3a408dbd8b8d39d5833",
+      "name": "Saburo Arasaka - Stubborn Patriarch",
+      "number": "B004",
+      "set_id": "24848"
+    },
+    "boxtopper-beta:β005": {
+      "id": "cpk_4acab800c71eac01c6159c34d75057731b4cc127d68266a345b7dbc2d39cbcd30af517f4a05d5f2f04c579c9ce",
+      "name": "Jackie Welles - Pour One Out For Me",
+      "number": "B005",
+      "set_id": "24848"
+    },
+    "boxtopper-beta:β006": {
+      "id": "cpk_9263ae01c9d462eae5891052e333077336f00c45983b088202b2bcef39a6e1df850287b8ae52f9048d0b2bb3df",
+      "name": "V - Corporate Exile",
+      "number": "B006",
+      "set_id": "24848"
+    },
+    "boxtopper-retail:001": {
+      "id": "cpk_9bdddb78dcf3a8e176e11c6762bddc22200622e7318cc5feadcaf1d50ab5dbdd9c856e9788d6f8797a5b",
+      "name": "Yorinobu Arasaka - Embracing Destruction",
+      "number": "001",
+      "set_id": "24857"
+    },
+    "boxtopper-retail:002": {
+      "id": "cpk_7ddf3142c4171bd24201f2d6639897d15ea28389beb2640af780bf95cc2757095d75a7d19bc173cf45a1",
+      "name": "Viktor Vektor - Sit Down and Relax",
+      "number": "002",
+      "set_id": "24857"
+    },
+    "boxtopper-retail:003": {
+      "id": "cpk_3cf5fc6bc84fb32fd18309e1e5ee01c0af83317922fb36956b83a3fb36bc724d65d9dc0312c45e1c1726",
+      "name": "Goro Takemura - Hands Unclean",
+      "number": "003",
+      "set_id": "24857"
+    },
+    "boxtopper-retail:004": {
+      "id": "cpk_59e7e7f5c8fa8aa260c64c7bd5cc8fbea6f00e2ff6cb1d1d15420725de1db5c65fbd6c958d96f64ebfe8",
+      "name": "Saburo Arasaka - Stubborn Patriarch",
+      "number": "004",
+      "set_id": "24857"
+    },
+    "boxtopper-retail:005": {
+      "id": "cpk_4a1fcc89688878f91432d74aa56a5fbcc5a9bba1c7e481ca7a6c9d9a8805aed001b39dd6cb5de9b321cf",
+      "name": "Jackie Welles - Pour One Out For Me",
+      "number": "005",
+      "set_id": "24857"
+    },
+    "boxtopper-retail:006": {
+      "id": "cpk_1dbe881b81c764c247655a86b83b324d036aff23ca92ccf95ce0d33415789e2fdc5956561867b92558c7",
+      "name": "V - Corporate Exile",
+      "number": "006",
+      "set_id": "24857"
+    },
+    "embracing-beta:β001": {
+      "id": "cpk_972fd08a1e74f249bb019ef3707ff747377e4edf51df50f4d5c13956e33f050d7fe4525a3af2a94984b4b80223",
+      "name": "Yorinobu Arasaka - Embracing Destruction",
+      "number": "B001",
+      "set_id": "24846"
+    },
+    "embracing-beta:β002": {
+      "id": "cpk_654472bb1112e08f84f34c9bdccf835f740866abeceecd44d496c97ffedc4ce2a935bf2655fe6d48ae94c4c6ac",
+      "name": "Chrome Fang",
+      "number": "B002",
+      "set_id": "24846"
+    },
+    "embracing-beta:β003": {
+      "id": "cpk_d32fca4c8bd4a1218c159f9f56242bab95d31937c62ea9627cb5d585b8e07683e8ef7a30cca81a94f69f4f6ad4",
+      "name": "Minotaur",
+      "number": "B003",
+      "set_id": "24846"
+    },
+    "embracing-beta:β004": {
+      "id": "cpk_7f3a103ed6da75ab7f85846ba3466a1748974dc5608a52e552902d202ba290280959f62108b94586455913717b",
+      "name": "Ruthless Lowlife",
+      "number": "B004",
+      "set_id": "24846"
+    },
+    "embracing-beta:β005": {
+      "id": "cpk_f713f6dfa9461f944def914cceb6283232048afd9ef5289bdae7f9ff3608686ccac262bb3da663278f6d56f686",
+      "name": "Swordwise Huscle",
+      "number": "B005",
+      "set_id": "24846"
+    },
+    "embracing-beta:β006": {
+      "id": "cpk_6ec5085453d601740bbbedba7fb7cce8e037feb822691233dd0900473eade615f13479448a73823c6cdd8a088e",
+      "name": "Arasaka Emergency Radioport",
+      "number": "B006",
+      "set_id": "24846"
+    },
+    "embracing-beta:β007": {
+      "id": "cpk_0cd3d059b36016fd49c162a2d570c7cf27d4d839dcf12deb79cf86cc290cf3c661f9edfa64585ae3929fca20e8",
+      "name": "Mantis Blades",
+      "number": "B007",
+      "set_id": "24846"
+    },
+    "embracing-beta:β008": {
+      "id": "cpk_0292e128a4c53c1d5ffc13a62c40538ab2db3f42c576339fb33e78df8af2353b7fc21f82c607be3d79031df170",
+      "name": "Satori - Sword of Saburo",
+      "number": "B008",
+      "set_id": "24846"
+    },
+    "embracing-beta:β009": {
+      "id": "cpk_9c8c8707b5d1aeafdd9fd1c597d13df06295012436fe025727cc1c2084438a4add614472468b1bb821ab513588",
+      "name": "Industrial Assembly",
+      "number": "B009",
+      "set_id": "24846"
+    },
+    "embracing-beta:β010": {
+      "id": "cpk_d1c97de1b3dee689ae03aebdd2e21fb56f7945280b3e9d89ceb266ed1ab73bc506cc0ec7522e3e6f01e6586962",
+      "name": "Over the Edge",
+      "number": "B010",
+      "set_id": "24846"
+    },
+    "embracing-beta:β011": {
+      "id": "cpk_2c5b010ca15ac0c60d549813c281e9a8e063997fb361f6cd1f23629bd4c62bb412adedad2c1c35de12a75b2bad",
+      "name": "Shattered Memories",
+      "number": "B011",
+      "set_id": "24846"
+    },
+    "embracing-beta:β012": {
+      "id": "cpk_f392b229cae637c937e68f687b5c56c9cb2f8343b08f70919228113b0ce5a1b04b7cbcbfc207afb5a34d8dc054",
+      "name": "Goro Takemura - Hands Unclean",
+      "number": "B012",
+      "set_id": "24846"
+    },
+    "embracing-beta:β013": {
+      "id": "cpk_0ed9cc4bd94f898b120f43a94c03173d33e4160dd9840bfa28a3b66b07e0115bf1e6cd37547924d3bf24a2f6ad",
+      "name": "Saburo Arasaka - Stubborn Patriarch",
+      "number": "B013",
+      "set_id": "24846"
+    },
+    "embracing-beta:β014": {
+      "id": "cpk_c6d3fae444ba291d09c1e3f0f5665319b5f80b9016d57c85df9b28e6a564cbe07d5a6cca6e2bd3c5397a4f7c1d",
+      "name": "Corpo Security",
+      "number": "B014",
+      "set_id": "24846"
+    },
+    "embracing-beta:β015": {
+      "id": "cpk_6e5888fdde4156c1c68ed5cb9675d2ba7ba7f5c28f784bcfa0de0d19bdb7d56be6db9c6caab8bb2944a2b9ac15",
+      "name": "Emergency Atlus",
+      "number": "B015",
+      "set_id": "24846"
+    },
+    "embracing-beta:β016": {
+      "id": "cpk_4513233f9dd0339b18676b6e885865636b0fab0785ceaec14fbd9c24ce3a0d8bc83528860edad6bcb3ab058187",
+      "name": "Field Operator",
+      "number": "B016",
+      "set_id": "24846"
+    },
+    "embracing-beta:β017": {
+      "id": "cpk_cb657d798d1530230aa273a8dcb52a2d8a82fbfbd329a92ab9c0e6cc0afb8bdc2d0e07b2bc04d13cbc9d8e29b5",
+      "name": "Goro Takemura - Losing His Way",
+      "number": "B017",
+      "set_id": "24846"
+    },
+    "embracing-beta:β018": {
+      "id": "cpk_e57d493be898301441019da5feb029d43c1fc17707bb81c3d35a408dcac0a222bf99945bfa01e4757ee62bc978",
+      "name": "MaxTac AV",
+      "number": "B018",
+      "set_id": "24846"
+    },
+    "embracing-beta:β019": {
+      "id": "cpk_9fe63f57eb80c99547da641bae103964f1036956fcedec16817e54f7c4486134fd61250a266a761fec1d315b35",
+      "name": "Sandevistan",
+      "number": "B019",
+      "set_id": "24846"
+    },
+    "embracing-beta:β020": {
+      "id": "cpk_520cbdea3d1bc7ef9c1a1cc19ed9293ebe2b012d7ec590c863887e8e16ab2b9e05ccede69483771e3220d1f2b2",
+      "name": "Corporate Surveillance",
+      "number": "B020",
+      "set_id": "24846"
+    },
+    "embracing-retail:001": {
+      "id": "cpk_0442b2bfc746fe1da0285a61e7c438ec3fdcad45d262ca0d5fc174033a522b0c10d8941233b12f2cb3da",
+      "name": "Yorinobu Arasaka - Embracing Destruction",
+      "number": "001",
+      "set_id": "24858"
+    },
+    "embracing-retail:002": {
+      "id": "cpk_5e4eaf7bbb70a020d3512004449a4f2a52f8d4c3d762cc5e90e108ee452b9a782a214fb8f3b2abdc140f",
+      "name": "Chrome Fang",
+      "number": "002",
+      "set_id": "24858"
+    },
+    "embracing-retail:003": {
+      "id": "cpk_431d57750b8e03189db8787c7bb20cbdc8038b42a02577b277f1c521b3012d2c66db3d3d518d3bce707a",
+      "name": "Minotaur",
+      "number": "003",
+      "set_id": "24858"
+    },
+    "embracing-retail:004": {
+      "id": "cpk_291d786a826b280c85c0dc2d39525a41f42f7ac6d8c61920042fcd38de4d9e0129e5c7717df6ee85f456",
+      "name": "Ruthless Lowlife",
+      "number": "004",
+      "set_id": "24858"
+    },
+    "embracing-retail:005": {
+      "id": "cpk_06929f749b9a20e0581fa6e03ddb1829866b1b87c18f5ba2e88a2d26cc9a45caa842def2995a9fc94efd",
+      "name": "Swordwise Huscle",
+      "number": "005",
+      "set_id": "24858"
+    },
+    "embracing-retail:006": {
+      "id": "cpk_f9cc8d5b34e9265d0730b4b743854a09bb4170685c7f25bf352ec2517e19bd39959766fe8f16da8e8952",
+      "name": "Arasaka Emergency Radioport",
+      "number": "006",
+      "set_id": "24858"
+    },
+    "embracing-retail:007": {
+      "id": "cpk_76c41c5b4512af52fa0b9046e7cdf07a6df4118c3fe814c2c3a48f78f7f1372794651611865ccdf20c44",
+      "name": "Mantis Blades",
+      "number": "007",
+      "set_id": "24858"
+    },
+    "embracing-retail:008": {
+      "id": "cpk_e17fe5b04c90cd8c5ac72ef8a26a4941d79211fe5ddbec3e5c46da249183448f570d24db002d84612187",
+      "name": "Satori - Sword of Saburo",
+      "number": "008",
+      "set_id": "24858"
+    },
+    "embracing-retail:009": {
+      "id": "cpk_5e7c9e3a4a46def52b46e060993012178cfdd8fbe14157490d20e041f4a48dfebac73735c76fe5b46272",
+      "name": "Industrial Assembly",
+      "number": "009",
+      "set_id": "24858"
+    },
+    "embracing-retail:010": {
+      "id": "cpk_18d542879ccdfb79902c698a965fbc5f90c0fa3eb51fcd78605093e95a0e24f49408ad9542e9f51dfbe08d",
+      "name": "Over the Edge",
+      "number": "010",
+      "set_id": "24858"
+    },
+    "embracing-retail:011": {
+      "id": "cpk_d98dd7f692db52fa2be8338dc5dbaee498c27c270b8c88a6b04023873623320b6830dde8469a67ed9b07d0",
+      "name": "Shattered Memories",
+      "number": "011",
+      "set_id": "24858"
+    },
+    "embracing-retail:012": {
+      "id": "cpk_db00782b1e35257453120df891fdca8d624a945a9e0326fdea357540b08e63e676e0f209f952e02273c85c",
+      "name": "Goro Takemura - Hands Unclean",
+      "number": "012",
+      "set_id": "24858"
+    },
+    "embracing-retail:013": {
+      "id": "cpk_4aa3d2c2ef242daa681d38b5c947958455f8311beb79e516b6f2e64ff738338848861372e31918e420c413",
+      "name": "Saburo Arasaka - Stubborn Patriarch",
+      "number": "013",
+      "set_id": "24858"
+    },
+    "embracing-retail:014": {
+      "id": "cpk_afc8b99172343e5de4d78b56eb6becda662e8a422f8c49fd2d2c7cd61bc9c50842ed831f6abc3ee359e704",
+      "name": "Corpo Security",
+      "number": "014",
+      "set_id": "24858"
+    },
+    "embracing-retail:015": {
+      "id": "cpk_612f88c0deb5992f33c2df2dd2ffe34de40813b0859744d8889a88e9ccaa94eb12a7ee13e104f7296f7874",
+      "name": "Emergency Atlus",
+      "number": "015",
+      "set_id": "24858"
+    },
+    "embracing-retail:016": {
+      "id": "cpk_3a687cec7cdb8421346294642c89549bfc30e7efb0f3f3ecfcd156f63668314d69194ec347f625818f1a4e",
+      "name": "Field Operator",
+      "number": "016",
+      "set_id": "24858"
+    },
+    "embracing-retail:017": {
+      "id": "cpk_7cbfd824ede579a9e4db1b2f52263c23a9fba25eacf7f4a1771bd86016353d23813688af6a57060fbb6654",
+      "name": "Goro Takemura - Losing His Way",
+      "number": "017",
+      "set_id": "24858"
+    },
+    "embracing-retail:018": {
+      "id": "cpk_97ba9b174be3838e1ab4664cb1e7ac04ae4e1460d5b68959bba057e36f61c725fe85c9cccf5b4dfd0898de",
+      "name": "MaxTac AV",
+      "number": "018",
+      "set_id": "24858"
+    },
+    "embracing-retail:019": {
+      "id": "cpk_7c8bdab5c66131adc546d1ada1231de0131654e9f269c12425c52b2f0a367f6ea606ced7c2cc8a1d7e0b6e",
+      "name": "Sandevistan",
+      "number": "019",
+      "set_id": "24858"
+    },
+    "embracing-retail:020": {
+      "id": "cpk_b3cedac35dbac4b8dcdd4b10a504cc28bb2a80d430b57988d50f957c211a346d6b2d02aceba1e62c912c77",
+      "name": "Corporate Surveillance",
+      "number": "020",
+      "set_id": "24858"
+    },
+    "heist-beta:β001": {
+      "id": "cpk_97b282c483085dccb62001e29fd1ed629288fad2ca4aa20b6ac0537aecd37ed57b8c957d35b35acd4bb610aed2",
+      "name": "Viktor Vektor - Sit Down and Relax",
+      "number": "B001",
+      "set_id": "24847"
+    },
+    "heist-beta:β002": {
+      "id": "cpk_bb1c88afcf218fdaaf783ef6e4c91da3c3135fe7cc2433427121be23529dbe4b05e431d3332e7b27e433a7d4bf",
+      "name": "Dexter DeShawn - One Last Chance",
+      "number": "B002",
+      "set_id": "24847"
+    },
+    "heist-beta:β003": {
+      "id": "cpk_343312c658432316b54f4858b7441133fffb7e71ac9fdceb4b1c639f241ffa9ede8468268a1acdd2858614972c",
+      "name": "Heywood Ripperdoc",
+      "number": "B003",
+      "set_id": "24847"
+    },
+    "heist-beta:β004": {
+      "id": "cpk_4b15ba68af2ed09bd93805a979ab1b229b948d7bf975e30b91f7adc8379b41aef6289cef02fc6b95b35083e94c",
+      "name": "Offduty Malfini",
+      "number": "B004",
+      "set_id": "24847"
+    },
+    "heist-beta:β005": {
+      "id": "cpk_75c250abf05e3cc0cd8f7359b2712fe0918f0656e115838d845ec9e1afeb7a74b41fef6ab46a2184a2544b3cd7",
+      "name": "Secondhand Bombus",
+      "number": "B005",
+      "set_id": "24847"
+    },
+    "heist-beta:β006": {
+      "id": "cpk_f84594300dc4c91e08315c5b962ad5acd02131db43bc0b51aab1728a82b3b1820f10ec001273cf2d4cf42276ad",
+      "name": "T-Bug - Amateur Philosopher",
+      "number": "B006",
+      "set_id": "24847"
+    },
+    "heist-beta:β007": {
+      "id": "cpk_eb874cfe38678a975906dfa3f1a3532fafcbee455b8e0d07558f106bfc03c1dc89a5d46e7b6e383abe561ddfce",
+      "name": "Kiroshi Optics",
+      "number": "B007",
+      "set_id": "24847"
+    },
+    "heist-beta:β008": {
+      "id": "cpk_98eeeb509ea657e5ed620197f3b945b58d6f0cd86da11ae39f23b4dfb146d79f81dc87e1301270748ba76deb63",
+      "name": "Mandibular Upgrade",
+      "number": "B008",
+      "set_id": "24847"
+    },
+    "heist-beta:β009": {
+      "id": "cpk_abee470a25360acccca5302f545df766e7e40f7105df6b5d6ab91c022b7bc0d9ff1f2ca62713980970303d2136",
+      "name": "Zetatech Faceplate",
+      "number": "B009",
+      "set_id": "24847"
+    },
+    "heist-beta:β010": {
+      "id": "cpk_2d6a9765577c0533fa165b1d90715ae73a11a6208ed50c757c203147bbec0bacc4032b44db9af8bed728a6655c",
+      "name": "Afterparty at Lizzie's",
+      "number": "B010",
+      "set_id": "24847"
+    },
+    "heist-beta:β011": {
+      "id": "cpk_6624d4a74615a54ace62e49d12e1f5d5cc3cec786c2da0d79db04219cce7951f1e73921681d137251929832f16",
+      "name": "Jackie Welles - Pour One Out For Me",
+      "number": "B011",
+      "set_id": "24847"
+    },
+    "heist-beta:β012": {
+      "id": "cpk_2ce8844ffe7b349022bccb5f7dfeab66389c36a7cafe36e12c4e6200b28c138535e59cfd1bbba645dcbd149983",
+      "name": "V - Corporate Exile",
+      "number": "B012",
+      "set_id": "24847"
+    },
+    "heist-beta:β013": {
+      "id": "cpk_e511732aec1b321d0f4057f3f57170625a562e39ab0c99d9fcc7aeb89850ae2f63561669b35d8c2aa6a4016cff",
+      "name": "Delamain Cab",
+      "number": "B013",
+      "set_id": "24847"
+    },
+    "heist-beta:β014": {
+      "id": "cpk_d2506b828e4b13ec33d00c424d69f974658ef0ef6c501457ec775ff334d9ac5a74e75a2096a3a489ed7273a487",
+      "name": "Evelyn Parker - Scheming Siren",
+      "number": "B014",
+      "set_id": "24847"
+    },
+    "heist-beta:β015": {
+      "id": "cpk_0dfef3c0c89104edf7f9a541553aaebf21cf4322f33ed0b159aec09627594f2ed8dc82506174cabd3d5c2d331c",
+      "name": "MT0D12 Flathead",
+      "number": "B015",
+      "set_id": "24847"
+    },
+    "heist-beta:β016": {
+      "id": "cpk_d9f90f5d9ca0dfbe3072d7202191351a01bc7df06171d081d719b50613e9f8d47cf3bd969d227d99cf8a4cdc27",
+      "name": "Psycho Squad",
+      "number": "B016",
+      "set_id": "24847"
+    },
+    "heist-beta:β017": {
+      "id": "cpk_20ce437836321b7caffd71a107ea1a1dc5c28a25608990134368d8ffcb957626f6afebb18dcf3eea8f5a10ddba",
+      "name": "Dying Night - V's Pistol",
+      "number": "B017",
+      "set_id": "24847"
+    },
+    "heist-beta:β019": {
+      "id": "cpk_05a62fb4078e15fa233d81ea7462aeaca5b0472b8a2eb1b24be1e43fc160f9f926556630cd26f718817c2eecaf",
+      "name": "Floor It",
+      "number": "B019",
+      "set_id": "24847"
+    },
+    "heist-beta:β020": {
+      "id": "cpk_be39771deb05cfd97e269b4cabfbb955d687f738e36161ba2f1cc95681da3513f4a1876c37d0ad73ced33ee38d",
+      "name": "Reboot Optics",
+      "number": "B020",
+      "set_id": "24847"
+    },
+    "heist-retail:001": {
+      "id": "cpk_1264401585a92b07ac97c4f3f4fb1b928b3aa311b3e29a1377feecf8e9c2ac474a356b7848649bf718d2",
+      "name": "Viktor Vektor - Sit Down and Relax",
+      "number": "001",
+      "set_id": "24859"
+    },
+    "heist-retail:002": {
+      "id": "cpk_44af74f5a58d46b29453f459527e3ffe461d590be8f07b960c2ad71fcc1cba2d2b3d7d2bf3e2c520ea73",
+      "name": "Dexter DeShawn - One Last Chance",
+      "number": "002",
+      "set_id": "24859"
+    },
+    "heist-retail:003": {
+      "id": "cpk_b100053892ce75487b74dd52a9350c77502d139867a7dcac84a5c2c54a9e1c17aea2b287ab204a8bfed2",
+      "name": "Heywood Ripperdoc",
+      "number": "003",
+      "set_id": "24859"
+    },
+    "heist-retail:004": {
+      "id": "cpk_3c9b614966f836a1f5c68bf9677b89f546035bf55715ff1e64675cd730bf1581710e3910c280de7bc3c9",
+      "name": "Offduty Malfini",
+      "number": "004",
+      "set_id": "24859"
+    },
+    "heist-retail:005": {
+      "id": "cpk_89463b22db01abd24cb02b81b7ba03bd75799255057d333d145771d50e3cc8f801577d5d00c6df15dfb7",
+      "name": "Secondhand Bombus",
+      "number": "005",
+      "set_id": "24859"
+    },
+    "heist-retail:006": {
+      "id": "cpk_f7b5bba919f4bd91160926196e933e3a466f4c7c3d273c3dda8a1b9cfd30f37d0c0bd5b27d92ff7cf553",
+      "name": "T-Bug - Amateur Philosopher",
+      "number": "006",
+      "set_id": "24859"
+    },
+    "heist-retail:007": {
+      "id": "cpk_6903b29da195a903c135293fb7e81e57ce45850ba211c1a19299c1130c1643b53f84d8fb50169599c198",
+      "name": "Kiroshi Optics",
+      "number": "007",
+      "set_id": "24859"
+    },
+    "heist-retail:008": {
+      "id": "cpk_3c1397bc7558ac5d21771c0683272a9e085f3f155e08ed0f9cb02fda0a059624822e2e8333c27b14c2e8",
+      "name": "Mandibular Upgrade",
+      "number": "008",
+      "set_id": "24859"
+    },
+    "heist-retail:009": {
+      "id": "cpk_195d03c8b87acfbb1d866186e123bd1dfa46b0e03d8ec529a1ab64bb5ef61c4f6f071cc50d13baa81cd8",
+      "name": "Zetatech Faceplate",
+      "number": "009",
+      "set_id": "24859"
+    },
+    "heist-retail:010": {
+      "id": "cpk_bac609d2c90706bed5a054691e93cde9747bc772c320f9b569fcf8247c9f35ccd4a218f23bae5b8d1a867f",
+      "name": "Afterparty at Lizzie's",
+      "number": "010",
+      "set_id": "24859"
+    },
+    "heist-retail:011": {
+      "id": "cpk_975a1fb9e3d8426ef8d11bbac007d7f0f239ac5cb5ca34090433f8ae3a7ed4c3ee40ef55c3a1bcaf984eec",
+      "name": "Jackie Welles - Pour One Out For Me",
+      "number": "011",
+      "set_id": "24859"
+    },
+    "heist-retail:012": {
+      "id": "cpk_04e1c5b951184bc52026c01b1b59fe4ecdf8c076413a434b470691d1aea0f3834e2980f27404835ce882c3",
+      "name": "V - Corporate Exile",
+      "number": "012",
+      "set_id": "24859"
+    },
+    "heist-retail:013": {
+      "id": "cpk_7c32eb4a8f964718566290841dc76a7a0e665bb3a9f55534735417ba8cc4c0cda7e783ec0bd28d71751bab",
+      "name": "Delamain Cab",
+      "number": "013",
+      "set_id": "24859"
+    },
+    "heist-retail:014": {
+      "id": "cpk_f8c8ae7a7a74271f9663693934984fef3107b32440ec5febe33e899f5521c1f79235129ff37c377fe14092",
+      "name": "Evelyn Parker - Scheming Siren",
+      "number": "014",
+      "set_id": "24859"
+    },
+    "heist-retail:015": {
+      "id": "cpk_651bebd6ccfcd08f0e8e86e8541fe5375992698f813856fbbc4533fbb08089f917b23a630ca0ec70b51a8e",
+      "name": "MT0D12 Flathead",
+      "number": "015",
+      "set_id": "24859"
+    },
+    "heist-retail:016": {
+      "id": "cpk_e828dc5fd794b964dd10a3ffd05ba0470f9cbde74a53833e218413fba55e5f0a95a01efbe36a217d803067",
+      "name": "Psycho Squad",
+      "number": "016",
+      "set_id": "24859"
+    },
+    "heist-retail:017": {
+      "id": "cpk_361affd62906839d28ba7e4dd24b4f047e5e95ef5402a9564f190a4f0a3555c60caf477dbe7b0b6c7c61cb",
+      "name": "Dying Night - V's Pistol",
+      "number": "017",
+      "set_id": "24859"
+    },
+    "heist-retail:019": {
+      "id": "cpk_5b9ad3007f6efb57e796357da1f54b7812ec1b1ca9b9ebaec1608020dbfabd416ae98f0cc4080471f859cc",
+      "name": "Floor It",
+      "number": "019",
+      "set_id": "24859"
+    },
+    "heist-retail:020": {
+      "id": "cpk_39c615bb48cd7f9ddab0dbf769eee7638a7b0d21fdce832f3ff606a6d59517999407969415d055d6d234f4",
+      "name": "Reboot Optics",
+      "number": "020",
+      "set_id": "24859"
+    },
+    "retail:001": {
+      "id": "cpk_ec44126112bfa10718c67ba60f28035f198e4c9530e33141676fdd04e5f2c3c9d1dd865664c92be10c14",
+      "name": "Adam Smasher - Ender of Legends (Epic)",
+      "number": "001",
+      "set_id": "24855"
+    },
+    "retail:002": {
+      "id": "cpk_1f89a41ac153ac0fc18302d607f6ec2067fc0a258d0174a3be2fd9ef830063782d616d1ca610a26d5622",
+      "name": "Dexter DeShawn - Off the Grid (Rare)",
+      "number": "002",
+      "set_id": "24855"
+    },
+    "retail:003": {
+      "id": "cpk_64cd5028be8cece0ebecfab33d93c3b6f3fa3726a2f8a85b809dc4db199cc8e927f4cab609fb6b7ef472",
+      "name": "Johnny Silverhand - Rocking Renegade (Secret)",
+      "number": "003",
+      "set_id": "24855"
+    },
+    "retail:004": {
+      "id": "cpk_0ebf5f80d4dbe6d01e169a40cb1930b5396bbdc04b63a5c366d6784aacfcf2568e9c4ee2d2d5542fed45",
+      "name": "Royce - Psycho on the Edge (Rare)",
+      "number": "004",
+      "set_id": "24855"
+    },
+    "retail:006": {
+      "id": "cpk_e56896eae5784147711f34a0fe2f5de006bbc5f2d86e5d87e80637cea0650d7a5029e50319c6afbc7cbf",
+      "name": "6th Street Recruits",
+      "number": "006",
+      "set_id": "24855"
+    },
+    "retail:007": {
+      "id": "cpk_ef00c7f205aaa7c6dfaeee8c35ec47ff123eab1b7e310f0b4b68a3dfb1142e9af8e2f7a605cf95c30f04",
+      "name": "Animals Wrecker",
+      "number": "007",
+      "set_id": "24855"
+    },
+    "retail:008": {
+      "id": "cpk_525d0c64dbce7a3d654d1d66e1af02b7ef8575cf9bf427a398369427bc7a79e6708e5e595f170acc90f3",
+      "name": "Chrome Fang",
+      "number": "008",
+      "set_id": "24855"
+    },
+    "retail:009": {
+      "id": "cpk_317c6bfc4b4d10ab63e23d524a1099808a48da7aefef76747e003d3cf2834b2a2ecc8b53525799eed950",
+      "name": "El Sombreron - La Venganza Lenta",
+      "number": "009",
+      "set_id": "24855"
+    },
+    "retail:010": {
+      "id": "cpk_5af155afbfe5d185a867d05cf78c79947240dd6f4f158b557127c68416d8fd8b66adeca8279a8dac510842",
+      "name": "Japantown Jonin",
+      "number": "010",
+      "set_id": "24855"
+    },
+    "retail:011": {
+      "id": "cpk_8d4c089c94b893d82fe7358607eea6498b9d3fb03a4979a10888d4fa322261f5b74f574bd242da5c76a2dd",
+      "name": "Johnny Silverhand - Never Stop Fighting (Epic)",
+      "number": "011",
+      "set_id": "24855"
+    },
+    "retail:012": {
+      "id": "cpk_abbe8406a471667c1bdd64aecfb3ff400af215405f458124cd2b96180dfabe161265f25bf0a6caf3bff396",
+      "name": "Kerry Eurodyne - The Last Rockerboy",
+      "number": "012",
+      "set_id": "24855"
+    },
+    "retail:013": {
+      "id": "cpk_0f609a3f59a443406a366b0bfca1d2ba0aeffc0e4e89baf92d58767639facd0740fda735eea396297b7770",
+      "name": "La Llorona - Ghost of the Past",
+      "number": "013",
+      "set_id": "24855"
+    },
+    "retail:014": {
+      "id": "cpk_1c3093451351b242f7799ee2e1dd10417f4d721d5b1fd339077c5445a6376686cfb4dce408806626b61855",
+      "name": "Meredith Stout - Stone Cold Corpo",
+      "number": "014",
+      "set_id": "24855"
+    },
+    "retail:015": {
+      "id": "cpk_4cb39ef58e84830c8e468ddd58245055a2bb3bb392fa93f3c01237620694eb4dee613988e2a48f6c7ee352",
+      "name": "Octant",
+      "number": "015",
+      "set_id": "24855"
+    },
+    "retail:016": {
+      "id": "cpk_71e0a5d68fdf2da99c5f6b9d315a7779fb8ed68bc0794352bda6c171ae60704498aecee29c1769932f307c",
+      "name": "Royce - Don't Call Me Simon",
+      "number": "016",
+      "set_id": "24855"
+    },
+    "retail:017": {
+      "id": "cpk_a6a033c31d4dc5a2e07f72d7f28ddc5d19fc5fda6b794c85e5fe7bfb233ebad973651d4c0aa4626a0e4122",
+      "name": "Ruthless Lowlife",
+      "number": "017",
+      "set_id": "24855"
+    },
+    "retail:018": {
+      "id": "cpk_5851b6f0900d7f391f6c8967c1bab020fdcbe705c4fc5f464e78e719ea1fdc8ac0a063809c962a5d9c7aab",
+      "name": "Screw - Lovelorn Fool",
+      "number": "018",
+      "set_id": "24855"
+    },
+    "retail:019": {
+      "id": "cpk_a87423abc82d2207fa7787aacac4a9ad4512d2361ac1ff0ad62fa68f8a6123687af0aaec45a8592dbfe069",
+      "name": "Swordwise Huscle",
+      "number": "019",
+      "set_id": "24855"
+    },
+    "retail:020": {
+      "id": "cpk_a53cfd454bfe83331db2c861a6129a9e6a5220b97b26ed473f4ed3732ba3e9059724c4c87da33a384d0896",
+      "name": "V - Roamer of the Badlands",
+      "number": "020",
+      "set_id": "24855"
+    },
+    "retail:021": {
+      "id": "cpk_750c247e1089b14455b7e63913a1c44afa0b7137abd0f578edaa3df66bd6f20b5867527e4fa527615df4c4",
+      "name": "Valentino Guerrera",
+      "number": "021",
+      "set_id": "24855"
+    },
+    "retail:022": {
+      "id": "cpk_dded489f7cfbe0442c5739f1fdca3ddfef18dc782930362749b7cd3631d6d72d2a1db8bbf19cd791aa2db4",
+      "name": "Yorinobu Arasaka - Steel Dragon",
+      "number": "022",
+      "set_id": "24855"
+    },
+    "retail:023": {
+      "id": "cpk_d9f3593b5fb4ad18893966398c1fb6d70257247db70f4ed803c3406241a042dab05f072bd89669d2841e84",
+      "name": "Arasaka Emergency Radioport",
+      "number": "023",
+      "set_id": "24855"
+    },
+    "retail:024": {
+      "id": "cpk_52417a1f3db1b3480ada853637ace15b75f4cbac3088740aabf7beedee9dda48b01e4c0023e9d2be981af1",
+      "name": "Deadman Transmitter",
+      "number": "024",
+      "set_id": "24855"
+    },
+    "retail:025": {
+      "id": "cpk_60ca519dee74cf1447b8279146de23edb7c0f36d4fe13798dc37e252f48760e3a2f3a381a3abaf82822911",
+      "name": "Mantis Blades",
+      "number": "025",
+      "set_id": "24855"
+    },
+    "retail:026": {
+      "id": "cpk_8e21047530c8b045c9a2582ad336729cb3d552b1625f6b03f85a3ea67a52e732b0d7bf91e135ab38aa35e9",
+      "name": "Satori - Sword of Saburo",
+      "number": "026",
+      "set_id": "24855"
+    },
+    "retail:027": {
+      "id": "cpk_f0fc25b4a35c4a432b94fe8a8fd1214c6b63e04ee69c4a5f1172b44f51ccab4b30ac6f94388fb8aeabd139",
+      "name": "All is Lost",
+      "number": "027",
+      "set_id": "24855"
+    },
+    "retail:028": {
+      "id": "cpk_959910d02012e5ad8c4150c4c5e91f616e39203f49927239cb02027cf315a7b1e6f5f9ee56b43bced7bef1",
+      "name": "Appetite for Destruction",
+      "number": "028",
+      "set_id": "24855"
+    },
+    "retail:029": {
+      "id": "cpk_ede97b171b056b07fdc57636cd89083906295022dd5a1b37508c6b43412da3acb3f07449a903be4171e97a",
+      "name": "Bonnie and Clyde",
+      "number": "029",
+      "set_id": "24855"
+    },
+    "retail:030": {
+      "id": "cpk_1ba6517717b3f7518f65f132c43154a947a0bb8161fe31ca1c6185058ca11dec7dd05b483bb8434747e017",
+      "name": "Carnage at the Colosseum",
+      "number": "030",
+      "set_id": "24855"
+    },
+    "retail:031": {
+      "id": "cpk_a34e5cd37e086f447e2237c2b137eb09248c67c95995fb651ea9483eee70d63feb425b93b776e17b6f5312",
+      "name": "Detonate",
+      "number": "031",
+      "set_id": "24855"
+    },
+    "retail:032": {
+      "id": "cpk_744fdd83b4bed3d7603428e2a85c5c420643c3248583134a8e23e21d2f65ab7efb58d296f617c9314c0df2",
+      "name": "Gunpoint Diplomacy",
+      "number": "032",
+      "set_id": "24855"
+    },
+    "retail:033": {
+      "id": "cpk_59f41b26ef673e192c16e688831080d6d9b6cd6b4347c9223b2081e44016a44ed5cd04fdd7241b1f9a8a12",
+      "name": "Industrial Assembly",
+      "number": "033",
+      "set_id": "24855"
+    },
+    "retail:034": {
+      "id": "cpk_dee96c8a731d463ab4be23efeb26b789856c3ebcf6b5afe76a8350c7b16b78bbcdf5e0089ef8ca461bc86d",
+      "name": "Over the Edge",
+      "number": "034",
+      "set_id": "24855"
+    },
+    "retail:035": {
+      "id": "cpk_1f455229148aeeae873a0dc6ed341c6b1a3b8a3d64934af3eb3ad9f9bbb03be8cae7fa75a55cff009c3530",
+      "name": "Shattered Memories",
+      "number": "035",
+      "set_id": "24855"
+    },
+    "retail:036": {
+      "id": "cpk_05b4b1b2837fedde67f156eb79e6673fd28caf9d6e439c0fbbcbb4b8703d56861059144e2fe15719365f9c",
+      "name": "Dum Dum - Maelstrom Triggerman (Rare)",
+      "number": "036",
+      "set_id": "24855"
+    },
+    "retail:037": {
+      "id": "cpk_b08e9b06813bf9f0df63780bddf6b1a34d9f09a996acbe5a0a25f7a0015adf20ce76ebeb3f97c1e1e1d771",
+      "name": "Kerry Eurodyne - Axe, Attitude, Audience (Rare)",
+      "number": "037",
+      "set_id": "24855"
+    },
+    "retail:038": {
+      "id": "cpk_71c1e44dad91bf6d0caebd7586fff1b8dfbf7029bcd486ee7903c1c0078ebdc6b94f98828f59f1dfc031d0",
+      "name": "Muamar Reyes - El Capitan (Rare)",
+      "number": "038",
+      "set_id": "24855"
+    },
+    "retail:039": {
+      "id": "cpk_b4c03cf89c87b857bd435489db24245eae7e471365e901e0e9c029b8f21c49f66aff5b64296f4bf5d0f87a",
+      "name": "River Ward - Detective on the Hunt (Rare)",
+      "number": "039",
+      "set_id": "24855"
+    },
+    "retail:040": {
+      "id": "cpk_4865647005b78ef3660d363daa7b86a4f15d4ce2dc1c81f8cf6672fb726d2c9e5f80cb4892613af9a86b08",
+      "name": "Rogue Amendiares - Preem Solo (Rare)",
+      "number": "040",
+      "set_id": "24855"
+    },
+    "retail:041": {
+      "id": "cpk_bf56823ec91698d4e210ddb525b428b14a413c0985c6622da05704d7c0bd1de72ce320b1fef40d6c47d839",
+      "name": "Adam Smasher - Metal Over Meat (Epic)",
+      "number": "041",
+      "set_id": "24855"
+    },
+    "retail:042": {
+      "id": "cpk_29cef86b9e85bb94c0a08cc8e21d36f1dbae31b01802e483411d35b63e2fad79da77627c8c3384a993e07d",
+      "name": "Alt Cunningham - Mother of Daemons (Rare)",
+      "number": "042",
+      "set_id": "24855"
+    },
+    "retail:043": {
+      "id": "cpk_a5748a531a6e3f8d15f5af0e5ee502792c7a2b13773eb9dc92ff992e9832cad6bcd46fa885f7e51ddde911",
+      "name": "Augmented Negotiators",
+      "number": "043",
+      "set_id": "24855"
+    },
+    "retail:044": {
+      "id": "cpk_67529e9ccf7696d7eee6d34d522080084e420e5cfb36f09251844f38c9701159c6a8d3a1f037699c6b8fa5",
+      "name": "Caliber - Totentanz's Top Dog",
+      "number": "044",
+      "set_id": "24855"
+    },
+    "retail:045": {
+      "id": "cpk_84efec96bcc783a7f1535459440a38e23e321b0a9cc4b9753518a71302a0a2872534375aacf0558ce5881e",
+      "name": "Gilded Maton",
+      "number": "045",
+      "set_id": "24855"
+    },
+    "retail:046": {
+      "id": "cpk_9c79f249286ea15283c29f8a8868050aed41c3e986c64d2f1bfa091b607c2285683e16ab3332d77aad7973",
+      "name": "Hanako Arasaka - In a Gilded Cage (Rare)",
+      "number": "046",
+      "set_id": "24855"
+    },
+    "retail:047": {
+      "id": "cpk_e21d27661ac2feac21070bbb3de2b2c567b8dba64ddb603c96782159445fab055a18e8cf560f1e6abb7631",
+      "name": "Heywood Ripperdoc",
+      "number": "047",
+      "set_id": "24855"
+    },
+    "retail:048": {
+      "id": "cpk_a18ea5f1eecce2bec07386af1d41840fe71defda9afb124c7d997b5e7126de1d89d55a7ecc574c830e4e51",
+      "name": "Jackie Welles - Ride or Die Choom",
+      "number": "048",
+      "set_id": "24855"
+    },
+    "retail:049": {
+      "id": "cpk_615dd4cea15f6e0a6b8508183aff358014a14e505cfb22b15817c5ac587e032427aa2cfdffe8efee6f9c2e",
+      "name": "Maelstrom Goons",
+      "number": "049",
+      "set_id": "24855"
+    },
+    "retail:050": {
+      "id": "cpk_84919547fe2a9332e20dd692959ea1d007db07f110fea12bf3d8aab7207ffcd3688d03d381b7e2dd843a2c",
+      "name": "MaxTac Suppression Team",
+      "number": "050",
+      "set_id": "24855"
+    },
+    "retail:051": {
+      "id": "cpk_cefb8ce2ebbc7ac6168cbc63670c33db6b23a249543e2f6bb83b92801e6e266e81b682b1f9fae154ef80d6",
+      "name": "Offduty Malfini",
+      "number": "051",
+      "set_id": "24855"
+    },
+    "retail:052": {
+      "id": "cpk_8ab3ff64172a75e3f3bea9ec815e10dafb4aaf2dc93b74b38e1467ffa3d6dfe38db8208ff3bb07d5ca315f",
+      "name": "Rockn' Rockerboy",
+      "number": "052",
+      "set_id": "24855"
+    },
+    "retail:053": {
+      "id": "cpk_4daba0a95ec9c21468f1543a1c155624d63b50c90a37c5e1c1c57380646c447a5a25d573dda3628d70b593",
+      "name": "Secondhand Bombus",
+      "number": "053",
+      "set_id": "24855"
+    },
+    "retail:054": {
+      "id": "cpk_72e7ae24b6319f497611f439c19a131f0ce2b25b9fbf2bd726caed5d97c22bf00693d70e05b8f245c713e8",
+      "name": "Sketchy Ripper",
+      "number": "054",
+      "set_id": "24855"
+    },
+    "retail:055": {
+      "id": "cpk_15c5708b4be44231f2002c1c1949cbb1a3dbbf0fbc6c5c91a084d4e306cecd72a41219d96692743ed8b395",
+      "name": "T-Bug - Amateur Philosopher",
+      "number": "055",
+      "set_id": "24855"
+    },
+    "retail:056": {
+      "id": "cpk_8a9e07a5d19f49fd77f567d5b3499e8ffa9d3efe8288b828d8024243f30b0605b25aed3264f449f769d420",
+      "name": "Trauma Team Operatives",
+      "number": "056",
+      "set_id": "24855"
+    },
+    "retail:057": {
+      "id": "cpk_f785263e97f843529663644cf5155114550c815772d8441bdfd547dbf23f3c4e0889ac07d798f587c1505e",
+      "name": "Viktor Vektor - Drop Your Illusions",
+      "number": "057",
+      "set_id": "24855"
+    },
+    "retail:058": {
+      "id": "cpk_1779f11bc8d314b2b9feda45d6c549ce8bff2a38b39f47ed190f07d32351303714f211d60bc19688be1400",
+      "name": "Viktor Vektor - You Might Feel a Little Pinch",
+      "number": "058",
+      "set_id": "24855"
+    },
+    "retail:059": {
+      "id": "cpk_306e729e4c40e1290c725ab6ffd26ad46c0a9d1723d0add8f31bac720cc76a1f9657ba4e4d20ea699f2b8b",
+      "name": "Adrenaline Converter",
+      "number": "059",
+      "set_id": "24855"
+    },
+    "retail:060": {
+      "id": "cpk_295450036fdb895508f4735769f18b1a6384561170295ece211fdd8225d3b73082c1143bfa334744e02854",
+      "name": "Gorilla Arms",
+      "number": "060",
+      "set_id": "24855"
+    },
+    "retail:061": {
+      "id": "cpk_e4307e3bca84b8295a280ee60275142b27b9cfab463980d19cca982f650d9785a426d41edbfcd2cc0d9dda",
+      "name": "Kiroshi Optics",
+      "number": "061",
+      "set_id": "24855"
+    },
+    "retail:062": {
+      "id": "cpk_4ac8f75e96a67c3c8ad35e0e21ce78dc727fede87a8c1da5fb6ad4ade61e94ac393eee6f2c53c710f999fc",
+      "name": "Mandibular Upgrade",
+      "number": "062",
+      "set_id": "24855"
+    },
+    "retail:063": {
+      "id": "cpk_168ea7dd022109a8fd3038e24f946f11090c8a9dbbab79daa743334cc640af2edde383ab87bb0abb119c4a",
+      "name": "The Relic - Experimental Biochip (Epic)",
+      "number": "063",
+      "set_id": "24855"
+    },
+    "retail:064": {
+      "id": "cpk_ccba8931010af312c6c87e9f9fca7e19919d0f6f1a8889997c470567f487a4564a9b039f32a01c31a40972",
+      "name": "Zetatech Faceplate",
+      "number": "064",
+      "set_id": "24855"
+    },
+    "retail:065": {
+      "id": "cpk_9c60f804ef8365d0455373e75c5ec4c1d54297b9dd9bbe642a36849adb992a6f05f4940aa49df2f68b2c92",
+      "name": "Afterparty at Lizzie's",
+      "number": "065",
+      "set_id": "24855"
+    },
+    "retail:066": {
+      "id": "cpk_f85d6d7b8022c373319390303ebcfa437e911d8729b6830116231c999e21c7f290375912be39cb9d00dc6a",
+      "name": "Bootleg Black Sapphire Show",
+      "number": "066",
+      "set_id": "24855"
+    },
+    "retail:067": {
+      "id": "cpk_747d878cfaa14a789cd683932de44f6c33ff6a65c4944097d295d0c015c8c0f0b87d5931b9fc9609e3021d",
+      "name": "Cyberpsychosis",
+      "number": "067",
+      "set_id": "24855"
+    },
+    "retail:068": {
+      "id": "cpk_c3182f34e24f8f2dd08d76f41ee6074623e338f1c298b6a69e66eedb66963485b7ebf29ad32f3fab010d2a",
+      "name": "Live with the Aftermath",
+      "number": "068",
+      "set_id": "24855"
+    },
+    "retail:069": {
+      "id": "cpk_6664f8e3e5a45e73a4ea763ff49c999fb6b99de1ef5cecf4248dac86d629a4416e3b7c4ff749df0a243618",
+      "name": "Safety Override",
+      "number": "069",
+      "set_id": "24855"
+    },
+    "retail:070": {
+      "id": "cpk_06d5a2a9fc343227ba4f9a53f292c74e2ec8f82dbc5cf0aa9769020e6f763b61817f1f6fe2f678847b0080",
+      "name": "The Heist",
+      "number": "070",
+      "set_id": "24855"
+    },
+    "retail:071": {
+      "id": "cpk_65092399a227d6aa07f11180f15dbd4907f70a716d8089e35468b137f52aa88a970c46dcfa921c04791a39",
+      "name": "Goro Takemura - Vengeful Bodyguard (Rare)",
+      "number": "071",
+      "set_id": "24855"
+    },
+    "retail:072": {
+      "id": "cpk_5ca26c41e4423cf53318f70eb4f92edce6c65f5062efbc41f8f6bed6f683469fdf849bb08f3a0cfbab5510",
+      "name": "Hanako Arasaka - Daughter of the Emperor (Rare)",
+      "number": "072",
+      "set_id": "24855"
+    },
+    "retail:073": {
+      "id": "cpk_6b5ba76c68046d79445623ab525effb9c5d795edd7afbb51a5ef653a2660f55c1f862d0861f153be505f73",
+      "name": "Jackie Welles - Mama's Favorite (Rare)",
+      "number": "073",
+      "set_id": "24855"
+    },
+    "retail:074": {
+      "id": "cpk_b9e707fe7eeef619381fb3298ff9b361f9cc5ce0cdcf7c33dfdeff1f5f3ecbbe90964dc46af68a80627301",
+      "name": "Padre - Man of the Cross (Rare)",
+      "number": "074",
+      "set_id": "24855"
+    },
+    "retail:075": {
+      "id": "cpk_bf4ab3a5e567e41c1ba25069477deb4fa60cbf00b556f8ff52765ae030581569d44621074aaa7ed19b17ca",
+      "name": "Panam Palmer - Nomad Cavalry (Epic)",
+      "number": "075",
+      "set_id": "24855"
+    },
+    "retail:076": {
+      "id": "cpk_7cdddd9705ddf6e7880d9181656ee3d1ab0e0301411e58f07c967197c2ec57ad24a3fcf6c30e9fef93554a",
+      "name": "Corpo Security",
+      "number": "076",
+      "set_id": "24855"
+    },
+    "retail:077": {
+      "id": "cpk_12d946e987ba59a445e2407d89e90e35ce2b354e29c485660d743dafad7fe55985ba79bb7ca54664c0e98e",
+      "name": "Emergency Atlus",
+      "number": "077",
+      "set_id": "24855"
+    },
+    "retail:078": {
+      "id": "cpk_e6c6f04d7a907454806f4927fadb2826539805bf3807b7a764d03482a8eab53149aaa1b35ca15a1d6fbca9",
+      "name": "Field Operator",
+      "number": "078",
+      "set_id": "24855"
+    },
+    "retail:079": {
+      "id": "cpk_15702135e282dbf4a32cfab3e437a3613e509f8cd8f29bfa666ad2130a92f11f2485856f06138642943d92",
+      "name": "Maelstrom Zealots",
+      "number": "079",
+      "set_id": "24855"
+    },
+    "retail:080": {
+      "id": "cpk_879de95dc677dfa9740dc543299e0401e69fa90bd3fafb4bf47599e11a2604206f18e395878a3cf369e3b0",
+      "name": "MaxTac AV",
+      "number": "080",
+      "set_id": "24855"
+    },
+    "retail:081": {
+      "id": "cpk_df6e4b95d94bded20edc860edaf086afdf5d38fc56304c275520c6ccbba3f58468eb195eb16a12507df499",
+      "name": "MaxTac Heavy",
+      "number": "081",
+      "set_id": "24855"
+    },
+    "retail:082": {
+      "id": "cpk_c72391ba596db46b4cfe32ff5c2594680f01c8fb0fb881a16d48fcefaf677169c6e53b08b55036b78a674f",
+      "name": "MaxTac Squadron",
+      "number": "082",
+      "set_id": "24855"
+    },
+    "retail:083": {
+      "id": "cpk_c0ffed404b0150fddf94cd99609f16a8ef90cbeb31c0ddbe6647339b71f0ec968b9cb43ae560c7cebea2d6",
+      "name": "Nadia - Fighting Through Grief",
+      "number": "083",
+      "set_id": "24855"
+    },
+    "retail:084": {
+      "id": "cpk_472e5fc1f110a1300d21cc8bb6b21f18efe5d317194bf0bd5dc46fab249820a3aa2a533af17fee7dc5898f",
+      "name": "Pacifica Netrunner",
+      "number": "084",
+      "set_id": "24855"
+    },
+    "retail:085": {
+      "id": "cpk_ada76ea7fa3ed1b5c115efce860e58340aa96442f0b14438412ba14a0d4b7aef82508d8ca34efb41cd0ed6",
+      "name": "Panam Palmer - Strength Through Family (Secret)",
+      "number": "085",
+      "set_id": "24855"
+    },
+    "retail:086": {
+      "id": "cpk_56eed4a1039d61f741459ba3aa1e73040202d25b30e2a822128f78323d09ad99de9ba31f7d2d59e36b63c4",
+      "name": "Pepe Najarro - Working Doubles",
+      "number": "086",
+      "set_id": "24855"
+    },
+    "retail:087": {
+      "id": "cpk_8b541e4c2e0401dc1313c2cf98430d278bdcb84ec10148676f7eab6b4d19d67f9c37c6facd6cd88c65bb81",
+      "name": "Riding Nomad",
+      "number": "087",
+      "set_id": "24855"
+    },
+    "retail:088": {
+      "id": "cpk_de69c2938b5ea59a65fd089cc27126209af9df610bba33a5981a66602364a1fa416612770a59e8883cc2d6",
+      "name": "Sandayu Oda - Hanako's Guardian (Rare)",
+      "number": "088",
+      "set_id": "24855"
+    },
+    "retail:089": {
+      "id": "cpk_e41206f5c86e3bd3b5832e2729c253607771fa6e205806130eff168b311d07919f9495920e322e9614bd74",
+      "name": "Saul Bright - Stormrider",
+      "number": "089",
+      "set_id": "24855"
+    },
+    "retail:090": {
+      "id": "cpk_56fe7675fe16bf4e551caa1cf25e28dd626cb9d58d339931950568f5af19b268bdd093fedf96c59c8e5151",
+      "name": "Tyger's Whisper",
+      "number": "090",
+      "set_id": "24855"
+    },
+    "retail:091": {
+      "id": "cpk_cce2ce33e1ccab25d3499d27b966d4424aa905273144bfb8a7c97321e5640dddd2ae539f4548218b16fd78",
+      "name": "Valentino Street Racer",
+      "number": "091",
+      "set_id": "24855"
+    },
+    "retail:092": {
+      "id": "cpk_abc1e9dc45a8e460e0b8f2954d99432e3b98210a51574be2a34bc196a71551154ce84bee2fc7d07f22dc0b",
+      "name": "Wraith Marauders",
+      "number": "092",
+      "set_id": "24855"
+    },
+    "retail:093": {
+      "id": "cpk_b243aaed45bd7494a705ce4cbf477a3e445b583234d44ebd818dc240ab7d6fcbd4345cb2f06211ac02112e",
+      "name": "Overwatch - Panam's Gift (Epic)",
+      "number": "093",
+      "set_id": "24855"
+    },
+    "retail:094": {
+      "id": "cpk_d0b4ff88c443fa6824a93340c520b1aa70f25877203524c3b6102bea556dadca01a9c4d48bbc9f55fdffe6",
+      "name": "Riot Shield",
+      "number": "094",
+      "set_id": "24855"
+    },
+    "retail:095": {
+      "id": "cpk_0ad7d867fb689d83eed008a1954bb30d9aa084d1ee807baefd47130e75bd55d669ea8311c688e055dbd464",
+      "name": "Sandevistan",
+      "number": "095",
+      "set_id": "24855"
+    },
+    "retail:096": {
+      "id": "cpk_a05ee9f85092003d34e8882705eca245c2577e92355e0ce3bccb4cd731f9f26925c00cdcfa2b58b98b24a2",
+      "name": "Zetatech Berserk",
+      "number": "096",
+      "set_id": "24855"
+    },
+    "retail:097": {
+      "id": "cpk_6abf95938534e7a3f3368c3b8c8aadb5d360702235bc91a70061a3cf8700e350785cab93a27f8060d21f16",
+      "name": "Corporate Surveillance",
+      "number": "097",
+      "set_id": "24855"
+    },
+    "retail:098": {
+      "id": "cpk_a970f830ae89295419d8b2f1bbe4596bae38f985f3f3bc27fc544ff3b04da45c8f224a8537130a0dbce278",
+      "name": "(Don't Fear) The Reaper",
+      "number": "098",
+      "set_id": "24855"
+    },
+    "retail:099": {
+      "id": "cpk_0e25500a85783e6ed1a0cb29a8133453e1e759e5dd6bf23ee87629b1681d4d44153657db977c685baa333d",
+      "name": "Fool on the Hill",
+      "number": "099",
+      "set_id": "24855"
+    },
+    "retail:100": {
+      "id": "cpk_8ab53d79cbae75529f8421af662057696fff9b502794f236b4726e08099e3af9d2f5f730ee45bf5f591d3f87",
+      "name": "Memory Relapse",
+      "number": "100",
+      "set_id": "24855"
+    },
+    "retail:101": {
+      "id": "cpk_8b3684c44a9a0ef037e447067e1dbb03fe47fae5c6a6b128e5693f76485c47e8169309e7637141b5ac8f0120",
+      "name": "Peace Offering",
+      "number": "101",
+      "set_id": "24855"
+    },
+    "retail:102": {
+      "id": "cpk_2ca34067af9e9ea2526921d196c7f455749d76e3fc4769ca15f7c4df7b21b32497154785a965d0af564ce2e6",
+      "name": "Synapse Burnout",
+      "number": "102",
+      "set_id": "24855"
+    },
+    "retail:103": {
+      "id": "cpk_fd78b64c7b7a1874d7c67a4c0cdcdc53d33a58ea34994eba763086c78848f2e51b958e082ef4e20dd95502e4",
+      "name": "Take Control",
+      "number": "103",
+      "set_id": "24855"
+    },
+    "retail:104": {
+      "id": "cpk_bfc85f536ae1c224fba30e3ce409abbf21959c3a62d69374e1911154e173cacd8b9fed635b1a29853ae04ac4",
+      "name": "We Gotta Live Together",
+      "number": "104",
+      "set_id": "24855"
+    },
+    "retail:105": {
+      "id": "cpk_f8ec004e48229d1f41496ae034e455cf5b4e4a60931491af9104dbdaa7ee87e16698d38a36d6ee1de4c723c6",
+      "name": "Wild in the Streets",
+      "number": "105",
+      "set_id": "24855"
+    },
+    "retail:106": {
+      "id": "cpk_e70f446458a80b066c38ada5e843c88d47b1afdadbb39d464f342cd66b48b81b826ff3cfd86b925884bff79c",
+      "name": "Alt Cunningham - Soulkiller Architect (Rare)",
+      "number": "106",
+      "set_id": "24855"
+    },
+    "retail:107": {
+      "id": "cpk_dbab17c6bb19a9a786da085f9b5aff254dea694905e145f4f42de2cea41952b079061c82f559efb71ee43883",
+      "name": "Evelyn Parker - Beautiful Enigma (Rare)",
+      "number": "107",
+      "set_id": "24855"
+    },
+    "retail:108": {
+      "id": "cpk_04d8aa05b6d9a5141a2a0a577699e7333084530f2a8bd33c9e7d75c7cc3e63bf8335f86e76a5a0a1c581f615",
+      "name": "Judy Alvarez - Braindance Maestro (Epic)",
+      "number": "108",
+      "set_id": "24855"
+    },
+    "retail:109": {
+      "id": "cpk_5098aad2bbf7c4c65e95cddf3fd5c4c9402de58b3cec3e20bf77acfeaf125aedbe30ec1d2343e684d3ee3731",
+      "name": "Sasha Yakovleva - Won't Let You Down (Secret)",
+      "number": "109",
+      "set_id": "24855"
+    },
+    "retail:110": {
+      "id": "cpk_0a3f4891dfc358518f33173005f0d941f95da3bff9bd5329e2772e50d374c9a9a7e806c15d07fc0ec2c98b75",
+      "name": "Wakako Okada - Peace and Harmony (Rare)",
+      "number": "110",
+      "set_id": "24855"
+    },
+    "retail:111": {
+      "id": "cpk_2f37978c751aff2da3f5fbdc8efb2559e46973b20ef027e0ca5a5ddfcdc8f93ef2da92fd2797d5ac8a94b0cf",
+      "name": "Delamain - Rideshare AI",
+      "number": "111",
+      "set_id": "24855"
+    },
+    "retail:112": {
+      "id": "cpk_4dfdbe1b956c1f660ed989dd901828e7d4deb9cc2816a347ce05c5c997aaf57511a048d86dc26b58f71cf175",
+      "name": "Delamain Cab",
+      "number": "112",
+      "set_id": "24855"
+    },
+    "retail:113": {
+      "id": "cpk_cfa728644171f8e7435b77e52498372894651f4eee7c77e83d0a841cb9b55eb2bc1995ec1e84c1095dfde0d1",
+      "name": "Evelyn Parker - Scheming Siren",
+      "number": "113",
+      "set_id": "24855"
+    },
+    "retail:114": {
+      "id": "cpk_14574aa27f52a249ad255922a245cca50818e3f5d2b13ba019d285711afcbda631efa9d7cf7f790da1b81a34",
+      "name": "Hacked Corpo",
+      "number": "114",
+      "set_id": "24855"
+    },
+    "retail:115": {
+      "id": "cpk_25d72bc8387dcbd34d7934ee8f7ea419d2779a5f9541e5856d5851aab36bd3e2a43709ccfdf937166a578e39",
+      "name": "Jacked-In Voodoo Boy",
+      "number": "115",
+      "set_id": "24855"
+    },
+    "retail:116": {
+      "id": "cpk_d779cdd19ba4dbe7ec84eb9117ee2cb7829724b6b058162edccaedda429270af16f2a0742223968ff1b8920e",
+      "name": "Judy Alvarez - Nothing to Doubt (Secret)",
+      "number": "116",
+      "set_id": "24855"
+    },
+    "retail:117": {
+      "id": "cpk_70c606d8d4e1849ca67546a334c20133c086d87fa75c5bfc645cf8b40b9d0352f915792dd0993d6aee1fa19a",
+      "name": "Lizzy Wizzy - Delicate Weapon",
+      "number": "117",
+      "set_id": "24855"
+    },
+    "retail:118": {
+      "id": "cpk_56d61d01a64153a3d149089b3f9763e6eaf414eae91e053b63409011a98d11dacc0ecb3a11b6f0a85e410e5a",
+      "name": "Maman Brigitte - Spirit of Death",
+      "number": "118",
+      "set_id": "24855"
+    },
+    "retail:119": {
+      "id": "cpk_eee36f71257176486db7db18a945894baae8ce6153a5f490e7df5fcfc962d58d4b658ca09d9260f7c85f046e",
+      "name": "Misty Olszewski - Mender of Broken Spirits",
+      "number": "119",
+      "set_id": "24855"
+    },
+    "retail:120": {
+      "id": "cpk_ac2ed3bbea6f8a554370e8c60f937829bf5e1610e5676a5ccd204c75e0d2448d418b7f4a161bcc48bf33c0f1",
+      "name": "Modded Kusanagi",
+      "number": "120",
+      "set_id": "24855"
+    },
+    "retail:121": {
+      "id": "cpk_1b26cc75c477d0d186c9748e75a107a008cf09d614fd03419babfd8c18e238971e1ef7016f4c9983d42c67ea",
+      "name": "Modded Muramasa",
+      "number": "121",
+      "set_id": "24855"
+    },
+    "retail:122": {
+      "id": "cpk_07238a1b62cc81f9e09a582a0b219eeee206202ce069ded367b8b8794a3afaf401eb97bd1f268796d01af971",
+      "name": "Mox Inciters",
+      "number": "122",
+      "set_id": "24855"
+    },
+    "retail:123": {
+      "id": "cpk_2967b2dbc277eea5f0ff6de294e3fc513a2f4f8085ec14cdeda31684f91dab84de82d4f24dab7c3519a23e8b",
+      "name": "Placide - Voodoo Sentinel",
+      "number": "123",
+      "set_id": "24855"
+    },
+    "retail:124": {
+      "id": "cpk_ac256b1ce302a2b5c1f2b193d3d4c7a57b7d9a397041c1b987ad3774acd9550231aa379789ac917542555d49",
+      "name": "Psycho Squad",
+      "number": "124",
+      "set_id": "24855"
+    },
+    "retail:125": {
+      "id": "cpk_2cc33bd909c17e672d4466fe92c6e05430f8f0a0c999d4224af34a9b40ff86da6304dc5c0ce46a1c440ce12c",
+      "name": "Rita Wheeler - No Stupid Questions",
+      "number": "125",
+      "set_id": "24855"
+    },
+    "retail:126": {
+      "id": "cpk_d69d3599334c0ccfc5b741b906f34373cfeac5d2fcb55ba737c6fa92a901ce30af33077cc1bb310216321691",
+      "name": "Rogue Amendiares - Queen of the Afterlife (Epic)",
+      "number": "126",
+      "set_id": "24855"
+    },
+    "retail:127": {
+      "id": "cpk_e4edfbbfeda46a46812b6530a5eb7c9798b42f5d4b36a12547f9e68e2f5f127c3b361a60eff6d060db7c511b",
+      "name": "Westbrook Netrunner",
+      "number": "127",
+      "set_id": "24855"
+    },
+    "retail:128": {
+      "id": "cpk_c654a5b12b596cb73fb822d25f4d09a66b4d73c75b24b89c4dcb82515919ba6e258df2e01a982825f180a6c7",
+      "name": "Dying Night - V's Pistol",
+      "number": "128",
+      "set_id": "24855"
+    },
+    "retail:129": {
+      "id": "cpk_403c57b8853d0ab05dad736b865c25af140f73b195c94597fa6024000e5076d2aff0364d48351e4d84c7b803",
+      "name": "NetWatch Netdriver",
+      "number": "129",
+      "set_id": "24855"
+    },
+    "retail:130": {
+      "id": "cpk_32ad1cb8ba637c9ee027bf78754eb3c046d13fb24e533a60faee93232849850fb7908614490ab183f73af6da",
+      "name": "Tetratronic Rippler",
+      "number": "130",
+      "set_id": "24855"
+    },
+    "retail:131": {
+      "id": "cpk_206f1e6ce38720e433a00e4f21210dd310b4e03d93870ac1db2c0dafdcfdcfc4ccabda9fab02a29a3086d6d4",
+      "name": "Chrome Reverie",
+      "number": "131",
+      "set_id": "24855"
+    },
+    "retail:132": {
+      "id": "cpk_ebfd5f35fd0cda7f004f71459491c64a4e955df66adb5124d1a65f5305135c6bc966aca1b7ec5ecd9ca69f3f",
+      "name": "Floor It",
+      "number": "132",
+      "set_id": "24855"
+    },
+    "retail:133": {
+      "id": "cpk_9b02a6d037cffd0f06f37ae9e409a0df6760647b439297d05f175b43f80900d657cf8226795eec004c4b346a",
+      "name": "Les Elemens",
+      "number": "133",
+      "set_id": "24855"
+    },
+    "retail:134": {
+      "id": "cpk_a659c0c3fe13d05b306c563cc5b372439b1497feae5fa0602ae298905031ef6562377f3c9cb1568e3d96a487",
+      "name": "Nocturne OP55 N1",
+      "number": "134",
+      "set_id": "24855"
+    },
+    "retail:135": {
+      "id": "cpk_23731f12ac0918d9c152270e73ef1512eaaaf8ecba297c05af78df6423e12f528115d39064248117600c86fe",
+      "name": "Pyramid Song",
+      "number": "135",
+      "set_id": "24855"
+    },
+    "retail:136": {
+      "id": "cpk_a4edd86df99579c03973cc582575c202f33ebbf664469716100e72cc7e7d2c8117caac1744f3ca0db19aaa94",
+      "name": "Reboot Optics",
+      "number": "136",
+      "set_id": "24855"
+    },
+    "retail:137": {
+      "id": "cpk_198bbf87c94a309aa36c72d742fee332cb500c6cb2aa16f2f5a0ca26738447d084ffbd33223597a9c810eebc",
+      "name": "Three Mouths, One Desire",
+      "number": "137",
+      "set_id": "24855"
+    },
+    "retail:138": {
+      "id": "cpk_2dc3aa9eea93fc69d7b4b82e65fe07f69db86b8b69360e928c6dfe28429a275d613c1c311eb58adacafe8e3e",
+      "name": "Towerfall (Epic)",
+      "number": "138",
+      "set_id": "24855"
+    },
+    "retail:139": {
+      "id": "cpk_9cce6eae71e7ea24e8907df652a37d65f1b8128c67fddd46ee1b95ba5c6c9ed75a8c5b0409f01c15e83f4a35",
+      "name": "Trust No One",
+      "number": "139",
+      "set_id": "24855"
+    },
+    "retail:140": {
+      "id": "cpk_a6b4b1dd43b704541395225a599171aa8c27bf0641db183cbe86b0829ddb7124bfed92d5ee0bca8714e9840a",
+      "name": "Unlikely Bond",
+      "number": "140",
+      "set_id": "24855"
     }
   },
-  "total": 1
+  "matcherVersion": 2,
+  "total": 391
 }
