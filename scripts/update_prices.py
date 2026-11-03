@@ -22,6 +22,7 @@ ROOT = Path(__file__).resolve().parent.parent
 API = 'https://api.pokewallet.io/cpk'
 TODAY = dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds')
 MAX_PER_RUN = 60  # 8 runs daily, at most 60 card details each; free tier 100 requests/hour.
+MAPPING_REFRESH_DAYS = 1  # Recheck source mappings daily for newly released cards.
 
 SET_NAMES = {
  'wnc-beta': 'Welcome to Night City - Beta',
@@ -87,37 +88,44 @@ def request(path, params=None):
  raise AssertionError('unreachable')
 
 def build_card_index(cards):
- """Match exact set + number + name, reject ambiguous print variants."""
+ """Match exact edition, set ID, number and name; never guess between prints."""
  sets_res = request('/sets')
  api_sets = sets_res.get('data', [])
  resolved = {}
  for sid, name in SET_NAMES.items():
-  matches = [s for s in api_sets if normalize(s.get('name')) == normalize(name)]
-  if len(matches) == 1: resolved[sid] = str(matches[0]['set_id'])
-  else: print(f'Nicht eindeutiges/fehlendes Set: {name} ({len(matches)} Treffer)')
+  ids = sorted({str(s['set_id']) for s in api_sets if s.get('set_id') is not None and normalize(s.get('name')) == normalize(name)})
+  if ids:
+   resolved[sid] = ids
+   if len(ids) > 1:
+    print(f'Mehrere API-Sets für {name}; prüfe Karten einzeln auf eindeutige Drucke: {len(ids)} Sets')
+  else:
+   print(f'Noch kein exakt passendes API-Set: {name}')
  index = {}
- for sid, set_id in resolved.items():
+ for sid, set_ids in resolved.items():
   all_entries = []
-  for page in range(1, 21):
-   response = request('/sets/' + urllib.parse.quote(set_id, safe=''), {'page': page, 'limit': 200})
-   entries = response.get('cards', [])
-   if not isinstance(entries, list): raise ValueError('API: Kartenliste fehlt')
-   all_entries.extend(entries)
-   paging = response.get('pagination') or {}
-   if page >= int(paging.get('total_pages', 1)): break
+  for set_id in set_ids:
+   for page in range(1, 21):
+    response = request('/sets/' + urllib.parse.quote(set_id, safe=''), {'page': page, 'limit': 200})
+    entries = response.get('cards', [])
+    if not isinstance(entries, list): raise ValueError('API: Kartenliste fehlt')
+    for ent in entries:
+     info = ent.get('card_info') or {}
+     if str(info.get('set_id')) != set_id: continue
+     all_entries.append((set_id, ent))
+    paging = response.get('pagination') or {}
+    if page >= int(paging.get('total_pages', 1)): break
   local = [c for c in cards if c['setId'] == sid]
   for card in local:
    wanted_n = collector(card['no'])
    wanted_name = normalize(card['name'])
    candidates = []
-   for ent in all_entries:
+   for entry_set_id, ent in all_entries:
     info = ent.get('card_info') or {}
-    if collector(info.get('card_number')) is None or wanted_n is None: continue
     actual_n = collector(info.get('card_number'))
+    if wanted_n is None or actual_n is None: continue
     if wanted_n[0] != actual_n[0]: continue
     if wanted_n[1] and actual_n[1] and wanted_n[1] != actual_n[1]: continue
     if wanted_name != normalize(info.get('name')): continue
-    # If a/b suffix is only in local data, V.1/V.2 API label is necessary.
     if wanted_n[1] and not actual_n[1]:
      suffix = wanted_n[1]
      version = re.search(r'\(\s*v\.?\s*([12])\s*\)', str(info.get('name')), flags=re.I)
@@ -126,9 +134,14 @@ def build_card_index(cards):
     if info.get('product_type') == 'sealed': continue
     eid = ent.get('id')
     if not isinstance(eid, str) or not re.fullmatch(r'(?:cpk_[a-f0-9]{16,128}|[a-f0-9]{64})', eid): continue
-    candidates.append({'id': eid, 'set_id': set_id, 'name': str(info.get('name')), 'number': str(info.get('card_number'))})
+    candidates.append({'id': eid, 'set_id': entry_set_id, 'name': str(info.get('name')), 'number': str(info.get('card_number'))})
    if len(candidates) == 1: index[card['key']] = candidates[0]
    elif len(candidates) > 1: print(f'Mehrdeutiger Druck, nicht zugeordnet: {card["key"]}: {len(candidates)}')
+ for sid in SET_NAMES:
+  local = [c for c in cards if c['setId'] == sid]
+  missing = [c['no'] for c in local if c['key'] not in index]
+  print(f'{sid}: {len(local)-len(missing)}/{len(local)} zugeordnet' +
+        ('; offen: ' + ', '.join(missing[:10]) + (' ...' if len(missing)>10 else '') if missing else ''))
  print(f'{len(index)} von {len(cards)} Drucke eindeutig mit PokéWallet verknüpft')
  return index
 
@@ -142,7 +155,14 @@ def price_from_detail(local_card, match, detail):
  info = detail.get('card_info') or {}
  if str(info.get('set_id')) != match['set_id']:
   return None
- if collector(info.get('card_number'))[0] != collector(local_card['no'])[0]: return None
+ wanted_n = collector(local_card['no'])
+ actual_n = collector(info.get('card_number'))
+ if wanted_n is None or actual_n is None or wanted_n[0] != actual_n[0]: return None
+ if wanted_n[1] and actual_n[1] and wanted_n[1] != actual_n[1]: return None
+ if wanted_n[1] and not actual_n[1]:
+  version = re.search(r'\(\s*v\.?\s*([12])\s*\)', str(info.get('name')), flags=re.I)
+  if wanted_n[1] in ('a', 'b') and (not version or int(version.group(1)) != ('ab'.index(wanted_n[1]) + 1)):
+   return None
  if normalize(info.get('name')) != normalize(local_card['name']): return None
  cm = detail.get('cardmarket') or {}
  want = 'foil' if 'holo' in str(local_card.get('finish', '')).lower() else 'normal'
@@ -165,12 +185,18 @@ def main():
  state = load_json(state_path, {'cursor': 0})
  cache_data = load_json(cache, {'mapping': {}, 'generatedAt': None})
  mapping = cache_data.get('mapping') or {}
- # Refresh the source mapping weekly to accommodate new retail releases.
+ # Refresh mapping daily as more Retail and promo singles reach the API.
  stamp = cache_data.get('generatedAt', '') or ''
- if cache_data.get('matcherVersion') != 2 or not mapping or len(mapping) < max(10, len(cards)//10) or (dt.date.today() - dt.date.fromisoformat(stamp[:10])).days >= 7:
-  mapping = build_card_index(cards)
-  if not mapping: raise RuntimeError('Kein eindeutiger Produktabgleich möglich; keine Preise geändert.')
-  dump_json(cache, {'mapping': mapping, 'generatedAt': TODAY, 'total': len(mapping), 'matcherVersion': 2})
+ try:
+  age = (dt.datetime.now(dt.timezone.utc).date() - dt.date.fromisoformat(stamp[:10])).days
+ except (ValueError, TypeError):
+  age = MAPPING_REFRESH_DAYS
+ if cache_data.get('matcherVersion') != 3 or not mapping or age >= MAPPING_REFRESH_DAYS:
+  fresh = build_card_index(cards)
+  if not fresh: raise RuntimeError('Kein eindeutiger Produktabgleich möglich; keine Preise geändert.')
+  # Upstream may temporarily omit a product; retain prior verified matches.
+  mapping = {**{k: v for k, v in mapping.items() if k in by_key}, **fresh}
+  dump_json(cache, {'mapping': mapping, 'generatedAt': TODAY, 'total': len(mapping), 'matcherVersion': 3})
  keys = [c['key'] for c in cards if c['key'] in mapping]
  if not keys: raise RuntimeError('Kein einziges Kartenprodukt zugeordnet.')
  cursor = int(state.get('cursor', 0)) % len(keys)
