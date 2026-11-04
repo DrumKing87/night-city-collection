@@ -7,6 +7,7 @@ This script is intended for GitHub Actions (never put API credentials in the rep
 """
 from __future__ import annotations
 import datetime as dt
+from email.utils import parsedate_to_datetime
 import json
 import os
 from pathlib import Path
@@ -21,7 +22,8 @@ import urllib.request
 ROOT = Path(__file__).resolve().parent.parent
 API = 'https://api.pokewallet.io/cpk'
 TODAY = dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds')
-MAX_PER_RUN = 60  # 8 runs daily, at most 60 card details each; free tier 100 requests/hour.
+MAX_PER_RUN = 35  # Smaller batches leave headroom for mapping refresh and API limits.
+COOLDOWN_MINUTES = 90  # Respect temporary quota limits without repeated failed runs.
 MAPPING_REFRESH_DAYS = 1  # Recheck source mappings daily for newly released cards.
 
 SET_NAMES = {
@@ -66,12 +68,49 @@ def catalog():
  if len(cards) < 400: raise ValueError('Unerwartet wenige Karten, Abbruch.')
  return cards
 
+class RateLimitError(Exception):
+ """An HTTP 429 response. Never erase or overwrite valid existing price records."""
+ def __init__(self, seconds=None):
+  super().__init__('PokéWallet HTTP 429: API-Kontingent vorübergehend ausgeschöpft')
+  self.seconds = seconds
+
+
+def retry_after_seconds(raw):
+ """Retry-After may be seconds or an RFC 7231 HTTP date."""
+ if not raw: return None
+ try:
+  return max(0, int(raw))
+ except (ValueError, TypeError):
+  try:
+   date = parsedate_to_datetime(raw)
+   if date.tzinfo is None: date = date.replace(tzinfo=dt.timezone.utc)
+   return max(0, int((date - dt.datetime.now(dt.timezone.utc)).total_seconds()))
+  except (TypeError, ValueError, OverflowError):
+   return None
+
+
+def cooldown_end(seconds=None):
+ # A 429 response may reflect a rolling rate limit or shared hourly quota.
+ delay = max(COOLDOWN_MINUTES * 60, seconds or 0)
+ return (dt.datetime.now(dt.timezone.utc) + dt.timedelta(seconds=delay)).isoformat(timespec='seconds')
+
+
+def pause_active(state):
+ raw = state.get('rateLimitUntil')
+ if not raw: return False
+ try:
+  until = dt.datetime.fromisoformat(str(raw).replace('Z', '+00:00'))
+  return until > dt.datetime.now(dt.timezone.utc)
+ except (ValueError, TypeError):
+  return False
+
+
 def request(path, params=None):
  key = os.environ.get('POKEWALLET_API_KEY', '').strip()
  if not key: raise RuntimeError('GitHub-Secret POKEWALLET_API_KEY fehlt. Kein Preisupdate möglich.')
  url = API + path
  if params: url += '?' + urllib.parse.urlencode(params)
- req = urllib.request.Request(url, headers={'X-API-Key': key, 'Accept': 'application/json', 'User-Agent': 'NightCityCollection/1.0 personal-card-tracker'})
+ req = urllib.request.Request(url, headers={'X-API-Key': key, 'Accept': 'application/json', 'User-Agent': 'NightCityCollection/1.1 personal-card-tracker'})
  for attempt in range(3):
   try:
    with urllib.request.urlopen(req, timeout=25) as response:
@@ -79,12 +118,15 @@ def request(path, params=None):
     data = json.load(response)
    if not isinstance(data, dict): raise ValueError('API: ungültiges JSON')
    return data
-  except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as ex:
-   status = getattr(ex, 'code', 0)
-   if status in (401, 403, 429):
-    raise RuntimeError(f'API Fehler HTTP {status}. Secret bzw. Freikontingent prüfen.') from ex
+  except urllib.error.HTTPError as ex:
+   if ex.code == 429:
+    raise RateLimitError(retry_after_seconds(ex.headers.get('Retry-After') if ex.headers else None)) from ex
+   if ex.code in (401, 403):
+    raise RuntimeError(f'API Fehler HTTP {ex.code}: Berechtigung/Schlüssel prüfen.') from ex
    if attempt == 2: raise
-   time.sleep(2 + attempt * 3)
+  except (urllib.error.URLError, TimeoutError) as ex:
+   if attempt == 2: raise
+  time.sleep(2 + attempt * 3)
  raise AssertionError('unreachable')
 
 def build_card_index(cards):
@@ -183,51 +225,93 @@ def main():
  state_path = ROOT / 'data/update-state.json'
  prices_path = ROOT / 'data/prices.json'
  state = load_json(state_path, {'cursor': 0})
+
+ # A previous API 429 should not cause repeated futile requests. Preserve feed.
+ if pause_active(state):
+  print(f"PokéWallet-Abkühlzeit bis {state['rateLimitUntil']} UTC. Bestehende Preise bleiben unverändert.")
+  return
+
  cache_data = load_json(cache, {'mapping': {}, 'generatedAt': None})
  mapping = cache_data.get('mapping') or {}
- # Refresh mapping daily as more Retail and promo singles reach the API.
  stamp = cache_data.get('generatedAt', '') or ''
  try:
   age = (dt.datetime.now(dt.timezone.utc).date() - dt.date.fromisoformat(stamp[:10])).days
  except (ValueError, TypeError):
   age = MAPPING_REFRESH_DAYS
+
+ # When rate-limited during the daily catalog mapping refresh, save only cooldown.
  if cache_data.get('matcherVersion') != 3 or not mapping or age >= MAPPING_REFRESH_DAYS:
-  fresh = build_card_index(cards)
+  try:
+   fresh = build_card_index(cards)
+  except RateLimitError as ex:
+   state['rateLimitUntil'] = cooldown_end(ex.seconds)
+   state['lastRateLimitedAt'] = TODAY
+   state['lastRunStatus'] = 'rate_limited_mapping'
+   dump_json(state_path, state)
+   print(f"HTTP 429 während Kartenzuordnung; nächster Versuch nach {state['rateLimitUntil']} UTC. Alle Preise unverändert.")
+   return
   if not fresh: raise RuntimeError('Kein eindeutiger Produktabgleich möglich; keine Preise geändert.')
-  # Upstream may temporarily omit a product; retain prior verified matches.
+  # An upstream data omission is not grounds for deleting previously verified IDs.
   mapping = {**{k: v for k, v in mapping.items() if k in by_key}, **fresh}
   dump_json(cache, {'mapping': mapping, 'generatedAt': TODAY, 'total': len(mapping), 'matcherVersion': 3})
+
  keys = [c['key'] for c in cards if c['key'] in mapping]
  if not keys: raise RuntimeError('Kein einziges Kartenprodukt zugeordnet.')
  cursor = int(state.get('cursor', 0)) % len(keys)
  batch = [keys[(cursor+i) % len(keys)] for i in range(min(MAX_PER_RUN, len(keys)))]
  existing = load_json(prices_path, {'schema': 1, 'prices': {}})
+ # Existing data is never lost due to absent or temporarily unavailable sources.
  result = {k: v for k, v in (existing.get('prices') or {}).items() if k in by_key}
- checks = updated = misses = 0
+ checks = updated = misses = processed = 0
+ limited = None
  for key in batch:
   try:
    detail = request('/cards/' + urllib.parse.quote(mapping[key]['id'], safe=''))
-   price = price_from_detail(by_key[key], mapping[key], detail)
-   if price:
-    result[key] = price
-    updated += 1
-   else: misses += 1
-   checks += 1
+  except RateLimitError as ex:
+   limited = ex
+   print(f'HTTP 429 bei {key}: sicherer Stopp nach {checks} erfolgreichen Detailabfragen.')
+   break
   except Exception as ex:
-   print('Abrufproblem:', key, str(ex)[:160], file=sys.stderr)
-   # Rate-limit / authentication errors are critical and must NOT publish a false success.
-   if 'HTTP 429' in str(ex) or 'HTTP 401' in str(ex) or 'HTTP 403' in str(ex):
+   # Invalid credentials/permissions are configuration faults, not transient.
+   if isinstance(ex, RuntimeError) and ('HTTP 401' in str(ex) or 'HTTP 403' in str(ex)):
     raise
+   # Transient network or API errors: stop, retry this card next time.
+   print('Temporäres Abrufproblem:', key, str(ex)[:160], file=sys.stderr)
+   break
+
+  price = price_from_detail(by_key[key], mapping[key], detail)
+  if price:
+   result[key] = price
+   updated += 1
+  else:
+   misses += 1
+  checks += 1
+  processed += 1
   time.sleep(0.15)
- if checks == 0: raise RuntimeError('Kein Preisabruf erfolgreich; vorherige Datei beibehalten.')
- dump_json(prices_path, {'schema': 1, 'provider': 'PokéWallet / Cardmarket',
+
+ if limited:
+  state['rateLimitUntil'] = cooldown_end(limited.seconds)
+  state['lastRateLimitedAt'] = TODAY
+  state['lastRunStatus'] = 'rate_limited_partial' if checks else 'rate_limited'
+ else:
+  state.pop('rateLimitUntil', None)
+  state['lastRunStatus'] = 'ok' if checks == len(batch) else 'partial_network_error'
+
+ # Advance only past confirmed checked cards. Interrupted cards are retried later.
+ state.update({'cursor': (cursor + processed) % len(keys), 'lastRun': TODAY,
+               'mapped': len(mapping), 'lastChecked': checks, 'lastNewPrices': updated})
+
+ if checks:
+  dump_json(prices_path, {'schema': 1, 'provider': 'PokéWallet / Cardmarket',
                           'generatedAt': TODAY, 'currency': 'EUR', 'prices': result,
                           'mapped': len(mapping), 'total': len(cards), 'checkedThisRun': checks,
                           'updatedThisRun': updated, 'noPriceThisRun': misses,
                           'note': 'Cardmarket EUR Trendpreise nach exaktem Druck und Finish; kein garantiert erzielbarer Verkaufspreis.'})
- dump_json(state_path, {'cursor': (cursor + len(batch)) % len(keys), 'lastRun': TODAY,
-                        'mapped': len(mapping), 'lastChecked': checks, 'lastNewPrices': updated})
- print(f'Karten zugeordnet: {len(mapping)}/{len(cards)}; geprüft: {checks}; verwertbare Preise: {updated}; gespeichert: {len(result)}')
+ # With zero successful detail requests, only status/cooldown is written.
+ # In particular, data/prices.json and existing market prices remain unchanged.
+ dump_json(state_path, state)
+ print(f'Karten zugeordnet: {len(mapping)}/{len(cards)}; geprüft: {checks}; neue/aktualisierte Preise: {updated}; gespeichert: {len(result)}')
+ if limited: print(f"Nächste zulässige Anfrage nach {state['rateLimitUntil']} UTC.")
 
 if __name__ == '__main__':
  try: main()
