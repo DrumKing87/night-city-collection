@@ -1,7 +1,8 @@
 {
-  "cursor": 180,
-  "lastChecked": 60,
-  "lastNewPrices": 42,
-  "lastRun": "2026-11-04T01:27:00+00:00",
+  "cursor": 215,
+  "lastChecked": 35,
+  "lastNewPrices": 0,
+  "lastRun": "2026-11-04T19:50:45+00:00",
+  "lastRunStatus": "ok",
   "mapped": 391
 }

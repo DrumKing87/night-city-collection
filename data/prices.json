@@ -1,9 +1,9 @@
 {
-  "checkedThisRun": 60,
+  "checkedThisRun": 35,
   "currency": "EUR",
-  "generatedAt": "2026-11-04T01:27:00+00:00",
+  "generatedAt": "2026-11-04T19:50:45+00:00",
   "mapped": 391,
-  "noPriceThisRun": 18,
+  "noPriceThisRun": 35,
   "note": "Cardmarket EUR Trendpreise nach exaktem Druck und Finish; kein garantiert erzielbarer Verkaufspreis.",
   "prices": {
     "beta:β001": {
@@ -1468,5 +1468,5 @@
   "provider": "PokéWallet / Cardmarket",
   "schema": 1,
   "total": 458,
-  "updatedThisRun": 42
+  "updatedThisRun": 0
 }
