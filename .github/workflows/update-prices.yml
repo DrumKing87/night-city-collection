@@ -1,33 +1,63 @@
 name: Cyberpunk TCG Marktpreise aktualisieren
+
 on:
   schedule:
-    # 8 Teilaktualisierungen pro Tag; Free-API max. 100 Anfragen pro Stunde.
+    # 8 Teilaktualisierungen pro Tag; reduzierte Batches schützen das API-Kontingent.
     - cron: '19 0,3,6,9,12,15,18,21 * * *'
   workflow_dispatch:
+
 permissions:
   contents: write
+
 concurrency:
   group: night-city-price-updates
   cancel-in-progress: false
+
 jobs:
   prices:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
+      - name: Repository laden
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Python einrichten
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Kartenwerte abrufen
+      - name: Kartenwerte abrufen (429-Schonung aktiv)
         env:
           POKEWALLET_API_KEY: ${{ secrets.POKEWALLET_API_KEY }}
         run: python scripts/update_prices.py
-      - name: Neue Preisdatei veröffentlichen
+      - name: Preisdateien mit Wiederholungsversuchen veröffentlichen
+        shell: bash
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add data/prices.json data/card-map.json data/update-state.json
-          if ! git diff --cached --quiet; then
-            git commit -m "Update Cyberpunk prices [skip ci]"
-            git push
+          if git diff --cached --quiet; then
+            echo 'Keine Änderungen; vorhandene Preise bleiben erhalten.'
+            exit 0
           fi
+          git commit -m 'Update Cyberpunk prices [skip ci]'
+          # GitHub occasionally returns temporary 5xx errors while accepting pushes.
+          # Retry without forcing updates and rebase onto the current branch safely.
+          for attempt in 1 2 3 4 5; do
+            if git push origin HEAD:main; then
+              echo 'Preisdateien erfolgreich veröffentlicht.'
+              exit 0
+            fi
+            if [ "$attempt" -eq 5 ]; then
+              echo 'GitHub-Push nach 5 Versuchen fehlgeschlagen.' >&2
+              exit 1
+            fi
+            sleep $((attempt * 8))
+            git fetch origin main
+            if ! git rebase origin/main; then
+              git rebase --abort || true
+              echo 'Rebase-Konflikt: Keine vorhandenen Dateien überschrieben.' >&2
+              exit 1
+            fi
+          done
