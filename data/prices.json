@@ -1,9 +1,9 @@
 {
   "checkedThisRun": 35,
   "currency": "EUR",
-  "generatedAt": "2026-11-05T11:04:57+00:00",
+  "generatedAt": "2026-11-05T20:02:37+00:00",
   "mapped": 402,
-  "noPriceThisRun": 35,
+  "noPriceThisRun": 16,
   "note": "Cardmarket EUR Trendpreise nach exaktem Druck und Finish; kein garantiert erzielbarer Verkaufspreis.",
   "prices": {
     "beta:β001": {
@@ -1463,10 +1463,181 @@
       "priceAsOf": "2026-11-03",
       "retrievedAt": "2026-11-04T01:27:00+00:00",
       "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "heist-beta:β001": {
+      "amount": 3.72,
+      "currency": "EUR",
+      "date": "2026-11-05",
+      "finish": "foil",
+      "priceAsOf": "2026-11-05",
+      "retrievedAt": "2026-11-05T20:02:37+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "heist-beta:β002": {
+      "amount": 8.25,
+      "currency": "EUR",
+      "date": "2026-11-05",
+      "finish": "normal",
+      "priceAsOf": "2026-11-05",
+      "retrievedAt": "2026-11-05T20:02:37+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "heist-beta:β003": {
+      "amount": 0.02,
+      "currency": "EUR",
+      "date": "2026-11-05",
+      "finish": "normal",
+      "priceAsOf": "2026-11-01",
+      "retrievedAt": "2026-11-05T20:02:37+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "heist-beta:β004": {
+      "amount": 0.02,
+      "currency": "EUR",
+      "date": "2026-11-05",
+      "finish": "normal",
+      "priceAsOf": "2026-11-01",
+      "retrievedAt": "2026-11-05T20:02:37+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "heist-beta:β005": {
+      "amount": 0.14,
+      "currency": "EUR",
+      "date": "2026-11-05",
+      "finish": "normal",
+      "priceAsOf": "2026-11-01",
+      "retrievedAt": "2026-11-05T20:02:37+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "heist-beta:β006": {
+      "amount": 0.13,
+      "currency": "EUR",
+      "date": "2026-11-05",
+      "finish": "normal",
+      "priceAsOf": "2026-11-01",
+      "retrievedAt": "2026-11-05T20:02:37+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "heist-beta:β007": {
+      "amount": 0.02,
+      "currency": "EUR",
+      "date": "2026-11-05",
+      "finish": "normal",
+      "priceAsOf": "2026-11-01",
+      "retrievedAt": "2026-11-05T20:02:37+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "heist-beta:β008": {
+      "amount": 0.02,
+      "currency": "EUR",
+      "date": "2026-11-05",
+      "finish": "normal",
+      "priceAsOf": "2026-11-01",
+      "retrievedAt": "2026-11-05T20:02:37+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "heist-beta:β009": {
+      "amount": 0.06,
+      "currency": "EUR",
+      "date": "2026-11-05",
+      "finish": "normal",
+      "priceAsOf": "2026-11-04",
+      "retrievedAt": "2026-11-05T20:02:37+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "heist-beta:β010": {
+      "amount": 0.1,
+      "currency": "EUR",
+      "date": "2026-11-05",
+      "finish": "normal",
+      "priceAsOf": "2026-11-01",
+      "retrievedAt": "2026-11-05T20:02:37+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "heist-beta:β011": {
+      "amount": 8.67,
+      "currency": "EUR",
+      "date": "2026-11-05",
+      "finish": "foil",
+      "priceAsOf": "2026-11-05",
+      "retrievedAt": "2026-11-05T20:02:37+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "heist-beta:β012": {
+      "amount": 2.88,
+      "currency": "EUR",
+      "date": "2026-11-05",
+      "finish": "foil",
+      "priceAsOf": "2026-11-05",
+      "retrievedAt": "2026-11-05T20:02:37+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "heist-beta:β013": {
+      "amount": 0.04,
+      "currency": "EUR",
+      "date": "2026-11-05",
+      "finish": "normal",
+      "priceAsOf": "2026-11-01",
+      "retrievedAt": "2026-11-05T20:02:37+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "heist-beta:β014": {
+      "amount": 0.03,
+      "currency": "EUR",
+      "date": "2026-11-05",
+      "finish": "normal",
+      "priceAsOf": "2026-11-01",
+      "retrievedAt": "2026-11-05T20:02:37+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "heist-beta:β015": {
+      "amount": 7.26,
+      "currency": "EUR",
+      "date": "2026-11-05",
+      "finish": "normal",
+      "priceAsOf": "2026-11-05",
+      "retrievedAt": "2026-11-05T20:02:37+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "heist-beta:β016": {
+      "amount": 0.06,
+      "currency": "EUR",
+      "date": "2026-11-05",
+      "finish": "normal",
+      "priceAsOf": "2026-11-01",
+      "retrievedAt": "2026-11-05T20:02:37+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "heist-beta:β017": {
+      "amount": 0.1,
+      "currency": "EUR",
+      "date": "2026-11-05",
+      "finish": "foil",
+      "priceAsOf": "2026-11-05",
+      "retrievedAt": "2026-11-05T20:02:37+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "heist-beta:β019": {
+      "amount": 0.15,
+      "currency": "EUR",
+      "date": "2026-11-05",
+      "finish": "normal",
+      "priceAsOf": "2026-11-04",
+      "retrievedAt": "2026-11-05T20:02:37+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "heist-beta:β020": {
+      "amount": 0.02,
+      "currency": "EUR",
+      "date": "2026-11-05",
+      "finish": "normal",
+      "priceAsOf": "2026-11-01",
+      "retrievedAt": "2026-11-05T20:02:37+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
     }
   },
   "provider": "PokéWallet / Cardmarket",
   "schema": 1,
   "total": 458,
-  "updatedThisRun": 0
+  "updatedThisRun": 19
 }
