@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T01:27:00+00:00",
+  "generatedAt": "2026-11-05T01:29:36+00:00",
   "mapping": {
     "beta:β001": {
       "id": "cpk_e8d45696340e4fc4135060220a4fb155654707004d996beb4eb8252f5459ddbc52e4e5ba1244752252249c7995",
@@ -1513,6 +1513,72 @@
       "number": "020",
       "set_id": "24859"
     },
+    "prerelease-retail:001": {
+      "id": "cpk_9eca45bddfb0c2760dad10aea12fe694daa341dd3511de59b5484e7275758a7f0444b3c5825a08e247bd",
+      "name": "Adam Smasher - Ender of Legends",
+      "number": "001",
+      "set_id": "24928"
+    },
+    "prerelease-retail:002": {
+      "id": "cpk_e65acd12615ca3bb4a9061becd385d34545dfee1786c914055113afceb3a46b9bae432c9f1223e4f9de7",
+      "name": "Dexter DeShawn - Off the Grid",
+      "number": "002",
+      "set_id": "24928"
+    },
+    "prerelease-retail:003": {
+      "id": "cpk_0850ca166bfd7bdb560deb8d003f73e905a673886ca300334cbe68d4c3a20fddf63038c635cd72f5686a",
+      "name": "Royce - Psycho on the Edge",
+      "number": "003",
+      "set_id": "24928"
+    },
+    "prerelease-retail:004": {
+      "id": "cpk_c8b990df5eed92b8462a84a77a1ffae901acbddde73ab06ff8bd62cc24330dfbe460757050fb5cdc10d9",
+      "name": "Dum Dum - Maelstrom Triggerman",
+      "number": "004",
+      "set_id": "24928"
+    },
+    "prerelease-retail:005": {
+      "id": "cpk_1c4bb231870e9eda6f0214d7ec5acfc8184184e6c7d2c803009766d0371f3672f0a3a2c9db1914dedc38",
+      "name": "Muamar Reyes - El Capitan",
+      "number": "005",
+      "set_id": "24928"
+    },
+    "prerelease-retail:006": {
+      "id": "cpk_374c3370c870a1db8836addfa9de223958e43e9c14ba69b1c34dd71147e33358d631d1394a8a337b672f",
+      "name": "Rogue Amendiares - Preem Solo",
+      "number": "006",
+      "set_id": "24928"
+    },
+    "prerelease-retail:007": {
+      "id": "cpk_579ad0a8b46cebcf4025b1ed1d6040a32074e234ffb3fc4e501db4ce30d0a83ca7cdbd534cc62d440786",
+      "name": "Goro Takemura - Vengeful Bodyguard",
+      "number": "007",
+      "set_id": "24928"
+    },
+    "prerelease-retail:008": {
+      "id": "cpk_32bff4df3fe7cb3b6923731df8bde247986158f42d5691f38261e22fdfd06777bc587e863502bf0a0275",
+      "name": "Padre - Man of the Cross",
+      "number": "008",
+      "set_id": "24928"
+    },
+    "prerelease-retail:009": {
+      "id": "cpk_a922528ac3cad406a5b4e8787de803051ea15809336e39d43aec3d8b9a99323c536d4c4781111d90ea66",
+      "name": "Alt Cunningham - Soulkiller Architect",
+      "number": "009",
+      "set_id": "24928"
+    },
+    "prerelease-retail:010": {
+      "id": "cpk_be3169d3849c9288c44fa32b2317228389ffc874c36c82d31d876a5c88a1159a0ff5df5724fe367ef87967",
+      "name": "Wakako Okada - Peace and Harmony",
+      "number": "010",
+      "set_id": "24928"
+    },
+    "prerelease-retail:011": {
+      "id": "cpk_b5a03e027ba81dcf3d7a7ff1bccbe962f4c1f8eb2be30a4d5e3e4ea2bc902c9adad97e121562cb98367f2f",
+      "name": "Gorilla Arms",
+      "number": "011",
+      "set_id": "24928"
+    },
     "retail:001": {
       "id": "cpk_ec44126112bfa10718c67ba60f28035f198e4c9530e33141676fdd04e5f2c3c9d1dd865664c92be10c14",
       "name": "Adam Smasher - Ender of Legends (Epic)",
@@ -2349,5 +2415,5 @@
     }
   },
   "matcherVersion": 3,
-  "total": 391
+  "total": 402
 }
