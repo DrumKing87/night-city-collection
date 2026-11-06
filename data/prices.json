@@ -1,9 +1,9 @@
 {
   "checkedThisRun": 35,
   "currency": "EUR",
-  "generatedAt": "2026-11-06T01:36:19+00:00",
+  "generatedAt": "2026-11-06T11:02:08+00:00",
   "mapped": 402,
-  "noPriceThisRun": 19,
+  "noPriceThisRun": 31,
   "note": "Cardmarket EUR Trendpreise nach exaktem Druck und Finish; kein garantiert erzielbarer Verkaufspreis.",
   "prices": {
     "beta:β001": {
@@ -1608,6 +1608,42 @@
       "retrievedAt": "2026-11-06T01:36:19+00:00",
       "source": "PokéWallet / Cardmarket (Online)"
     },
+    "embracing-beta:β017": {
+      "amount": 5.06,
+      "currency": "EUR",
+      "date": "2026-11-06",
+      "finish": "normal",
+      "priceAsOf": "2026-11-05",
+      "retrievedAt": "2026-11-06T11:02:08+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "embracing-beta:β018": {
+      "amount": 0.03,
+      "currency": "EUR",
+      "date": "2026-11-06",
+      "finish": "normal",
+      "priceAsOf": "2026-11-04",
+      "retrievedAt": "2026-11-06T11:02:08+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "embracing-beta:β019": {
+      "amount": 0.15,
+      "currency": "EUR",
+      "date": "2026-11-06",
+      "finish": "normal",
+      "priceAsOf": "2026-10-29",
+      "retrievedAt": "2026-11-06T11:02:08+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
+    "embracing-beta:β020": {
+      "amount": 0.07,
+      "currency": "EUR",
+      "date": "2026-11-06",
+      "finish": "normal",
+      "priceAsOf": "2026-10-26",
+      "retrievedAt": "2026-11-06T11:02:08+00:00",
+      "source": "PokéWallet / Cardmarket (Online)"
+    },
     "heist-beta:β001": {
       "amount": 3.72,
       "currency": "EUR",
@@ -1783,5 +1819,5 @@
   "provider": "PokéWallet / Cardmarket",
   "schema": 1,
   "total": 458,
-  "updatedThisRun": 16
+  "updatedThisRun": 4
 }
