@@ -194,29 +194,43 @@ def valid_amount(v):
  except (TypeError, ValueError): return None
 
 def price_from_detail(local_card, match, detail):
+ """Return the original strict Cardmarket trend price and a safe diagnostic code.
+
+ No fallback to listing prices or wrong finishes. Missing values are logged only.
+ """
  info = detail.get('card_info') or {}
  if str(info.get('set_id')) != match['set_id']:
-  return None
+  return None, 'set_id_mismatch'
  wanted_n = collector(local_card['no'])
  actual_n = collector(info.get('card_number'))
- if wanted_n is None or actual_n is None or wanted_n[0] != actual_n[0]: return None
- if wanted_n[1] and actual_n[1] and wanted_n[1] != actual_n[1]: return None
+ if wanted_n is None or actual_n is None or wanted_n[0] != actual_n[0]:
+  return None, 'card_number_mismatch'
+ if wanted_n[1] and actual_n[1] and wanted_n[1] != actual_n[1]:
+  return None, 'card_variant_mismatch'
  if wanted_n[1] and not actual_n[1]:
   version = re.search(r'\(\s*v\.?\s*([12])\s*\)', str(info.get('name')), flags=re.I)
   if wanted_n[1] in ('a', 'b') and (not version or int(version.group(1)) != ('ab'.index(wanted_n[1]) + 1)):
-   return None
- if normalize(info.get('name')) != normalize(local_card['name']): return None
+   return None, 'card_variant_mismatch'
+ if normalize(info.get('name')) != normalize(local_card['name']):
+  return None, 'card_name_mismatch'
  cm = detail.get('cardmarket') or {}
+ if not isinstance(cm, dict) or not cm:
+  return None, 'cardmarket_block_missing'
+ entries = cm.get('prices')
+ if not isinstance(entries, list) or not entries:
+  return None, 'cardmarket_prices_missing'
  want = 'foil' if 'holo' in str(local_card.get('finish', '')).lower() else 'normal'
- choices = [p for p in cm.get('prices', []) if str(p.get('variant_type', '')).lower() == want]
- if len(choices) != 1: return None
+ choices = [p for p in entries if isinstance(p, dict) and str(p.get('variant_type', '')).lower() == want]
+ if len(choices) == 0: return None, 'cardmarket_finish_missing'
+ if len(choices) != 1: return None, 'cardmarket_finish_ambiguous'
  row = choices[0]
  amount = valid_amount(row.get('trend'))
- if amount is None: return None  # Asking prices are not sale trend; do NOT substitute lowest listing.
+ if amount is None: return None, 'cardmarket_trend_unavailable'
  updated_at = str(row.get('updated_at') or '')
  return {'amount': amount, 'currency': 'EUR', 'source': 'PokéWallet / Cardmarket (Online)',
          'date': TODAY[:10], 'priceAsOf': updated_at[:10] if re.match(r'^\d{4}-\d{2}-\d{2}', updated_at) else None,
-         'retrievedAt': TODAY, 'finish': want}
+         'retrievedAt': TODAY, 'finish': want}, 'price_available'
+
 
 def main():
  cards = catalog()
@@ -264,6 +278,8 @@ def main():
  result = {k: v for k, v in (existing.get('prices') or {}).items() if k in by_key}
  checks = updated = misses = processed = 0
  limited = None
+ diagnostics = {}
+ retail_examples = []
  for key in batch:
   try:
    detail = request('/cards/' + urllib.parse.quote(mapping[key]['id'], safe=''))
@@ -279,7 +295,21 @@ def main():
    print('Temporäres Abrufproblem:', key, str(ex)[:160], file=sys.stderr)
    break
 
-  price = price_from_detail(by_key[key], mapping[key], detail)
+  price, reason = price_from_detail(by_key[key], mapping[key], detail)
+  set_id = by_key[key]['setId']
+  group = diagnostics.setdefault(set_id, {})
+  group[reason] = group.get(reason, 0) + 1
+  if 'retail' in set_id and reason != 'price_available' and len(retail_examples) < 8:
+   cm = detail.get('cardmarket') or {}
+   rows = cm.get('prices') if isinstance(cm, dict) else []
+   rows = rows if isinstance(rows, list) else []
+   summary = [{'variant': str(item.get('variant_type'))[:20],
+               'hasTrend': valid_amount(item.get('trend')) is not None,
+               'hasAvg': valid_amount(item.get('avg')) is not None,
+               'hasAvg7': valid_amount(item.get('avg7')) is not None,
+               'hasLow': valid_amount(item.get('low')) is not None}
+              for item in rows[:4] if isinstance(item, dict)]
+   retail_examples.append({'key': key, 'reason': reason, 'variants': summary})
   if price:
    result[key] = price
    updated += 1
@@ -288,6 +318,12 @@ def main():
   checks += 1
   processed += 1
   time.sleep(0.15)
+
+ if diagnostics:
+  print('PREISDIAGNOSE nach Sets und Gründen:', json.dumps(diagnostics, ensure_ascii=False, sort_keys=True))
+  if retail_examples:
+   print('PREISDIAGNOSE Retail-Beispiele (keine Schlüssel/Preise):',
+         json.dumps(retail_examples, ensure_ascii=False))
 
  if limited:
   state['rateLimitUntil'] = cooldown_end(limited.seconds)
