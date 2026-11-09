@@ -519,7 +519,8 @@ $('priceImportFile').addEventListener('change',async e=>{const f=e.target.files?
 
 // Preis-Feed: öffentlich abrufbare Datei, niemals API-Schlüssel im Browser.
 const LIVE_URL='https://raw.githubusercontent.com/DrumKing87/night-city-collection/main/data/prices.json';
-const LIVE_SOURCE='PokéWallet / Cardmarket (Online)';
+const LIVE_SOURCE='Cardmarket (Direkt)';
+const LEGACY_LIVE_SOURCE='PokéWallet / Cardmarket (Online)';
 let liveInProgress=false;
 async function loadLivePrices(){
  if(liveInProgress)return;
@@ -536,15 +537,15 @@ async function loadLivePrices(){
   for(const [key,item] of Object.entries(feed.prices)){
    if(!BY.has(key)){invalid++;continue;}
    const amount=normalizePriceInput(item?.amount);
-   if(amount===null||item.currency!=='EUR'||item.source!==LIVE_SOURCE){invalid++;continue;}
+   if(amount===null||item.currency!=='EUR'||![LIVE_SOURCE,LEGACY_LIVE_SOURCE].includes(item.source)){invalid++;continue;}
    const previous=prices[key];
    // Only built-in snapshots and previous automatic prices may be overwritten.
-   if(previous && !isSnapshotPrice(previous) && previous.source!==LIVE_SOURCE){custom++;continue;}
+   if(previous && !isSnapshotPrice(previous) && ![LIVE_SOURCE,LEGACY_LIVE_SOURCE].includes(previous.source)){custom++;continue;}
    // Older feeds must not replace newer online values.
-   if(previous?.source===LIVE_SOURCE && previous.date && item.date && previous.date>item.date)continue;
+   if([LIVE_SOURCE,LEGACY_LIVE_SOURCE].includes(previous?.source) && previous.date && item.date && previous.date>item.date)continue;
    const date=/^\d{4}-\d{2}-\d{2}$/.test(item.date||'')?item.date:new Date().toISOString().slice(0,10);
-   if(!previous||previous.amount!==amount||previous.source!==LIVE_SOURCE||previous.date!==date){
-    prices[key]={amount,source:LIVE_SOURCE,date};newPrices++;
+   if(!previous||previous.amount!==amount||previous.source!==item.source||previous.date!==date){
+    prices[key]={amount,source:item.source,date};newPrices++;
    }
   }
   if(newPrices)savePrices();
