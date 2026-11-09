@@ -1,0 +1,21 @@
+name: Cardmarket Cyberpunk-Preisliste prüfen
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Repository laden
+        uses: actions/checkout@v4
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Cardmarket-Dateien analysieren (nur lesen)
+        run: python scripts/inspect_cardmarket.py
