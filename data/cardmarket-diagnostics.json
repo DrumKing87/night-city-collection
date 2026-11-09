@@ -1,0 +1,1509 @@
+{
+  "alreadySavedPriceRecords": 207,
+  "bySet": {
+    "boxtopper-beta": {
+      "mit_preis": 6
+    },
+    "boxtopper-retail": {
+      "mit_preis": 6
+    },
+    "embracing-beta": {
+      "mit_preis": 20
+    },
+    "embracing-retail": {
+      "kein_trend": 1,
+      "kein_trend-foil": 3,
+      "mit_preis": 16
+    },
+    "heist-beta": {
+      "kein_Produkt_match": 1,
+      "mit_preis": 19
+    },
+    "heist-retail": {
+      "kein_Produkt_match": 1,
+      "kein_trend-foil": 1,
+      "mit_preis": 18
+    },
+    "prerelease-beta": {
+      "mit_preis": 11
+    },
+    "prerelease-retail": {
+      "mit_preis": 11
+    },
+    "wnc-beta": {
+      "mehrdeutiger_Sonderdruck": 63,
+      "mit_preis": 109
+    },
+    "wnc-retail": {
+      "mehrdeutiger_Sonderdruck": 63,
+      "mit_preis": 109
+    }
+  },
+  "generatedAt": "2026-11-09T23:27:43+00:00",
+  "newOrUpdatedPrices": 325,
+  "savedPriceRecordsAfterUpdate": 378,
+  "sourceAsOf": "2026-11-09",
+  "total": 458,
+  "unresolved": [
+    {
+      "candidateProductIds": [
+        905088,
+        905229
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β001",
+      "name": "Adam Smasher: Ender of Legends",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905089,
+        905230
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β002",
+      "name": "Dexter DeShawn: Off the Grid",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905090,
+        905257
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β003",
+      "name": "Johnny Silverhand: Rocking Renegade",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905091,
+        905231
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β004",
+      "name": "Royce: Psycho on the Edge",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905092,
+        905093,
+        905232
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β005a",
+      "name": "V: Streetkid",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905092,
+        905093,
+        905232
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β005b",
+      "name": "V: Streetkid",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905099,
+        905248
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β011",
+      "name": "Johnny Silverhand: Never Stop Fighting",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905124,
+        905233
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β036",
+      "name": "Dum Dum: Maelstrom Triggerman",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905125,
+        905234
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β037",
+      "name": "Kerry Eurodyne: Axe, Attitude, Audience",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905126,
+        905235
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β038",
+      "name": "Muamar Reyes: El Capitán",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905127,
+        905236
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β039",
+      "name": "River Ward: Detective on the Hunt",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905128,
+        905237
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β040",
+      "name": "Rogue Amendiares: Preem Solo",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905129,
+        905249
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β041",
+      "name": "Adam Smasher: Metal Over Meat",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905130,
+        905250
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β042",
+      "name": "Alt Cunningham: Mother of Daemons",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905134,
+        905251
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β046",
+      "name": "Hanako Arasaka: In a Gilded Cage",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905151,
+        905252
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β063",
+      "name": "The Relic: Experimental Biochip",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905159,
+        905238
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β071",
+      "name": "Goro Takemura: Vengeful Bodyguard",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905160,
+        905239
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β072",
+      "name": "Hanako Arasaka: Daughter of the Emperor",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905161,
+        905240
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β073",
+      "name": "Jackie Welles: Mama's Favorite",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905162,
+        905241
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β074",
+      "name": "Padre: Man of the Cross",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905163,
+        905242
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β075",
+      "name": "Panam Palmer: Nomad Cavalry",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905173,
+        905259
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β085",
+      "name": "Panam Palmer: Strength Through Family",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905176,
+        905253
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β088",
+      "name": "Sandayu Oda: Hanako's Guardian",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905181,
+        905254
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β093",
+      "name": "Overwatch: Panam's Gift",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905194,
+        905243
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β106",
+      "name": "Alt Cunningham: Soulkiller Architect",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905195,
+        905244
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β107",
+      "name": "Evelyn Parker: Beautiful Enigma",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905196,
+        905245
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β108",
+      "name": "Judy Álvarez: Braindance Maestro",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905197,
+        905258
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β109",
+      "name": "Sasha Yakovleva: Won't Let You Down",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905198,
+        905246
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β110",
+      "name": "Wakako Okada: Peace and Harmony",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905204,
+        905260
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β116",
+      "name": "Judy Álvarez: Nothing to Doubt",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905214,
+        905255
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β126",
+      "name": "Rogue Amendiares: Queen of the Afterlife",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905226,
+        905256
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β138",
+      "name": "Towerfall",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905088,
+        905229
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β141",
+      "name": "Adam Smasher: Ender of Legends",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905089,
+        905230
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β142",
+      "name": "Dexter DeShawn: Off the Grid",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905091,
+        905231
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β143",
+      "name": "Royce: Psycho on the Edge",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905092,
+        905093,
+        905232
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β144",
+      "name": "V: Streetkid",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905124,
+        905233
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β145",
+      "name": "Dum Dum: Maelstrom Triggerman",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905125,
+        905234
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β146",
+      "name": "Kerry Eurodyne: Axe, Attitude, Audience",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905126,
+        905235
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β147",
+      "name": "Muamar Reyes: El Capitán",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905127,
+        905236
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β148",
+      "name": "River Ward: Detective on the Hunt",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905128,
+        905237
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β149",
+      "name": "Rogue Amendiares: Preem Solo",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905159,
+        905238
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β150",
+      "name": "Goro Takemura: Vengeful Bodyguard",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905160,
+        905239
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β151",
+      "name": "Hanako Arasaka: Daughter of the Emperor",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905161,
+        905240
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β152",
+      "name": "Jackie Welles: Mama's Favorite",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905162,
+        905241
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β153",
+      "name": "Padre: Man of the Cross",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905163,
+        905242
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β154",
+      "name": "Panam Palmer: Nomad Cavalry",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905194,
+        905243
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β155",
+      "name": "Alt Cunningham: Soulkiller Architect",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905195,
+        905244
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β156",
+      "name": "Evelyn Parker: Beautiful Enigma",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905196,
+        905245
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β157",
+      "name": "Judy Álvarez: Braindance Maestro",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905198,
+        905246
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β158",
+      "name": "Wakako Okada: Peace and Harmony",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905099,
+        905248
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β159",
+      "name": "Johnny Silverhand: Never Stop Fighting",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905129,
+        905249
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β160",
+      "name": "Adam Smasher: Metal Over Meat",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905130,
+        905250
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β161",
+      "name": "Alt Cunningham: Mother of Daemons",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905134,
+        905251
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β162",
+      "name": "Hanako Arasaka: In a Gilded Cage",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905151,
+        905252
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β163",
+      "name": "The Relic: Experimental Biochip",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905176,
+        905253
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β164",
+      "name": "Sandayu Oda: Hanako's Guardian",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905181,
+        905254
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β165",
+      "name": "Overwatch: Panam's Gift",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905214,
+        905255
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β166",
+      "name": "Rogue Amendiares: Queen of the Afterlife",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905226,
+        905256
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β167",
+      "name": "Towerfall",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905090,
+        905257
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β168",
+      "name": "Johnny Silverhand: Rocking Renegade",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905197,
+        905258
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β169",
+      "name": "Sasha Yakovleva: Won't Let You Down",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905173,
+        905259
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β170",
+      "name": "Panam Palmer: Strength Through Family",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        905204,
+        905260
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "beta:β171",
+      "name": "Judy Álvarez: Nothing to Doubt",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920398,
+        920648
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:001",
+      "name": "Adam Smasher: Ender of Legends",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920419,
+        920649
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:002",
+      "name": "Dexter DeShawn: Off the Grid",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920420,
+        920675
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:003",
+      "name": "Johnny Silverhand: Rocking Renegade",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920421,
+        920650
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:004",
+      "name": "Royce: Psycho on the Edge",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920422,
+        920423,
+        920651
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:005a",
+      "name": "V: Streetkid",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920422,
+        920423,
+        920651
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:005b",
+      "name": "V: Streetkid",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920442,
+        920666
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:011",
+      "name": "Johnny Silverhand: Never Stop Fighting",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920474,
+        920652
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:036",
+      "name": "Dum Dum: Maelstrom Triggerman",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920475,
+        920653
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:037",
+      "name": "Kerry Eurodyne: Axe, Attitude, Audience",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920476,
+        920654
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:038",
+      "name": "Muamar Reyes: El Capitán",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920477,
+        920655
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:039",
+      "name": "River Ward: Detective on the Hunt",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920478,
+        920656
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:040",
+      "name": "Rogue Amendiares: Preem Solo",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920479,
+        920667
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:041",
+      "name": "Adam Smasher: Metal Over Meat",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920480,
+        920668
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:042",
+      "name": "Alt Cunningham: Mother of Daemons",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920484,
+        920669
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:046",
+      "name": "Hanako Arasaka: In a Gilded Cage",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920501,
+        920670
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:063",
+      "name": "The Relic: Experimental Biochip",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920509,
+        920657
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:071",
+      "name": "Goro Takemura: Vengeful Bodyguard",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920510,
+        920658
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:072",
+      "name": "Hanako Arasaka: Daughter of the Emperor",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920571,
+        920659
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:073",
+      "name": "Jackie Welles: Mama's Favorite",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920573,
+        920660
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:074",
+      "name": "Padre: Man of the Cross",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920575,
+        920661
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:075",
+      "name": "Panam Palmer: Nomad Cavalry",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920592,
+        920677
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:085",
+      "name": "Panam Palmer: Strength Through Family",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920595,
+        920671
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:088",
+      "name": "Sandayu Oda: Hanako's Guardian",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920600,
+        920672
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:093",
+      "name": "Overwatch: Panam's Gift",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920613,
+        920662
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:106",
+      "name": "Alt Cunningham: Soulkiller Architect",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920614,
+        920663
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:107",
+      "name": "Evelyn Parker: Beautiful Enigma",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920615,
+        920664
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:108",
+      "name": "Judy Álvarez: Braindance Maestro",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920616,
+        920676
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:109",
+      "name": "Sasha Yakovleva: Won't Let You Down",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920617,
+        920665
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:110",
+      "name": "Wakako Okada: Peace and Harmony",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920623,
+        920678
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:116",
+      "name": "Judy Álvarez: Nothing to Doubt",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920633,
+        920673
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:126",
+      "name": "Rogue Amendiares: Queen of the Afterlife",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920645,
+        920674
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:138",
+      "name": "Towerfall",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920398,
+        920648
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:141",
+      "name": "Adam Smasher: Ender of Legends",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920419,
+        920649
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:142",
+      "name": "Dexter DeShawn: Off the Grid",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920421,
+        920650
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:143",
+      "name": "Royce: Psycho on the Edge",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920422,
+        920423,
+        920651
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:144",
+      "name": "V: Streetkid",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920474,
+        920652
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:145",
+      "name": "Dum Dum: Maelstrom Triggerman",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920475,
+        920653
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:146",
+      "name": "Kerry Eurodyne: Axe, Attitude, Audience",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920476,
+        920654
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:147",
+      "name": "Muamar Reyes: El Capitán",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920477,
+        920655
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:148",
+      "name": "River Ward: Detective on the Hunt",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920478,
+        920656
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:149",
+      "name": "Rogue Amendiares: Preem Solo",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920509,
+        920657
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:150",
+      "name": "Goro Takemura: Vengeful Bodyguard",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920510,
+        920658
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:151",
+      "name": "Hanako Arasaka: Daughter of the Emperor",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920571,
+        920659
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:152",
+      "name": "Jackie Welles: Mama's Favorite",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920573,
+        920660
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:153",
+      "name": "Padre: Man of the Cross",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920575,
+        920661
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:154",
+      "name": "Panam Palmer: Nomad Cavalry",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920613,
+        920662
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:155",
+      "name": "Alt Cunningham: Soulkiller Architect",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920614,
+        920663
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:156",
+      "name": "Evelyn Parker: Beautiful Enigma",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920615,
+        920664
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:157",
+      "name": "Judy Álvarez: Braindance Maestro",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920617,
+        920665
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:158",
+      "name": "Wakako Okada: Peace and Harmony",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920442,
+        920666
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:159",
+      "name": "Johnny Silverhand: Never Stop Fighting",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920479,
+        920667
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:160",
+      "name": "Adam Smasher: Metal Over Meat",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920480,
+        920668
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:161",
+      "name": "Alt Cunningham: Mother of Daemons",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920484,
+        920669
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:162",
+      "name": "Hanako Arasaka: In a Gilded Cage",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920501,
+        920670
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:163",
+      "name": "The Relic: Experimental Biochip",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920595,
+        920671
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:164",
+      "name": "Sandayu Oda: Hanako's Guardian",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920600,
+        920672
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:165",
+      "name": "Overwatch: Panam's Gift",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920633,
+        920673
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:166",
+      "name": "Rogue Amendiares: Queen of the Afterlife",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920645,
+        920674
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:167",
+      "name": "Towerfall",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920420,
+        920675
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:168",
+      "name": "Johnny Silverhand: Rocking Renegade",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920616,
+        920676
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:169",
+      "name": "Sasha Yakovleva: Won't Let You Down",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920592,
+        920677
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:170",
+      "name": "Panam Palmer: Strength Through Family",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        920623,
+        920678
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "retail:171",
+      "name": "Judy Álvarez: Nothing to Doubt",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Normal",
+      "idProduct": null,
+      "key": "heist-beta:β018",
+      "name": "Tetratronic Rippler",
+      "reason": "kein_Produkt_match"
+    },
+    {
+      "candidateProductIds": [
+        920410
+      ],
+      "finish": "Holo",
+      "idProduct": 920410,
+      "key": "heist-retail:012",
+      "name": "V: Corporate Exile",
+      "reason": "kein_trend-foil"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Normal",
+      "idProduct": null,
+      "key": "heist-retail:018",
+      "name": "Tetratronic Rippler",
+      "reason": "kein_Produkt_match"
+    },
+    {
+      "candidateProductIds": [
+        920425
+      ],
+      "finish": "Holo",
+      "idProduct": 920425,
+      "key": "embracing-retail:001",
+      "name": "Yorinobu Arasaka: Embracing Destruction",
+      "reason": "kein_trend-foil"
+    },
+    {
+      "candidateProductIds": [
+        920439
+      ],
+      "finish": "Holo",
+      "idProduct": 920439,
+      "key": "embracing-retail:012",
+      "name": "Goro Takemura: Hands Unclean",
+      "reason": "kein_trend-foil"
+    },
+    {
+      "candidateProductIds": [
+        920441
+      ],
+      "finish": "Holo",
+      "idProduct": 920441,
+      "key": "embracing-retail:013",
+      "name": "Saburo Arasaka: Stubborn Patriarch",
+      "reason": "kein_trend-foil"
+    },
+    {
+      "candidateProductIds": [
+        920451
+      ],
+      "finish": "Normal",
+      "idProduct": 920451,
+      "key": "embracing-retail:020",
+      "name": "Corporate Surveillance",
+      "reason": "kein_trend"
+    }
+  ],
+  "withConfirmedProductMatch": 330,
+  "withValidCardmarketPrice": 325
+}
