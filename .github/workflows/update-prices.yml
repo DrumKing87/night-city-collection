@@ -2,8 +2,9 @@ name: Cyberpunk TCG Marktpreise aktualisieren
 
 on:
   schedule:
-    # 8 Teilaktualisierungen pro Tag; reduzierte Batches schützen das API-Kontingent.
-    - cron: '19 0,3,6,9,12,15,18,21 * * *'
+    # Ein offizieller Cardmarket-Tagesexport statt acht PokéWallet-API-Blöcken.
+    # 03:40 UTC: Cardmarket-Preisdatei sollte bereits aktualisiert sein.
+    - cron: '40 3 * * *'
   workflow_dispatch:
 
 permissions:
@@ -26,27 +27,23 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Kartenwerte abrufen (429-Schonung aktiv)
-        env:
-          POKEWALLET_API_KEY: ${{ secrets.POKEWALLET_API_KEY }}
+      - name: Alle 458 Kartendrucke mit Cardmarket abgleichen
         run: python scripts/update_prices.py
-      - name: Preisdateien mit Wiederholungsversuchen veröffentlichen
+      - name: Preise und Diagnose sicher veröffentlichen
         shell: bash
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/prices.json data/card-map.json data/update-state.json
+          git add data/prices.json data/cardmarket-diagnostics.json
           if git diff --cached --quiet; then
-            echo 'Keine Änderungen; vorhandene Preise bleiben erhalten.'
+            echo 'Keine Änderungen.'
             exit 0
           fi
-          git commit -m 'Update Cyberpunk prices [skip ci]'
-          # GitHub occasionally returns temporary 5xx errors while accepting pushes.
-          # Retry without forcing updates and rebase onto the current branch safely.
+          git commit -m 'Update all Cyberpunk Cardmarket prices [skip ci]'
           for attempt in 1 2 3 4 5; do
             if git push origin HEAD:main; then
-              echo 'Preisdateien erfolgreich veröffentlicht.'
+              echo 'Cardmarket-Preisfeed erfolgreich veröffentlicht.'
               exit 0
             fi
             if [ "$attempt" -eq 5 ]; then
@@ -57,7 +54,7 @@ jobs:
             git fetch origin main
             if ! git rebase origin/main; then
               git rebase --abort || true
-              echo 'Rebase-Konflikt: Keine vorhandenen Dateien überschrieben.' >&2
+              echo 'Rebase-Konflikt: Keine bestehenden Dateien überschrieben.' >&2
               exit 1
             fi
           done
