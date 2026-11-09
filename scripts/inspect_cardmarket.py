@@ -21,6 +21,18 @@ BASE = 'https://downloads.s3.cardmarket.com/productCatalog'
 PRODUCTS_URL = f'{BASE}/productList/products_singles_{GAME}.json'
 PRICES_URL = f'{BASE}/priceGuide/price_guide_{GAME}.json'
 
+# Cardmarket expansion IDs, distinct for Beta and Retail.
+# Candidate assignments from the 2026-11-09 catalog probe. This preview
+# only counts possible matches; manually verify every expansion ID and
+# any ambiguous product before using these mappings for actual imports.
+SET_EXPANSIONS = {
+    'wnc-beta': 6714, 'wnc-retail': 6761,
+    'heist-beta': 6715, 'heist-retail': 6762,
+    'embracing-beta': 6716, 'embracing-retail': 6763,
+    'boxtopper-beta': 6717, 'boxtopper-retail': 6764,
+    'prerelease-beta': 6718, 'prerelease-retail': 6765,
+}
+
 
 def fetch_json(url: str) -> dict:
     req = urllib.request.Request(url, headers={
@@ -122,6 +134,69 @@ def main() -> int:
     for expansion, counts in sorted(expansions.items(), key=lambda it: -sum(it[1].values()))[:18]:
         print('Mögliche Expansion', expansion, 'Namensüberschneidungen:',
               json.dumps(dict(counts.most_common()), ensure_ascii=False))
+    # Strict read-only preview: every local printing and every Cardmarket product
+    # must have a UNIQUE normalized name within one exact expansion.
+    # If 001 and 141 share a name, neither gets an automatic price here.
+    local_groups = defaultdict(list)
+    for card in cards:
+        expansion = SET_EXPANSIONS.get(card['setId'])
+        if expansion is None:
+            raise ValueError(f'Unbekanntes Set: {card["setId"]}')
+        local_groups[(expansion, normalize(card['name']))].append(card)
+    product_groups = defaultdict(list)
+    for product in products:
+        try:
+            ex = int(product.get('idExpansion'))
+        except (TypeError, ValueError):
+            continue
+        product_groups[(ex, normalize(product.get('name')))].append(product)
+    by_set = defaultdict(Counter)
+    examples = defaultdict(list)
+    unique_matches = 0
+    unique_prices = 0
+    for (expansion, name), group in local_groups.items():
+        candidates = product_groups.get((expansion, name), [])
+        for c in group:
+            ct = by_set[c['setId']]
+            ct['total'] += 1
+            if len(group) != 1 or len(candidates) != 1:
+                reason = 'ambiguous' if (len(group)>1 or len(candidates)>1) else 'no_match'
+                ct[reason] += 1
+                if len(examples[reason]) < 9:
+                    examples[reason].append({'key': c['key'], 'localSameName': len(group),
+                                              'cardmarketSameName': len(candidates)})
+                continue
+            product = candidates[0]
+            ct['unique_product'] += 1
+            unique_matches += 1
+            guide = by_id.get(str(product.get('idProduct')))
+            if not guide:
+                ct['no_price_row'] += 1
+                continue
+            # Important: do not substitute the normal price for a foil card or
+            # vice versa. Cardmarket's 'trend-holo' is not in this game feed.
+            finish = str(c.get('finish','')).lower()
+            price_key = 'trend-foil' if ('holo' in finish or 'foil' in finish) else 'trend'
+            if usable(guide.get(price_key)):
+                ct['correct_finish_price'] += 1
+                unique_prices += 1
+            else:
+                ct['no_correct_finish_price'] += 1
+                if len(examples['missing_price']) < 7:
+                    examples['missing_price'].append({'key': c['key'],
+                        'idProduct': product.get('idProduct'), 'requiredField': price_key,
+                        'normalAvailable': usable(guide.get('trend')),
+                        'foilAvailable': usable(guide.get('trend-foil'))})
+    print('SICHERER KARTENABGLEICH (NUR VORSCHAU):',
+          json.dumps({'uniqueProducts': unique_matches,
+                      'uniqueProductsWithCorrectFinishPrice': unique_prices,
+                      'totalLocalCards': len(cards)}, ensure_ascii=False))
+    for set_id in SET_EXPANSIONS:
+        print('SET-VORSCHAU', set_id, 'Cardmarket-Expansion', SET_EXPANSIONS[set_id],
+              json.dumps(dict(by_set[set_id]), ensure_ascii=False))
+    for reason, sample in examples.items():
+        print('BEISPIELE', reason, json.dumps(sample, ensure_ascii=False))
+    print('WICHTIG: Gleichnamige Sonderdrucke bleiben bewusst ungeklärt; keine Preise geändert.')
     print('ERFOLG: Dateien überprüft. Noch KEINE Preise übernommen.')
     return 0
 
