@@ -41,7 +41,7 @@ WORKERS = 8
 # All external hosts were already present as card image sources in the catalog,
 # plus ExBurst, which was confirmed to provide exact retail prints 144-171.
 IMAGE_HOSTS = {'cdn.tcg.online', 'cdn.lumatcg.com', 'res.cloudinary.com',
-               'cdn.exburst.dev', 'fixer-datapad.com'}
+               'cdn.exburst.dev', 'fixer-datapad.com', 'firebasestorage.googleapis.com'}
 EXBURST_CODE = {
   'wnc-retail': 'MS01', 'wnc-beta': 'BETA',
   'heist-retail': 'SD01', 'heist-beta': 'SD01BETA',
@@ -58,8 +58,8 @@ def catalog_cards():
         raise RuntimeError('Kartenliste in index.html nicht erkannt')
     db = json.loads(match.group(1))
     cards = db.get('cards', [])
-    if len(cards) != 458 or len({c['key'] for c in cards}) != 458:
-        raise RuntimeError('Erwartet: 458 eindeutige Kartendrucke; bitte Katalog prüfen')
+    if len(cards) < 591 or len({c['key'] for c in cards}) != len(cards):
+        raise RuntimeError('Erwartet: mindestens 591 eindeutige Kartendrucke; bitte Katalog prüfen')
     for c in cards:
         if c['setId'] not in {s['id'] for s in db['sets']}:
             raise RuntimeError('Unbekanntes Set: '+str(c['setId']))
@@ -288,7 +288,7 @@ def main():
     if os.environ.get('GITHUB_STEP_SUMMARY'):
         with open(os.environ['GITHUB_STEP_SUMMARY'],'a',encoding='utf-8') as f:
             f.write(f"## Night City Artwork-Abgleich\n\n"
-                    f"- Geprüft: **{len(cards)}** Drucke aus 10 Sets\n"
+                    f"- Geprüft: **{len(cards)}** Drucke insgesamt\n"
                     f"- Lokal verfügbar: **{len(complete)}**\n"
                     f"- In diesem Lauf neu: **{report['downloaded']}**\n"
                     f"- Offen: **{len(unresolved)}**\n\n")
