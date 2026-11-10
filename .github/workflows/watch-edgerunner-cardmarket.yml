@@ -1,0 +1,272 @@
+name: Cardmarket - Edgerunner Open automatisch ueberwachen
+
+on:
+  schedule:
+    # Nach dem taeglichen Preisimport, damit neue offizielle Sets entdeckt werden.
+    - cron: '20 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: night-city-price-updates
+  cancel-in-progress: false
+
+jobs:
+  watch-edgerunner:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Repository laden
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Python 3.12 einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Edgerunner Open gegen Cardmarket pruefen
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat > /tmp/edgerunner_cardmarket_monitor.py <<'PY_MONITOR'
+          from __future__ import annotations
+
+          from collections import Counter, defaultdict
+          from datetime import datetime, timezone
+          from pathlib import Path
+          from urllib.request import Request, urlopen
+          import json
+          import os
+          import re
+          import subprocess
+          import sys
+          import unicodedata
+
+          ROOT = Path.cwd()
+          SET_ID = "edgerunner-s1"
+          PRODUCT_URL = "https://downloads.s3.cardmarket.com/productCatalog/productList/products_singles_23.json"
+          STATUS_JSON = ROOT / "data" / "cardmarket-edgerunner-monitor.json"
+          STATUS_MD = ROOT / "data" / "cardmarket-edgerunner-monitor.md"
+
+
+          def norm(value: object) -> str:
+              s = unicodedata.normalize("NFKD", str(value or ""))
+              s = "".join(ch for ch in s if not unicodedata.combining(ch))
+              s = re.sub(r"\(\s*v\.?\s*[12]\s*\)", "", s.lower().replace("&", "and"), flags=re.I)
+              return " ".join(re.sub(r"[^a-z0-9]+", " ", s).split())
+
+
+          def read_catalog() -> list[dict]:
+              text = (ROOT / "index.html").read_text(encoding="utf-8")
+              match = re.search(r"const DB\s*=\s*(\{.*?\})\s*;\s*const CARDS", text, re.S)
+              if not match:
+                  raise ValueError("Katalog in index.html nicht gefunden")
+              cards = json.loads(match.group(1))["cards"]
+              if len(cards) != 591 or len({c["key"] for c in cards}) != 591:
+                  raise ValueError("Sicherheitsabbruch: 591 eindeutige Karten erwartet")
+              subset = [c for c in cards if c["setId"] == SET_ID]
+              if len(subset) != 53 or len({c["no"] for c in subset}) != 53:
+                  raise ValueError("Sicherheitsabbruch: 53 eindeutige Edgerunner-Kartennummern erwartet")
+              if any(c.get("finish") not in ("Holo", "Foil") for c in subset):
+                  raise ValueError("Unerwartete Druckart im Edgerunner-Katalog")
+              return subset
+
+
+          def read_products() -> dict:
+              req = Request(PRODUCT_URL, headers={
+                  "User-Agent": "NightCityCollection/5.0 (automatic safe expansion monitor)",
+                  "Accept": "application/json",
+              })
+              with urlopen(req, timeout=90) as response:
+                  if response.status != 200:
+                      raise ValueError("Cardmarket HTTP " + str(response.status))
+                  raw = response.read(25_000_001)
+              if len(raw) > 25_000_000:
+                  raise ValueError("Cardmarket-Produktkatalog zu gross")
+              data = json.loads(raw)
+              products = data.get("products")
+              if data.get("version") != 1 or not isinstance(products, list) or len(products) < 500:
+                  raise ValueError("Cardmarket-Export unvollstaendig oder falsches Format")
+              if any(p.get("categoryName") != "Cyberpunk Single" for p in products):
+                  raise ValueError("Unbekannte Cardmarket-Produktkategorie")
+              ids = [str(p["idProduct"]) for p in products]
+              if len(ids) != len(set(ids)):
+                  raise ValueError("Doppelte Cardmarket-Produktnummern")
+              return data
+
+
+          def find_candidates(local_cards: list[dict], products: list[dict]) -> tuple[list[int], list[dict]]:
+              target = Counter(norm(c["name"]) for c in local_cards)
+              grouped = defaultdict(list)
+              for product in products:
+                  try:
+                      eid = int(product["idExpansion"])
+                  except (TypeError, KeyError, ValueError) as exc:
+                      raise ValueError("Produkt ohne gueltige Cardmarket-Expansion") from exc
+                  grouped[eid].append(product)
+
+              matches = []
+              candidates = []
+              for eid, rows in grouped.items():
+                  names = Counter(norm(p.get("name")) for p in rows)
+                  # A few common card names matching other sets must NEVER authorize the set.
+                  if len(rows) == 53 and names == target:
+                      matches.append(eid)
+                  overlapping = sum((names & target).values())
+                  if overlapping:
+                      candidates.append({
+                          "idExpansion": eid,
+                          "officialProducts": len(rows),
+                          "sameNamesCountedWithPrintings": overlapping,
+                          "matchingDistinctNames": len(set(names) & set(target)),
+                          "all53PrintingsMatch": len(rows) == 53 and names == target,
+                      })
+              candidates.sort(key=lambda x: (
+                  x["sameNamesCountedWithPrintings"],
+                  x["matchingDistinctNames"],
+              ), reverse=True)
+              return matches, candidates[:10]
+
+
+          def patch_importer(expansion: int) -> bool:
+              path = ROOT / "scripts" / "update_prices.py"
+              source = path.read_text(encoding="utf-8")
+              current = re.search(r"'edgerunner-s1'\s*:\s*(\d+)", source)
+              if current:
+                  if int(current.group(1)) != expansion:
+                      raise ValueError("Edgerunner-Set-ID im Preisimporter widerspricht Cardmarket")
+                  return False
+              anchor = "'set1-promos': 6719,"
+              if source.count(anchor) != 1:
+                  raise ValueError("Unerwartete Preisimporter-Version: Patch nicht moeglich")
+              source = source.replace(anchor, anchor + "\n    'edgerunner-s1': " + str(expansion) + ",", 1)
+              path.write_text(source, encoding="utf-8")
+              return True
+
+
+          def write_status(report: dict) -> None:
+              STATUS_JSON.parent.mkdir(parents=True, exist_ok=True)
+              STATUS_JSON.write_text(
+                  json.dumps(report, ensure_ascii=False, sort_keys=True, indent=2) + "\n",
+                  encoding="utf-8",
+              )
+              lines = [
+                  "# Cardmarket: Edgerunner Open S1 – automatische Ueberwachung",
+                  "",
+                  "**Pruefdatum (UTC):** " + report["checkedAt"],
+                  "",
+                  "**Ergebnis:** " + (
+                      "Eine exakt passende Cardmarket-Expansion wurde bestaetigt."
+                      if report["status"] == "verified"
+                      else "Noch keine exakt passende Cardmarket-Expansion im offiziellen Produktkatalog."
+                  ),
+                  "",
+                  "Bedingung: **53 offizielle Produkte, dieselben 53 Kartennamen inklusive Mehrfachdrucke, "
+                  "genau eine passende Expansion**. Nur eindeutig benannte Einzel-Drucke sind automatisch preisfaehig.",
+                  "",
+                  "| Cardmarket-Expansion | Produkte | Passende Drucke | Passende Namen | Exakter Set-Treffer |",
+                  "|---:|---:|---:|---:|---|",
+              ]
+              for row in report["nearestExpansions"]:
+                  lines.append(
+                      f"| {row['idExpansion']} | {row['officialProducts']} | "
+                      f"{row['sameNamesCountedWithPrintings']} | {row['matchingDistinctNames']} | "
+                      f"{'Ja' if row['all53PrintingsMatch'] else 'Nein'} |"
+                  )
+              lines += [
+                  "",
+                  f"**Neue gespeicherte Preise in diesem Lauf:** {report['newPriceRecords']}",
+                  "",
+                  "**Schutz:** Keine Ersatzpreise aus anderen Sets. Mehrdeutige Druckvarianten bleiben ungepreist. "
+                  "Ein eigener Preisimport erfolgt ausschliesslich nach kompletter Set-Bestaetigung.",
+                  "",
+              ]
+              STATUS_MD.write_text("\n".join(lines), encoding="utf-8")
+              summary = os.environ.get("GITHUB_STEP_SUMMARY")
+              if summary:
+                  with open(summary, "a", encoding="utf-8") as f:
+                      f.write("\n".join(lines) + "\n")
+
+
+          def main() -> None:
+              local = read_catalog()
+              doc = read_products()
+              matches, closest = find_candidates(local, doc["products"])
+              if len(matches) > 1:
+                  raise ValueError("Mehr als eine identische Edgerunner-Expansion – manueller Review erforderlich")
+              old = json.loads((ROOT / "data" / "prices.json").read_text(encoding="utf-8"))
+              previous = old.get("prices")
+              if not isinstance(previous, dict) or len(previous) < 400:
+                  raise ValueError("Bestehende Preisliste fehlt oder ist unerwartet unvollstaendig")
+              old_count = len(previous)
+
+              status = "not_listed"
+              new_count = 0
+              chosen = None
+              if matches:
+                  chosen = matches[0]
+                  patch_importer(chosen)
+                  # The existing importer independently validates expansion, product name,
+                  # category, exact foil price field, source date and saved custom prices.
+                  subprocess.run([sys.executable, "scripts/update_prices.py"], check=True, cwd=ROOT)
+                  updated = json.loads((ROOT / "data" / "prices.json").read_text(encoding="utf-8"))
+                  saved = updated.get("prices")
+                  if not isinstance(saved, dict) or len(saved) < old_count or not set(previous).issubset(saved):
+                      raise ValueError("Preisimport hat bestehende Preisdatensaetze verloren")
+                  new_count = len(saved) - old_count
+                  status = "verified"
+
+              report = {
+                  "schema": 1,
+                  "checkedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                  "status": status,
+                  "officialProductCatalogCreatedAt": doc.get("createdAt"),
+                  "officialProductCatalogUrl": PRODUCT_URL,
+                  "localPrintings": len(local),
+                  "officialProductCount": len(doc["products"]),
+                  "officialExpansionCount": len({int(p["idExpansion"]) for p in doc["products"]}),
+                  "verifiedExpansionId": chosen,
+                  "nearestExpansions": closest,
+                  "previousSavedPrices": old_count,
+                  "newPriceRecords": new_count,
+                  "savedPricesAfter": old_count + new_count,
+                  "warning": (
+                      "Never map Edgerunner printings to similarly named cards in other sets; "
+                      "duplicate-name printings require independent collector-number evidence."
+                  ),
+              }
+              write_status(report)
+              print(
+                  "EDGERUNNER:", status,
+                  "verifizierte Expansion:", chosen,
+                  "neue Preise:", new_count,
+                  "Gesamtpreise:", report["savedPricesAfter"],
+              )
+
+
+          if __name__ == "__main__":
+              main()
+          PY_MONITOR
+          python /tmp/edgerunner_cardmarket_monitor.py
+      - name: Status und gegebenenfalls sichere neue Preise speichern
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/cardmarket-edgerunner-monitor.json data/cardmarket-edgerunner-monitor.md
+          git add scripts/update_prices.py data/prices.json data/cardmarket-diagnostics.json
+          git diff --cached --check
+          if git diff --cached --quiet; then
+            echo 'Status und Preise unveraendert.'
+            exit 0
+          fi
+          git commit -m 'Monitor official Cardmarket Edgerunner products and safe prices [skip ci]'
+          for attempt in 1 2 3 4; do
+            if git push origin HEAD:main; then exit 0; fi
+            if [ "$attempt" -eq 4 ]; then exit 1; fi
+            git fetch origin main
+            git rebase origin/main
+          done
