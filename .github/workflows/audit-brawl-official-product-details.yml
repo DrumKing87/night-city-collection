@@ -1,0 +1,186 @@
+name: Cardmarket - Brawl Original-Produktdaten pruefen
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: night-city-price-updates
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Repository laden
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Python 3.12 einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Originalfelder der offiziellen Cardmarket-Produkte pruefen
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY_BRAWL'
+          from collections import Counter, defaultdict
+          from datetime import datetime, timezone
+          from pathlib import Path
+          from urllib.request import Request, urlopen
+          import json
+          import re
+          import unicodedata
+
+          ROOT = Path('.')
+          PRODUCT_URL = ('https://downloads.s3.cardmarket.com/productCatalog/'
+                         'productList/products_singles_23.json')
+          OUTPUT_JSON = ROOT / 'data/cardmarket-brawl-official-product-details.json'
+          OUTPUT_MD = ROOT / 'data/cardmarket-brawl-official-product-details.md'
+
+          def norm(value):
+              text = unicodedata.normalize('NFKD', str(value or ''))
+              text = ''.join(ch for ch in text if not unicodedata.combining(ch))
+              text = re.sub(r'\(\s*v\.?\s*[12]\s*\)', '', text.lower().replace('&', 'and'), flags=re.I)
+              return ' '.join(re.sub(r'[^a-z0-9]+', ' ', text).split())
+
+          def read_official():
+              req = Request(PRODUCT_URL, headers={
+                  'Accept': 'application/json',
+                  'User-Agent': 'NightCityCollection/4.0 (safe Brawl product detail audit)',
+              })
+              with urlopen(req, timeout=90) as response:
+                  if response.status != 200:
+                      raise ValueError(f'Produktdatei HTTP {response.status}')
+                  payload = response.read(25_000_001)
+              if len(payload) > 25_000_000:
+                  raise ValueError('Produktdatei groesser als 25MB')
+              doc = json.loads(payload)
+              products = doc.get('products')
+              if doc.get('version') != 1 or not isinstance(products, list) or len(products) < 500:
+                  raise ValueError('Offizieller Produktkatalog hat unerwartetes Format')
+              if any(x.get('categoryName') != 'Cyberpunk Single' for x in products):
+                  raise ValueError('Falsche Cardmarket-Produktkategorie')
+              return doc
+
+          def main():
+              html = (ROOT / 'index.html').read_text('utf-8')
+              m = re.search(r'const DB\s*=\s*(\{.*?\})\s*;\s*const CARDS', html, re.S)
+              if not m:
+                  raise ValueError('Lokaler Katalog nicht gefunden')
+              db = json.loads(m.group(1))
+              cards = db['cards']
+              if len(cards) != 591 or len({c['key'] for c in cards}) != 591:
+                  raise ValueError('Unerwarteter lokaler Katalog')
+              local = {c['key']: c for c in cards if c['setId'] == 'brawl-s1'}
+              if len(local) != 37:
+                  raise ValueError('Erwartete 37 Brawl-Karten fehlen')
+
+              prior = json.loads((ROOT / 'data/cardmarket-brawl-variant-review.json').read_text('utf-8'))
+              rows = prior.get('rows')
+              if not isinstance(rows, list) or len(rows) != 37 or set(r['key'] for r in rows) != set(local):
+                  raise ValueError('Vorheriger Variantenbericht nicht passend')
+              official = read_official()
+              products = [p for p in official['products'] if str(p.get('idExpansion')) == '6953']
+              by_id = {int(p['idProduct']): p for p in products}
+              if len(products) != 37 or len(by_id) != 37:
+                  raise ValueError('Offizieller Brawl-Katalog hat nicht mehr 37 eindeutige Produkte')
+              if len({norm(p.get('name')) for p in products}) != 18:
+                  raise ValueError('Brawl-Produktnamen unerwartet veraendert')
+
+              report_rows = []
+              for row in rows:
+                  c = local[row['key']]
+                  matched = []
+                  for candidate in row['possibleCardmarketProductIds']:
+                      pid = int(candidate['idProduct'])
+                      product = by_id.get(pid)
+                      if not product or norm(product.get('name')) != norm(c['name']):
+                          raise ValueError('Produkt-ID / Set / Kartenname unvereinbar: ' + c['key'])
+                      # Full original metadata is included for audit transparency.
+                      matched.append({'idProduct': pid, 'officialProduct': product})
+                  if not matched or len(matched) != (3 if str(c['no']) in ('015','033','037') else 2):
+                      raise ValueError('Unerwartete Kandidatenanzahl bei ' + c['key'])
+                  # Compare fields OTHER than product ID, which is inherently unique.
+                  all_fields = sorted(set().union(*(set(m['officialProduct']) for m in matched)) - {'idProduct'})
+                  differences = {}
+                  for field in all_fields:
+                      vals = [m['officialProduct'].get(field) for m in matched]
+                      if len({json.dumps(v, ensure_ascii=False, sort_keys=True) for v in vals}) > 1:
+                          differences[field] = [{'idProduct': m['idProduct'],
+                                                 'value': m['officialProduct'].get(field)} for m in matched]
+                  report_rows.append({
+                      'key': c['key'], 'collectorNumber': c['no'],
+                      'officialVariant': row['variantFromOfficialRules'],
+                      'cardName': c['name'],
+                      'cardmarketCandidates': matched,
+                      'distinguishingProductFieldsExcludingId': differences,
+                      'safelyVerifiedProductId': None,
+                  })
+
+              report = {
+                  'schema': 1,
+                  'generatedAt': datetime.now(timezone.utc).isoformat(timespec='seconds'),
+                  'officialProductCreatedAt': official.get('createdAt'),
+                  'sourceUrl': PRODUCT_URL,
+                  'totalPrintings': 37,
+                  'officialProductCount': 37,
+                  'allProductKeys': sorted(set().union(*(set(p) for p in products))),
+                  'rowsWithDistinguishingProductFields': sum(bool(x['distinguishingProductFieldsExcludingId']) for x in report_rows),
+                  'verifiedProductIds': 0,
+                  'rows': report_rows,
+                  'warning': ('Diagnose ohne Preisimport. Eine unterschiedliche Produkt-ID oder '
+                              'Listenreihenfolge ist kein Beweis fuer Participation/Brawl Champ/Judge.'),
+              }
+              OUTPUT_JSON.write_text(json.dumps(report, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+              lines = [
+                  '# Cardmarket Brawl - offizielle Original-Produktmetadaten',
+                  '',
+                  'Nur Diagnose: keine Produkt-ID wurde freigegeben und kein Preis geaendert.',
+                  '',
+                  'Cardmarket-Produktkatalog: ' + str(official.get('createdAt')),
+                  '',
+                  '**Vorhandene Felder:** ' + ', '.join(report['allProductKeys']),
+                  '',
+                  'Karten mit abweichenden Produktfeldern (ausser idProduct): ' + str(report['rowsWithDistinguishingProductFields']),
+                  '',
+                  '| Karte | Druck | Cardmarket-IDs | Unterschiedliche Produktfelder |',
+                  '|---|---|---|---|',
+              ]
+              for x in report_rows:
+                  ids = ', '.join(str(z['idProduct']) for z in x['cardmarketCandidates'])
+                  differing = ', '.join(x['distinguishingProductFieldsExcludingId']) or 'keine'
+                  lines.append(f"| {x['collectorNumber']} {x['cardName'].replace('|', '/')} | {x['officialVariant']} | {ids} | {differing} |")
+              lines.extend(['', 'Zum genauen Vergleich die gleichnamige JSON-Datei oeffnen.',
+                            'Varianten nur mit extern bestaetigter Zuordnung freigeben.'])
+              OUTPUT_MD.write_text('\n'.join(lines) + '\n', encoding='utf-8')
+              print('Cardmarket original fields:', ', '.join(report['allProductKeys']))
+              print('37 Drucke, 37 offizielle Produkte,', report['rowsWithDistinguishingProductFields'],
+                    'Drucke mit abweichenden Metadatenfeldern (ohne ID).')
+              print('Keine Preise / Produkt-IDs veraendert.')
+
+          main()
+          PY_BRAWL
+      - name: Nur die Diagnoseberichte speichern
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/cardmarket-brawl-official-product-details.json data/cardmarket-brawl-official-product-details.md
+          git diff --cached --check
+          if git diff --cached --quiet; then
+            echo 'Keine neuen Diagnosedaten.'
+            exit 0
+          fi
+          git commit -m 'Audit Brawl Cardmarket original product metadata [skip ci]'
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then exit 0; fi
+            if [ "$attempt" -eq 3 ]; then exit 1; fi
+            git fetch origin main
+            git rebase origin/main
+          done
