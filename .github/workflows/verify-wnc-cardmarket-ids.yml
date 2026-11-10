@@ -1,0 +1,289 @@
+name: Cardmarket - WNC Sonderdrucke eindeutig zuordnen
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: night-city-price-updates
+  cancel-in-progress: false
+
+jobs:
+  match-and-update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Repository laden
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: HTML-Parser installieren
+        run: python -m pip install --disable-pip-version-check 'beautifulsoup4>=4.12,<5'
+      - name: Sonderdrucke anhand von Sammlernummern und Produkt-IDs verifizieren
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat > /tmp/verify_cardmarket_variants.py <<'PY_VARIANTS'
+          #!/usr/bin/env python3
+          """Safely match Welcome-to-Night-City print numbers to Cardmarket product IDs.
+
+          Uses independent Cardometer CHECKLIST NUMBERS + official Cardmarket catalog
+          EXPANSION/NAME + local card NUMBER/RARITY. Never imports Cardometer prices.
+          Intentionally defers card 005b because a normal/foil conflict exists across
+          sources; existing site marks it Holo but Cardometer reports Normal.
+          """
+          from __future__ import annotations
+
+          from collections import Counter, defaultdict
+          from datetime import datetime, timezone
+          from pathlib import Path
+          from urllib.parse import urljoin, urlsplit
+          from urllib.request import Request, urlopen
+          import json
+          import re
+          import unicodedata
+
+          from bs4 import BeautifulSoup
+
+          BASE = Path(__file__).resolve().parents[2] if Path(__file__).parent.name == "scripts" else Path.cwd()
+          PRODUCT_URL = "https://downloads.s3.cardmarket.com/productCatalog/productList/products_singles_23.json"
+          SET_URLS = {
+              "wnc-beta": ("https://cardometer.com/cyberpunk/sets/cyberpunk-welcome-to-night-city-beta/", 6714),
+              "wnc-retail": ("https://cardometer.com/cyberpunk/sets/cyberpunk-welcome-to-night-city-retail/", 6761),
+          }
+          RARS = {
+              "Common": "C", "Uncommon": "UC", "Rare": "R", "Epic": "E",
+              "Secret": "S", "Nova Rare": "NR", "Iconic Legend": "IL",
+              "Iconic Other": "IO", "Iconic Secret": "IS",
+          }
+          SKIP_NUMBER = {"005b"}  # Independent foil-vs-normal sources conflict.
+          CARD_LINK = re.compile(r"-(\d{3}[a-z]?)-(\d{5,})$", re.I)
+
+
+          def normalize(v):
+              s = unicodedata.normalize("NFKD", str(v or ""))
+              s = "".join(x for x in s if not unicodedata.combining(x))
+              s = re.sub(r"\(\s*v\.?\s*[12]\s*\)", "", s.lower().replace("&", "and"), flags=re.I)
+              return " ".join(re.sub(r"[^a-z0-9]+", " ", s).split())
+
+
+          def url_data(url: str, max_bytes: int, accept: str) -> bytes:
+              req = Request(url, headers={
+                  "User-Agent": "NightCityCollection/2.1 (public checklist cross-validation)",
+                  "Accept": accept,
+              })
+              with urlopen(req, timeout=65) as response:
+                  if response.status != 200:
+                      raise RuntimeError(f"Download fehlgeschlagen: HTTP {response.status}: {url}")
+                  data = response.read(max_bytes + 1)
+              if len(data) > max_bytes:
+                  raise RuntimeError(f"Sicherheitsabbruch: Antwort zu groß: {url}")
+              return data
+
+
+          def load_cards() -> list:
+              html = (BASE / "index.html").read_text(encoding="utf-8")
+              m = re.search(r"const DB\s*=\s*(\{.*?\})\s*;\s*const CARDS", html, re.S)
+              if not m:
+                  raise ValueError("Katalog nicht gefunden")
+              db = json.loads(m.group(1))
+              cards = db["cards"]
+              if len(cards) != 591 or len({c["key"] for c in cards}) != 591:
+                  raise ValueError("Sicherheitsabbruch: Erwarte 591 eindeutige Karten")
+              for sid in SET_URLS:
+                  if len([c for c in cards if c["setId"] == sid]) != 172:
+                      raise ValueError("Setgröße unerwartet: " + sid)
+              return cards
+
+
+          def load_official_products() -> dict:
+              doc = json.loads(url_data(PRODUCT_URL, 25_000_000, "application/json"))
+              if doc.get("version") != 1 or not isinstance(doc.get("products"), list) or len(doc["products"]) < 500:
+                  raise ValueError("Cardmarket-Katalog: Unerwartetes Format oder unvollständig")
+              result = {}
+              for p in doc["products"]:
+                  if p.get("categoryName") != "Cyberpunk Single":
+                      raise ValueError("Fremde Cardmarket-Kategorie")
+                  pid = int(p["idProduct"])
+                  if pid in result:
+                      raise ValueError("Doppelte offizielle Cardmarket-Produkt-ID")
+                  result[pid] = p
+              return result
+
+
+          def set_checklist(html: str, sid: str, url: str, exp: int) -> dict:
+              soup = BeautifulSoup(html, "html.parser")
+              text = soup.get_text(" ", strip=True)
+              if not re.search(r"\bSet\s+code\s+cm:\s*" + str(exp) + r"\b", text, re.I):
+                  raise ValueError(f"Setcode der unabhängigen Quelle ungleich {exp} ({sid})")
+              entries = defaultdict(dict)
+              for a in soup.select('a[href*="/cyberpunk/cards/"]'):
+                  href = urljoin(url, a.get("href") or "")
+                  if urlsplit(href).netloc != "cardometer.com":
+                      continue
+                  tail = urlsplit(href).path.rstrip("/").split("/")[-1]
+                  m = CARD_LINK.search(tail)
+                  if not m:
+                      continue  # No number supplied; never assign by product order.
+                  number, pid = m.group(1).lower(), int(m.group(2))
+                  label = a.get_text(" ", strip=True)
+                  rar = re.search(r"\b" + re.escape(number) + r"\s*[·•]\s*(IL|IO|IS|NR|UC|E|S|R|C)(?=\W|$)", label, re.I)
+                  if not rar:
+                      continue  # Rarity not explicit. Leave unresolved.
+                  entry = {"pid": pid, "rarity": rar.group(1).upper(), "label": label,
+                           "sourceUrl": href}
+                  old = entries[number].get(pid)
+                  if old and old["rarity"] != entry["rarity"]:
+                      raise ValueError(f"Widerspruch in {sid} bei {number}/{pid}")
+                  entries[number][pid] = entry
+              if len(entries) < 125:
+                  raise ValueError(f"Checkliste zu unvollständig in {sid}: nur {len(entries)} Nummern")
+              return entries
+
+
+          def main() -> None:
+              cards = load_cards()
+              by_sid_no = {(c["setId"], str(c["no"]).lower().removeprefix("β")): c for c in cards
+                           if c["setId"] in SET_URLS}
+              if len(by_sid_no) != 344:
+                  raise ValueError("Uneindeutige lokale Sammlernummern")
+              official = load_official_products()
+              groups = defaultdict(list)
+              for c in cards:
+                  if c["setId"] in SET_URLS:
+                      groups[c["setId"], normalize(c["name"])].append(c)
+              official_groups = defaultdict(list)
+              for pid, p in official.items():
+                  official_groups[str(p.get("idExpansion")), normalize(p.get("name"))].append(pid)
+
+              prior_path = BASE / "data/cardmarket-product-overrides.json"
+              prior = json.loads(prior_path.read_text(encoding="utf-8")) if prior_path.exists() else {}
+              if not isinstance(prior, dict):
+                  raise ValueError("Ungültiges Format bestehender Produkt-ID-Overrides")
+              if len({int(v) for v in prior.values()}) != len(prior):
+                  raise ValueError("Bestehende Produkt-IDs werden mehreren Druckvarianten zugewiesen")
+              new = {}
+              evidence = []
+              skipped = []
+              for sid, (url, exp) in SET_URLS.items():
+                  html = url_data(url, 3_000_000, "text/html").decode("utf-8")
+                  listed = set_checklist(html, sid, url, exp)
+                  for (card_sid, number), c in by_sid_no.items():
+                      if card_sid != sid:
+                          continue
+                      key = c["key"]
+                      if len(groups[sid, normalize(c["name"])]) == 1 and len(official_groups[str(exp), normalize(c["name"])]) == 1:
+                          continue  # Existing importer already handles this unambiguously.
+                      if number in SKIP_NUMBER:
+                          skipped.append({"key": key, "reason": "finish_conflict_005b"})
+                          continue
+                      options = []
+                      for pid, row in listed.get(number, {}).items():
+                          product = official.get(pid)
+                          if not product or str(product.get("idExpansion")) != str(exp):
+                              continue
+                          if normalize(product.get("name")) != normalize(c["name"]):
+                              continue
+                          if normalize(c["name"]) not in normalize(row["label"]):
+                              continue
+                          if RARS.get(c["rarity"]) != row["rarity"]:
+                              continue
+                          if pid not in official_groups[str(exp), normalize(c["name"])]:
+                              continue
+                          options.append(row)
+                      if len(options) != 1:
+                          skipped.append({"key": key, "reason": "no_unique_external_print_id",
+                                          "candidateIds": [o["pid"] for o in options]})
+                          continue
+                      row = options[0]
+                      if key in prior and int(prior[key]) != row["pid"]:
+                          raise ValueError(f"Bisheriger bestätigter Override widersprüchlich: {key}")
+                      new[key] = row["pid"]
+                      evidence.append({"key": key, "idProduct": row["pid"],
+                                       "cardNumber": number, "expansion": exp,
+                                       "sourceUrl": row["sourceUrl"]})
+              if len(new) < 80:
+                  raise ValueError(f"Zu wenige eindeutig bestätigte Druckvarianten: {len(new)}; sicherer Abbruch")
+              updated = dict(prior)
+              updated.update(new)
+              if len({int(v) for v in updated.values()}) != len(updated):
+                  raise ValueError("Cardmarket-Produkt-ID würde mehrfach vergeben")
+              if set(updated).difference({c["key"] for c in cards}):
+                  raise ValueError("Overrides referenzieren unbekannte Karten")
+              report = {
+                  "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                  "method": "Cardometer print NUMBER + RARITY + OFFICIAL Cardmarket EXPANSION/PRODUCT NAME/ID",
+                  "priceSource": "Cardmarket official EUR price guide only; never Cardometer prices",
+                  "mappedWncVariantRecords": len(new),
+                  "mappedNewRecords": len(set(new).difference(prior)),
+                  "skipped": skipped,
+                  "evidence": evidence,
+                  "sourcePages": {sid: url for sid, (url, _) in SET_URLS.items()},
+                  "notes": "No order-based mapping; 005b held back due to foil/normal discrepancy. Brawl and Showdown excluded because public checklist lacks verified product-specific collector numbers.",
+              }
+              dest = BASE / "data/cardmarket-variant-audit.json"
+              # All checks finished. Output only now.
+              prior_path.write_text(json.dumps(updated, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+              dest.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+              print("CARDMARKET-DURCHGEPRÜFTE WNC-VARIANTEN:", len(new))
+              print("Neue eindeutige Produkt-IDs:", report["mappedNewRecords"])
+              print("Noch unklar / bewusst ausgeschlossen:", len(skipped))
+              print("Produkt-IDs werden im vorhandenen Preisimporter erneut gegen Cardmarket validiert.")
+
+
+          if __name__ == "__main__":
+              main()
+          PY_VARIANTS
+          python /tmp/verify_cardmarket_variants.py
+      - name: Offizielle Cardmarket-Preise fuer gesamte Sammlung aktualisieren
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/update_prices.py
+      - name: Preis- und Override-Sicherheitskontrolle
+        shell: bash
+        run: |
+          python - <<'PY_CHECK'
+          import json
+          from pathlib import Path
+          prices = json.loads(Path('data/prices.json').read_text('utf-8'))
+          report = json.loads(Path('data/cardmarket-variant-audit.json').read_text('utf-8'))
+          diagnostics = json.loads(Path('data/cardmarket-diagnostics.json').read_text('utf-8'))
+          assert prices['total'] == 591 and diagnostics['total'] == 591
+          assert len(prices['prices']) >= 388, 'Bisherige gespeicherte Preise duerfen nicht verschwinden'
+          assert report['mappedWncVariantRecords'] >= 80, 'Variantenzuordnung unerwartet klein'
+          print('Karten:', prices['total'])
+          print('Gespeicherte Preise:', len(prices['prices']))
+          print('Eindeutige WNC-Produkt-IDs:', report['mappedWncVariantRecords'])
+          PY_CHECK
+      - name: Nur validierte Preisdateien und Bericht speichern
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/cardmarket-product-overrides.json data/cardmarket-variant-audit.json data/prices.json data/cardmarket-diagnostics.json
+          git diff --cached --check
+          if git diff --cached --quiet; then
+            echo 'Keine neuen Produktzuordnungen oder Preisaenderungen.'
+            exit 0
+          fi
+          git commit -m 'Match verified WNC collector numbers to official Cardmarket product IDs [skip ci]'
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              echo 'Eindeutig zugeordnete Karten und Preise veroeffentlicht.'
+              exit 0
+            fi
+            if [ "$attempt" -eq 3 ]; then
+              echo 'GitHub Push fehlgeschlagen.' >&2
+              exit 1
+            fi
+            git fetch origin main
+            git rebase origin/main
+          done
