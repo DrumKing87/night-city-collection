@@ -1,0 +1,131 @@
+name: Cardmarket - sichere neue Sets und Preise aktivieren
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: night-city-price-updates
+  cancel-in-progress: false
+
+jobs:
+  enable-and-import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Repository laden
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Katalog und offizielle Expansions sicher verifizieren
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from collections import Counter
+          from pathlib import Path
+          from urllib.request import Request, urlopen
+          import json, re, unicodedata
+
+          root = Path('.')
+          src = (root/'scripts/update_prices.py').read_text('utf-8')
+          page = (root/'index.html').read_text('utf-8')
+          m = re.search(r'const DB\s*=\s*(\{.*?\})\s*;\s*const CARDS',page,re.S)
+          if not m:
+              raise SystemExit('Sicherheitsabbruch: Katalog nicht erkannt')
+          db = json.loads(m.group(1)); cards = db['cards']
+          if len(cards) != 591 or len({c['key'] for c in cards}) != 591:
+              raise SystemExit('Sicherheitsabbruch: erwarte 591 eindeutige Kartendrucke')
+
+          # Ids selected after the official report (10 November 2026).
+          # Full card-name MULTISETS must match the Cardmarket expansion.
+          # That proves the set rather than just a few overlapping names.
+          additions = {
+              'heist-demo': (6720, 15),
+              'embracing-demo': (6721, 14),
+              'brawl-s1': (6953, 37),
+              'showdown-s1': (6954, 5),
+              'judge-promos': (6952, 3),
+          }
+          def norm(v):
+              text = unicodedata.normalize('NFKD',str(v or ''))
+              text = ''.join(c for c in text if not unicodedata.combining(c))
+              text = re.sub(r'\(\s*v\.?\s*[12]\s*\)', '', text.lower().replace('&','and'), flags=re.I)
+              return ' '.join(re.sub(r'[^a-z0-9]+', ' ', text).split())
+          url = 'https://downloads.s3.cardmarket.com/productCatalog/productList/products_singles_23.json'
+          with urlopen(Request(url,headers={'User-Agent':'NightCityCollection/2.0 (verified set identity)'}),timeout=85) as response:
+              raw = response.read(25_000_001)
+          if len(raw)>25_000_000:
+              raise SystemExit('Sicherheitsabbruch: Export zu gross')
+          data = json.loads(raw)
+          if data.get('version') != 1 or not isinstance(data.get('products'),list):
+              raise SystemExit('Sicherheitsabbruch: Produktliste nicht lesbar')
+          if any(p.get('categoryName') != 'Cyberpunk Single' for p in data['products']):
+              raise SystemExit('Sicherheitsabbruch: Produktkategorie abweichend')
+          for sid,(exp,n) in additions.items():
+              theirs = [p for p in data['products'] if str(p.get('idExpansion'))==str(exp)]
+              ours = [c for c in cards if c['setId']==sid]
+              if len(theirs)!=n or len(ours)!=n:
+                  raise SystemExit(f'Sicherheitsabbruch: {sid}, Anzahl {len(ours)}/{len(theirs)} erwartet {n}')
+              # Exact multisets preserve duplicate normal/foil and tournament variants.
+              if Counter(norm(c['name']) for c in ours) != Counter(norm(p.get('name')) for p in theirs):
+                  raise SystemExit(f'Sicherheitsabbruch: {sid}, Namen/Druckvarianten weichen ab')
+              print('Bestätigt:',sid,'Cardmarket-Expansion:',exp,'Drucke:',n)
+
+          original = "    'prerelease-beta': 6718, 'prerelease-retail': 6765,\n}"
+          replacement = "    'prerelease-beta': 6718, 'prerelease-retail': 6765,\n" + \
+                        "    'heist-demo': 6720, 'embracing-demo': 6721,\n" + \
+                        "    'brawl-s1': 6953, 'showdown-s1': 6954, 'judge-promos': 6952,\n}"
+          if replacement in src:
+              print('Erweiterte Set-Zuordnung bereits installiert')
+          else:
+              if src.count(original) != 1:
+                  raise SystemExit('Sicherheitsabbruch: Unerwarteter Aufbau des Preisimporters')
+              src=src.replace(original,replacement,1)
+              (root/'scripts/update_prices.py').write_text(src,encoding='utf-8')
+          PY
+          python -m py_compile scripts/update_prices.py
+      - name: Offiziellen Cardmarket-Preisimport für alle 591 Karten ausführen
+        run: python scripts/update_prices.py
+      - name: Preise und Diagnose prüfen
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=json.loads(Path('data/prices.json').read_text('utf-8'))
+          d=json.loads(Path('data/cardmarket-diagnostics.json').read_text('utf-8'))
+          if p['total'] != 591 or d['total'] != 591:
+              raise SystemExit('Sicherheitsabbruch: Neue Karten nicht vollständig geprüft')
+          if not all(x in d['bySet'] for x in ('heist-demo','embracing-demo','brawl-s1','showdown-s1','judge-promos')):
+              raise SystemExit('Sicherheitsabbruch: Bericht ohne neue Sets')
+          if len(p['prices']) < 378:
+              raise SystemExit('Sicherheitsabbruch: bestehende Preise würden verschwinden')
+          print('Neue Preisabdeckung:',len(p['prices']),'/ 591')
+          for sid in ('heist-demo','embracing-demo','brawl-s1','showdown-s1','judge-promos'):
+              print(sid,d['bySet'][sid])
+          PY
+      - name: Nur Preisimport, Preise und Diagnose speichern
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add scripts/update_prices.py data/prices.json data/cardmarket-diagnostics.json
+          git diff --cached --check
+          if git diff --cached --quiet; then
+            echo 'Keine Änderungen zu speichern.'
+            exit 0
+          fi
+          git commit -m 'Verify additional Cardmarket set IDs and import safe prices [skip ci]'
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then exit 0; fi
+            if [ "$attempt" -eq 3 ]; then exit 1; fi
+            git fetch origin main
+            git rebase origin/main
+          done
