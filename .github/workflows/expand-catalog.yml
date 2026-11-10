@@ -1,0 +1,55 @@
+name: Night City Collection - weitere Sets ergaenzen
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: night-city-price-updates
+  cancel-in-progress: false
+
+jobs:
+  expand-catalog:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Parser-Abhaengigkeiten
+        run: python -m pip install 'requests>=2.31,<3' 'beautifulsoup4>=4.12,<5'
+      - name: Neue Sets und Druckvarianten streng pruefen
+        run: python scripts/expand_catalog.py
+      - name: Python-Syntax und Katalogbericht kontrollieren
+        run: |
+          python -m py_compile scripts/expand_catalog.py scripts/update_prices.py
+          python - <<'PY'
+          import json,re
+          from pathlib import Path
+          h=Path('index.html').read_text('utf-8')
+          d=json.loads(re.search(r'const DB\s*=\s*(\{.*?\})\s*;\s*const CARDS',h,re.S).group(1))
+          assert len(d['sets'])==18, len(d['sets'])
+          assert len(d['cards'])==591, len(d['cards'])
+          assert len({x['key'] for x in d['cards']})==591
+          print('VALIDIERT:',len(d['sets']),'Sets und',len(d['cards']),'Kartendrucke')
+          PY
+      - name: Nur Katalog und Diagnose committen
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html scripts/update_prices.py data/catalog-expansion-audit.json
+          git diff --cached --check
+          if git diff --cached --quiet; then
+            echo 'Keine Aenderungen vorhanden.'
+            exit 0
+          fi
+          git commit -m 'Expand Night City Collection to 18 release entries and 591 cards'
+          git push origin HEAD:main
