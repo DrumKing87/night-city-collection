@@ -1,0 +1,87 @@
+{
+  "checkedAt": "2026-11-10T16:24:29+00:00",
+  "localPrintings": 53,
+  "nearestExpansions": [
+    {
+      "all53PrintingsMatch": false,
+      "idExpansion": 6714,
+      "matchingDistinctNames": 27,
+      "officialProducts": 172,
+      "sameNamesCountedWithPrintings": 32
+    },
+    {
+      "all53PrintingsMatch": false,
+      "idExpansion": 6761,
+      "matchingDistinctNames": 27,
+      "officialProducts": 172,
+      "sameNamesCountedWithPrintings": 32
+    },
+    {
+      "all53PrintingsMatch": false,
+      "idExpansion": 6718,
+      "matchingDistinctNames": 10,
+      "officialProducts": 11,
+      "sameNamesCountedWithPrintings": 10
+    },
+    {
+      "all53PrintingsMatch": false,
+      "idExpansion": 6765,
+      "matchingDistinctNames": 10,
+      "officialProducts": 11,
+      "sameNamesCountedWithPrintings": 10
+    },
+    {
+      "all53PrintingsMatch": false,
+      "idExpansion": 6722,
+      "matchingDistinctNames": 7,
+      "officialProducts": 35,
+      "sameNamesCountedWithPrintings": 7
+    },
+    {
+      "all53PrintingsMatch": false,
+      "idExpansion": 6717,
+      "matchingDistinctNames": 6,
+      "officialProducts": 6,
+      "sameNamesCountedWithPrintings": 6
+    },
+    {
+      "all53PrintingsMatch": false,
+      "idExpansion": 6764,
+      "matchingDistinctNames": 6,
+      "officialProducts": 6,
+      "sameNamesCountedWithPrintings": 6
+    },
+    {
+      "all53PrintingsMatch": false,
+      "idExpansion": 6721,
+      "matchingDistinctNames": 5,
+      "officialProducts": 14,
+      "sameNamesCountedWithPrintings": 5
+    },
+    {
+      "all53PrintingsMatch": false,
+      "idExpansion": 6716,
+      "matchingDistinctNames": 5,
+      "officialProducts": 20,
+      "sameNamesCountedWithPrintings": 5
+    },
+    {
+      "all53PrintingsMatch": false,
+      "idExpansion": 6763,
+      "matchingDistinctNames": 5,
+      "officialProducts": 20,
+      "sameNamesCountedWithPrintings": 5
+    }
+  ],
+  "newPriceRecords": 0,
+  "officialExpansionCount": 17,
+  "officialProductCatalogCreatedAt": "2026-11-10T14:33:26+0100",
+  "officialProductCatalogUrl": "https://downloads.s3.cardmarket.com/productCatalog/productList/products_singles_23.json",
+  "officialProductCount": 570,
+  "previousSavedPrices": 454,
+  "savedPricesAfter": 454,
+  "schema": 1,
+  "status": "not_listed",
+  "verifiedExpansionId": null,
+  "warning": "Never map Edgerunner printings to similarly named cards in other sets; duplicate-name printings require independent collector-number evidence."
+}
