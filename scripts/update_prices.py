@@ -82,9 +82,9 @@ def local_cards() -> list[dict]:
     if not match:
         raise ValueError('Lokaler Kartenkatalog in index.html nicht gefunden')
     cards = json.loads(match.group(1))['cards']
-    if len(cards) != 458 or len({c['key'] for c in cards}) != 458:
-        raise ValueError('Unvollständiger oder doppelter Katalog: erwarte 458 Kartendrucke')
-    if set(c['setId'] for c in cards) != set(CARD_EXPANSION):
+    if len(cards) < 458 or len({c['key'] for c in cards}) != len(cards):
+        raise ValueError('Unvollständiger oder doppelter Katalog: mindestens 458 Kartendrucke erwartet')
+    if not set(CARD_EXPANSION).issubset({c['setId'] for c in cards}):
         raise ValueError('Set-Konfiguration weicht von den Karten ab')
     return cards
 
@@ -136,7 +136,8 @@ def main() -> int:
         grouped[(ex, norm(product.get('name'))) ].append(product)
     local_groups = defaultdict(list)
     for card in cards:
-        local_groups[(CARD_EXPANSION[card['setId']], norm(card['name']))].append(card)
+        if card['setId'] in CARD_EXPANSION:
+            local_groups[(CARD_EXPANSION[card['setId']], norm(card['name']))].append(card)
     overrides = read_json(DATA / 'cardmarket-product-overrides.json', {})
     if not isinstance(overrides, dict):
         raise ValueError('data/cardmarket-product-overrides.json muss ein JSON-Objekt sein')
@@ -156,6 +157,12 @@ def main() -> int:
     for c in cards:
         checked += 1
         key, sid = c['key'], c['setId']
+        if sid not in CARD_EXPANSION:
+            statistics[sid]['set_ohne_verifizierte_Cardmarket_Expansion'] += 1
+            diagnostics.append({'key': key, 'name': c['name'], 'finish': c['finish'],
+                                'reason': 'set_ohne_verifizierte_Cardmarket_Expansion',
+                                'candidateProductIds': [], 'idProduct': None})
+            continue
         pair = CARD_EXPANSION[sid], norm(c['name'])
         local_dupes = local_groups[pair]
         possible = grouped.get(pair, [])

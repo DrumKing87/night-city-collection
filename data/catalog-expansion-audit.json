@@ -1,0 +1,56 @@
+{
+  "generatedAt": "2026-11-10T06:30:24+00:00",
+  "originalCards": 458,
+  "addedCards": 133,
+  "resultCards": 591,
+  "newSets": [
+    {
+      "id": "edgerunner-s1",
+      "count": 53
+    },
+    {
+      "id": "brawl-s1",
+      "count": 37
+    },
+    {
+      "id": "showdown-s1",
+      "count": 5
+    },
+    {
+      "id": "judge-promos",
+      "count": 3
+    },
+    {
+      "id": "set1-promos",
+      "count": 6
+    },
+    {
+      "id": "heist-demo",
+      "count": 15
+    },
+    {
+      "id": "embracing-demo",
+      "count": 14
+    },
+    {
+      "id": "alpha",
+      "count": 0
+    }
+  ],
+  "source": "https://logtcg.app",
+  "sourceUrls": [
+    "https://logtcg.app/logpunk/sets/en/edgerunner-open-season-1",
+    "https://logtcg.app/logpunk/sets/en/night-city-brawl-season-1",
+    "https://logtcg.app/logpunk/sets/en/night-city-showdown-season-1",
+    "https://logtcg.app/logpunk/sets/en/judge-promos",
+    "https://logtcg.app/logpunk/sets/en/set-1-promos",
+    "https://logtcg.app/logpunk/sets/en/merc-demo-deck",
+    "https://logtcg.app/logpunk/sets/en/arasaka-demo-deck",
+    "https://www.cardmarket.com/en/Cyberpunk/Expansions"
+  ],
+  "notes": [
+    "Alpha has no independently verified full checklist; zero cards added",
+    "Price importer keeps the 10 original verified Cardmarket expansion IDs; new cards are not priced until exact product IDs/expansions are verified.",
+    "Collection owned quantities and stored prices are not modified"
+  ]
+}
