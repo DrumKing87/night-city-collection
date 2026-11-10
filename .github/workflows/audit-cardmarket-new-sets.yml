@@ -1,0 +1,244 @@
+name: Cardmarket neue Sets - offizieller Abgleich
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: night-city-price-updates
+  cancel-in-progress: false
+
+jobs:
+  audit-new-sets:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Repository laden
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Offizielle Cardmarket-Produkt- und Preisdateien abgleichen
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat > /tmp/cardmarket_new_sets_audit.py <<'PY_AUDIT'
+          from __future__ import annotations
+
+          from collections import Counter, defaultdict
+          from datetime import datetime, timezone
+          from pathlib import Path
+          from urllib.request import Request, urlopen
+          from decimal import Decimal, InvalidOperation
+          import json
+          import re
+          import sys
+          import unicodedata
+
+          BASE = "https://downloads.s3.cardmarket.com/productCatalog"
+          PRODUCT_URL = BASE + "/productList/products_singles_23.json"
+          PRICE_URL = BASE + "/priceGuide/price_guide_23.json"
+          INDEX = Path("index.html")
+          REPORT = Path("data/cardmarket-new-sets-audit.json")
+          NEW_SETS = (
+              "edgerunner-s1", "brawl-s1", "showdown-s1", "judge-promos",
+              "set1-promos", "heist-demo", "embracing-demo",
+          )
+          ORIGINAL_SETS = (
+              "wnc-beta", "wnc-retail", "heist-beta", "heist-retail",
+              "embracing-beta", "embracing-retail", "prerelease-beta",
+              "prerelease-retail", "boxtopper-beta", "boxtopper-retail",
+          )
+
+
+          def load_json(url: str) -> dict:
+              req = Request(url, headers={"User-Agent": "NightCityCollection/2.0 (safe official Cardmarket audit)",
+                                          "Accept": "application/json"})
+              with urlopen(req, timeout=85) as response:
+                  if response.status != 200:
+                      raise ValueError(f"Cardmarket HTTP {response.status}: {url}")
+                  buf = response.read(25_000_001)
+              if len(buf) > 25_000_000:
+                  raise ValueError("Cardmarket-Export ist größer als 25 MB")
+              obj = json.loads(buf)
+              if not isinstance(obj, dict) or obj.get("version") != 1:
+                  raise ValueError("Unbekanntes Cardmarket-Dateiformat: " + url)
+              return obj
+
+
+          def normalize(value: object) -> str:
+              s = unicodedata.normalize("NFKD", str(value or ""))
+              s = "".join(c for c in s if not unicodedata.combining(c))
+              s = re.sub(r"\(\s*v\.?\s*[12]\s*\)", "", s.lower().replace("&", "and"), flags=re.I)
+              return " ".join(re.sub(r"[^a-z0-9]+", " ", s).split())
+
+
+          def price_valid(value: object) -> bool:
+              try:
+                  n = Decimal(str(value))
+                  return n.is_finite() and 0 < n <= 1_000_000
+              except (InvalidOperation, TypeError, ValueError):
+                  return False
+
+
+          def read_catalog() -> tuple[list, dict]:
+              text = INDEX.read_text(encoding="utf-8")
+              match = re.search(r"const DB\s*=\s*(\{.*?\})\s*;\s*const CARDS", text, flags=re.S)
+              if not match:
+                  raise ValueError("Kartendaten in index.html nicht gefunden")
+              db = json.loads(match.group(1))
+              cards, sets = db.get("cards"), db.get("sets")
+              if not isinstance(cards, list) or not isinstance(sets, list):
+                  raise ValueError("Ungültiger Kartenkatalog")
+              if len(cards) != 591 or len({c["key"] for c in cards}) != 591 or len(sets) != 18:
+                  raise ValueError("Sicherheitsabbruch: erwarte 591 eindeutige Karten in 18 Sets")
+              known_sets = {s["id"] for s in sets}
+              if not set(NEW_SETS + ORIGINAL_SETS + ("alpha",)).issubset(known_sets):
+                  raise ValueError("Erwartete Set-IDs fehlen")
+              if any(c["setId"] not in known_sets for c in cards):
+                  raise ValueError("Karte mit unbekannter Set-ID")
+              return cards, {s["id"]: s for s in sets}
+
+
+          def run():
+              cards, sets = read_catalog()
+              products_doc, prices_doc = load_json(PRODUCT_URL), load_json(PRICE_URL)
+              products, price_rows = products_doc.get("products"), prices_doc.get("priceGuides")
+              if not isinstance(products, list) or len(products) < 400:
+                  raise ValueError("Zu wenig Produktdaten im offiziellen Cardmarket-Export")
+              if not isinstance(price_rows, list) or len(price_rows) < 400:
+                  raise ValueError("Zu wenig Preiszeilen im offiziellen Cardmarket-Export")
+              if any(p.get("categoryName") != "Cyberpunk Single" for p in products):
+                  raise ValueError("Falsche Kategorie im Cardmarket-Produktkatalog")
+
+              guides = {str(p["idProduct"]): p for p in price_rows if p.get("idProduct") is not None}
+              by_exp = defaultdict(lambda: defaultdict(list))
+              exp_labels = defaultdict(Counter)
+              for product in products:
+                  try:
+                      eid = int(product["idExpansion"])
+                      pid = str(product["idProduct"])
+                      name = normalize(product["name"])
+                  except (KeyError, ValueError, TypeError):
+                      continue
+                  if not name or eid <= 0:
+                      continue
+                  by_exp[eid][name].append(product)
+                  label = str(product.get("expansionName") or "").strip()
+                  if label:
+                      exp_labels[eid][label] += 1
+              if len(by_exp) < 5:
+                  raise ValueError("Zu wenige Cardmarket-Expansions: keine belastbare Diagnose")
+
+              report_sets = []
+              for sid in NEW_SETS:
+                  local = [c for c in cards if c["setId"] == sid]
+                  if not local:
+                      raise ValueError("Leeres erwartetes Set: " + sid)
+                  local_name_groups = defaultdict(list)
+                  for c in local:
+                      local_name_groups[normalize(c["name"])].append(c)
+                  candidates = []
+                  for eid, names in by_exp.items():
+                      matching = [(name, locals_) for name, locals_ in local_name_groups.items() if name in names]
+                      if not matching:
+                          continue
+                      hits = sum(len(entries) for _, entries in matching)
+                      unique_by_name = sum(len(entries) for name, entries in matching if len(entries) == 1 and len(names[name]) == 1)
+                      valid_price = 0
+                      for name, entries in matching:
+                          if len(entries) == 1 and len(names[name]) == 1:
+                              c, p = entries[0], names[name][0]
+                              row = guides.get(str(p["idProduct"]))
+                              foil = "holo" in str(c.get("finish", "")).lower() or "foil" in str(c.get("finish", "")).lower()
+                              field = "trend-foil" if foil else "trend"
+                              if row and str(row.get("idCategory")) == str(p.get("idCategory")) and price_valid(row.get(field)):
+                                  valid_price += 1
+                      candidates.append({
+                          "idExpansion": eid,
+                          "expansionNames": [label for label, _ in exp_labels[eid].most_common(3)],
+                          "cardmarketProductCount": sum(map(len, names.values())),
+                          "matchingLocalPrintings": hits,
+                          "matchingDistinctNames": len(matching),
+                          "uniqueNameAndProductCount": unique_by_name,
+                          "uniqueWithValidPrice": valid_price,
+                          "matchingExamples": [
+                              {"name": entries[0]["name"], "catalogKeys": [x["key"] for x in entries[:3]],
+                               "candidateProductIds": [p["idProduct"] for p in names[name]][:5]}
+                              for name, entries in matching[:8]
+                          ],
+                      })
+                  candidates.sort(key=lambda x: (x["matchingDistinctNames"], x["uniqueWithValidPrice"], x["uniqueNameAndProductCount"]), reverse=True)
+                  report_sets.append({
+                      "setId": sid, "setTitle": sets[sid]["title"], "catalogPrintings": len(local),
+                      "distinctCardNames": len(local_name_groups),
+                      "candidateExpansions": candidates[:8],
+                      "analysisNote": "Treffer sind Kandidaten, keine verifizierten Preiszuordnungen. Prüfe Set-Identität und Druckvariante.",
+                  })
+
+              previous = json.loads(Path("data/prices.json").read_text(encoding="utf-8"))
+              old_prices = previous.get("prices", {})
+              if not isinstance(old_prices, dict):
+                  raise ValueError("Vorhandene Preisdatei hat kein gültiges prices-Objekt")
+              local_keys = {c["key"] for c in cards}
+              report = {
+                  "schema": 1, "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                  "productCatalogSource": PRODUCT_URL, "priceGuideSource": PRICE_URL,
+                  "productsCreatedAt": products_doc.get("createdAt"), "priceGuideCreatedAt": prices_doc.get("createdAt"),
+                  "catalogPrintings": len(cards), "examinedNewPrintings": sum(r["catalogPrintings"] for r in report_sets),
+                  "savedPriceRecordsUnchanged": len(set(old_prices) & local_keys),
+                  "cardmarketProductCount": len(products), "cardmarketExpansionCount": len(by_exp),
+                  "newSets": report_sets,
+                  "warning": "REINER DIAGNOSELAUF: KEINE Preis- oder Kartendaten geaendert. Ein Namensmatch allein beweist die Druckvariante nicht.",
+              }
+              REPORT.parent.mkdir(parents=True, exist_ok=True)
+              REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+              print("CARDMARKET NEUE SETS: offizieller Export", products_doc.get("createdAt"))
+              print("Katalog:", len(cards), "Kartendrucke; neue Karten:", report["examinedNewPrintings"])
+              for item in report_sets:
+                  print("SET", item["setId"], "Karten", item["catalogPrintings"])
+                  for c in item["candidateExpansions"][:3]:
+                      print("  Kandidat", c["idExpansion"], c["expansionNames"],
+                            "Treffer", c["matchingDistinctNames"],
+                            "Eindeutige mit Preis", c["uniqueWithValidPrice"])
+              if "GITHUB_STEP_SUMMARY" in __import__("os").environ:
+                  with open(__import__("os").environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as f:
+                      f.write("## Cardmarket-Abgleich: neue Sets\n\n")
+                      f.write("Nur Diagnose; vorhandene Preise bleiben unberührt.\n\n")
+                      f.write("| Set | Kartendrucke | Kandidat (ID) | Namensmatches | Eindeutige mit Preis |\n")
+                      f.write("|---|---:|---:|---:|---:|\n")
+                      for entry in report_sets:
+                          best = entry["candidateExpansions"][:1]
+                          b = best[0] if best else {}
+                          f.write(f"| {entry['setTitle']} | {entry['catalogPrintings']} | {b.get('idExpansion','–')} | {b.get('matchingDistinctNames',0)} | {b.get('uniqueWithValidPrice',0)} |\n")
+                      f.write("\n**Achtung:** Kandidaten müssen vor automatischer Preiszuordnung geprüft werden.\n")
+              print("Diagnose gespeichert:", REPORT)
+
+
+          if __name__ == "__main__":
+              try:
+                  run()
+              except (ValueError, KeyError, TypeError, OSError, json.JSONDecodeError) as exc:
+                  print("SICHERER ABBRUCH:", exc, file=sys.stderr)
+                  sys.exit(1)
+          PY_AUDIT
+          python /tmp/cardmarket_new_sets_audit.py
+      - name: Nur Diagnosebericht veroeffentlichen
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/cardmarket-new-sets-audit.json
+          git diff --cached --check
+          if git diff --cached --quiet; then
+            echo 'Keine Aenderungen vorhanden.'
+            exit 0
+          fi
+          git commit -m 'Audit official Cardmarket matching for seven new sets [skip ci]'
+          git push origin HEAD:main
