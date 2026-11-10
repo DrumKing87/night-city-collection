@@ -1,0 +1,262 @@
+name: Cardmarket - fehlende Trendpreise und offizielle Alternativen pruefen
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: night-city-price-updates
+  cancel-in-progress: false
+
+jobs:
+  alternative-price-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Repository laden
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Python 3.12 einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Offizielle Alternativpreise OHNE Import untersuchen
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat > /tmp/audit_alternative_prices.py <<'PY_AUDIT'
+          from __future__ import annotations
+
+          from collections import Counter
+          from datetime import datetime, timezone, timedelta
+          from decimal import Decimal, InvalidOperation, ROUND_HALF_UP
+          from pathlib import Path
+          from urllib.request import Request, urlopen
+          import ast
+          import json
+          import os
+          import re
+          import unicodedata
+
+          ROOT = Path.cwd()
+          BASE = 'https://downloads.s3.cardmarket.com/productCatalog'
+          PRODUCT_URL = BASE + '/productList/products_singles_23.json'
+          PRICE_URL = BASE + '/priceGuide/price_guide_23.json'
+          OUT_JSON = ROOT / 'data/cardmarket-alternative-price-audit.json'
+          OUT_MD = ROOT / 'data/cardmarket-alternative-price-audit.md'
+          NOW = datetime.now(timezone.utc)
+          REASONS = {'kein_trend', 'kein_trend-foil'}
+
+          def download(url):
+              req = Request(url, headers={
+                  'User-Agent': 'NightCityCollection/5.1 (safe official alternative price audit)',
+                  'Accept': 'application/json',
+              })
+              with urlopen(req, timeout=85) as response:
+                  if response.status != 200:
+                      raise ValueError(f'HTTP {response.status}: {url}')
+                  raw = response.read(25_000_001)
+              if len(raw) > 25_000_000:
+                  raise ValueError('Cardmarket-Datei groesser als 25 MB')
+              doc = json.loads(raw)
+              if not isinstance(doc, dict) or doc.get('version') != 1:
+                  raise ValueError('Cardmarket-Dateiformat nicht erkannt')
+              return doc
+
+          def number(value):
+              try:
+                  x = Decimal(str(value))
+                  if not x.is_finite() or x <= 0 or x > 1_000_000:
+                      return None
+                  return float(x.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP))
+              except (InvalidOperation, ValueError, TypeError):
+                  return None
+
+          def norm(value):
+              s = unicodedata.normalize('NFKD', str(value or ''))
+              s = ''.join(ch for ch in s if not unicodedata.combining(ch))
+              s = re.sub(r'\(\s*v\.?\s*[12]\s*\)', '', s.lower().replace('&', 'and'), flags=re.I)
+              return ' '.join(re.sub(r'[^a-z0-9]+', ' ', s).split())
+
+          def load_cards():
+              html = (ROOT / 'index.html').read_text(encoding='utf-8')
+              m = re.search(r'const DB\s*=\s*(\{.*?\})\s*;\s*const CARDS', html, re.S)
+              if not m:
+                  raise ValueError('Kartenkatalog nicht gefunden')
+              cards = json.loads(m.group(1))['cards']
+              if len(cards) != 591 or len({c['key'] for c in cards}) != 591:
+                  raise ValueError('Katalog weicht von 591 eindeutigen Kartendrucken ab')
+              return {c['key']: c for c in cards}
+
+          def load_expansions():
+              tree = ast.parse((ROOT / 'scripts/update_prices.py').read_text(encoding='utf-8'))
+              for node in tree.body:
+                  if isinstance(node, ast.Assign) and any(isinstance(t, ast.Name) and t.id == 'CARD_EXPANSION' for t in node.targets):
+                      value = ast.literal_eval(node.value)
+                      if isinstance(value, dict) and len(value) >= 10:
+                          return value
+              raise ValueError('CARD_EXPANSION im bestehenden Preisimporter nicht lesbar')
+
+          def check_time(value):
+              try:
+                  d = datetime.fromisoformat(value)
+                  if d.tzinfo is None:
+                      raise ValueError('Timezone fehlt')
+                  if d > NOW + timedelta(hours=4) or d < NOW - timedelta(days=4):
+                      raise ValueError('Zeitstempel ist veraltet')
+              except (ValueError, TypeError) as exc:
+                  raise ValueError(f'Cardmarket-Export hat ungueltiges Datum: {value!r}') from exc
+
+          def main():
+              cards = load_cards()
+              exps = load_expansions()
+              previous = json.loads((ROOT / 'data/prices.json').read_text(encoding='utf-8'))
+              saved = previous.get('prices')
+              if not isinstance(saved, dict) or len(saved) < 454:
+                  raise ValueError('Vorhandene 454 gespeicherte Preise fehlen')
+              diagnostics = json.loads((ROOT / 'data/cardmarket-diagnostics.json').read_text(encoding='utf-8'))
+              unresolved = diagnostics.get('unresolved')
+              if not isinstance(unresolved, list):
+                  raise ValueError('Cardmarket-Diagnose fehlt')
+
+              pdoc, gdoc = download(PRODUCT_URL), download(PRICE_URL)
+              check_time(gdoc.get('createdAt'))
+              products, guides = pdoc.get('products'), gdoc.get('priceGuides')
+              if not isinstance(products, list) or len(products) < 500:
+                  raise ValueError('Cardmarket-Produktkatalog unvollstaendig')
+              if not isinstance(guides, list) or len(guides) < 500:
+                  raise ValueError('Cardmarket-Preisdatei unvollstaendig')
+              if any(x.get('categoryName') != 'Cyberpunk Single' for x in products):
+                  raise ValueError('Falsche Produktkategorie im Export')
+              by_pid = {str(p['idProduct']): p for p in products}
+              by_gid = {str(p['idProduct']): p for p in guides}
+              if len(by_pid) != len(products) or len(by_gid) != len(guides):
+                  raise ValueError('Doppelte Cardmarket-Produkt-ID')
+
+              rows = []
+              candidates = [x for x in unresolved if x.get('reason') in REASONS and x.get('key') not in saved]
+              if len({x['key'] for x in candidates}) != len(candidates):
+                  raise ValueError('Doppelte Schluessel in der Diagnose')
+              for entry in candidates:
+                  key = entry['key']
+                  if key not in cards:
+                      raise ValueError('Diagnose referenziert unbekannte Karte: ' + key)
+                  card = cards[key]
+                  sid, pid = card['setId'], str(entry.get('idProduct'))
+                  if sid not in exps or pid not in by_pid:
+                      raise ValueError('Nicht bestaetigter Produktbezug fuer ' + key)
+                  product = by_pid[pid]
+                  if str(product.get('idExpansion')) != str(exps[sid]) or norm(product.get('name')) != norm(card['name']):
+                      raise ValueError('Produkt-ID / Kartenname / Expansion widersprechen sich: ' + key)
+                  guide = by_gid.get(pid)
+                  if guide is None or str(guide.get('idCategory')) != str(product.get('idCategory')):
+                      raise ValueError('Preiszeile oder Kategorie passt nicht: ' + key)
+                  is_foil = 'holo' in str(card.get('finish', '')).lower() or 'foil' in str(card.get('finish', '')).lower()
+                  suffix = '-foil' if is_foil else ''
+                  expected_reason = 'kein_trend-foil' if is_foil else 'kein_trend'
+                  if entry['reason'] != expected_reason:
+                      raise ValueError('Druckart und Diagnose passen nicht: ' + key)
+                  fields = {k: number(guide.get(k + suffix)) for k in ('trend', 'avg7', 'avg30', 'avg', 'avg1', 'low')}
+                  if fields['trend'] is not None:
+                      state = 'trend_jetzt_verfuegbar'
+                  elif fields['avg7'] is not None:
+                      state = 'nur_durchschnitt_7_tage'
+                  elif fields['avg30'] is not None:
+                      state = 'nur_durchschnitt_30_tage'
+                  elif fields['avg'] is not None:
+                      state = 'nur_allgemeiner_durchschnitt'
+                  else:
+                      state = 'kein_geeigneter_durchschnitt'
+                  rows.append({
+                      'key': key, 'setId': sid, 'cardNumber': card['no'],
+                      'name': card['name'], 'finish': card['finish'],
+                      'idProduct': int(pid), 'priceSeries': 'foil' if is_foil else 'normal',
+                      'state': state,
+                      'officialFields': {k + suffix: v for k, v in fields.items()},
+                  })
+
+              rows.sort(key=lambda x: (x['setId'], x['cardNumber'], x['key']))
+              counts = dict(Counter(r['state'] for r in rows))
+              report = {
+                  'schema': 1, 'generatedAt': NOW.isoformat(timespec='seconds'),
+                  'cardmarketPriceAsOf': gdoc['createdAt'],
+                  'cardmarketProductsAsOf': pdoc.get('createdAt'),
+                  'priceSource': PRICE_URL,
+                  'totalCatalogPrintings': len(cards),
+                  'previousSavedPriceCount': len(saved),
+                  'examinedMissingTrendPrices': len(rows),
+                  'statuses': counts,
+                  'rows': rows,
+                  'safety': 'READ ONLY for prices.json. Other averages are NOT trend prices; low is NOT portfolio market value. Product ID and print finish verified independently.',
+              }
+              OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
+              OUT_JSON.write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+              md = [
+                  '# Cardmarket – fehlende Trendpreise und andere offizielle Preisfelder',
+                  '',
+                  '**Reiner Diagnosebericht. Keine Preise geaendert.**',
+                  '',
+                  f"- Stand des offiziellen Preisexports: `{gdoc['createdAt']}`",
+                  f'- Karten ohne Trendpreis und mit bestaetigter Produkt-ID geprueft: **{len(rows)}**',
+                  f'- Trendpreis inzwischen wieder vorhanden: **{counts.get("trend_jetzt_verfuegbar", 0)}**',
+                  f'- 7-Tage-Durchschnitt (wenn Trend fehlt): **{counts.get("nur_durchschnitt_7_tage", 0)}**',
+                  f'- 30-Tage-Durchschnitt (wenn Trend und AVG7 fehlen): **{counts.get("nur_durchschnitt_30_tage", 0)}**',
+                  f'- Allgemeiner Durchschnitt (wenn AVG7/AVG30 fehlen): **{counts.get("nur_allgemeiner_durchschnitt", 0)}**',
+                  f'- Kein geeigneter Durchschnitt: **{counts.get("kein_geeigneter_durchschnitt", 0)}**',
+                  '',
+                  '| Karte | Cardmarket-ID | Druck | Trend | AVG7 | AVG30 | AVG | AVG1 | Low | Ergebnis |',
+                  '|---|---:|---|---:|---:|---:|---:|---:|---:|---|',
+              ]
+              def fmt(value):
+                  return f'{value:.2f} €' if value is not None else '–'
+              for r in rows:
+                  values = list(r['officialFields'].values())
+                  # Defined in insertion order: trend, avg7, avg30, avg, avg1, low.
+                  title = (r['name'] + ' (' + str(r['cardNumber']) + ')').replace('|', '/')
+                  md.append('| ' + title + ' | ' + str(r['idProduct']) + ' | ' + r['priceSeries'] + ' | ' +
+                            ' | '.join(fmt(v) for v in values) + ' | ' + r['state'] + ' |')
+              md += [
+                  '',
+                  '**Auslegung:** AVG7 und AVG30 sind vergangene Durchschnittspreise, keine Cardmarket-Trendpreise. '
+                  'LOW ist ein Mindestwert aus dem Preisleitfaden und kein verlaesslicher Sammlungswert.',
+                  '',
+                  '**Wichtig:** Auch ein gueltiger Durchschnitt wird durch diesen Lauf nicht automatisch '
+                  'als Trendpreis in der Sammlung gespeichert. Die Preisart muss im Frontend kenntlich gemacht werden, '
+                  'bevor eine gesonderte Fallback-Anzeige aktiviert wird.',
+                  '',
+              ]
+              OUT_MD.write_text('\n'.join(md), encoding='utf-8')
+              summary = os.environ.get('GITHUB_STEP_SUMMARY')
+              if summary:
+                  with open(summary, 'a', encoding='utf-8') as f:
+                      f.write('\n'.join(md[:15]) + '\n')
+              print('OFFIZIELLE PREISFELDER GEPRUEFT:', len(rows))
+              print('Ergebnisse:', json.dumps(counts, ensure_ascii=False))
+              print('GESPEICHERTE PREISE UNVERAENDERT:', len(saved))
+
+          if __name__ == '__main__':
+              main()
+          PY_AUDIT
+          python /tmp/audit_alternative_prices.py
+      - name: Nur Diagnosebericht in GitHub sichern
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/cardmarket-alternative-price-audit.json data/cardmarket-alternative-price-audit.md
+          git diff --cached --check
+          if git diff --cached --quiet; then
+            echo 'Keine Berichtsaenderung vorhanden.'
+            exit 0
+          fi
+          git commit -m 'Audit official alternative prices without mixing trend statistics [skip ci]'
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then exit 0; fi
+            if [ "$attempt" -eq 3 ]; then exit 1; fi
+            git fetch origin main
+            git rebase origin/main
+          done
