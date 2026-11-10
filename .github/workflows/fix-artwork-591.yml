@@ -1,0 +1,88 @@
+name: Night City Collection - Artwork-Sync fuer 591 Karten reparieren
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: night-city-artwork-update
+  cancel-in-progress: false
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Repository laden
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Artwork-Skript und Workflow auf erweiterten Katalog umstellen
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import json, re
+
+          p = Path('index.html')
+          html = p.read_text(encoding='utf-8')
+          m = re.search(r'const DB\s*=\s*(\{.*?\})\s*;\s*const CARDS', html, re.S)
+          if not m:
+              raise SystemExit('Sicherheitsabbruch: Kartenkatalog nicht gefunden')
+          db = json.loads(m.group(1))
+          keys = [c['key'] for c in db['cards']]
+          if len(keys) < 591 or len(set(keys)) != len(keys) or len(db['sets']) < 18:
+              raise SystemExit('Sicherheitsabbruch: Katalog nicht vollstaendig / uneindeutige IDs')
+          print(f'Katalog bestaetigt: {len(keys)} Karten, {len(db["sets"])} Sets')
+
+          def replace_one(s, old, new, filename):
+              n = s.count(old)
+              if n != 1:
+                  raise SystemExit(f'Sicherheitsabbruch: {filename}, Muster {old!r}, gefunden {n} statt 1')
+              return s.replace(old, new)
+
+          artwork_path = Path('scripts/fetch_artworks.py')
+          artwork = artwork_path.read_text(encoding='utf-8')
+          if 'if len(cards) < 591 or len({c[\'key\'] for c in cards}) != len(cards):' in artwork:
+              print('Artwork-Skript ist bereits aktualisiert')
+          else:
+              artwork = replace_one(
+                  artwork,
+                  "if len(cards) != 458 or len({c['key'] for c in cards}) != 458:",
+                  "if len(cards) < 591 or len({c['key'] for c in cards}) != len(cards):",
+                  str(artwork_path),
+              )
+              artwork = replace_one(
+                  artwork,
+                  "raise RuntimeError('Erwartet: 458 eindeutige Kartendrucke; bitte Katalog prüfen')",
+                  "raise RuntimeError('Erwartet: mindestens 591 eindeutige Kartendrucke; bitte Katalog prüfen')",
+                  str(artwork_path),
+              )
+              artwork = artwork.replace('Drucke aus 10 Sets', 'Drucke insgesamt')
+              artwork_path.write_text(artwork, encoding='utf-8')
+
+          workflow_path = Path('.github/workflows/fetch-artworks.yml')
+          workflow = workflow_path.read_text(encoding='utf-8')
+          workflow = workflow.replace('Alle Cyberpunk-Artworks prüfen (458 Kartendrucke)', 'Alle Cyberpunk-Artworks prüfen (gesamter Katalog)')
+          workflow = workflow.replace('Alle 458 Kartenbilder prüfen und fehlende ergänzen', 'Alle Katalog-Kartenbilder prüfen und fehlende ergänzen')
+          workflow = workflow.replace('Update 458 card artworks and coverage report', 'Update catalog card artworks and coverage report')
+          workflow_path.write_text(workflow, encoding='utf-8')
+          PY
+          python -m py_compile scripts/fetch_artworks.py
+      - name: Anpassung sicher speichern
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add scripts/fetch_artworks.py .github/workflows/fetch-artworks.yml
+          git diff --cached --check
+          if git diff --cached --quiet; then
+            echo 'Artwork-Synchronisierung bereits aktuell.'
+            exit 0
+          fi
+          git commit -m 'Support expanded 591-card catalog in artwork sync'
+          git push origin HEAD:main
