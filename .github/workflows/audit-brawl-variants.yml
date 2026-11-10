@@ -1,0 +1,212 @@
+name: Cardmarket - Brawl Druckvarianten exakt pruefen
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: night-city-price-updates
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Repository laden
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: HTML Parser installieren
+        run: python -m pip install 'beautifulsoup4>=4.12,<5'
+      - name: Brawl-Varianten ohne Preisaenderung abgleichen
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY_AUDIT'
+          from collections import Counter
+          from datetime import datetime, timezone
+          from pathlib import Path
+          from urllib.parse import urlsplit
+          from urllib.request import Request, urlopen
+          import json
+          import re
+          import unicodedata
+          from bs4 import BeautifulSoup
+
+          ROOT = Path('.')
+          SOURCE = 'https://cardometer.com/cyberpunk/sets/cyberpunk-night-city-brawl-season-1/'
+          AUDIT = ROOT / 'data/cardmarket-special-printing-candidates.json'
+          OUT = ROOT / 'data/cardmarket-brawl-variant-review.json'
+          MD = ROOT / 'data/cardmarket-brawl-variant-review.md'
+
+          def norm(t):
+              t = unicodedata.normalize('NFKD', str(t or ''))
+              t = ''.join(c for c in t if not unicodedata.combining(c))
+              return ' '.join(re.sub('[^a-z0-9]+', ' ', t.lower().replace('&', 'and')).split())
+
+          html = (ROOT/'index.html').read_text('utf-8')
+          m = re.search(r'const DB\s*=\s*(\{.*?\})\s*;\s*const CARDS', html, re.S)
+          if not m:
+              raise SystemExit('Katalog fehlt – nichts veraendert')
+          db = json.loads(m.group(1))
+          cards = [c for c in db['cards'] if c['setId'] == 'brawl-s1']
+          if len(db['cards']) != 591 or len(cards) != 37 or len({c['key'] for c in db['cards']}) != 591:
+              raise SystemExit('Katalog weicht ab – nichts veraendert')
+          cards.sort(key=lambda c: int(c['no']))
+          if [int(c['no']) for c in cards] != list(range(1,38)):
+              raise SystemExit('Brawl-Sammlernummern sind nicht lueckenlos')
+          if [norm(c['name']) for c in cards[:18]] != [norm(c['name']) for c in cards[18:36]]:
+              raise SystemExit('Die 18 Brawl-Paare weichen unerwartet ab')
+          if norm(cards[14]['name']) != norm(cards[36]['name']):
+              raise SystemExit('Judge-Promo Nr. 037 ist nicht Maman Brigitte')
+
+          audit = json.loads(AUDIT.read_text('utf-8'))
+          recorded = [c for c in audit['candidateRows'] if c['cardmarketExpansion'] == 6953]
+          rows_by_key = {c['key']: c for c in recorded}
+          if len(recorded) != 37 or set(rows_by_key) != {c['key'] for c in cards}:
+              raise SystemExit('Offizieller Cardmarket-Kandidatenbericht unvollstaendig')
+          candidates_by_pid = {}
+          for c in cards:
+              r = rows_by_key[c['key']]
+              if norm(r['cardName']) != norm(c['name']) or str(r['cardNumber']) != str(c['no']):
+                  raise SystemExit('Name / Nummer im Kandidatenbericht abweichend')
+              if len(r['candidates']) not in (2,3):
+                  raise SystemExit('Brawl-Kandidatengruppen unerwartet')
+              for p in r['candidates']:
+                  pid = int(p['idProduct'])
+                  old = candidates_by_pid.get(pid)
+                  if old is not None and old != norm(c['name']):
+                      raise SystemExit('Cardmarket-ID verweist auf verschiedene Kartennamen')
+                  candidates_by_pid[pid] = norm(c['name'])
+          if len(candidates_by_pid) != 37:
+              raise SystemExit('Nicht 37 unterschiedliche Cardmarket-IDs gefunden')
+
+          cardometer = []
+          fetch_error = None
+          order_consistent = False
+          try:
+              req = Request(SOURCE, headers={
+                  'User-Agent': 'Mozilla/5.0 (NightCityCollection independent print verification)',
+                  'Accept': 'text/html',
+              })
+              with urlopen(req, timeout=60) as response:
+                  blob = response.read(3_000_001)
+              if len(blob) > 3_000_000:
+                  raise ValueError('Checkliste zu gross')
+              soup = BeautifulSoup(blob, 'html.parser')
+              headings = [x for x in soup.find_all(['h2','h3'])
+                          if 'all cards in the set' in x.get_text(' ',strip=True).lower()]
+              if not headings:
+                  raise ValueError('Cardometer-Kartenabschnitt nicht erkennbar')
+              from bs4.element import Tag
+              seen = set()
+              for node in headings[0].next_elements:
+                  if isinstance(node,Tag) and node.name == 'h2' and node is not headings[0]:
+                      break
+                  if not isinstance(node,Tag) or node.name != 'a':
+                      continue
+                  path = urlsplit(node.get('href') or '').path
+                  if '/cyberpunk/cards/' not in path:
+                      continue
+                  match = re.search(r'-(\d{5,})/?$', path)
+                  if not match:
+                      continue
+                  pid = int(match.group(1))
+                  if pid not in candidates_by_pid or pid in seen:
+                      continue
+                  cardometer.append({'idProduct':pid,'label':node.get_text(' ',strip=True)})
+                  seen.add(pid)
+              order_consistent = (len(cardometer) == 37 and
+                                  [c['idProduct'] for c in cardometer] == list(dict.fromkeys(x['idProduct'] for x in cardometer)) and
+                                  all(candidates_by_pid[c['idProduct']] == norm(cards[i]['name']) and
+                                      norm(cards[i]['name']) in norm(c['label'])
+                                      for i,c in enumerate(cardometer)))
+              if not order_consistent:
+                  fetch_error = ('Cardometer liefert keine eindeutig zum lokalen Katalog '
+                                 'passende 37er-Reihenfolge. Alle Preis-IDs bleiben unbestaetigt.')
+          except Exception as e:
+              fetch_error = type(e).__name__ + ': ' + str(e)[:300]
+
+          rows = []
+          for i,c in enumerate(cards):
+              src = rows_by_key[c['key']]
+              # Die vermutete ID kommt NUR aus Listenposition, NICHT aus
+              # einer nachgewiesenen Sammlernummer im Produktdatensatz.
+              proposed = cardometer[i]['idProduct'] if order_consistent else None
+              if proposed is not None and proposed not in {int(p['idProduct']) for p in src['candidates']}:
+                  raise SystemExit('Quelle widerspricht dem offiziellen Cardmarket-Namen')
+              variant = 'Participation' if i < 18 else 'Brawl Champ' if i < 36 else 'Judge'
+              rows.append({
+                  'key': c['key'], 'number': c['no'], 'name': c['name'],
+                  'variantFromOfficialRules': variant,
+                  'possibleCardmarketProductIds': src['candidates'],
+                  'suggestedProductIdBySourceOrder_UNVERIFIED': proposed,
+                  'verifiedCollectorNumberToProductId': False,
+              })
+
+          result = {
+              'generatedAt': datetime.now(timezone.utc).isoformat(timespec='seconds'),
+              'officialCardmarketSnapshot': audit.get('priceGuideCreatedAt'),
+              'total': len(rows), 'cardometerListOrderConsistent': order_consistent,
+              'cardometerErrorOrWarning': fetch_error,
+              'safelyAssignedProductIds': 0, 'newPricesWritten': 0,
+              'sources': {
+                  'officialCardmarketAudit': 'data/cardmarket-special-printing-candidates.json',
+                  'independentCardometer': SOURCE,
+                  'officialOrganizedPlay': 'https://tcgcyberpunk.com/en/news/ncb-preview',
+              },
+              'warning': ('Eindeutige Kartennummern in Cardometer-Produktdetails fehlen. '
+                          'Die Listenreihenfolge ist keine ausreichende Bestaetigung. '
+                          'KEIN Preisimport oder Override wurde vorgenommen.'),
+              'rows': rows,
+          }
+          OUT.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          lines = [
+              '# Night City Brawl S1 – Cardmarket-Variantenpruefung',
+              '',
+              'Die 37 Drucke sind 001–018 **Participation**, 019–036 **Brawl Champ** und 037 **Judge**.',
+              '',
+              '**WICHTIG:** Die Cardometer-Seite zeigt im Produktdetail keine zugeordnete Sammlernummer.',
+              'Eine vermutete ID aus der Listenreihenfolge gilt daher **nicht als bestaetigt**.',
+              'Es wurden **keine Preise / Produkt-IDs automatisch zugeordnet**.',
+              '',
+              'Cardometer-Reihenfolge konsistent: **' + ('Ja' if order_consistent else 'Nein') + '**',
+              'Stand Preisdatei: ' + str(audit.get('priceGuideCreatedAt','unbekannt')),
+              '',
+              '| Nr. | Variante | Karte | Moegliche Cardmarket-IDs | Vermutete ID (ungeprueft!) |',
+              '|---:|---|---|---|---:|',
+          ]
+          for row in rows:
+              possibles = ', '.join(str(p['idProduct']) for p in row['possibleCardmarketProductIds'])
+              tentative = str(row['suggestedProductIdBySourceOrder_UNVERIFIED'] or '–')
+              lines.append(f"| {row['number']} | {row['variantFromOfficialRules']} | "
+                           f"{row['name'].replace('|','/')} | {possibles} | {tentative} |")
+          if fetch_error:
+              lines.extend(['','Checklisten-Hinweis: '+fetch_error])
+          MD.write_text('\n'.join(lines)+'\n',encoding='utf-8')
+          print('Brawl-Varianten-Bericht gespeichert:', OUT, MD)
+          print('37 Karten,', len(candidates_by_pid), 'Cardmarket-Produkte,',
+                'Quellenreihenfolge passt:', order_consistent)
+          print('Sicher zugewiesene Produkt-IDs: 0 (absichtlicher Schutz).')
+          PY_AUDIT
+      - name: Nur Diagnoseberichte sichern
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/cardmarket-brawl-variant-review.json data/cardmarket-brawl-variant-review.md
+          git diff --cached --check
+          if git diff --cached --quiet; then
+            echo 'Keine neuen Diagnosedaten.'
+            exit 0
+          fi
+          git commit -m 'Audit Brawl promo variant IDs without assigning unverified prices [skip ci]'
+          git push origin HEAD:main
