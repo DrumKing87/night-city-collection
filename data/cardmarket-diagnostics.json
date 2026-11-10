@@ -1,5 +1,5 @@
 {
-  "alreadySavedPriceRecords": 388,
+  "alreadySavedPriceRecords": 453,
   "bySet": {
     "boxtopper-beta": {
       "mit_preis": 6
@@ -46,6 +46,12 @@
     "prerelease-retail": {
       "mit_preis": 11
     },
+    "set1-promos": {
+      "kein_Produkt_match": 2,
+      "kein_trend-foil": 1,
+      "mehrdeutiger_Sonderdruck": 2,
+      "mit_preis": 1
+    },
     "showdown-s1": {
       "mehrdeutiger_Sonderdruck": 5
     },
@@ -58,9 +64,9 @@
       "mit_preis": 165
     }
   },
-  "generatedAt": "2026-11-10T11:27:20+00:00",
-  "newOrUpdatedPrices": 112,
-  "savedPriceRecordsAfterUpdate": 453,
+  "generatedAt": "2026-11-10T11:39:50+00:00",
+  "newOrUpdatedPrices": 1,
+  "savedPriceRecordsAfterUpdate": 454,
   "sourceAsOf": "2026-11-09",
   "total": 591,
   "unresolved": [
@@ -1214,7 +1220,7 @@
       "idProduct": null,
       "key": "set1-promos:004a",
       "name": "Lucyna Kushinada: Fresh Beginnings",
-      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+      "reason": "kein_Produkt_match"
     },
     {
       "candidateProductIds": [],
@@ -1222,39 +1228,37 @@
       "idProduct": null,
       "key": "set1-promos:004b",
       "name": "Lucyna Kushinada: Fresh Beginnings",
-      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+      "reason": "kein_Produkt_match"
     },
     {
-      "candidateProductIds": [],
+      "candidateProductIds": [
+        904772
+      ],
       "finish": "Holo",
       "idProduct": null,
       "key": "set1-promos:005",
       "name": "Rebecca: Having a Moment",
-      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+      "reason": "mehrdeutiger_Sonderdruck"
     },
     {
-      "candidateProductIds": [],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "set1-promos:006",
-      "name": "Misty Olszewski: Mender of Broken Spirits",
-      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
-    },
-    {
-      "candidateProductIds": [],
+      "candidateProductIds": [
+        904772
+      ],
       "finish": "Holo",
       "idProduct": null,
       "key": "set1-promos:007",
       "name": "Rebecca: Having a Moment",
-      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+      "reason": "mehrdeutiger_Sonderdruck"
     },
     {
-      "candidateProductIds": [],
+      "candidateProductIds": [
+        905261
+      ],
       "finish": "Holo",
-      "idProduct": null,
+      "idProduct": 905261,
       "key": "set1-promos:008",
       "name": "Adam Smasher: Ender of Legends",
-      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+      "reason": "kein_trend-foil"
     },
     {
       "candidateProductIds": [
@@ -1447,6 +1451,6 @@
       "reason": "kein_trend"
     }
   ],
-  "withConfirmedProductMatch": 474,
-  "withValidCardmarketPrice": 447
+  "withConfirmedProductMatch": 476,
+  "withValidCardmarketPrice": 448
 }

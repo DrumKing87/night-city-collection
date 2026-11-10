@@ -35,7 +35,7 @@ CARD_EXPANSION = {
     'boxtopper-beta': 6717, 'boxtopper-retail': 6764,
     'prerelease-beta': 6718, 'prerelease-retail': 6765,
     'heist-demo': 6720, 'embracing-demo': 6721,
-    'brawl-s1': 6953, 'showdown-s1': 6954, 'judge-promos': 6952,
+    'brawl-s1': 6953, 'showdown-s1': 6954, 'judge-promos': 6952, 'set1-promos': 6719,
 }
 DATA = ROOT / 'data'
 NOW = datetime.now(timezone.utc)

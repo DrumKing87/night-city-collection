@@ -1,0 +1,962 @@
+{
+  "schema": 1,
+  "generatedAt": "2026-11-10T11:39:50+00:00",
+  "productsCreatedAt": "2026-11-08T13:01:13+0100",
+  "priceGuideCreatedAt": "2026-11-09T02:50:49+0100",
+  "previousSavedPrices": 453,
+  "safeSet1Keys": [
+    "set1-promos:006",
+    "set1-promos:008"
+  ],
+  "candidateRows": [
+    {
+      "key": "brawl-s1:001",
+      "cardNumber": "001",
+      "cardName": "Kerry Eurodyne: The Last Rockerboy",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922559,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922582,
+          "trend": null,
+          "trendFoil": 55.0
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:002",
+      "cardNumber": "002",
+      "cardName": "Minotaur",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922561,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922583,
+          "trend": null,
+          "trendFoil": 60.0
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:003",
+      "cardNumber": "003",
+      "cardName": "Satori: Sword of Saburo",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922562,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922584,
+          "trend": null,
+          "trendFoil": null
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:004",
+      "cardNumber": "004",
+      "cardName": "Jackie Welles: Ride or Die Choom",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922563,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922585,
+          "trend": null,
+          "trendFoil": null
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:005",
+      "cardNumber": "005",
+      "cardName": "Secondhand Bombus",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922565,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922586,
+          "trend": null,
+          "trendFoil": 60.0
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:006",
+      "cardNumber": "006",
+      "cardName": "Mandibular Upgrade",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922566,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922587,
+          "trend": null,
+          "trendFoil": 60.0
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:007",
+      "cardNumber": "007",
+      "cardName": "Bootleg Black Sapphire Show",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922567,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922589,
+          "trend": null,
+          "trendFoil": null
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:008",
+      "cardNumber": "008",
+      "cardName": "Cyberpsychosis",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922568,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922590,
+          "trend": null,
+          "trendFoil": null
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:009",
+      "cardNumber": "009",
+      "cardName": "Corpo Security",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922569,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922591,
+          "trend": null,
+          "trendFoil": 55.0
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:010",
+      "cardNumber": "010",
+      "cardName": "MaxTac Squadron",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922570,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922593,
+          "trend": null,
+          "trendFoil": null
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:011",
+      "cardNumber": "011",
+      "cardName": "Wraith Marauders",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922571,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922594,
+          "trend": null,
+          "trendFoil": 55.0
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:012",
+      "cardNumber": "012",
+      "cardName": "(Don't Fear) The Reaper",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922573,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922595,
+          "trend": null,
+          "trendFoil": 60.0
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:013",
+      "cardNumber": "013",
+      "cardName": "We Gotta Live Together",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922574,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922596,
+          "trend": null,
+          "trendFoil": 55.0
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:014",
+      "cardNumber": "014",
+      "cardName": "Delamain Cab",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922575,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922598,
+          "trend": null,
+          "trendFoil": 55.0
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:015",
+      "cardNumber": "015",
+      "cardName": "Maman Brigitte: Spirit of Death",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922577,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922599,
+          "trend": null,
+          "trendFoil": null
+        },
+        {
+          "idProduct": 922603,
+          "trend": null,
+          "trendFoil": null
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:016",
+      "cardNumber": "016",
+      "cardName": "Dying Night: V's Pistol",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922578,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922600,
+          "trend": null,
+          "trendFoil": 55.0
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:017",
+      "cardNumber": "017",
+      "cardName": "NetWatch Netdriver",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922579,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922601,
+          "trend": null,
+          "trendFoil": 55.0
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:018",
+      "cardNumber": "018",
+      "cardName": "Floor It",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922581,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922602,
+          "trend": null,
+          "trendFoil": 55.0
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:019",
+      "cardNumber": "019",
+      "cardName": "Kerry Eurodyne: The Last Rockerboy",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922559,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922582,
+          "trend": null,
+          "trendFoil": 55.0
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:020",
+      "cardNumber": "020",
+      "cardName": "Minotaur",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922561,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922583,
+          "trend": null,
+          "trendFoil": 60.0
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:021",
+      "cardNumber": "021",
+      "cardName": "Satori: Sword of Saburo",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922562,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922584,
+          "trend": null,
+          "trendFoil": null
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:022",
+      "cardNumber": "022",
+      "cardName": "Jackie Welles: Ride or Die Choom",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922563,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922585,
+          "trend": null,
+          "trendFoil": null
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:023",
+      "cardNumber": "023",
+      "cardName": "Secondhand Bombus",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922565,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922586,
+          "trend": null,
+          "trendFoil": 60.0
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:024",
+      "cardNumber": "024",
+      "cardName": "Mandibular Upgrade",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922566,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922587,
+          "trend": null,
+          "trendFoil": 60.0
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:025",
+      "cardNumber": "025",
+      "cardName": "Bootleg Black Sapphire Show",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922567,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922589,
+          "trend": null,
+          "trendFoil": null
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:026",
+      "cardNumber": "026",
+      "cardName": "Cyberpsychosis",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922568,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922590,
+          "trend": null,
+          "trendFoil": null
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:027",
+      "cardNumber": "027",
+      "cardName": "Corpo Security",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922569,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922591,
+          "trend": null,
+          "trendFoil": 55.0
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:028",
+      "cardNumber": "028",
+      "cardName": "MaxTac Squadron",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922570,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922593,
+          "trend": null,
+          "trendFoil": null
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:029",
+      "cardNumber": "029",
+      "cardName": "Wraith Marauders",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922571,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922594,
+          "trend": null,
+          "trendFoil": 55.0
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:030",
+      "cardNumber": "030",
+      "cardName": "(Don't Fear) The Reaper",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922573,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922595,
+          "trend": null,
+          "trendFoil": 60.0
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:031",
+      "cardNumber": "031",
+      "cardName": "We Gotta Live Together",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922574,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922596,
+          "trend": null,
+          "trendFoil": 55.0
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:032",
+      "cardNumber": "032",
+      "cardName": "Delamain Cab",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922575,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922598,
+          "trend": null,
+          "trendFoil": 55.0
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:033",
+      "cardNumber": "033",
+      "cardName": "Maman Brigitte: Spirit of Death",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922577,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922599,
+          "trend": null,
+          "trendFoil": null
+        },
+        {
+          "idProduct": 922603,
+          "trend": null,
+          "trendFoil": null
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:034",
+      "cardNumber": "034",
+      "cardName": "Dying Night: V's Pistol",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922578,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922600,
+          "trend": null,
+          "trendFoil": 55.0
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:035",
+      "cardNumber": "035",
+      "cardName": "NetWatch Netdriver",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922579,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922601,
+          "trend": null,
+          "trendFoil": 55.0
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:036",
+      "cardNumber": "036",
+      "cardName": "Floor It",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922581,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922602,
+          "trend": null,
+          "trendFoil": 55.0
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "brawl-s1:037",
+      "cardNumber": "037",
+      "cardName": "Maman Brigitte: Spirit of Death",
+      "finish": "Holo",
+      "cardmarketExpansion": 6953,
+      "candidates": [
+        {
+          "idProduct": 922577,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922599,
+          "trend": null,
+          "trendFoil": null
+        },
+        {
+          "idProduct": 922603,
+          "trend": null,
+          "trendFoil": null
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "showdown-s1:001",
+      "cardNumber": "001",
+      "cardName": "Sandevistan",
+      "finish": "Normal",
+      "cardmarketExpansion": 6954,
+      "candidates": [
+        {
+          "idProduct": 922604,
+          "trend": null,
+          "trendFoil": null
+        },
+        {
+          "idProduct": 922606,
+          "trend": null,
+          "trendFoil": null
+        },
+        {
+          "idProduct": 922609,
+          "trend": null,
+          "trendFoil": null
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "showdown-s1:002",
+      "cardNumber": "002",
+      "cardName": "Adam Smasher: Metal Over Meat",
+      "finish": "Holo",
+      "cardmarketExpansion": 6954,
+      "candidates": [
+        {
+          "idProduct": 922605,
+          "trend": null,
+          "trendFoil": null
+        },
+        {
+          "idProduct": 922608,
+          "trend": null,
+          "trendFoil": null
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "showdown-s1:003",
+      "cardNumber": "003",
+      "cardName": "Sandevistan",
+      "finish": "Holo",
+      "cardmarketExpansion": 6954,
+      "candidates": [
+        {
+          "idProduct": 922604,
+          "trend": null,
+          "trendFoil": null
+        },
+        {
+          "idProduct": 922606,
+          "trend": null,
+          "trendFoil": null
+        },
+        {
+          "idProduct": 922609,
+          "trend": null,
+          "trendFoil": null
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "showdown-s1:004",
+      "cardNumber": "004",
+      "cardName": "Adam Smasher: Metal Over Meat",
+      "finish": "Holo",
+      "cardmarketExpansion": 6954,
+      "candidates": [
+        {
+          "idProduct": 922605,
+          "trend": null,
+          "trendFoil": null
+        },
+        {
+          "idProduct": 922608,
+          "trend": null,
+          "trendFoil": null
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "showdown-s1:005",
+      "cardNumber": "005",
+      "cardName": "Sandevistan",
+      "finish": "Holo",
+      "cardmarketExpansion": 6954,
+      "candidates": [
+        {
+          "idProduct": 922604,
+          "trend": null,
+          "trendFoil": null
+        },
+        {
+          "idProduct": 922606,
+          "trend": null,
+          "trendFoil": null
+        },
+        {
+          "idProduct": 922609,
+          "trend": null,
+          "trendFoil": null
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "set1-promos:004a",
+      "cardNumber": "004a",
+      "cardName": "Lucyna Kushinada: Fresh Beginnings",
+      "finish": "Normal",
+      "cardmarketExpansion": 6719,
+      "candidates": [],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "set1-promos:004b",
+      "cardNumber": "004b",
+      "cardName": "Lucyna Kushinada: Fresh Beginnings",
+      "finish": "Holo",
+      "cardmarketExpansion": 6719,
+      "candidates": [],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "set1-promos:005",
+      "cardNumber": "005",
+      "cardName": "Rebecca: Having a Moment",
+      "finish": "Holo",
+      "cardmarketExpansion": 6719,
+      "candidates": [
+        {
+          "idProduct": 904772,
+          "trend": null,
+          "trendFoil": 65.28
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "set1-promos:006",
+      "cardNumber": "006",
+      "cardName": "Misty Olszewski: Mender of Broken Spirits",
+      "finish": "Holo",
+      "cardmarketExpansion": 6719,
+      "candidates": [
+        {
+          "idProduct": 920528,
+          "trend": null,
+          "trendFoil": 33.34
+        }
+      ],
+      "requiresPrintVerification": false
+    },
+    {
+      "key": "set1-promos:007",
+      "cardNumber": "007",
+      "cardName": "Rebecca: Having a Moment",
+      "finish": "Holo",
+      "cardmarketExpansion": 6719,
+      "candidates": [
+        {
+          "idProduct": 904772,
+          "trend": null,
+          "trendFoil": 65.28
+        }
+      ],
+      "requiresPrintVerification": true
+    },
+    {
+      "key": "set1-promos:008",
+      "cardNumber": "008",
+      "cardName": "Adam Smasher: Ender of Legends",
+      "finish": "Holo",
+      "cardmarketExpansion": 6719,
+      "candidates": [
+        {
+          "idProduct": 905261,
+          "trend": null,
+          "trendFoil": null
+        }
+      ],
+      "requiresPrintVerification": false
+    }
+  ],
+  "warning": "Brawl/Showdown und mehrdeutige Promodrucke sind nur Diagnose; KEINE automatische Produktzuordnung."
+}
