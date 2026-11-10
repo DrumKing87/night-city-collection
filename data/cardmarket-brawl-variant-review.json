@@ -1,0 +1,772 @@
+{
+  "generatedAt": "2026-11-10T15:14:42+00:00",
+  "officialCardmarketSnapshot": "2026-11-09T02:50:49+0100",
+  "total": 37,
+  "cardometerListOrderConsistent": true,
+  "cardometerErrorOrWarning": null,
+  "safelyAssignedProductIds": 0,
+  "newPricesWritten": 0,
+  "sources": {
+    "officialCardmarketAudit": "data/cardmarket-special-printing-candidates.json",
+    "independentCardometer": "https://cardometer.com/cyberpunk/sets/cyberpunk-night-city-brawl-season-1/",
+    "officialOrganizedPlay": "https://tcgcyberpunk.com/en/news/ncb-preview"
+  },
+  "warning": "Eindeutige Kartennummern in Cardometer-Produktdetails fehlen. Die Listenreihenfolge ist keine ausreichende Bestaetigung. KEIN Preisimport oder Override wurde vorgenommen.",
+  "rows": [
+    {
+      "key": "brawl-s1:001",
+      "number": "001",
+      "name": "Kerry Eurodyne: The Last Rockerboy",
+      "variantFromOfficialRules": "Participation",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922559,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922582,
+          "trend": null,
+          "trendFoil": 55.0
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922559,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:002",
+      "number": "002",
+      "name": "Minotaur",
+      "variantFromOfficialRules": "Participation",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922561,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922583,
+          "trend": null,
+          "trendFoil": 60.0
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922561,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:003",
+      "number": "003",
+      "name": "Satori: Sword of Saburo",
+      "variantFromOfficialRules": "Participation",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922562,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922584,
+          "trend": null,
+          "trendFoil": null
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922562,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:004",
+      "number": "004",
+      "name": "Jackie Welles: Ride or Die Choom",
+      "variantFromOfficialRules": "Participation",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922563,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922585,
+          "trend": null,
+          "trendFoil": null
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922563,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:005",
+      "number": "005",
+      "name": "Secondhand Bombus",
+      "variantFromOfficialRules": "Participation",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922565,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922586,
+          "trend": null,
+          "trendFoil": 60.0
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922565,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:006",
+      "number": "006",
+      "name": "Mandibular Upgrade",
+      "variantFromOfficialRules": "Participation",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922566,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922587,
+          "trend": null,
+          "trendFoil": 60.0
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922566,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:007",
+      "number": "007",
+      "name": "Bootleg Black Sapphire Show",
+      "variantFromOfficialRules": "Participation",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922567,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922589,
+          "trend": null,
+          "trendFoil": null
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922567,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:008",
+      "number": "008",
+      "name": "Cyberpsychosis",
+      "variantFromOfficialRules": "Participation",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922568,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922590,
+          "trend": null,
+          "trendFoil": null
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922568,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:009",
+      "number": "009",
+      "name": "Corpo Security",
+      "variantFromOfficialRules": "Participation",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922569,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922591,
+          "trend": null,
+          "trendFoil": 55.0
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922569,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:010",
+      "number": "010",
+      "name": "MaxTac Squadron",
+      "variantFromOfficialRules": "Participation",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922570,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922593,
+          "trend": null,
+          "trendFoil": null
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922570,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:011",
+      "number": "011",
+      "name": "Wraith Marauders",
+      "variantFromOfficialRules": "Participation",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922571,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922594,
+          "trend": null,
+          "trendFoil": 55.0
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922571,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:012",
+      "number": "012",
+      "name": "(Don't Fear) The Reaper",
+      "variantFromOfficialRules": "Participation",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922573,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922595,
+          "trend": null,
+          "trendFoil": 60.0
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922573,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:013",
+      "number": "013",
+      "name": "We Gotta Live Together",
+      "variantFromOfficialRules": "Participation",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922574,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922596,
+          "trend": null,
+          "trendFoil": 55.0
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922574,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:014",
+      "number": "014",
+      "name": "Delamain Cab",
+      "variantFromOfficialRules": "Participation",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922575,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922598,
+          "trend": null,
+          "trendFoil": 55.0
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922575,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:015",
+      "number": "015",
+      "name": "Maman Brigitte: Spirit of Death",
+      "variantFromOfficialRules": "Participation",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922577,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922599,
+          "trend": null,
+          "trendFoil": null
+        },
+        {
+          "idProduct": 922603,
+          "trend": null,
+          "trendFoil": null
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922577,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:016",
+      "number": "016",
+      "name": "Dying Night: V's Pistol",
+      "variantFromOfficialRules": "Participation",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922578,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922600,
+          "trend": null,
+          "trendFoil": 55.0
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922578,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:017",
+      "number": "017",
+      "name": "NetWatch Netdriver",
+      "variantFromOfficialRules": "Participation",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922579,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922601,
+          "trend": null,
+          "trendFoil": 55.0
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922579,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:018",
+      "number": "018",
+      "name": "Floor It",
+      "variantFromOfficialRules": "Participation",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922581,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922602,
+          "trend": null,
+          "trendFoil": 55.0
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922581,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:019",
+      "number": "019",
+      "name": "Kerry Eurodyne: The Last Rockerboy",
+      "variantFromOfficialRules": "Brawl Champ",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922559,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922582,
+          "trend": null,
+          "trendFoil": 55.0
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922582,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:020",
+      "number": "020",
+      "name": "Minotaur",
+      "variantFromOfficialRules": "Brawl Champ",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922561,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922583,
+          "trend": null,
+          "trendFoil": 60.0
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922583,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:021",
+      "number": "021",
+      "name": "Satori: Sword of Saburo",
+      "variantFromOfficialRules": "Brawl Champ",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922562,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922584,
+          "trend": null,
+          "trendFoil": null
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922584,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:022",
+      "number": "022",
+      "name": "Jackie Welles: Ride or Die Choom",
+      "variantFromOfficialRules": "Brawl Champ",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922563,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922585,
+          "trend": null,
+          "trendFoil": null
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922585,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:023",
+      "number": "023",
+      "name": "Secondhand Bombus",
+      "variantFromOfficialRules": "Brawl Champ",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922565,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922586,
+          "trend": null,
+          "trendFoil": 60.0
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922586,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:024",
+      "number": "024",
+      "name": "Mandibular Upgrade",
+      "variantFromOfficialRules": "Brawl Champ",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922566,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922587,
+          "trend": null,
+          "trendFoil": 60.0
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922587,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:025",
+      "number": "025",
+      "name": "Bootleg Black Sapphire Show",
+      "variantFromOfficialRules": "Brawl Champ",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922567,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922589,
+          "trend": null,
+          "trendFoil": null
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922589,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:026",
+      "number": "026",
+      "name": "Cyberpsychosis",
+      "variantFromOfficialRules": "Brawl Champ",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922568,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922590,
+          "trend": null,
+          "trendFoil": null
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922590,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:027",
+      "number": "027",
+      "name": "Corpo Security",
+      "variantFromOfficialRules": "Brawl Champ",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922569,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922591,
+          "trend": null,
+          "trendFoil": 55.0
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922591,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:028",
+      "number": "028",
+      "name": "MaxTac Squadron",
+      "variantFromOfficialRules": "Brawl Champ",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922570,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922593,
+          "trend": null,
+          "trendFoil": null
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922593,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:029",
+      "number": "029",
+      "name": "Wraith Marauders",
+      "variantFromOfficialRules": "Brawl Champ",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922571,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922594,
+          "trend": null,
+          "trendFoil": 55.0
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922594,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:030",
+      "number": "030",
+      "name": "(Don't Fear) The Reaper",
+      "variantFromOfficialRules": "Brawl Champ",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922573,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922595,
+          "trend": null,
+          "trendFoil": 60.0
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922595,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:031",
+      "number": "031",
+      "name": "We Gotta Live Together",
+      "variantFromOfficialRules": "Brawl Champ",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922574,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922596,
+          "trend": null,
+          "trendFoil": 55.0
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922596,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:032",
+      "number": "032",
+      "name": "Delamain Cab",
+      "variantFromOfficialRules": "Brawl Champ",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922575,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922598,
+          "trend": null,
+          "trendFoil": 55.0
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922598,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:033",
+      "number": "033",
+      "name": "Maman Brigitte: Spirit of Death",
+      "variantFromOfficialRules": "Brawl Champ",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922577,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922599,
+          "trend": null,
+          "trendFoil": null
+        },
+        {
+          "idProduct": 922603,
+          "trend": null,
+          "trendFoil": null
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922599,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:034",
+      "number": "034",
+      "name": "Dying Night: V's Pistol",
+      "variantFromOfficialRules": "Brawl Champ",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922578,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922600,
+          "trend": null,
+          "trendFoil": 55.0
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922600,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:035",
+      "number": "035",
+      "name": "NetWatch Netdriver",
+      "variantFromOfficialRules": "Brawl Champ",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922579,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922601,
+          "trend": null,
+          "trendFoil": 55.0
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922601,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:036",
+      "number": "036",
+      "name": "Floor It",
+      "variantFromOfficialRules": "Brawl Champ",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922581,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922602,
+          "trend": null,
+          "trendFoil": 55.0
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922602,
+      "verifiedCollectorNumberToProductId": false
+    },
+    {
+      "key": "brawl-s1:037",
+      "number": "037",
+      "name": "Maman Brigitte: Spirit of Death",
+      "variantFromOfficialRules": "Judge",
+      "possibleCardmarketProductIds": [
+        {
+          "idProduct": 922577,
+          "trend": null,
+          "trendFoil": 8.0
+        },
+        {
+          "idProduct": 922599,
+          "trend": null,
+          "trendFoil": null
+        },
+        {
+          "idProduct": 922603,
+          "trend": null,
+          "trendFoil": null
+        }
+      ],
+      "suggestedProductIdBySourceOrder_UNVERIFIED": 922603,
+      "verifiedCollectorNumberToProductId": false
+    }
+  ]
+}
