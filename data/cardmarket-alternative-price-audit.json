@@ -1,0 +1,520 @@
+{
+  "schema": 1,
+  "generatedAt": "2026-11-10T19:57:30+00:00",
+  "cardmarketPriceAsOf": "2026-11-09T02:50:49+0100",
+  "cardmarketProductsAsOf": "2026-11-10T14:33:26+0100",
+  "priceSource": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_23.json",
+  "totalCatalogPrintings": 591,
+  "previousSavedPriceCount": 454,
+  "examinedMissingTrendPrices": 28,
+  "statuses": {
+    "kein_geeigneter_durchschnitt": 28
+  },
+  "rows": [
+    {
+      "key": "embracing-demo:001",
+      "setId": "embracing-demo",
+      "cardNumber": "001",
+      "name": "Yorinobu Arasaka: Embracing Destruction",
+      "finish": "Holo",
+      "idProduct": 905000,
+      "priceSeries": "foil",
+      "state": "kein_geeigneter_durchschnitt",
+      "officialFields": {
+        "trend-foil": null,
+        "avg7-foil": null,
+        "avg30-foil": null,
+        "avg-foil": null,
+        "avg1-foil": null,
+        "low-foil": null
+      }
+    },
+    {
+      "key": "embracing-demo:003",
+      "setId": "embracing-demo",
+      "cardNumber": "003",
+      "name": "Swordwise Huscle",
+      "finish": "Normal",
+      "idProduct": 905002,
+      "priceSeries": "normal",
+      "state": "kein_geeigneter_durchschnitt",
+      "officialFields": {
+        "trend": null,
+        "avg7": null,
+        "avg30": null,
+        "avg": null,
+        "avg1": null,
+        "low": 0.2
+      }
+    },
+    {
+      "key": "embracing-demo:006",
+      "setId": "embracing-demo",
+      "cardNumber": "006",
+      "name": "Industrial Assembly",
+      "finish": "Normal",
+      "idProduct": 905005,
+      "priceSeries": "normal",
+      "state": "kein_geeigneter_durchschnitt",
+      "officialFields": {
+        "trend": null,
+        "avg7": null,
+        "avg30": null,
+        "avg": null,
+        "avg1": null,
+        "low": 0.1
+      }
+    },
+    {
+      "key": "embracing-demo:007",
+      "setId": "embracing-demo",
+      "cardNumber": "007",
+      "name": "Over the Edge",
+      "finish": "Normal",
+      "idProduct": 905006,
+      "priceSeries": "normal",
+      "state": "kein_geeigneter_durchschnitt",
+      "officialFields": {
+        "trend": null,
+        "avg7": null,
+        "avg30": null,
+        "avg": null,
+        "avg1": null,
+        "low": 0.1
+      }
+    },
+    {
+      "key": "embracing-demo:008",
+      "setId": "embracing-demo",
+      "cardNumber": "008",
+      "name": "Goro Takemura: Hands Unclean",
+      "finish": "Holo",
+      "idProduct": 905007,
+      "priceSeries": "foil",
+      "state": "kein_geeigneter_durchschnitt",
+      "officialFields": {
+        "trend-foil": null,
+        "avg7-foil": null,
+        "avg30-foil": null,
+        "avg-foil": null,
+        "avg1-foil": null,
+        "low-foil": null
+      }
+    },
+    {
+      "key": "embracing-demo:009",
+      "setId": "embracing-demo",
+      "cardNumber": "009",
+      "name": "Saburo Arasaka: Stubborn Patriarch",
+      "finish": "Holo",
+      "idProduct": 905008,
+      "priceSeries": "foil",
+      "state": "kein_geeigneter_durchschnitt",
+      "officialFields": {
+        "trend-foil": null,
+        "avg7-foil": null,
+        "avg30-foil": null,
+        "avg-foil": null,
+        "avg1-foil": null,
+        "low-foil": null
+      }
+    },
+    {
+      "key": "embracing-demo:010",
+      "setId": "embracing-demo",
+      "cardNumber": "010",
+      "name": "Corpo Security",
+      "finish": "Normal",
+      "idProduct": 905009,
+      "priceSeries": "normal",
+      "state": "kein_geeigneter_durchschnitt",
+      "officialFields": {
+        "trend": null,
+        "avg7": null,
+        "avg30": null,
+        "avg": null,
+        "avg1": null,
+        "low": 0.1
+      }
+    },
+    {
+      "key": "embracing-demo:014",
+      "setId": "embracing-demo",
+      "cardNumber": "014",
+      "name": "Corporate Surveillance",
+      "finish": "Normal",
+      "idProduct": 905013,
+      "priceSeries": "normal",
+      "state": "kein_geeigneter_durchschnitt",
+      "officialFields": {
+        "trend": null,
+        "avg7": null,
+        "avg30": null,
+        "avg": null,
+        "avg1": null,
+        "low": 0.05
+      }
+    },
+    {
+      "key": "embracing-retail:001",
+      "setId": "embracing-retail",
+      "cardNumber": "001",
+      "name": "Yorinobu Arasaka: Embracing Destruction",
+      "finish": "Holo",
+      "idProduct": 920425,
+      "priceSeries": "foil",
+      "state": "kein_geeigneter_durchschnitt",
+      "officialFields": {
+        "trend-foil": null,
+        "avg7-foil": null,
+        "avg30-foil": null,
+        "avg-foil": null,
+        "avg1-foil": null,
+        "low-foil": 7.85
+      }
+    },
+    {
+      "key": "embracing-retail:012",
+      "setId": "embracing-retail",
+      "cardNumber": "012",
+      "name": "Goro Takemura: Hands Unclean",
+      "finish": "Holo",
+      "idProduct": 920439,
+      "priceSeries": "foil",
+      "state": "kein_geeigneter_durchschnitt",
+      "officialFields": {
+        "trend-foil": null,
+        "avg7-foil": null,
+        "avg30-foil": null,
+        "avg-foil": null,
+        "avg1-foil": null,
+        "low-foil": 6.5
+      }
+    },
+    {
+      "key": "embracing-retail:013",
+      "setId": "embracing-retail",
+      "cardNumber": "013",
+      "name": "Saburo Arasaka: Stubborn Patriarch",
+      "finish": "Holo",
+      "idProduct": 920441,
+      "priceSeries": "foil",
+      "state": "kein_geeigneter_durchschnitt",
+      "officialFields": {
+        "trend-foil": null,
+        "avg7-foil": null,
+        "avg30-foil": null,
+        "avg-foil": null,
+        "avg1-foil": null,
+        "low-foil": 5.5
+      }
+    },
+    {
+      "key": "embracing-retail:020",
+      "setId": "embracing-retail",
+      "cardNumber": "020",
+      "name": "Corporate Surveillance",
+      "finish": "Normal",
+      "idProduct": 920451,
+      "priceSeries": "normal",
+      "state": "kein_geeigneter_durchschnitt",
+      "officialFields": {
+        "trend": null,
+        "avg7": null,
+        "avg30": null,
+        "avg": null,
+        "avg1": null,
+        "low": 8.9
+      }
+    },
+    {
+      "key": "heist-demo:001",
+      "setId": "heist-demo",
+      "cardNumber": "001",
+      "name": "Viktor Vektor: Sit Down and Relax",
+      "finish": "Holo",
+      "idProduct": 905014,
+      "priceSeries": "foil",
+      "state": "kein_geeigneter_durchschnitt",
+      "officialFields": {
+        "trend-foil": null,
+        "avg7-foil": null,
+        "avg30-foil": null,
+        "avg-foil": null,
+        "avg1-foil": null,
+        "low-foil": null
+      }
+    },
+    {
+      "key": "heist-demo:004",
+      "setId": "heist-demo",
+      "cardNumber": "004",
+      "name": "Kiroshi Optics",
+      "finish": "Normal",
+      "idProduct": 905017,
+      "priceSeries": "normal",
+      "state": "kein_geeigneter_durchschnitt",
+      "officialFields": {
+        "trend": null,
+        "avg7": null,
+        "avg30": null,
+        "avg": null,
+        "avg1": null,
+        "low": 0.15
+      }
+    },
+    {
+      "key": "heist-demo:006",
+      "setId": "heist-demo",
+      "cardNumber": "006",
+      "name": "Afterparty at Lizzie's",
+      "finish": "Normal",
+      "idProduct": 905019,
+      "priceSeries": "normal",
+      "state": "kein_geeigneter_durchschnitt",
+      "officialFields": {
+        "trend": null,
+        "avg7": null,
+        "avg30": null,
+        "avg": null,
+        "avg1": null,
+        "low": 0.1
+      }
+    },
+    {
+      "key": "heist-demo:007",
+      "setId": "heist-demo",
+      "cardNumber": "007",
+      "name": "Jackie Welles: Pour One Out For Me",
+      "finish": "Holo",
+      "idProduct": 905020,
+      "priceSeries": "foil",
+      "state": "kein_geeigneter_durchschnitt",
+      "officialFields": {
+        "trend-foil": null,
+        "avg7-foil": null,
+        "avg30-foil": null,
+        "avg-foil": null,
+        "avg1-foil": null,
+        "low-foil": null
+      }
+    },
+    {
+      "key": "heist-demo:008",
+      "setId": "heist-demo",
+      "cardNumber": "008",
+      "name": "V: Corporate Exile",
+      "finish": "Holo",
+      "idProduct": 905021,
+      "priceSeries": "foil",
+      "state": "kein_geeigneter_durchschnitt",
+      "officialFields": {
+        "trend-foil": null,
+        "avg7-foil": null,
+        "avg30-foil": null,
+        "avg-foil": null,
+        "avg1-foil": null,
+        "low-foil": null
+      }
+    },
+    {
+      "key": "heist-demo:009",
+      "setId": "heist-demo",
+      "cardNumber": "009",
+      "name": "Delamain Cab",
+      "finish": "Normal",
+      "idProduct": 905022,
+      "priceSeries": "normal",
+      "state": "kein_geeigneter_durchschnitt",
+      "officialFields": {
+        "trend": null,
+        "avg7": null,
+        "avg30": null,
+        "avg": null,
+        "avg1": null,
+        "low": 0.15
+      }
+    },
+    {
+      "key": "heist-demo:010",
+      "setId": "heist-demo",
+      "cardNumber": "010",
+      "name": "Evelyn Parker: Scheming Siren",
+      "finish": "Normal",
+      "idProduct": 905023,
+      "priceSeries": "normal",
+      "state": "kein_geeigneter_durchschnitt",
+      "officialFields": {
+        "trend": null,
+        "avg7": null,
+        "avg30": null,
+        "avg": null,
+        "avg1": null,
+        "low": 0.15
+      }
+    },
+    {
+      "key": "heist-demo:012",
+      "setId": "heist-demo",
+      "cardNumber": "012",
+      "name": "Psycho Squad",
+      "finish": "Normal",
+      "idProduct": 905025,
+      "priceSeries": "normal",
+      "state": "kein_geeigneter_durchschnitt",
+      "officialFields": {
+        "trend": null,
+        "avg7": null,
+        "avg30": null,
+        "avg": null,
+        "avg1": null,
+        "low": 0.19
+      }
+    },
+    {
+      "key": "heist-demo:013",
+      "setId": "heist-demo",
+      "cardNumber": "013",
+      "name": "Dying Night: V's Pistol",
+      "finish": "Holo",
+      "idProduct": 905026,
+      "priceSeries": "foil",
+      "state": "kein_geeigneter_durchschnitt",
+      "officialFields": {
+        "trend-foil": null,
+        "avg7-foil": null,
+        "avg30-foil": null,
+        "avg-foil": null,
+        "avg1-foil": null,
+        "low-foil": null
+      }
+    },
+    {
+      "key": "heist-demo:014",
+      "setId": "heist-demo",
+      "cardNumber": "014",
+      "name": "Floor It",
+      "finish": "Normal",
+      "idProduct": 905027,
+      "priceSeries": "normal",
+      "state": "kein_geeigneter_durchschnitt",
+      "officialFields": {
+        "trend": null,
+        "avg7": null,
+        "avg30": null,
+        "avg": null,
+        "avg1": null,
+        "low": 0.15
+      }
+    },
+    {
+      "key": "heist-demo:015",
+      "setId": "heist-demo",
+      "cardNumber": "015",
+      "name": "Reboot Optics",
+      "finish": "Normal",
+      "idProduct": 905028,
+      "priceSeries": "normal",
+      "state": "kein_geeigneter_durchschnitt",
+      "officialFields": {
+        "trend": null,
+        "avg7": null,
+        "avg30": null,
+        "avg": null,
+        "avg1": null,
+        "low": 0.1
+      }
+    },
+    {
+      "key": "heist-retail:012",
+      "setId": "heist-retail",
+      "cardNumber": "012",
+      "name": "V: Corporate Exile",
+      "finish": "Holo",
+      "idProduct": 920410,
+      "priceSeries": "foil",
+      "state": "kein_geeigneter_durchschnitt",
+      "officialFields": {
+        "trend-foil": null,
+        "avg7-foil": null,
+        "avg30-foil": null,
+        "avg-foil": null,
+        "avg1-foil": null,
+        "low-foil": 7.8
+      }
+    },
+    {
+      "key": "judge-promos:001",
+      "setId": "judge-promos",
+      "cardNumber": "001",
+      "name": "Secondhand Bombus",
+      "finish": "Normal",
+      "idProduct": 922552,
+      "priceSeries": "normal",
+      "state": "kein_geeigneter_durchschnitt",
+      "officialFields": {
+        "trend": null,
+        "avg7": null,
+        "avg30": null,
+        "avg": null,
+        "avg1": null,
+        "low": null
+      }
+    },
+    {
+      "key": "judge-promos:002",
+      "setId": "judge-promos",
+      "cardNumber": "002",
+      "name": "MaxTac Squadron",
+      "finish": "Normal",
+      "idProduct": 922553,
+      "priceSeries": "normal",
+      "state": "kein_geeigneter_durchschnitt",
+      "officialFields": {
+        "trend": null,
+        "avg7": null,
+        "avg30": null,
+        "avg": null,
+        "avg1": null,
+        "low": null
+      }
+    },
+    {
+      "key": "judge-promos:003",
+      "setId": "judge-promos",
+      "cardNumber": "003",
+      "name": "Delamain: Rideshare AI",
+      "finish": "Normal",
+      "idProduct": 922554,
+      "priceSeries": "normal",
+      "state": "kein_geeigneter_durchschnitt",
+      "officialFields": {
+        "trend": null,
+        "avg7": null,
+        "avg30": null,
+        "avg": null,
+        "avg1": null,
+        "low": null
+      }
+    },
+    {
+      "key": "set1-promos:008",
+      "setId": "set1-promos",
+      "cardNumber": "008",
+      "name": "Adam Smasher: Ender of Legends",
+      "finish": "Holo",
+      "idProduct": 905261,
+      "priceSeries": "foil",
+      "state": "kein_geeigneter_durchschnitt",
+      "officialFields": {
+        "trend-foil": null,
+        "avg7-foil": null,
+        "avg30-foil": null,
+        "avg-foil": null,
+        "avg1-foil": null,
+        "low-foil": null
+      }
+    }
+  ],
+  "safety": "READ ONLY for prices.json. Other averages are NOT trend prices; low is NOT portfolio market value. Product ID and print finish verified independently."
+}
