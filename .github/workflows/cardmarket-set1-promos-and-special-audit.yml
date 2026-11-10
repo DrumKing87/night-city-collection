@@ -1,0 +1,208 @@
+name: 'Cardmarket - Set 1 Promos sicher aktivieren und Sonderdrucke pruefen'
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: night-city-price-updates
+  cancel-in-progress: false
+
+jobs:
+  audit-and-import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Repository laden
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Python 3.12 einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Karten und offizielle Produktnummern kontrollieren
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from collections import defaultdict
+          from datetime import datetime, timezone
+          from pathlib import Path
+          from urllib.request import Request, urlopen
+          import json, re, unicodedata
+
+          def load(url):
+              request = Request(url, headers={
+                  'User-Agent': 'NightCityCollection/3.0 (official product audit)',
+                  'Accept': 'application/json',
+              })
+              with urlopen(request, timeout=90) as response:
+                  raw = response.read(25_000_001)
+              if len(raw) > 25_000_000:
+                  raise ValueError('Cardmarket-Export zu gross')
+              doc = json.loads(raw)
+              if doc.get('version') != 1:
+                  raise ValueError('Unerwartetes Cardmarket-Exportformat')
+              return doc
+
+          def norm(v):
+              s = unicodedata.normalize('NFKD', str(v or ''))
+              s = ''.join(ch for ch in s if not unicodedata.combining(ch))
+              s = re.sub(r'\(\s*v\.?\s*[12]\s*\)', '', s.lower().replace('&', 'and'), flags=re.I)
+              return ' '.join(re.sub(r'[^a-z0-9]+', ' ', s).split())
+
+          page = Path('index.html').read_text('utf-8')
+          match = re.search(r'const DB\s*=\s*(\{.*?\})\s*;\s*const CARDS', page, re.S)
+          if not match:
+              raise ValueError('Katalog nicht gefunden')
+          db = json.loads(match.group(1))
+          cards = db['cards']
+          if len(cards) != 591 or len({c['key'] for c in cards}) != 591 or len(db['sets']) != 18:
+              raise ValueError('Erwarte 591 eindeutige Kartendrucke aus 18 Set-Eintraegen')
+          existing = json.loads(Path('data/prices.json').read_text('utf-8'))
+          previous_count = len(existing.get('prices', {}))
+          if previous_count < 453:
+              raise ValueError('Vorhandene Preise unerwartet unvollstaendig')
+
+          base = 'https://downloads.s3.cardmarket.com/productCatalog'
+          products_doc = load(base + '/productList/products_singles_23.json')
+          guides_doc = load(base + '/priceGuide/price_guide_23.json')
+          products = products_doc.get('products')
+          guide = guides_doc.get('priceGuides')
+          if not isinstance(products, list) or len(products) < 500 or not isinstance(guide, list) or len(guide) < 500:
+              raise ValueError('Cardmarket-Katalog oder Preisleitfaden unvollstaendig')
+          if any(p.get('categoryName') != 'Cyberpunk Single' for p in products):
+              raise ValueError('Fremdkategorie im Produktkatalog')
+
+          products_by_id = {str(p['idProduct']): p for p in products}
+          if len(products_by_id) != len(products):
+              raise ValueError('Doppelte Cardmarket-Produkt-ID')
+          guides_by_id = {str(p['idProduct']): p for p in guide}
+          by_exp_name = defaultdict(list)
+          for p in products:
+              by_exp_name[(str(p.get('idExpansion')), norm(p.get('name')))].append(p)
+
+          promo = [c for c in cards if c['setId'] == 'set1-promos']
+          if len(promo) != 6:
+              raise ValueError('Lokale Set-1-Promos weichen ab')
+          official_promos = [p for p in products if str(p.get('idExpansion')) == '6719']
+          if len(official_promos) != 3:
+              raise ValueError('Cardmarket hat nicht mehr genau drei Promo-Produkte; bitte erneut pruefen')
+          known = {
+              'set1-promos:006': ('006', 'Misty Olszewski: Mender of Broken Spirits', 920528),
+              'set1-promos:008': ('008', 'Adam Smasher: Ender of Legends', 905261),
+          }
+          for key, (number, title, pid) in known.items():
+              local = [c for c in promo if c['key'] == key]
+              if len(local) != 1 or local[0]['no'] != number or norm(local[0]['name']) != norm(title):
+                  raise ValueError('Falsche lokale Promokarte: ' + key)
+              if local[0].get('finish') != 'Holo' or local[0].get('rarity') != 'Nova Rare':
+                  raise ValueError('Druckart oder Seltenheit abweichend: ' + key)
+              product = products_by_id.get(str(pid))
+              if not product or str(product.get('idExpansion')) != '6719' or norm(product.get('name')) != norm(title):
+                  raise ValueError('Offizielle Produkt-ID stimmt nicht mit der Karte ueberein: ' + key)
+              if len(by_exp_name[('6719', norm(title))]) != 1:
+                  raise ValueError('Mehrdeutiger Produktname in Promo-Expansion: ' + key)
+          # Rebecca 005/007 und Lucyna 004a/004b niemals per Namensgleichheit zuordnen.
+          ambiguous = {c['key'] for c in promo} - set(known)
+          if ambiguous != {'set1-promos:004a','set1-promos:004b','set1-promos:005','set1-promos:007'}:
+              raise ValueError('Ungepruefte lokale Promokarten hinzugekommen')
+          print('Sichere Set-1-Zuordnung: ID 6719; 006 -> 920528; 008 -> 905261')
+
+          # Fuer die Sonderdrucke KEINE Zuordnung nach Sortierreihenfolge oder Preis erstellen.
+          expansion_map = {'brawl-s1': '6953', 'showdown-s1': '6954', 'set1-promos': '6719'}
+          expected_counts = {'brawl-s1': 37, 'showdown-s1': 5, 'set1-promos': 6}
+          audit = []
+          for sid, expansion in expansion_map.items():
+              subset = [c for c in cards if c['setId'] == sid]
+              if len(subset) != expected_counts[sid]:
+                  raise ValueError('Setgroesse geaendert: ' + sid)
+              for card in subset:
+                  candidates = []
+                  for p in by_exp_name[(expansion, norm(card['name']))]:
+                      pid = str(p['idProduct'])
+                      row = guides_by_id.get(pid, {})
+                      def price(field):
+                          value = row.get(field)
+                          try:
+                              number = float(value)
+                              if 0 < number <= 1000000:
+                                  return number
+                          except (TypeError, ValueError):
+                              pass
+                          return None
+                      candidates.append({'idProduct': int(pid), 'trend': price('trend'),
+                                         'trendFoil': price('trend-foil')})
+                  candidates.sort(key=lambda x: x['idProduct'])
+                  audit.append({'key': card['key'], 'cardNumber': card['no'],
+                                'cardName': card['name'], 'finish': card['finish'],
+                                'cardmarketExpansion': int(expansion),
+                                'candidates': candidates,
+                                'requiresPrintVerification': sid != 'set1-promos' or card['key'] not in known})
+          report = {'schema': 1, 'generatedAt': datetime.now(timezone.utc).isoformat(timespec='seconds'),
+                    'productsCreatedAt': products_doc.get('createdAt'),
+                    'priceGuideCreatedAt': guides_doc.get('createdAt'),
+                    'previousSavedPrices': previous_count, 'safeSet1Keys': list(known),
+                    'candidateRows': audit,
+                    'warning': 'Brawl/Showdown und mehrdeutige Promodrucke sind nur Diagnose; KEINE automatische Produktzuordnung.'}
+          out = Path('data/cardmarket-special-printing-candidates.json')
+          out.write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+
+          script = Path('scripts/update_prices.py')
+          text = script.read_text('utf-8')
+          new = "    'brawl-s1': 6953, 'showdown-s1': 6954, 'judge-promos': 6952, 'set1-promos': 6719,"
+          old = "    'brawl-s1': 6953, 'showdown-s1': 6954, 'judge-promos': 6952,"
+          if new not in text:
+              if text.count(old) != 1:
+                  raise ValueError('Preisimporter wurde geaendert; Patch nicht sicher moeglich')
+              text = text.replace(old, new, 1)
+              script.write_text(text, encoding='utf-8')
+          print('Pruefbericht erstellt:', out, '/ Kandidatenzeilen:', len(audit))
+          PY
+          python -m py_compile scripts/update_prices.py
+      - name: Sicheren Cardmarket-Import ausfuehren
+        run: python scripts/update_prices.py
+      - name: Pruefen ob alte Preise und Varianten erhalten sind
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          audit = json.loads(Path('data/cardmarket-special-printing-candidates.json').read_text('utf-8'))
+          prices = json.loads(Path('data/prices.json').read_text('utf-8'))
+          report = json.loads(Path('data/cardmarket-diagnostics.json').read_text('utf-8'))
+          if prices['total'] != 591 or report['total'] != 591:
+              raise ValueError('Nicht alle Karten wurden geprueft')
+          if len(prices['prices']) < audit['previousSavedPrices']:
+              raise ValueError('Bestehende Preise gingen verloren')
+          if 'set1-promos' not in report['bySet']:
+              raise ValueError('Set-1-Promos wurden nicht abgeglichen')
+          for item in audit['candidateRows']:
+              if item['requiresPrintVerification'] and item['key'] in prices['prices'] and item['cardmarketExpansion'] in (6953,6954):
+                  raise ValueError('Unverifizierter Brawl/Showdown-Preis vorhanden: ' + item['key'])
+          print('Preise:', len(prices['prices']), '/ 591; vorher:', audit['previousSavedPrices'])
+          print('Set 1 Promos:', report['bySet']['set1-promos'])
+          print('Nicht automatisch zugeordnete Sonderdrucke: 42 aus Brawl/Showdown')
+          PY
+      - name: Nur Preisimport und Diagnose speichern
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add scripts/update_prices.py data/prices.json data/cardmarket-diagnostics.json data/cardmarket-special-printing-candidates.json
+          git diff --cached --check
+          if git diff --cached --quiet; then
+            echo 'Bereits aktuell.'
+            exit 0
+          fi
+          git commit -m 'Safely import Set 1 promos and audit Brawl Showdown variants [skip ci]'
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then exit 0; fi
+            if [ "$attempt" -eq 3 ]; then exit 1; fi
+            git fetch origin main
+            git rebase origin/main
+          done
