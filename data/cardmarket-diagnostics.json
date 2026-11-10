@@ -1,5 +1,5 @@
 {
-  "alreadySavedPriceRecords": 207,
+  "alreadySavedPriceRecords": 378,
   "bySet": {
     "boxtopper-beta": {
       "mit_preis": 6
@@ -7,8 +7,16 @@
     "boxtopper-retail": {
       "mit_preis": 6
     },
+    "brawl-s1": {
+      "mehrdeutiger_Sonderdruck": 37
+    },
     "embracing-beta": {
       "mit_preis": 20
+    },
+    "embracing-demo": {
+      "kein_trend": 5,
+      "kein_trend-foil": 3,
+      "mit_preis": 6
     },
     "embracing-retail": {
       "kein_trend": 1,
@@ -19,16 +27,27 @@
       "kein_Produkt_match": 1,
       "mit_preis": 19
     },
+    "heist-demo": {
+      "kein_trend": 7,
+      "kein_trend-foil": 4,
+      "mit_preis": 4
+    },
     "heist-retail": {
       "kein_Produkt_match": 1,
       "kein_trend-foil": 1,
       "mit_preis": 18
+    },
+    "judge-promos": {
+      "kein_trend": 3
     },
     "prerelease-beta": {
       "mit_preis": 11
     },
     "prerelease-retail": {
       "mit_preis": 11
+    },
+    "showdown-s1": {
+      "mehrdeutiger_Sonderdruck": 5
     },
     "wnc-beta": {
       "mehrdeutiger_Sonderdruck": 63,
@@ -39,11 +58,11 @@
       "mit_preis": 109
     }
   },
-  "generatedAt": "2026-11-09T23:27:43+00:00",
-  "newOrUpdatedPrices": 325,
-  "savedPriceRecordsAfterUpdate": 378,
+  "generatedAt": "2026-11-10T09:31:20+00:00",
+  "newOrUpdatedPrices": 10,
+  "savedPriceRecordsAfterUpdate": 388,
   "sourceAsOf": "2026-11-09",
-  "total": 458,
+  "total": 591,
   "unresolved": [
     {
       "candidateProductIds": [
@@ -1502,8 +1521,1168 @@
       "key": "embracing-retail:020",
       "name": "Corporate Surveillance",
       "reason": "kein_trend"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:001",
+      "name": "Royce: Don't Call Me Simon",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:002",
+      "name": "Field Operator",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:003",
+      "name": "Riding Nomad",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:004",
+      "name": "Industrial Assembly",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:005",
+      "name": "Afterparty at Lizzie's",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:006",
+      "name": "Peace Offering",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:007",
+      "name": "Trust No One",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:008",
+      "name": "Industrial Assembly",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:009",
+      "name": "Afterparty at Lizzie's",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:010",
+      "name": "Peace Offering",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:011",
+      "name": "Trust No One",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:012",
+      "name": "Dexter DeShawn: Off the Grid",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:013",
+      "name": "V: Streetkid",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:014",
+      "name": "Muamar Reyes: El Capitán",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:015",
+      "name": "Judy Álvarez: Braindance Maestro",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:016",
+      "name": "Dexter DeShawn: Off the Grid",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:017",
+      "name": "V: Streetkid",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:018",
+      "name": "Muamar Reyes: El Capitán",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:019",
+      "name": "Judy Álvarez: Braindance Maestro",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:020",
+      "name": "Dexter DeShawn: Off the Grid",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:021",
+      "name": "V: Streetkid",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:022",
+      "name": "Muamar Reyes: El Capitán",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:023",
+      "name": "Judy Álvarez: Braindance Maestro",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:024",
+      "name": "Dexter DeShawn: Off the Grid",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:025",
+      "name": "V: Streetkid",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:026",
+      "name": "Muamar Reyes: El Capitán",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:027",
+      "name": "Judy Álvarez: Braindance Maestro",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:029",
+      "name": "Adam Smasher: Ender of Legends",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:030",
+      "name": "Dexter DeShawn: Off the Grid",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:031",
+      "name": "Johnny Silverhand: Rocking Renegade",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:032",
+      "name": "Royce: Psycho on the Edge",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:033",
+      "name": "V: Streetkid",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:034",
+      "name": "Yorinobu Arasaka: Embracing Destruction",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:035",
+      "name": "Dum Dum: Maelstrom Triggerman",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:036",
+      "name": "Kerry Eurodyne: Axe, Attitude, Audience",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:037",
+      "name": "Muamar Reyes: El Capitán",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:038",
+      "name": "River Ward: Detective on the Hunt",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:039",
+      "name": "Rogue Amendiares: Preem Solo",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:040",
+      "name": "Viktor Vektor: Sit Down and Relax",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:041",
+      "name": "Goro Takemura: Hands Unclean",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:042",
+      "name": "Goro Takemura: Vengeful Bodyguard",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:043",
+      "name": "Hanako Arasaka: Daughter of the Emperor",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:044",
+      "name": "Jackie Welles: Mama's Favorite",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:045",
+      "name": "Padre: Man of the Cross",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:046",
+      "name": "Panam Palmer: Nomad Cavalry",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:047",
+      "name": "Saburo Arasaka: Stubborn Patriarch",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:048",
+      "name": "Alt Cunningham: Soulkiller Architect",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:049",
+      "name": "Evelyn Parker: Beautiful Enigma",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:050",
+      "name": "Jackie Welles: Pour One Out For Me",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:051",
+      "name": "Judy Álvarez: Braindance Maestro",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:052",
+      "name": "Sasha Yakovleva: Won't Let You Down",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:053",
+      "name": "V: Corporate Exile",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "edgerunner-s1:054",
+      "name": "Wakako Okada: Peace and Harmony",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [
+        922559,
+        922582
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:001",
+      "name": "Kerry Eurodyne: The Last Rockerboy",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922561,
+        922583
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:002",
+      "name": "Minotaur",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922562,
+        922584
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:003",
+      "name": "Satori: Sword of Saburo",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922563,
+        922585
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:004",
+      "name": "Jackie Welles: Ride or Die Choom",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922565,
+        922586
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:005",
+      "name": "Secondhand Bombus",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922566,
+        922587
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:006",
+      "name": "Mandibular Upgrade",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922567,
+        922589
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:007",
+      "name": "Bootleg Black Sapphire Show",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922568,
+        922590
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:008",
+      "name": "Cyberpsychosis",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922569,
+        922591
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:009",
+      "name": "Corpo Security",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922570,
+        922593
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:010",
+      "name": "MaxTac Squadron",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922571,
+        922594
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:011",
+      "name": "Wraith Marauders",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922573,
+        922595
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:012",
+      "name": "(Don't Fear) The Reaper",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922574,
+        922596
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:013",
+      "name": "We Gotta Live Together",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922575,
+        922598
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:014",
+      "name": "Delamain Cab",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922577,
+        922599,
+        922603
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:015",
+      "name": "Maman Brigitte: Spirit of Death",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922578,
+        922600
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:016",
+      "name": "Dying Night: V's Pistol",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922579,
+        922601
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:017",
+      "name": "NetWatch Netdriver",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922581,
+        922602
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:018",
+      "name": "Floor It",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922559,
+        922582
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:019",
+      "name": "Kerry Eurodyne: The Last Rockerboy",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922561,
+        922583
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:020",
+      "name": "Minotaur",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922562,
+        922584
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:021",
+      "name": "Satori: Sword of Saburo",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922563,
+        922585
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:022",
+      "name": "Jackie Welles: Ride or Die Choom",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922565,
+        922586
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:023",
+      "name": "Secondhand Bombus",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922566,
+        922587
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:024",
+      "name": "Mandibular Upgrade",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922567,
+        922589
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:025",
+      "name": "Bootleg Black Sapphire Show",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922568,
+        922590
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:026",
+      "name": "Cyberpsychosis",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922569,
+        922591
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:027",
+      "name": "Corpo Security",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922570,
+        922593
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:028",
+      "name": "MaxTac Squadron",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922571,
+        922594
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:029",
+      "name": "Wraith Marauders",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922573,
+        922595
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:030",
+      "name": "(Don't Fear) The Reaper",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922574,
+        922596
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:031",
+      "name": "We Gotta Live Together",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922575,
+        922598
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:032",
+      "name": "Delamain Cab",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922577,
+        922599,
+        922603
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:033",
+      "name": "Maman Brigitte: Spirit of Death",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922578,
+        922600
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:034",
+      "name": "Dying Night: V's Pistol",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922579,
+        922601
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:035",
+      "name": "NetWatch Netdriver",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922581,
+        922602
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:036",
+      "name": "Floor It",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922577,
+        922599,
+        922603
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "brawl-s1:037",
+      "name": "Maman Brigitte: Spirit of Death",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922604,
+        922606,
+        922609
+      ],
+      "finish": "Normal",
+      "idProduct": null,
+      "key": "showdown-s1:001",
+      "name": "Sandevistan",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922605,
+        922608
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "showdown-s1:002",
+      "name": "Adam Smasher: Metal Over Meat",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922604,
+        922606,
+        922609
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "showdown-s1:003",
+      "name": "Sandevistan",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922605,
+        922608
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "showdown-s1:004",
+      "name": "Adam Smasher: Metal Over Meat",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922604,
+        922606,
+        922609
+      ],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "showdown-s1:005",
+      "name": "Sandevistan",
+      "reason": "mehrdeutiger_Sonderdruck"
+    },
+    {
+      "candidateProductIds": [
+        922552
+      ],
+      "finish": "Normal",
+      "idProduct": 922552,
+      "key": "judge-promos:001",
+      "name": "Secondhand Bombus",
+      "reason": "kein_trend"
+    },
+    {
+      "candidateProductIds": [
+        922553
+      ],
+      "finish": "Normal",
+      "idProduct": 922553,
+      "key": "judge-promos:002",
+      "name": "MaxTac Squadron",
+      "reason": "kein_trend"
+    },
+    {
+      "candidateProductIds": [
+        922554
+      ],
+      "finish": "Normal",
+      "idProduct": 922554,
+      "key": "judge-promos:003",
+      "name": "Delamain: Rideshare AI",
+      "reason": "kein_trend"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Normal",
+      "idProduct": null,
+      "key": "set1-promos:004a",
+      "name": "Lucyna Kushinada: Fresh Beginnings",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "set1-promos:004b",
+      "name": "Lucyna Kushinada: Fresh Beginnings",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "set1-promos:005",
+      "name": "Rebecca: Having a Moment",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "set1-promos:006",
+      "name": "Misty Olszewski: Mender of Broken Spirits",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "set1-promos:007",
+      "name": "Rebecca: Having a Moment",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [],
+      "finish": "Holo",
+      "idProduct": null,
+      "key": "set1-promos:008",
+      "name": "Adam Smasher: Ender of Legends",
+      "reason": "set_ohne_verifizierte_Cardmarket_Expansion"
+    },
+    {
+      "candidateProductIds": [
+        905014
+      ],
+      "finish": "Holo",
+      "idProduct": 905014,
+      "key": "heist-demo:001",
+      "name": "Viktor Vektor: Sit Down and Relax",
+      "reason": "kein_trend-foil"
+    },
+    {
+      "candidateProductIds": [
+        905017
+      ],
+      "finish": "Normal",
+      "idProduct": 905017,
+      "key": "heist-demo:004",
+      "name": "Kiroshi Optics",
+      "reason": "kein_trend"
+    },
+    {
+      "candidateProductIds": [
+        905019
+      ],
+      "finish": "Normal",
+      "idProduct": 905019,
+      "key": "heist-demo:006",
+      "name": "Afterparty at Lizzie's",
+      "reason": "kein_trend"
+    },
+    {
+      "candidateProductIds": [
+        905020
+      ],
+      "finish": "Holo",
+      "idProduct": 905020,
+      "key": "heist-demo:007",
+      "name": "Jackie Welles: Pour One Out For Me",
+      "reason": "kein_trend-foil"
+    },
+    {
+      "candidateProductIds": [
+        905021
+      ],
+      "finish": "Holo",
+      "idProduct": 905021,
+      "key": "heist-demo:008",
+      "name": "V: Corporate Exile",
+      "reason": "kein_trend-foil"
+    },
+    {
+      "candidateProductIds": [
+        905022
+      ],
+      "finish": "Normal",
+      "idProduct": 905022,
+      "key": "heist-demo:009",
+      "name": "Delamain Cab",
+      "reason": "kein_trend"
+    },
+    {
+      "candidateProductIds": [
+        905023
+      ],
+      "finish": "Normal",
+      "idProduct": 905023,
+      "key": "heist-demo:010",
+      "name": "Evelyn Parker: Scheming Siren",
+      "reason": "kein_trend"
+    },
+    {
+      "candidateProductIds": [
+        905025
+      ],
+      "finish": "Normal",
+      "idProduct": 905025,
+      "key": "heist-demo:012",
+      "name": "Psycho Squad",
+      "reason": "kein_trend"
+    },
+    {
+      "candidateProductIds": [
+        905026
+      ],
+      "finish": "Holo",
+      "idProduct": 905026,
+      "key": "heist-demo:013",
+      "name": "Dying Night: V's Pistol",
+      "reason": "kein_trend-foil"
+    },
+    {
+      "candidateProductIds": [
+        905027
+      ],
+      "finish": "Normal",
+      "idProduct": 905027,
+      "key": "heist-demo:014",
+      "name": "Floor It",
+      "reason": "kein_trend"
+    },
+    {
+      "candidateProductIds": [
+        905028
+      ],
+      "finish": "Normal",
+      "idProduct": 905028,
+      "key": "heist-demo:015",
+      "name": "Reboot Optics",
+      "reason": "kein_trend"
+    },
+    {
+      "candidateProductIds": [
+        905000
+      ],
+      "finish": "Holo",
+      "idProduct": 905000,
+      "key": "embracing-demo:001",
+      "name": "Yorinobu Arasaka: Embracing Destruction",
+      "reason": "kein_trend-foil"
+    },
+    {
+      "candidateProductIds": [
+        905002
+      ],
+      "finish": "Normal",
+      "idProduct": 905002,
+      "key": "embracing-demo:003",
+      "name": "Swordwise Huscle",
+      "reason": "kein_trend"
+    },
+    {
+      "candidateProductIds": [
+        905005
+      ],
+      "finish": "Normal",
+      "idProduct": 905005,
+      "key": "embracing-demo:006",
+      "name": "Industrial Assembly",
+      "reason": "kein_trend"
+    },
+    {
+      "candidateProductIds": [
+        905006
+      ],
+      "finish": "Normal",
+      "idProduct": 905006,
+      "key": "embracing-demo:007",
+      "name": "Over the Edge",
+      "reason": "kein_trend"
+    },
+    {
+      "candidateProductIds": [
+        905007
+      ],
+      "finish": "Holo",
+      "idProduct": 905007,
+      "key": "embracing-demo:008",
+      "name": "Goro Takemura: Hands Unclean",
+      "reason": "kein_trend-foil"
+    },
+    {
+      "candidateProductIds": [
+        905008
+      ],
+      "finish": "Holo",
+      "idProduct": 905008,
+      "key": "embracing-demo:009",
+      "name": "Saburo Arasaka: Stubborn Patriarch",
+      "reason": "kein_trend-foil"
+    },
+    {
+      "candidateProductIds": [
+        905009
+      ],
+      "finish": "Normal",
+      "idProduct": 905009,
+      "key": "embracing-demo:010",
+      "name": "Corpo Security",
+      "reason": "kein_trend"
+    },
+    {
+      "candidateProductIds": [
+        905013
+      ],
+      "finish": "Normal",
+      "idProduct": 905013,
+      "key": "embracing-demo:014",
+      "name": "Corporate Surveillance",
+      "reason": "kein_trend"
     }
   ],
-  "withConfirmedProductMatch": 330,
-  "withValidCardmarketPrice": 325
+  "withConfirmedProductMatch": 362,
+  "withValidCardmarketPrice": 335
 }
