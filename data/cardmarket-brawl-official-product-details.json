@@ -1,0 +1,1735 @@
+{
+  "schema": 1,
+  "generatedAt": "2026-11-10T16:14:30+00:00",
+  "officialProductCreatedAt": "2026-11-10T14:33:26+0100",
+  "sourceUrl": "https://downloads.s3.cardmarket.com/productCatalog/productList/products_singles_23.json",
+  "totalPrintings": 37,
+  "officialProductCount": 37,
+  "allProductKeys": [
+    "categoryName",
+    "dateAdded",
+    "idCategory",
+    "idExpansion",
+    "idMetacard",
+    "idProduct",
+    "name"
+  ],
+  "rowsWithDistinguishingProductFields": 37,
+  "verifiedProductIds": 0,
+  "rows": [
+    {
+      "key": "brawl-s1:001",
+      "collectorNumber": "001",
+      "officialVariant": "Participation",
+      "cardName": "Kerry Eurodyne: The Last Rockerboy",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922559,
+          "officialProduct": {
+            "idProduct": 922559,
+            "name": "Kerry Eurodyne - The Last Rockerboy",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467229,
+            "dateAdded": "2026-11-06 19:47:45"
+          }
+        },
+        {
+          "idProduct": 922582,
+          "officialProduct": {
+            "idProduct": 922582,
+            "name": "Kerry Eurodyne - The Last Rockerboy",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467229,
+            "dateAdded": "2026-11-06 19:54:38"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922559,
+            "value": "2026-11-06 19:47:45"
+          },
+          {
+            "idProduct": 922582,
+            "value": "2026-11-06 19:54:38"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:002",
+      "collectorNumber": "002",
+      "officialVariant": "Participation",
+      "cardName": "Minotaur",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922561,
+          "officialProduct": {
+            "idProduct": 922561,
+            "name": "Minotaur",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467197,
+            "dateAdded": "2026-11-06 19:48:09"
+          }
+        },
+        {
+          "idProduct": 922583,
+          "officialProduct": {
+            "idProduct": 922583,
+            "name": "Minotaur",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467197,
+            "dateAdded": "2026-11-06 19:54:53"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922561,
+            "value": "2026-11-06 19:48:09"
+          },
+          {
+            "idProduct": 922583,
+            "value": "2026-11-06 19:54:53"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:003",
+      "collectorNumber": "003",
+      "officialVariant": "Participation",
+      "cardName": "Satori: Sword of Saburo",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922562,
+          "officialProduct": {
+            "idProduct": 922562,
+            "name": "Satori - Sword of Saburo",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467188,
+            "dateAdded": "2026-11-06 19:48:28"
+          }
+        },
+        {
+          "idProduct": 922584,
+          "officialProduct": {
+            "idProduct": 922584,
+            "name": "Satori - Sword of Saburo",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467188,
+            "dateAdded": "2026-11-06 19:55:13"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922562,
+            "value": "2026-11-06 19:48:28"
+          },
+          {
+            "idProduct": 922584,
+            "value": "2026-11-06 19:55:13"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:004",
+      "collectorNumber": "004",
+      "officialVariant": "Participation",
+      "cardName": "Jackie Welles: Ride or Die Choom",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922563,
+          "officialProduct": {
+            "idProduct": 922563,
+            "name": "Jackie Welles - Ride or Die Choom",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467181,
+            "dateAdded": "2026-11-06 19:48:45"
+          }
+        },
+        {
+          "idProduct": 922585,
+          "officialProduct": {
+            "idProduct": 922585,
+            "name": "Jackie Welles - Ride or Die Choom",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467181,
+            "dateAdded": "2026-11-06 19:55:29"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922563,
+            "value": "2026-11-06 19:48:45"
+          },
+          {
+            "idProduct": 922585,
+            "value": "2026-11-06 19:55:29"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:005",
+      "collectorNumber": "005",
+      "officialVariant": "Participation",
+      "cardName": "Secondhand Bombus",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922565,
+          "officialProduct": {
+            "idProduct": 922565,
+            "name": "Secondhand Bombus",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467182,
+            "dateAdded": "2026-11-06 19:49:13"
+          }
+        },
+        {
+          "idProduct": 922586,
+          "officialProduct": {
+            "idProduct": 922586,
+            "name": "Secondhand Bombus",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467182,
+            "dateAdded": "2026-11-06 19:55:44"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922565,
+            "value": "2026-11-06 19:49:13"
+          },
+          {
+            "idProduct": 922586,
+            "value": "2026-11-06 19:55:44"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:006",
+      "collectorNumber": "006",
+      "officialVariant": "Participation",
+      "cardName": "Mandibular Upgrade",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922566,
+          "officialProduct": {
+            "idProduct": 922566,
+            "name": "Mandibular Upgrade",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467195,
+            "dateAdded": "2026-11-06 19:49:28"
+          }
+        },
+        {
+          "idProduct": 922587,
+          "officialProduct": {
+            "idProduct": 922587,
+            "name": "Mandibular Upgrade",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467195,
+            "dateAdded": "2026-11-06 19:56:00"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922566,
+            "value": "2026-11-06 19:49:28"
+          },
+          {
+            "idProduct": 922587,
+            "value": "2026-11-06 19:56:00"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:007",
+      "collectorNumber": "007",
+      "officialVariant": "Participation",
+      "cardName": "Bootleg Black Sapphire Show",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922567,
+          "officialProduct": {
+            "idProduct": 922567,
+            "name": "Bootleg Black Sapphire Show",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467263,
+            "dateAdded": "2026-11-06 19:50:01"
+          }
+        },
+        {
+          "idProduct": 922589,
+          "officialProduct": {
+            "idProduct": 922589,
+            "name": "Bootleg Black Sapphire Show",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467263,
+            "dateAdded": "2026-11-06 19:56:13"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922567,
+            "value": "2026-11-06 19:50:01"
+          },
+          {
+            "idProduct": 922589,
+            "value": "2026-11-06 19:56:13"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:008",
+      "collectorNumber": "008",
+      "officialVariant": "Participation",
+      "cardName": "Cyberpsychosis",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922568,
+          "officialProduct": {
+            "idProduct": 922568,
+            "name": "Cyberpsychosis",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467264,
+            "dateAdded": "2026-11-06 19:50:14"
+          }
+        },
+        {
+          "idProduct": 922590,
+          "officialProduct": {
+            "idProduct": 922590,
+            "name": "Cyberpsychosis",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467264,
+            "dateAdded": "2026-11-06 19:56:26"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922568,
+            "value": "2026-11-06 19:50:14"
+          },
+          {
+            "idProduct": 922590,
+            "value": "2026-11-06 19:56:26"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:009",
+      "collectorNumber": "009",
+      "officialVariant": "Participation",
+      "cardName": "Corpo Security",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922569,
+          "officialProduct": {
+            "idProduct": 922569,
+            "name": "Corpo Security",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467184,
+            "dateAdded": "2026-11-06 19:50:27"
+          }
+        },
+        {
+          "idProduct": 922591,
+          "officialProduct": {
+            "idProduct": 922591,
+            "name": "Corpo Security",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467184,
+            "dateAdded": "2026-11-06 19:56:41"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922569,
+            "value": "2026-11-06 19:50:27"
+          },
+          {
+            "idProduct": 922591,
+            "value": "2026-11-06 19:56:41"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:010",
+      "collectorNumber": "010",
+      "officialVariant": "Participation",
+      "cardName": "MaxTac Squadron",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922570,
+          "officialProduct": {
+            "idProduct": 922570,
+            "name": "MaxTac Squadron",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467272,
+            "dateAdded": "2026-11-06 19:50:40"
+          }
+        },
+        {
+          "idProduct": 922593,
+          "officialProduct": {
+            "idProduct": 922593,
+            "name": "MaxTac Squadron",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467272,
+            "dateAdded": "2026-11-06 19:57:07"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922570,
+            "value": "2026-11-06 19:50:40"
+          },
+          {
+            "idProduct": 922593,
+            "value": "2026-11-06 19:57:07"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:011",
+      "collectorNumber": "011",
+      "officialVariant": "Participation",
+      "cardName": "Wraith Marauders",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922571,
+          "officialProduct": {
+            "idProduct": 922571,
+            "name": "Wraith Marauders",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467282,
+            "dateAdded": "2026-11-06 19:50:53"
+          }
+        },
+        {
+          "idProduct": 922594,
+          "officialProduct": {
+            "idProduct": 922594,
+            "name": "Wraith Marauders",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467282,
+            "dateAdded": "2026-11-06 19:57:21"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922571,
+            "value": "2026-11-06 19:50:53"
+          },
+          {
+            "idProduct": 922594,
+            "value": "2026-11-06 19:57:21"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:012",
+      "collectorNumber": "012",
+      "officialVariant": "Participation",
+      "cardName": "(Don't Fear) The Reaper",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922573,
+          "officialProduct": {
+            "idProduct": 922573,
+            "name": "(Don't Fear) The Reaper",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467286,
+            "dateAdded": "2026-11-06 19:51:07"
+          }
+        },
+        {
+          "idProduct": 922595,
+          "officialProduct": {
+            "idProduct": 922595,
+            "name": "(Don't Fear) The Reaper",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467286,
+            "dateAdded": "2026-11-06 19:57:39"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922573,
+            "value": "2026-11-06 19:51:07"
+          },
+          {
+            "idProduct": 922595,
+            "value": "2026-11-06 19:57:39"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:013",
+      "collectorNumber": "013",
+      "officialVariant": "Participation",
+      "cardName": "We Gotta Live Together",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922574,
+          "officialProduct": {
+            "idProduct": 922574,
+            "name": "We Gotta Live Together",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467292,
+            "dateAdded": "2026-11-06 19:51:21"
+          }
+        },
+        {
+          "idProduct": 922596,
+          "officialProduct": {
+            "idProduct": 922596,
+            "name": "We Gotta Live Together",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467292,
+            "dateAdded": "2026-11-06 19:57:50"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922574,
+            "value": "2026-11-06 19:51:21"
+          },
+          {
+            "idProduct": 922596,
+            "value": "2026-11-06 19:57:50"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:014",
+      "collectorNumber": "014",
+      "officialVariant": "Participation",
+      "cardName": "Delamain Cab",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922575,
+          "officialProduct": {
+            "idProduct": 922575,
+            "name": "Delamain Cab",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467178,
+            "dateAdded": "2026-11-06 19:51:35"
+          }
+        },
+        {
+          "idProduct": 922598,
+          "officialProduct": {
+            "idProduct": 922598,
+            "name": "Delamain Cab",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467178,
+            "dateAdded": "2026-11-06 19:58:03"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922575,
+            "value": "2026-11-06 19:51:35"
+          },
+          {
+            "idProduct": 922598,
+            "value": "2026-11-06 19:58:03"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:015",
+      "collectorNumber": "015",
+      "officialVariant": "Participation",
+      "cardName": "Maman Brigitte: Spirit of Death",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922577,
+          "officialProduct": {
+            "idProduct": 922577,
+            "name": "Maman Brigitte - Spirit of Death",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467302,
+            "dateAdded": "2026-11-06 19:51:58"
+          }
+        },
+        {
+          "idProduct": 922599,
+          "officialProduct": {
+            "idProduct": 922599,
+            "name": "Maman Brigitte - Spirit of Death",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467302,
+            "dateAdded": "2026-11-06 19:58:21"
+          }
+        },
+        {
+          "idProduct": 922603,
+          "officialProduct": {
+            "idProduct": 922603,
+            "name": "Maman Brigitte - Spirit of Death",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467302,
+            "dateAdded": "2026-11-06 19:59:21"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922577,
+            "value": "2026-11-06 19:51:58"
+          },
+          {
+            "idProduct": 922599,
+            "value": "2026-11-06 19:58:21"
+          },
+          {
+            "idProduct": 922603,
+            "value": "2026-11-06 19:59:21"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:016",
+      "collectorNumber": "016",
+      "officialVariant": "Participation",
+      "cardName": "Dying Night: V's Pistol",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922578,
+          "officialProduct": {
+            "idProduct": 922578,
+            "name": "Dying Night - V's Pistol",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467190,
+            "dateAdded": "2026-11-06 19:52:17"
+          }
+        },
+        {
+          "idProduct": 922600,
+          "officialProduct": {
+            "idProduct": 922600,
+            "name": "Dying Night - V's Pistol",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467190,
+            "dateAdded": "2026-11-06 19:58:37"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922578,
+            "value": "2026-11-06 19:52:17"
+          },
+          {
+            "idProduct": 922600,
+            "value": "2026-11-06 19:58:37"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:017",
+      "collectorNumber": "017",
+      "officialVariant": "Participation",
+      "cardName": "NetWatch Netdriver",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922579,
+          "officialProduct": {
+            "idProduct": 922579,
+            "name": "NetWatch Netdriver",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467311,
+            "dateAdded": "2026-11-06 19:52:30"
+          }
+        },
+        {
+          "idProduct": 922601,
+          "officialProduct": {
+            "idProduct": 922601,
+            "name": "NetWatch Netdriver",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467311,
+            "dateAdded": "2026-11-06 19:58:50"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922579,
+            "value": "2026-11-06 19:52:30"
+          },
+          {
+            "idProduct": 922601,
+            "value": "2026-11-06 19:58:50"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:018",
+      "collectorNumber": "018",
+      "officialVariant": "Participation",
+      "cardName": "Floor It",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922581,
+          "officialProduct": {
+            "idProduct": 922581,
+            "name": "Floor It",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467191,
+            "dateAdded": "2026-11-06 19:54:14"
+          }
+        },
+        {
+          "idProduct": 922602,
+          "officialProduct": {
+            "idProduct": 922602,
+            "name": "Floor It",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467191,
+            "dateAdded": "2026-11-06 19:59:01"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922581,
+            "value": "2026-11-06 19:54:14"
+          },
+          {
+            "idProduct": 922602,
+            "value": "2026-11-06 19:59:01"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:019",
+      "collectorNumber": "019",
+      "officialVariant": "Brawl Champ",
+      "cardName": "Kerry Eurodyne: The Last Rockerboy",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922559,
+          "officialProduct": {
+            "idProduct": 922559,
+            "name": "Kerry Eurodyne - The Last Rockerboy",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467229,
+            "dateAdded": "2026-11-06 19:47:45"
+          }
+        },
+        {
+          "idProduct": 922582,
+          "officialProduct": {
+            "idProduct": 922582,
+            "name": "Kerry Eurodyne - The Last Rockerboy",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467229,
+            "dateAdded": "2026-11-06 19:54:38"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922559,
+            "value": "2026-11-06 19:47:45"
+          },
+          {
+            "idProduct": 922582,
+            "value": "2026-11-06 19:54:38"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:020",
+      "collectorNumber": "020",
+      "officialVariant": "Brawl Champ",
+      "cardName": "Minotaur",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922561,
+          "officialProduct": {
+            "idProduct": 922561,
+            "name": "Minotaur",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467197,
+            "dateAdded": "2026-11-06 19:48:09"
+          }
+        },
+        {
+          "idProduct": 922583,
+          "officialProduct": {
+            "idProduct": 922583,
+            "name": "Minotaur",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467197,
+            "dateAdded": "2026-11-06 19:54:53"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922561,
+            "value": "2026-11-06 19:48:09"
+          },
+          {
+            "idProduct": 922583,
+            "value": "2026-11-06 19:54:53"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:021",
+      "collectorNumber": "021",
+      "officialVariant": "Brawl Champ",
+      "cardName": "Satori: Sword of Saburo",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922562,
+          "officialProduct": {
+            "idProduct": 922562,
+            "name": "Satori - Sword of Saburo",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467188,
+            "dateAdded": "2026-11-06 19:48:28"
+          }
+        },
+        {
+          "idProduct": 922584,
+          "officialProduct": {
+            "idProduct": 922584,
+            "name": "Satori - Sword of Saburo",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467188,
+            "dateAdded": "2026-11-06 19:55:13"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922562,
+            "value": "2026-11-06 19:48:28"
+          },
+          {
+            "idProduct": 922584,
+            "value": "2026-11-06 19:55:13"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:022",
+      "collectorNumber": "022",
+      "officialVariant": "Brawl Champ",
+      "cardName": "Jackie Welles: Ride or Die Choom",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922563,
+          "officialProduct": {
+            "idProduct": 922563,
+            "name": "Jackie Welles - Ride or Die Choom",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467181,
+            "dateAdded": "2026-11-06 19:48:45"
+          }
+        },
+        {
+          "idProduct": 922585,
+          "officialProduct": {
+            "idProduct": 922585,
+            "name": "Jackie Welles - Ride or Die Choom",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467181,
+            "dateAdded": "2026-11-06 19:55:29"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922563,
+            "value": "2026-11-06 19:48:45"
+          },
+          {
+            "idProduct": 922585,
+            "value": "2026-11-06 19:55:29"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:023",
+      "collectorNumber": "023",
+      "officialVariant": "Brawl Champ",
+      "cardName": "Secondhand Bombus",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922565,
+          "officialProduct": {
+            "idProduct": 922565,
+            "name": "Secondhand Bombus",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467182,
+            "dateAdded": "2026-11-06 19:49:13"
+          }
+        },
+        {
+          "idProduct": 922586,
+          "officialProduct": {
+            "idProduct": 922586,
+            "name": "Secondhand Bombus",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467182,
+            "dateAdded": "2026-11-06 19:55:44"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922565,
+            "value": "2026-11-06 19:49:13"
+          },
+          {
+            "idProduct": 922586,
+            "value": "2026-11-06 19:55:44"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:024",
+      "collectorNumber": "024",
+      "officialVariant": "Brawl Champ",
+      "cardName": "Mandibular Upgrade",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922566,
+          "officialProduct": {
+            "idProduct": 922566,
+            "name": "Mandibular Upgrade",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467195,
+            "dateAdded": "2026-11-06 19:49:28"
+          }
+        },
+        {
+          "idProduct": 922587,
+          "officialProduct": {
+            "idProduct": 922587,
+            "name": "Mandibular Upgrade",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467195,
+            "dateAdded": "2026-11-06 19:56:00"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922566,
+            "value": "2026-11-06 19:49:28"
+          },
+          {
+            "idProduct": 922587,
+            "value": "2026-11-06 19:56:00"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:025",
+      "collectorNumber": "025",
+      "officialVariant": "Brawl Champ",
+      "cardName": "Bootleg Black Sapphire Show",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922567,
+          "officialProduct": {
+            "idProduct": 922567,
+            "name": "Bootleg Black Sapphire Show",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467263,
+            "dateAdded": "2026-11-06 19:50:01"
+          }
+        },
+        {
+          "idProduct": 922589,
+          "officialProduct": {
+            "idProduct": 922589,
+            "name": "Bootleg Black Sapphire Show",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467263,
+            "dateAdded": "2026-11-06 19:56:13"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922567,
+            "value": "2026-11-06 19:50:01"
+          },
+          {
+            "idProduct": 922589,
+            "value": "2026-11-06 19:56:13"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:026",
+      "collectorNumber": "026",
+      "officialVariant": "Brawl Champ",
+      "cardName": "Cyberpsychosis",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922568,
+          "officialProduct": {
+            "idProduct": 922568,
+            "name": "Cyberpsychosis",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467264,
+            "dateAdded": "2026-11-06 19:50:14"
+          }
+        },
+        {
+          "idProduct": 922590,
+          "officialProduct": {
+            "idProduct": 922590,
+            "name": "Cyberpsychosis",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467264,
+            "dateAdded": "2026-11-06 19:56:26"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922568,
+            "value": "2026-11-06 19:50:14"
+          },
+          {
+            "idProduct": 922590,
+            "value": "2026-11-06 19:56:26"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:027",
+      "collectorNumber": "027",
+      "officialVariant": "Brawl Champ",
+      "cardName": "Corpo Security",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922569,
+          "officialProduct": {
+            "idProduct": 922569,
+            "name": "Corpo Security",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467184,
+            "dateAdded": "2026-11-06 19:50:27"
+          }
+        },
+        {
+          "idProduct": 922591,
+          "officialProduct": {
+            "idProduct": 922591,
+            "name": "Corpo Security",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467184,
+            "dateAdded": "2026-11-06 19:56:41"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922569,
+            "value": "2026-11-06 19:50:27"
+          },
+          {
+            "idProduct": 922591,
+            "value": "2026-11-06 19:56:41"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:028",
+      "collectorNumber": "028",
+      "officialVariant": "Brawl Champ",
+      "cardName": "MaxTac Squadron",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922570,
+          "officialProduct": {
+            "idProduct": 922570,
+            "name": "MaxTac Squadron",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467272,
+            "dateAdded": "2026-11-06 19:50:40"
+          }
+        },
+        {
+          "idProduct": 922593,
+          "officialProduct": {
+            "idProduct": 922593,
+            "name": "MaxTac Squadron",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467272,
+            "dateAdded": "2026-11-06 19:57:07"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922570,
+            "value": "2026-11-06 19:50:40"
+          },
+          {
+            "idProduct": 922593,
+            "value": "2026-11-06 19:57:07"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:029",
+      "collectorNumber": "029",
+      "officialVariant": "Brawl Champ",
+      "cardName": "Wraith Marauders",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922571,
+          "officialProduct": {
+            "idProduct": 922571,
+            "name": "Wraith Marauders",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467282,
+            "dateAdded": "2026-11-06 19:50:53"
+          }
+        },
+        {
+          "idProduct": 922594,
+          "officialProduct": {
+            "idProduct": 922594,
+            "name": "Wraith Marauders",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467282,
+            "dateAdded": "2026-11-06 19:57:21"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922571,
+            "value": "2026-11-06 19:50:53"
+          },
+          {
+            "idProduct": 922594,
+            "value": "2026-11-06 19:57:21"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:030",
+      "collectorNumber": "030",
+      "officialVariant": "Brawl Champ",
+      "cardName": "(Don't Fear) The Reaper",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922573,
+          "officialProduct": {
+            "idProduct": 922573,
+            "name": "(Don't Fear) The Reaper",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467286,
+            "dateAdded": "2026-11-06 19:51:07"
+          }
+        },
+        {
+          "idProduct": 922595,
+          "officialProduct": {
+            "idProduct": 922595,
+            "name": "(Don't Fear) The Reaper",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467286,
+            "dateAdded": "2026-11-06 19:57:39"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922573,
+            "value": "2026-11-06 19:51:07"
+          },
+          {
+            "idProduct": 922595,
+            "value": "2026-11-06 19:57:39"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:031",
+      "collectorNumber": "031",
+      "officialVariant": "Brawl Champ",
+      "cardName": "We Gotta Live Together",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922574,
+          "officialProduct": {
+            "idProduct": 922574,
+            "name": "We Gotta Live Together",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467292,
+            "dateAdded": "2026-11-06 19:51:21"
+          }
+        },
+        {
+          "idProduct": 922596,
+          "officialProduct": {
+            "idProduct": 922596,
+            "name": "We Gotta Live Together",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467292,
+            "dateAdded": "2026-11-06 19:57:50"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922574,
+            "value": "2026-11-06 19:51:21"
+          },
+          {
+            "idProduct": 922596,
+            "value": "2026-11-06 19:57:50"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:032",
+      "collectorNumber": "032",
+      "officialVariant": "Brawl Champ",
+      "cardName": "Delamain Cab",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922575,
+          "officialProduct": {
+            "idProduct": 922575,
+            "name": "Delamain Cab",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467178,
+            "dateAdded": "2026-11-06 19:51:35"
+          }
+        },
+        {
+          "idProduct": 922598,
+          "officialProduct": {
+            "idProduct": 922598,
+            "name": "Delamain Cab",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467178,
+            "dateAdded": "2026-11-06 19:58:03"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922575,
+            "value": "2026-11-06 19:51:35"
+          },
+          {
+            "idProduct": 922598,
+            "value": "2026-11-06 19:58:03"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:033",
+      "collectorNumber": "033",
+      "officialVariant": "Brawl Champ",
+      "cardName": "Maman Brigitte: Spirit of Death",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922577,
+          "officialProduct": {
+            "idProduct": 922577,
+            "name": "Maman Brigitte - Spirit of Death",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467302,
+            "dateAdded": "2026-11-06 19:51:58"
+          }
+        },
+        {
+          "idProduct": 922599,
+          "officialProduct": {
+            "idProduct": 922599,
+            "name": "Maman Brigitte - Spirit of Death",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467302,
+            "dateAdded": "2026-11-06 19:58:21"
+          }
+        },
+        {
+          "idProduct": 922603,
+          "officialProduct": {
+            "idProduct": 922603,
+            "name": "Maman Brigitte - Spirit of Death",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467302,
+            "dateAdded": "2026-11-06 19:59:21"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922577,
+            "value": "2026-11-06 19:51:58"
+          },
+          {
+            "idProduct": 922599,
+            "value": "2026-11-06 19:58:21"
+          },
+          {
+            "idProduct": 922603,
+            "value": "2026-11-06 19:59:21"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:034",
+      "collectorNumber": "034",
+      "officialVariant": "Brawl Champ",
+      "cardName": "Dying Night: V's Pistol",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922578,
+          "officialProduct": {
+            "idProduct": 922578,
+            "name": "Dying Night - V's Pistol",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467190,
+            "dateAdded": "2026-11-06 19:52:17"
+          }
+        },
+        {
+          "idProduct": 922600,
+          "officialProduct": {
+            "idProduct": 922600,
+            "name": "Dying Night - V's Pistol",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467190,
+            "dateAdded": "2026-11-06 19:58:37"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922578,
+            "value": "2026-11-06 19:52:17"
+          },
+          {
+            "idProduct": 922600,
+            "value": "2026-11-06 19:58:37"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:035",
+      "collectorNumber": "035",
+      "officialVariant": "Brawl Champ",
+      "cardName": "NetWatch Netdriver",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922579,
+          "officialProduct": {
+            "idProduct": 922579,
+            "name": "NetWatch Netdriver",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467311,
+            "dateAdded": "2026-11-06 19:52:30"
+          }
+        },
+        {
+          "idProduct": 922601,
+          "officialProduct": {
+            "idProduct": 922601,
+            "name": "NetWatch Netdriver",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467311,
+            "dateAdded": "2026-11-06 19:58:50"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922579,
+            "value": "2026-11-06 19:52:30"
+          },
+          {
+            "idProduct": 922601,
+            "value": "2026-11-06 19:58:50"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:036",
+      "collectorNumber": "036",
+      "officialVariant": "Brawl Champ",
+      "cardName": "Floor It",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922581,
+          "officialProduct": {
+            "idProduct": 922581,
+            "name": "Floor It",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467191,
+            "dateAdded": "2026-11-06 19:54:14"
+          }
+        },
+        {
+          "idProduct": 922602,
+          "officialProduct": {
+            "idProduct": 922602,
+            "name": "Floor It",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467191,
+            "dateAdded": "2026-11-06 19:59:01"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922581,
+            "value": "2026-11-06 19:54:14"
+          },
+          {
+            "idProduct": 922602,
+            "value": "2026-11-06 19:59:01"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    },
+    {
+      "key": "brawl-s1:037",
+      "collectorNumber": "037",
+      "officialVariant": "Judge",
+      "cardName": "Maman Brigitte: Spirit of Death",
+      "cardmarketCandidates": [
+        {
+          "idProduct": 922577,
+          "officialProduct": {
+            "idProduct": 922577,
+            "name": "Maman Brigitte - Spirit of Death",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467302,
+            "dateAdded": "2026-11-06 19:51:58"
+          }
+        },
+        {
+          "idProduct": 922599,
+          "officialProduct": {
+            "idProduct": 922599,
+            "name": "Maman Brigitte - Spirit of Death",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467302,
+            "dateAdded": "2026-11-06 19:58:21"
+          }
+        },
+        {
+          "idProduct": 922603,
+          "officialProduct": {
+            "idProduct": 922603,
+            "name": "Maman Brigitte - Spirit of Death",
+            "idCategory": 1661,
+            "categoryName": "Cyberpunk Single",
+            "idExpansion": 6953,
+            "idMetacard": 467302,
+            "dateAdded": "2026-11-06 19:59:21"
+          }
+        }
+      ],
+      "distinguishingProductFieldsExcludingId": {
+        "dateAdded": [
+          {
+            "idProduct": 922577,
+            "value": "2026-11-06 19:51:58"
+          },
+          {
+            "idProduct": 922599,
+            "value": "2026-11-06 19:58:21"
+          },
+          {
+            "idProduct": 922603,
+            "value": "2026-11-06 19:59:21"
+          }
+        ]
+      },
+      "safelyVerifiedProductId": null
+    }
+  ],
+  "warning": "Diagnose ohne Preisimport. Eine unterschiedliche Produkt-ID oder Listenreihenfolge ist kein Beweis fuer Participation/Brawl Champ/Judge."
+}
