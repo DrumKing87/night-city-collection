@@ -1,0 +1,868 @@
+{
+  "generatedAt": "2026-11-10T11:27:20+00:00",
+  "method": "Cardometer print NUMBER + RARITY + OFFICIAL Cardmarket EXPANSION/PRODUCT NAME/ID",
+  "priceSource": "Cardmarket official EUR price guide only; never Cardometer prices",
+  "mappedWncVariantRecords": 112,
+  "mappedNewRecords": 112,
+  "skipped": [
+    {
+      "key": "beta:β005b",
+      "reason": "finish_conflict_005b"
+    },
+    {
+      "key": "beta:β038",
+      "reason": "no_unique_external_print_id",
+      "candidateIds": []
+    },
+    {
+      "key": "beta:β108",
+      "reason": "no_unique_external_print_id",
+      "candidateIds": []
+    },
+    {
+      "key": "beta:β116",
+      "reason": "no_unique_external_print_id",
+      "candidateIds": []
+    },
+    {
+      "key": "beta:β147",
+      "reason": "no_unique_external_print_id",
+      "candidateIds": []
+    },
+    {
+      "key": "beta:β157",
+      "reason": "no_unique_external_print_id",
+      "candidateIds": []
+    },
+    {
+      "key": "beta:β171",
+      "reason": "no_unique_external_print_id",
+      "candidateIds": []
+    },
+    {
+      "key": "retail:005b",
+      "reason": "finish_conflict_005b"
+    },
+    {
+      "key": "retail:038",
+      "reason": "no_unique_external_print_id",
+      "candidateIds": []
+    },
+    {
+      "key": "retail:108",
+      "reason": "no_unique_external_print_id",
+      "candidateIds": []
+    },
+    {
+      "key": "retail:116",
+      "reason": "no_unique_external_print_id",
+      "candidateIds": []
+    },
+    {
+      "key": "retail:147",
+      "reason": "no_unique_external_print_id",
+      "candidateIds": []
+    },
+    {
+      "key": "retail:157",
+      "reason": "no_unique_external_print_id",
+      "candidateIds": []
+    },
+    {
+      "key": "retail:171",
+      "reason": "no_unique_external_print_id",
+      "candidateIds": []
+    }
+  ],
+  "evidence": [
+    {
+      "key": "beta:β001",
+      "idProduct": 905088,
+      "cardNumber": "001",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-adam-smasher-ender-of-legends-001-905088/"
+    },
+    {
+      "key": "beta:β002",
+      "idProduct": 905089,
+      "cardNumber": "002",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-dexter-deshawn-off-the-grid-002-905089/"
+    },
+    {
+      "key": "beta:β003",
+      "idProduct": 905090,
+      "cardNumber": "003",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-johnny-silverhand-rocking-renegade-003-905090/"
+    },
+    {
+      "key": "beta:β004",
+      "idProduct": 905091,
+      "cardNumber": "004",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-royce-psycho-on-the-edge-004-905091/"
+    },
+    {
+      "key": "beta:β005a",
+      "idProduct": 905092,
+      "cardNumber": "005a",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-v-streetkid-005a-905092/"
+    },
+    {
+      "key": "beta:β011",
+      "idProduct": 905099,
+      "cardNumber": "011",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-johnny-silverhand-never-stop-fighting-011-905099/"
+    },
+    {
+      "key": "beta:β036",
+      "idProduct": 905124,
+      "cardNumber": "036",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-dum-dum-maelstrom-triggerman-036-905124/"
+    },
+    {
+      "key": "beta:β037",
+      "idProduct": 905125,
+      "cardNumber": "037",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-kerry-eurodyne-axe-attitude-audience-037-905125/"
+    },
+    {
+      "key": "beta:β039",
+      "idProduct": 905127,
+      "cardNumber": "039",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-river-ward-detective-on-the-hunt-039-905127/"
+    },
+    {
+      "key": "beta:β040",
+      "idProduct": 905128,
+      "cardNumber": "040",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-rogue-amendiares-preem-solo-040-905128/"
+    },
+    {
+      "key": "beta:β041",
+      "idProduct": 905129,
+      "cardNumber": "041",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-adam-smasher-metal-over-meat-041-905129/"
+    },
+    {
+      "key": "beta:β042",
+      "idProduct": 905130,
+      "cardNumber": "042",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-alt-cunningham-mother-of-daemons-042-905130/"
+    },
+    {
+      "key": "beta:β046",
+      "idProduct": 905134,
+      "cardNumber": "046",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-hanako-arasaka-in-a-gilded-cage-046-905134/"
+    },
+    {
+      "key": "beta:β063",
+      "idProduct": 905151,
+      "cardNumber": "063",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-the-relic-experimental-biochip-063-905151/"
+    },
+    {
+      "key": "beta:β071",
+      "idProduct": 905159,
+      "cardNumber": "071",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-goro-takemura-vengeful-bodyguard-071-905159/"
+    },
+    {
+      "key": "beta:β072",
+      "idProduct": 905160,
+      "cardNumber": "072",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-hanako-arasaka-daughter-of-the-emperor-072-905160/"
+    },
+    {
+      "key": "beta:β073",
+      "idProduct": 905161,
+      "cardNumber": "073",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-jackie-welles-mamas-favorite-073-905161/"
+    },
+    {
+      "key": "beta:β074",
+      "idProduct": 905162,
+      "cardNumber": "074",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-padre-man-of-the-cross-074-905162/"
+    },
+    {
+      "key": "beta:β075",
+      "idProduct": 905163,
+      "cardNumber": "075",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-panam-palmer-nomad-cavalry-075-905163/"
+    },
+    {
+      "key": "beta:β085",
+      "idProduct": 905173,
+      "cardNumber": "085",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-panam-palmer-strength-through-family-085-905173/"
+    },
+    {
+      "key": "beta:β088",
+      "idProduct": 905176,
+      "cardNumber": "088",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-sandayu-oda-hanakos-guardian-088-905176/"
+    },
+    {
+      "key": "beta:β093",
+      "idProduct": 905181,
+      "cardNumber": "093",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-overwatch-panams-gift-093-905181/"
+    },
+    {
+      "key": "beta:β106",
+      "idProduct": 905194,
+      "cardNumber": "106",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-alt-cunningham-soulkiller-architect-106-905194/"
+    },
+    {
+      "key": "beta:β107",
+      "idProduct": 905195,
+      "cardNumber": "107",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-evelyn-parker-beautiful-enigma-107-905195/"
+    },
+    {
+      "key": "beta:β109",
+      "idProduct": 905197,
+      "cardNumber": "109",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-sasha-yakovleva-wont-let-you-down-109-905197/"
+    },
+    {
+      "key": "beta:β110",
+      "idProduct": 905198,
+      "cardNumber": "110",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-wakako-okada-peace-and-harmony-110-905198/"
+    },
+    {
+      "key": "beta:β126",
+      "idProduct": 905214,
+      "cardNumber": "126",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-rogue-amendiares-queen-of-the-afterlife-126-905214/"
+    },
+    {
+      "key": "beta:β138",
+      "idProduct": 905226,
+      "cardNumber": "138",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-towerfall-138-905226/"
+    },
+    {
+      "key": "beta:β141",
+      "idProduct": 905229,
+      "cardNumber": "141",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-adam-smasher-ender-of-legends-141-905229/"
+    },
+    {
+      "key": "beta:β142",
+      "idProduct": 905230,
+      "cardNumber": "142",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-dexter-deshawn-off-the-grid-142-905230/"
+    },
+    {
+      "key": "beta:β143",
+      "idProduct": 905231,
+      "cardNumber": "143",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-royce-psycho-on-the-edge-143-905231/"
+    },
+    {
+      "key": "beta:β144",
+      "idProduct": 905232,
+      "cardNumber": "144",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-v-streetkid-144-905232/"
+    },
+    {
+      "key": "beta:β145",
+      "idProduct": 905233,
+      "cardNumber": "145",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-dum-dum-maelstrom-triggerman-145-905233/"
+    },
+    {
+      "key": "beta:β146",
+      "idProduct": 905234,
+      "cardNumber": "146",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-kerry-eurodyne-axe-attitude-audience-146-905234/"
+    },
+    {
+      "key": "beta:β148",
+      "idProduct": 905236,
+      "cardNumber": "148",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-river-ward-detective-on-the-hunt-148-905236/"
+    },
+    {
+      "key": "beta:β149",
+      "idProduct": 905237,
+      "cardNumber": "149",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-rogue-amendiares-preem-solo-149-905237/"
+    },
+    {
+      "key": "beta:β150",
+      "idProduct": 905238,
+      "cardNumber": "150",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-goro-takemura-vengeful-bodyguard-150-905238/"
+    },
+    {
+      "key": "beta:β151",
+      "idProduct": 905239,
+      "cardNumber": "151",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-hanako-arasaka-daughter-of-the-emperor-151-905239/"
+    },
+    {
+      "key": "beta:β152",
+      "idProduct": 905240,
+      "cardNumber": "152",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-jackie-welles-mamas-favorite-152-905240/"
+    },
+    {
+      "key": "beta:β153",
+      "idProduct": 905241,
+      "cardNumber": "153",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-padre-man-of-the-cross-153-905241/"
+    },
+    {
+      "key": "beta:β154",
+      "idProduct": 905242,
+      "cardNumber": "154",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-panam-palmer-nomad-cavalry-154-905242/"
+    },
+    {
+      "key": "beta:β155",
+      "idProduct": 905243,
+      "cardNumber": "155",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-alt-cunningham-soulkiller-architect-155-905243/"
+    },
+    {
+      "key": "beta:β156",
+      "idProduct": 905244,
+      "cardNumber": "156",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-evelyn-parker-beautiful-enigma-156-905244/"
+    },
+    {
+      "key": "beta:β158",
+      "idProduct": 905246,
+      "cardNumber": "158",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-wakako-okada-peace-and-harmony-158-905246/"
+    },
+    {
+      "key": "beta:β159",
+      "idProduct": 905248,
+      "cardNumber": "159",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-johnny-silverhand-never-stop-fighting-159-905248/"
+    },
+    {
+      "key": "beta:β160",
+      "idProduct": 905249,
+      "cardNumber": "160",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-adam-smasher-metal-over-meat-160-905249/"
+    },
+    {
+      "key": "beta:β161",
+      "idProduct": 905250,
+      "cardNumber": "161",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-alt-cunningham-mother-of-daemons-161-905250/"
+    },
+    {
+      "key": "beta:β162",
+      "idProduct": 905251,
+      "cardNumber": "162",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-hanako-arasaka-in-a-gilded-cage-162-905251/"
+    },
+    {
+      "key": "beta:β163",
+      "idProduct": 905252,
+      "cardNumber": "163",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-the-relic-experimental-biochip-163-905252/"
+    },
+    {
+      "key": "beta:β164",
+      "idProduct": 905253,
+      "cardNumber": "164",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-sandayu-oda-hanakos-guardian-164-905253/"
+    },
+    {
+      "key": "beta:β165",
+      "idProduct": 905254,
+      "cardNumber": "165",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-overwatch-panams-gift-165-905254/"
+    },
+    {
+      "key": "beta:β166",
+      "idProduct": 905255,
+      "cardNumber": "166",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-rogue-amendiares-queen-of-the-afterlife-166-905255/"
+    },
+    {
+      "key": "beta:β167",
+      "idProduct": 905256,
+      "cardNumber": "167",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-towerfall-167-905256/"
+    },
+    {
+      "key": "beta:β168",
+      "idProduct": 905257,
+      "cardNumber": "168",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-johnny-silverhand-rocking-renegade-168-905257/"
+    },
+    {
+      "key": "beta:β169",
+      "idProduct": 905258,
+      "cardNumber": "169",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-sasha-yakovleva-wont-let-you-down-169-905258/"
+    },
+    {
+      "key": "beta:β170",
+      "idProduct": 905259,
+      "cardNumber": "170",
+      "expansion": 6714,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-panam-palmer-strength-through-family-170-905259/"
+    },
+    {
+      "key": "retail:001",
+      "idProduct": 920398,
+      "cardNumber": "001",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-adam-smasher-ender-of-legends-001-920398/"
+    },
+    {
+      "key": "retail:002",
+      "idProduct": 920419,
+      "cardNumber": "002",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-dexter-deshawn-off-the-grid-002-920419/"
+    },
+    {
+      "key": "retail:003",
+      "idProduct": 920420,
+      "cardNumber": "003",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-johnny-silverhand-rocking-renegade-003-920420/"
+    },
+    {
+      "key": "retail:004",
+      "idProduct": 920421,
+      "cardNumber": "004",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-royce-psycho-on-the-edge-004-920421/"
+    },
+    {
+      "key": "retail:005a",
+      "idProduct": 920422,
+      "cardNumber": "005a",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-v-streetkid-005a-920422/"
+    },
+    {
+      "key": "retail:011",
+      "idProduct": 920442,
+      "cardNumber": "011",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-johnny-silverhand-never-stop-fighting-011-920442/"
+    },
+    {
+      "key": "retail:036",
+      "idProduct": 920474,
+      "cardNumber": "036",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-dum-dum-maelstrom-triggerman-036-920474/"
+    },
+    {
+      "key": "retail:037",
+      "idProduct": 920475,
+      "cardNumber": "037",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-kerry-eurodyne-axe-attitude-audience-037-920475/"
+    },
+    {
+      "key": "retail:039",
+      "idProduct": 920477,
+      "cardNumber": "039",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-river-ward-detective-on-the-hunt-039-920477/"
+    },
+    {
+      "key": "retail:040",
+      "idProduct": 920478,
+      "cardNumber": "040",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-rogue-amendiares-preem-solo-040-920478/"
+    },
+    {
+      "key": "retail:041",
+      "idProduct": 920479,
+      "cardNumber": "041",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-adam-smasher-metal-over-meat-041-920479/"
+    },
+    {
+      "key": "retail:042",
+      "idProduct": 920480,
+      "cardNumber": "042",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-alt-cunningham-mother-of-daemons-042-920480/"
+    },
+    {
+      "key": "retail:046",
+      "idProduct": 920484,
+      "cardNumber": "046",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-hanako-arasaka-in-a-gilded-cage-046-920484/"
+    },
+    {
+      "key": "retail:063",
+      "idProduct": 920501,
+      "cardNumber": "063",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-the-relic-experimental-biochip-063-920501/"
+    },
+    {
+      "key": "retail:071",
+      "idProduct": 920509,
+      "cardNumber": "071",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-goro-takemura-vengeful-bodyguard-071-920509/"
+    },
+    {
+      "key": "retail:072",
+      "idProduct": 920510,
+      "cardNumber": "072",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-hanako-arasaka-daughter-of-the-emperor-072-920510/"
+    },
+    {
+      "key": "retail:073",
+      "idProduct": 920571,
+      "cardNumber": "073",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-jackie-welles-mamas-favorite-073-920571/"
+    },
+    {
+      "key": "retail:074",
+      "idProduct": 920573,
+      "cardNumber": "074",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-padre-man-of-the-cross-074-920573/"
+    },
+    {
+      "key": "retail:075",
+      "idProduct": 920575,
+      "cardNumber": "075",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-panam-palmer-nomad-cavalry-075-920575/"
+    },
+    {
+      "key": "retail:085",
+      "idProduct": 920592,
+      "cardNumber": "085",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-panam-palmer-strength-through-family-085-920592/"
+    },
+    {
+      "key": "retail:088",
+      "idProduct": 920595,
+      "cardNumber": "088",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-sandayu-oda-hanakos-guardian-088-920595/"
+    },
+    {
+      "key": "retail:093",
+      "idProduct": 920600,
+      "cardNumber": "093",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-overwatch-panams-gift-093-920600/"
+    },
+    {
+      "key": "retail:106",
+      "idProduct": 920613,
+      "cardNumber": "106",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-alt-cunningham-soulkiller-architect-106-920613/"
+    },
+    {
+      "key": "retail:107",
+      "idProduct": 920614,
+      "cardNumber": "107",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-evelyn-parker-beautiful-enigma-107-920614/"
+    },
+    {
+      "key": "retail:109",
+      "idProduct": 920616,
+      "cardNumber": "109",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-sasha-yakovleva-wont-let-you-down-109-920616/"
+    },
+    {
+      "key": "retail:110",
+      "idProduct": 920617,
+      "cardNumber": "110",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-wakako-okada-peace-and-harmony-110-920617/"
+    },
+    {
+      "key": "retail:126",
+      "idProduct": 920633,
+      "cardNumber": "126",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-rogue-amendiares-queen-of-the-afterlife-126-920633/"
+    },
+    {
+      "key": "retail:138",
+      "idProduct": 920645,
+      "cardNumber": "138",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-towerfall-138-920645/"
+    },
+    {
+      "key": "retail:141",
+      "idProduct": 920648,
+      "cardNumber": "141",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-adam-smasher-ender-of-legends-141-920648/"
+    },
+    {
+      "key": "retail:142",
+      "idProduct": 920649,
+      "cardNumber": "142",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-dexter-deshawn-off-the-grid-142-920649/"
+    },
+    {
+      "key": "retail:143",
+      "idProduct": 920650,
+      "cardNumber": "143",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-royce-psycho-on-the-edge-143-920650/"
+    },
+    {
+      "key": "retail:144",
+      "idProduct": 920651,
+      "cardNumber": "144",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-v-streetkid-144-920651/"
+    },
+    {
+      "key": "retail:145",
+      "idProduct": 920652,
+      "cardNumber": "145",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-dum-dum-maelstrom-triggerman-145-920652/"
+    },
+    {
+      "key": "retail:146",
+      "idProduct": 920653,
+      "cardNumber": "146",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-kerry-eurodyne-axe-attitude-audience-146-920653/"
+    },
+    {
+      "key": "retail:148",
+      "idProduct": 920655,
+      "cardNumber": "148",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-river-ward-detective-on-the-hunt-148-920655/"
+    },
+    {
+      "key": "retail:149",
+      "idProduct": 920656,
+      "cardNumber": "149",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-rogue-amendiares-preem-solo-149-920656/"
+    },
+    {
+      "key": "retail:150",
+      "idProduct": 920657,
+      "cardNumber": "150",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-goro-takemura-vengeful-bodyguard-150-920657/"
+    },
+    {
+      "key": "retail:151",
+      "idProduct": 920658,
+      "cardNumber": "151",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-hanako-arasaka-daughter-of-the-emperor-151-920658/"
+    },
+    {
+      "key": "retail:152",
+      "idProduct": 920659,
+      "cardNumber": "152",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-jackie-welles-mamas-favorite-152-920659/"
+    },
+    {
+      "key": "retail:153",
+      "idProduct": 920660,
+      "cardNumber": "153",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-padre-man-of-the-cross-153-920660/"
+    },
+    {
+      "key": "retail:154",
+      "idProduct": 920661,
+      "cardNumber": "154",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-panam-palmer-nomad-cavalry-154-920661/"
+    },
+    {
+      "key": "retail:155",
+      "idProduct": 920662,
+      "cardNumber": "155",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-alt-cunningham-soulkiller-architect-155-920662/"
+    },
+    {
+      "key": "retail:156",
+      "idProduct": 920663,
+      "cardNumber": "156",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-evelyn-parker-beautiful-enigma-156-920663/"
+    },
+    {
+      "key": "retail:158",
+      "idProduct": 920665,
+      "cardNumber": "158",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-wakako-okada-peace-and-harmony-158-920665/"
+    },
+    {
+      "key": "retail:159",
+      "idProduct": 920666,
+      "cardNumber": "159",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-johnny-silverhand-never-stop-fighting-159-920666/"
+    },
+    {
+      "key": "retail:160",
+      "idProduct": 920667,
+      "cardNumber": "160",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-adam-smasher-metal-over-meat-160-920667/"
+    },
+    {
+      "key": "retail:161",
+      "idProduct": 920668,
+      "cardNumber": "161",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-alt-cunningham-mother-of-daemons-161-920668/"
+    },
+    {
+      "key": "retail:162",
+      "idProduct": 920669,
+      "cardNumber": "162",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-hanako-arasaka-in-a-gilded-cage-162-920669/"
+    },
+    {
+      "key": "retail:163",
+      "idProduct": 920670,
+      "cardNumber": "163",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-the-relic-experimental-biochip-163-920670/"
+    },
+    {
+      "key": "retail:164",
+      "idProduct": 920671,
+      "cardNumber": "164",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-sandayu-oda-hanakos-guardian-164-920671/"
+    },
+    {
+      "key": "retail:165",
+      "idProduct": 920672,
+      "cardNumber": "165",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-overwatch-panams-gift-165-920672/"
+    },
+    {
+      "key": "retail:166",
+      "idProduct": 920673,
+      "cardNumber": "166",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-rogue-amendiares-queen-of-the-afterlife-166-920673/"
+    },
+    {
+      "key": "retail:167",
+      "idProduct": 920674,
+      "cardNumber": "167",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-towerfall-167-920674/"
+    },
+    {
+      "key": "retail:168",
+      "idProduct": 920675,
+      "cardNumber": "168",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-johnny-silverhand-rocking-renegade-168-920675/"
+    },
+    {
+      "key": "retail:169",
+      "idProduct": 920676,
+      "cardNumber": "169",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-sasha-yakovleva-wont-let-you-down-169-920676/"
+    },
+    {
+      "key": "retail:170",
+      "idProduct": 920677,
+      "cardNumber": "170",
+      "expansion": 6761,
+      "sourceUrl": "https://cardometer.com/cyberpunk/cards/cyberpunk-panam-palmer-strength-through-family-170-920677/"
+    }
+  ],
+  "sourcePages": {
+    "wnc-beta": "https://cardometer.com/cyberpunk/sets/cyberpunk-welcome-to-night-city-beta/",
+    "wnc-retail": "https://cardometer.com/cyberpunk/sets/cyberpunk-welcome-to-night-city-retail/"
+  },
+  "notes": "No order-based mapping; 005b held back due to foil/normal discrepancy. Brawl and Showdown excluded because public checklist lacks verified product-specific collector numbers."
+}
