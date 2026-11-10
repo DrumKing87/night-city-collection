@@ -1,0 +1,3024 @@
+{
+  "schema": 1,
+  "generatedAt": "2026-11-10T09:07:01+00:00",
+  "productCatalogSource": "https://downloads.s3.cardmarket.com/productCatalog/productList/products_singles_23.json",
+  "priceGuideSource": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_23.json",
+  "productsCreatedAt": "2026-11-08T13:01:13+0100",
+  "priceGuideCreatedAt": "2026-11-09T02:50:49+0100",
+  "catalogPrintings": 591,
+  "examinedNewPrintings": 133,
+  "savedPriceRecordsUnchanged": 378,
+  "cardmarketProductCount": 570,
+  "cardmarketExpansionCount": 17,
+  "newSets": [
+    {
+      "setId": "edgerunner-s1",
+      "setTitle": "Edgerunner Open S1",
+      "catalogPrintings": 53,
+      "distinctCardNames": 33,
+      "candidateExpansions": [
+        {
+          "idExpansion": 6714,
+          "expansionNames": [],
+          "cardmarketProductCount": 172,
+          "matchingLocalPrintings": 47,
+          "matchingDistinctNames": 27,
+          "uniqueNameAndProductCount": 3,
+          "uniqueWithValidPrice": 0,
+          "matchingExamples": [
+            {
+              "name": "Royce: Don't Call Me Simon",
+              "catalogKeys": [
+                "edgerunner-s1:001"
+              ],
+              "candidateProductIds": [
+                905104
+              ]
+            },
+            {
+              "name": "Field Operator",
+              "catalogKeys": [
+                "edgerunner-s1:002"
+              ],
+              "candidateProductIds": [
+                905166
+              ]
+            },
+            {
+              "name": "Riding Nomad",
+              "catalogKeys": [
+                "edgerunner-s1:003"
+              ],
+              "candidateProductIds": [
+                905175
+              ]
+            },
+            {
+              "name": "Industrial Assembly",
+              "catalogKeys": [
+                "edgerunner-s1:004",
+                "edgerunner-s1:008"
+              ],
+              "candidateProductIds": [
+                905121
+              ]
+            },
+            {
+              "name": "Afterparty at Lizzie's",
+              "catalogKeys": [
+                "edgerunner-s1:005",
+                "edgerunner-s1:009"
+              ],
+              "candidateProductIds": [
+                905153
+              ]
+            },
+            {
+              "name": "Peace Offering",
+              "catalogKeys": [
+                "edgerunner-s1:006",
+                "edgerunner-s1:010"
+              ],
+              "candidateProductIds": [
+                905189
+              ]
+            },
+            {
+              "name": "Trust No One",
+              "catalogKeys": [
+                "edgerunner-s1:007",
+                "edgerunner-s1:011"
+              ],
+              "candidateProductIds": [
+                905227
+              ]
+            },
+            {
+              "name": "Dexter DeShawn: Off the Grid",
+              "catalogKeys": [
+                "edgerunner-s1:012",
+                "edgerunner-s1:016",
+                "edgerunner-s1:020"
+              ],
+              "candidateProductIds": [
+                905089,
+                905230
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6761,
+          "expansionNames": [],
+          "cardmarketProductCount": 172,
+          "matchingLocalPrintings": 47,
+          "matchingDistinctNames": 27,
+          "uniqueNameAndProductCount": 3,
+          "uniqueWithValidPrice": 0,
+          "matchingExamples": [
+            {
+              "name": "Royce: Don't Call Me Simon",
+              "catalogKeys": [
+                "edgerunner-s1:001"
+              ],
+              "candidateProductIds": [
+                920454
+              ]
+            },
+            {
+              "name": "Field Operator",
+              "catalogKeys": [
+                "edgerunner-s1:002"
+              ],
+              "candidateProductIds": [
+                920579
+              ]
+            },
+            {
+              "name": "Riding Nomad",
+              "catalogKeys": [
+                "edgerunner-s1:003"
+              ],
+              "candidateProductIds": [
+                920594
+              ]
+            },
+            {
+              "name": "Industrial Assembly",
+              "catalogKeys": [
+                "edgerunner-s1:004",
+                "edgerunner-s1:008"
+              ],
+              "candidateProductIds": [
+                920471
+              ]
+            },
+            {
+              "name": "Afterparty at Lizzie's",
+              "catalogKeys": [
+                "edgerunner-s1:005",
+                "edgerunner-s1:009"
+              ],
+              "candidateProductIds": [
+                920503
+              ]
+            },
+            {
+              "name": "Peace Offering",
+              "catalogKeys": [
+                "edgerunner-s1:006",
+                "edgerunner-s1:010"
+              ],
+              "candidateProductIds": [
+                920608
+              ]
+            },
+            {
+              "name": "Trust No One",
+              "catalogKeys": [
+                "edgerunner-s1:007",
+                "edgerunner-s1:011"
+              ],
+              "candidateProductIds": [
+                920646
+              ]
+            },
+            {
+              "name": "Dexter DeShawn: Off the Grid",
+              "catalogKeys": [
+                "edgerunner-s1:012",
+                "edgerunner-s1:016",
+                "edgerunner-s1:020"
+              ],
+              "candidateProductIds": [
+                920419,
+                920649
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6718,
+          "expansionNames": [],
+          "cardmarketProductCount": 11,
+          "matchingLocalPrintings": 14,
+          "matchingDistinctNames": 10,
+          "uniqueNameAndProductCount": 9,
+          "uniqueWithValidPrice": 9,
+          "matchingExamples": [
+            {
+              "name": "Judy Álvarez: Braindance Maestro",
+              "catalogKeys": [
+                "edgerunner-s1:015",
+                "edgerunner-s1:019",
+                "edgerunner-s1:023"
+              ],
+              "candidateProductIds": [
+                905046
+              ]
+            },
+            {
+              "name": "Adam Smasher: Ender of Legends",
+              "catalogKeys": [
+                "edgerunner-s1:029"
+              ],
+              "candidateProductIds": [
+                905037
+              ]
+            },
+            {
+              "name": "Royce: Psycho on the Edge",
+              "catalogKeys": [
+                "edgerunner-s1:032"
+              ],
+              "candidateProductIds": [
+                905038
+              ]
+            },
+            {
+              "name": "Dum Dum: Maelstrom Triggerman",
+              "catalogKeys": [
+                "edgerunner-s1:035"
+              ],
+              "candidateProductIds": [
+                905039
+              ]
+            },
+            {
+              "name": "River Ward: Detective on the Hunt",
+              "catalogKeys": [
+                "edgerunner-s1:038"
+              ],
+              "candidateProductIds": [
+                905040
+              ]
+            },
+            {
+              "name": "Rogue Amendiares: Preem Solo",
+              "catalogKeys": [
+                "edgerunner-s1:039"
+              ],
+              "candidateProductIds": [
+                905041
+              ]
+            },
+            {
+              "name": "Goro Takemura: Vengeful Bodyguard",
+              "catalogKeys": [
+                "edgerunner-s1:042"
+              ],
+              "candidateProductIds": [
+                905042
+              ]
+            },
+            {
+              "name": "Jackie Welles: Mama's Favorite",
+              "catalogKeys": [
+                "edgerunner-s1:044"
+              ],
+              "candidateProductIds": [
+                905043
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6765,
+          "expansionNames": [],
+          "cardmarketProductCount": 11,
+          "matchingLocalPrintings": 18,
+          "matchingDistinctNames": 10,
+          "uniqueNameAndProductCount": 8,
+          "uniqueWithValidPrice": 8,
+          "matchingExamples": [
+            {
+              "name": "Dexter DeShawn: Off the Grid",
+              "catalogKeys": [
+                "edgerunner-s1:012",
+                "edgerunner-s1:016",
+                "edgerunner-s1:020"
+              ],
+              "candidateProductIds": [
+                920518
+              ]
+            },
+            {
+              "name": "Muamar Reyes: El Capitán",
+              "catalogKeys": [
+                "edgerunner-s1:014",
+                "edgerunner-s1:018",
+                "edgerunner-s1:022"
+              ],
+              "candidateProductIds": [
+                920521
+              ]
+            },
+            {
+              "name": "Adam Smasher: Ender of Legends",
+              "catalogKeys": [
+                "edgerunner-s1:029"
+              ],
+              "candidateProductIds": [
+                920517
+              ]
+            },
+            {
+              "name": "Royce: Psycho on the Edge",
+              "catalogKeys": [
+                "edgerunner-s1:032"
+              ],
+              "candidateProductIds": [
+                920519
+              ]
+            },
+            {
+              "name": "Dum Dum: Maelstrom Triggerman",
+              "catalogKeys": [
+                "edgerunner-s1:035"
+              ],
+              "candidateProductIds": [
+                920520
+              ]
+            },
+            {
+              "name": "Rogue Amendiares: Preem Solo",
+              "catalogKeys": [
+                "edgerunner-s1:039"
+              ],
+              "candidateProductIds": [
+                920522
+              ]
+            },
+            {
+              "name": "Goro Takemura: Vengeful Bodyguard",
+              "catalogKeys": [
+                "edgerunner-s1:042"
+              ],
+              "candidateProductIds": [
+                920523
+              ]
+            },
+            {
+              "name": "Padre: Man of the Cross",
+              "catalogKeys": [
+                "edgerunner-s1:045"
+              ],
+              "candidateProductIds": [
+                920524
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6722,
+          "expansionNames": [],
+          "cardmarketProductCount": 35,
+          "matchingLocalPrintings": 8,
+          "matchingDistinctNames": 7,
+          "uniqueNameAndProductCount": 0,
+          "uniqueWithValidPrice": 0,
+          "matchingExamples": [
+            {
+              "name": "Industrial Assembly",
+              "catalogKeys": [
+                "edgerunner-s1:004",
+                "edgerunner-s1:008"
+              ],
+              "candidateProductIds": [
+                904949
+              ]
+            },
+            {
+              "name": "Yorinobu Arasaka: Embracing Destruction",
+              "catalogKeys": [
+                "edgerunner-s1:034"
+              ],
+              "candidateProductIds": [
+                904915,
+                904975
+              ]
+            },
+            {
+              "name": "Viktor Vektor: Sit Down and Relax",
+              "catalogKeys": [
+                "edgerunner-s1:040"
+              ],
+              "candidateProductIds": [
+                904925,
+                904982
+              ]
+            },
+            {
+              "name": "Goro Takemura: Hands Unclean",
+              "catalogKeys": [
+                "edgerunner-s1:041"
+              ],
+              "candidateProductIds": [
+                904919,
+                904970
+              ]
+            },
+            {
+              "name": "Saburo Arasaka: Stubborn Patriarch",
+              "catalogKeys": [
+                "edgerunner-s1:047"
+              ],
+              "candidateProductIds": [
+                904922,
+                904968
+              ]
+            },
+            {
+              "name": "Jackie Welles: Pour One Out For Me",
+              "catalogKeys": [
+                "edgerunner-s1:050"
+              ],
+              "candidateProductIds": [
+                904916,
+                904978
+              ]
+            },
+            {
+              "name": "V: Corporate Exile",
+              "catalogKeys": [
+                "edgerunner-s1:053"
+              ],
+              "candidateProductIds": [
+                904917,
+                904980
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6717,
+          "expansionNames": [],
+          "cardmarketProductCount": 6,
+          "matchingLocalPrintings": 6,
+          "matchingDistinctNames": 6,
+          "uniqueNameAndProductCount": 6,
+          "uniqueWithValidPrice": 6,
+          "matchingExamples": [
+            {
+              "name": "Yorinobu Arasaka: Embracing Destruction",
+              "catalogKeys": [
+                "edgerunner-s1:034"
+              ],
+              "candidateProductIds": [
+                905031
+              ]
+            },
+            {
+              "name": "Viktor Vektor: Sit Down and Relax",
+              "catalogKeys": [
+                "edgerunner-s1:040"
+              ],
+              "candidateProductIds": [
+                905032
+              ]
+            },
+            {
+              "name": "Goro Takemura: Hands Unclean",
+              "catalogKeys": [
+                "edgerunner-s1:041"
+              ],
+              "candidateProductIds": [
+                905033
+              ]
+            },
+            {
+              "name": "Saburo Arasaka: Stubborn Patriarch",
+              "catalogKeys": [
+                "edgerunner-s1:047"
+              ],
+              "candidateProductIds": [
+                905034
+              ]
+            },
+            {
+              "name": "Jackie Welles: Pour One Out For Me",
+              "catalogKeys": [
+                "edgerunner-s1:050"
+              ],
+              "candidateProductIds": [
+                905035
+              ]
+            },
+            {
+              "name": "V: Corporate Exile",
+              "catalogKeys": [
+                "edgerunner-s1:053"
+              ],
+              "candidateProductIds": [
+                905036
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6764,
+          "expansionNames": [],
+          "cardmarketProductCount": 6,
+          "matchingLocalPrintings": 6,
+          "matchingDistinctNames": 6,
+          "uniqueNameAndProductCount": 6,
+          "uniqueWithValidPrice": 6,
+          "matchingExamples": [
+            {
+              "name": "Yorinobu Arasaka: Embracing Destruction",
+              "catalogKeys": [
+                "edgerunner-s1:034"
+              ],
+              "candidateProductIds": [
+                920511
+              ]
+            },
+            {
+              "name": "Viktor Vektor: Sit Down and Relax",
+              "catalogKeys": [
+                "edgerunner-s1:040"
+              ],
+              "candidateProductIds": [
+                920512
+              ]
+            },
+            {
+              "name": "Goro Takemura: Hands Unclean",
+              "catalogKeys": [
+                "edgerunner-s1:041"
+              ],
+              "candidateProductIds": [
+                920513
+              ]
+            },
+            {
+              "name": "Saburo Arasaka: Stubborn Patriarch",
+              "catalogKeys": [
+                "edgerunner-s1:047"
+              ],
+              "candidateProductIds": [
+                920514
+              ]
+            },
+            {
+              "name": "Jackie Welles: Pour One Out For Me",
+              "catalogKeys": [
+                "edgerunner-s1:050"
+              ],
+              "candidateProductIds": [
+                920515
+              ]
+            },
+            {
+              "name": "V: Corporate Exile",
+              "catalogKeys": [
+                "edgerunner-s1:053"
+              ],
+              "candidateProductIds": [
+                920516
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6716,
+          "expansionNames": [],
+          "cardmarketProductCount": 20,
+          "matchingLocalPrintings": 6,
+          "matchingDistinctNames": 5,
+          "uniqueNameAndProductCount": 4,
+          "uniqueWithValidPrice": 3,
+          "matchingExamples": [
+            {
+              "name": "Field Operator",
+              "catalogKeys": [
+                "edgerunner-s1:002"
+              ],
+              "candidateProductIds": [
+                905063
+              ]
+            },
+            {
+              "name": "Industrial Assembly",
+              "catalogKeys": [
+                "edgerunner-s1:004",
+                "edgerunner-s1:008"
+              ],
+              "candidateProductIds": [
+                905056
+              ]
+            },
+            {
+              "name": "Yorinobu Arasaka: Embracing Destruction",
+              "catalogKeys": [
+                "edgerunner-s1:034"
+              ],
+              "candidateProductIds": [
+                905048
+              ]
+            },
+            {
+              "name": "Goro Takemura: Hands Unclean",
+              "catalogKeys": [
+                "edgerunner-s1:041"
+              ],
+              "candidateProductIds": [
+                905059
+              ]
+            },
+            {
+              "name": "Saburo Arasaka: Stubborn Patriarch",
+              "catalogKeys": [
+                "edgerunner-s1:047"
+              ],
+              "candidateProductIds": [
+                905060
+              ]
+            }
+          ]
+        }
+      ],
+      "analysisNote": "Treffer sind Kandidaten, keine verifizierten Preiszuordnungen. Prüfe Set-Identität und Druckvariante."
+    },
+    {
+      "setId": "brawl-s1",
+      "setTitle": "Night City Brawl S1",
+      "catalogPrintings": 37,
+      "distinctCardNames": 18,
+      "candidateExpansions": [
+        {
+          "idExpansion": 6953,
+          "expansionNames": [],
+          "cardmarketProductCount": 37,
+          "matchingLocalPrintings": 37,
+          "matchingDistinctNames": 18,
+          "uniqueNameAndProductCount": 0,
+          "uniqueWithValidPrice": 0,
+          "matchingExamples": [
+            {
+              "name": "Kerry Eurodyne: The Last Rockerboy",
+              "catalogKeys": [
+                "brawl-s1:001",
+                "brawl-s1:019"
+              ],
+              "candidateProductIds": [
+                922559,
+                922582
+              ]
+            },
+            {
+              "name": "Minotaur",
+              "catalogKeys": [
+                "brawl-s1:002",
+                "brawl-s1:020"
+              ],
+              "candidateProductIds": [
+                922561,
+                922583
+              ]
+            },
+            {
+              "name": "Satori: Sword of Saburo",
+              "catalogKeys": [
+                "brawl-s1:003",
+                "brawl-s1:021"
+              ],
+              "candidateProductIds": [
+                922562,
+                922584
+              ]
+            },
+            {
+              "name": "Jackie Welles: Ride or Die Choom",
+              "catalogKeys": [
+                "brawl-s1:004",
+                "brawl-s1:022"
+              ],
+              "candidateProductIds": [
+                922563,
+                922585
+              ]
+            },
+            {
+              "name": "Secondhand Bombus",
+              "catalogKeys": [
+                "brawl-s1:005",
+                "brawl-s1:023"
+              ],
+              "candidateProductIds": [
+                922565,
+                922586
+              ]
+            },
+            {
+              "name": "Mandibular Upgrade",
+              "catalogKeys": [
+                "brawl-s1:006",
+                "brawl-s1:024"
+              ],
+              "candidateProductIds": [
+                922566,
+                922587
+              ]
+            },
+            {
+              "name": "Bootleg Black Sapphire Show",
+              "catalogKeys": [
+                "brawl-s1:007",
+                "brawl-s1:025"
+              ],
+              "candidateProductIds": [
+                922567,
+                922589
+              ]
+            },
+            {
+              "name": "Cyberpsychosis",
+              "catalogKeys": [
+                "brawl-s1:008",
+                "brawl-s1:026"
+              ],
+              "candidateProductIds": [
+                922568,
+                922590
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6714,
+          "expansionNames": [],
+          "cardmarketProductCount": 172,
+          "matchingLocalPrintings": 35,
+          "matchingDistinctNames": 17,
+          "uniqueNameAndProductCount": 0,
+          "uniqueWithValidPrice": 0,
+          "matchingExamples": [
+            {
+              "name": "Kerry Eurodyne: The Last Rockerboy",
+              "catalogKeys": [
+                "brawl-s1:001",
+                "brawl-s1:019"
+              ],
+              "candidateProductIds": [
+                905100
+              ]
+            },
+            {
+              "name": "Satori: Sword of Saburo",
+              "catalogKeys": [
+                "brawl-s1:003",
+                "brawl-s1:021"
+              ],
+              "candidateProductIds": [
+                905114
+              ]
+            },
+            {
+              "name": "Jackie Welles: Ride or Die Choom",
+              "catalogKeys": [
+                "brawl-s1:004",
+                "brawl-s1:022"
+              ],
+              "candidateProductIds": [
+                905136
+              ]
+            },
+            {
+              "name": "Secondhand Bombus",
+              "catalogKeys": [
+                "brawl-s1:005",
+                "brawl-s1:023"
+              ],
+              "candidateProductIds": [
+                905141
+              ]
+            },
+            {
+              "name": "Mandibular Upgrade",
+              "catalogKeys": [
+                "brawl-s1:006",
+                "brawl-s1:024"
+              ],
+              "candidateProductIds": [
+                905150
+              ]
+            },
+            {
+              "name": "Bootleg Black Sapphire Show",
+              "catalogKeys": [
+                "brawl-s1:007",
+                "brawl-s1:025"
+              ],
+              "candidateProductIds": [
+                905154
+              ]
+            },
+            {
+              "name": "Cyberpsychosis",
+              "catalogKeys": [
+                "brawl-s1:008",
+                "brawl-s1:026"
+              ],
+              "candidateProductIds": [
+                905155
+              ]
+            },
+            {
+              "name": "Corpo Security",
+              "catalogKeys": [
+                "brawl-s1:009",
+                "brawl-s1:027"
+              ],
+              "candidateProductIds": [
+                905164
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6761,
+          "expansionNames": [],
+          "cardmarketProductCount": 172,
+          "matchingLocalPrintings": 35,
+          "matchingDistinctNames": 17,
+          "uniqueNameAndProductCount": 0,
+          "uniqueWithValidPrice": 0,
+          "matchingExamples": [
+            {
+              "name": "Kerry Eurodyne: The Last Rockerboy",
+              "catalogKeys": [
+                "brawl-s1:001",
+                "brawl-s1:019"
+              ],
+              "candidateProductIds": [
+                920448
+              ]
+            },
+            {
+              "name": "Satori: Sword of Saburo",
+              "catalogKeys": [
+                "brawl-s1:003",
+                "brawl-s1:021"
+              ],
+              "candidateProductIds": [
+                920464
+              ]
+            },
+            {
+              "name": "Jackie Welles: Ride or Die Choom",
+              "catalogKeys": [
+                "brawl-s1:004",
+                "brawl-s1:022"
+              ],
+              "candidateProductIds": [
+                920486
+              ]
+            },
+            {
+              "name": "Secondhand Bombus",
+              "catalogKeys": [
+                "brawl-s1:005",
+                "brawl-s1:023"
+              ],
+              "candidateProductIds": [
+                920491
+              ]
+            },
+            {
+              "name": "Mandibular Upgrade",
+              "catalogKeys": [
+                "brawl-s1:006",
+                "brawl-s1:024"
+              ],
+              "candidateProductIds": [
+                920500
+              ]
+            },
+            {
+              "name": "Bootleg Black Sapphire Show",
+              "catalogKeys": [
+                "brawl-s1:007",
+                "brawl-s1:025"
+              ],
+              "candidateProductIds": [
+                920504
+              ]
+            },
+            {
+              "name": "Cyberpsychosis",
+              "catalogKeys": [
+                "brawl-s1:008",
+                "brawl-s1:026"
+              ],
+              "candidateProductIds": [
+                920505
+              ]
+            },
+            {
+              "name": "Corpo Security",
+              "catalogKeys": [
+                "brawl-s1:009",
+                "brawl-s1:027"
+              ],
+              "candidateProductIds": [
+                920577
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6722,
+          "expansionNames": [],
+          "cardmarketProductCount": 35,
+          "matchingLocalPrintings": 16,
+          "matchingDistinctNames": 8,
+          "uniqueNameAndProductCount": 0,
+          "uniqueWithValidPrice": 0,
+          "matchingExamples": [
+            {
+              "name": "Satori: Sword of Saburo",
+              "catalogKeys": [
+                "brawl-s1:003",
+                "brawl-s1:021"
+              ],
+              "candidateProductIds": [
+                904947
+              ]
+            },
+            {
+              "name": "Jackie Welles: Ride or Die Choom",
+              "catalogKeys": [
+                "brawl-s1:004",
+                "brawl-s1:022"
+              ],
+              "candidateProductIds": [
+                904938
+              ]
+            },
+            {
+              "name": "Secondhand Bombus",
+              "catalogKeys": [
+                "brawl-s1:005",
+                "brawl-s1:023"
+              ],
+              "candidateProductIds": [
+                904939
+              ]
+            },
+            {
+              "name": "Mandibular Upgrade",
+              "catalogKeys": [
+                "brawl-s1:006",
+                "brawl-s1:024"
+              ],
+              "candidateProductIds": [
+                904962
+              ]
+            },
+            {
+              "name": "Corpo Security",
+              "catalogKeys": [
+                "brawl-s1:009",
+                "brawl-s1:027"
+              ],
+              "candidateProductIds": [
+                904941
+              ]
+            },
+            {
+              "name": "Delamain Cab",
+              "catalogKeys": [
+                "brawl-s1:014",
+                "brawl-s1:032"
+              ],
+              "candidateProductIds": [
+                904935
+              ]
+            },
+            {
+              "name": "Dying Night: V's Pistol",
+              "catalogKeys": [
+                "brawl-s1:016",
+                "brawl-s1:034"
+              ],
+              "candidateProductIds": [
+                904952
+              ]
+            },
+            {
+              "name": "Floor It",
+              "catalogKeys": [
+                "brawl-s1:018",
+                "brawl-s1:036"
+              ],
+              "candidateProductIds": [
+                904953
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6720,
+          "expansionNames": [],
+          "cardmarketProductCount": 15,
+          "matchingLocalPrintings": 10,
+          "matchingDistinctNames": 5,
+          "uniqueNameAndProductCount": 0,
+          "uniqueWithValidPrice": 0,
+          "matchingExamples": [
+            {
+              "name": "Secondhand Bombus",
+              "catalogKeys": [
+                "brawl-s1:005",
+                "brawl-s1:023"
+              ],
+              "candidateProductIds": [
+                905016
+              ]
+            },
+            {
+              "name": "Mandibular Upgrade",
+              "catalogKeys": [
+                "brawl-s1:006",
+                "brawl-s1:024"
+              ],
+              "candidateProductIds": [
+                905018
+              ]
+            },
+            {
+              "name": "Delamain Cab",
+              "catalogKeys": [
+                "brawl-s1:014",
+                "brawl-s1:032"
+              ],
+              "candidateProductIds": [
+                905022
+              ]
+            },
+            {
+              "name": "Dying Night: V's Pistol",
+              "catalogKeys": [
+                "brawl-s1:016",
+                "brawl-s1:034"
+              ],
+              "candidateProductIds": [
+                905026
+              ]
+            },
+            {
+              "name": "Floor It",
+              "catalogKeys": [
+                "brawl-s1:018",
+                "brawl-s1:036"
+              ],
+              "candidateProductIds": [
+                905027
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6715,
+          "expansionNames": [],
+          "cardmarketProductCount": 20,
+          "matchingLocalPrintings": 10,
+          "matchingDistinctNames": 5,
+          "uniqueNameAndProductCount": 0,
+          "uniqueWithValidPrice": 0,
+          "matchingExamples": [
+            {
+              "name": "Secondhand Bombus",
+              "catalogKeys": [
+                "brawl-s1:005",
+                "brawl-s1:023"
+              ],
+              "candidateProductIds": [
+                905072
+              ]
+            },
+            {
+              "name": "Mandibular Upgrade",
+              "catalogKeys": [
+                "brawl-s1:006",
+                "brawl-s1:024"
+              ],
+              "candidateProductIds": [
+                905075
+              ]
+            },
+            {
+              "name": "Delamain Cab",
+              "catalogKeys": [
+                "brawl-s1:014",
+                "brawl-s1:032"
+              ],
+              "candidateProductIds": [
+                905080
+              ]
+            },
+            {
+              "name": "Dying Night: V's Pistol",
+              "catalogKeys": [
+                "brawl-s1:016",
+                "brawl-s1:034"
+              ],
+              "candidateProductIds": [
+                905084
+              ]
+            },
+            {
+              "name": "Floor It",
+              "catalogKeys": [
+                "brawl-s1:018",
+                "brawl-s1:036"
+              ],
+              "candidateProductIds": [
+                905086
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6762,
+          "expansionNames": [],
+          "cardmarketProductCount": 20,
+          "matchingLocalPrintings": 10,
+          "matchingDistinctNames": 5,
+          "uniqueNameAndProductCount": 0,
+          "uniqueWithValidPrice": 0,
+          "matchingExamples": [
+            {
+              "name": "Secondhand Bombus",
+              "catalogKeys": [
+                "brawl-s1:005",
+                "brawl-s1:023"
+              ],
+              "candidateProductIds": [
+                920403
+              ]
+            },
+            {
+              "name": "Mandibular Upgrade",
+              "catalogKeys": [
+                "brawl-s1:006",
+                "brawl-s1:024"
+              ],
+              "candidateProductIds": [
+                920406
+              ]
+            },
+            {
+              "name": "Delamain Cab",
+              "catalogKeys": [
+                "brawl-s1:014",
+                "brawl-s1:032"
+              ],
+              "candidateProductIds": [
+                920411
+              ]
+            },
+            {
+              "name": "Dying Night: V's Pistol",
+              "catalogKeys": [
+                "brawl-s1:016",
+                "brawl-s1:034"
+              ],
+              "candidateProductIds": [
+                920415
+              ]
+            },
+            {
+              "name": "Floor It",
+              "catalogKeys": [
+                "brawl-s1:018",
+                "brawl-s1:036"
+              ],
+              "candidateProductIds": [
+                920417
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6721,
+          "expansionNames": [],
+          "cardmarketProductCount": 14,
+          "matchingLocalPrintings": 6,
+          "matchingDistinctNames": 3,
+          "uniqueNameAndProductCount": 0,
+          "uniqueWithValidPrice": 0,
+          "matchingExamples": [
+            {
+              "name": "Minotaur",
+              "catalogKeys": [
+                "brawl-s1:002",
+                "brawl-s1:020"
+              ],
+              "candidateProductIds": [
+                905001
+              ]
+            },
+            {
+              "name": "Satori: Sword of Saburo",
+              "catalogKeys": [
+                "brawl-s1:003",
+                "brawl-s1:021"
+              ],
+              "candidateProductIds": [
+                905004
+              ]
+            },
+            {
+              "name": "Corpo Security",
+              "catalogKeys": [
+                "brawl-s1:009",
+                "brawl-s1:027"
+              ],
+              "candidateProductIds": [
+                905009
+              ]
+            }
+          ]
+        }
+      ],
+      "analysisNote": "Treffer sind Kandidaten, keine verifizierten Preiszuordnungen. Prüfe Set-Identität und Druckvariante."
+    },
+    {
+      "setId": "showdown-s1",
+      "setTitle": "Night City Showdown S1",
+      "catalogPrintings": 5,
+      "distinctCardNames": 2,
+      "candidateExpansions": [
+        {
+          "idExpansion": 6714,
+          "expansionNames": [],
+          "cardmarketProductCount": 172,
+          "matchingLocalPrintings": 5,
+          "matchingDistinctNames": 2,
+          "uniqueNameAndProductCount": 0,
+          "uniqueWithValidPrice": 0,
+          "matchingExamples": [
+            {
+              "name": "Sandevistan",
+              "catalogKeys": [
+                "showdown-s1:001",
+                "showdown-s1:003",
+                "showdown-s1:005"
+              ],
+              "candidateProductIds": [
+                905183
+              ]
+            },
+            {
+              "name": "Adam Smasher: Metal Over Meat",
+              "catalogKeys": [
+                "showdown-s1:002",
+                "showdown-s1:004"
+              ],
+              "candidateProductIds": [
+                905129,
+                905249
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6761,
+          "expansionNames": [],
+          "cardmarketProductCount": 172,
+          "matchingLocalPrintings": 5,
+          "matchingDistinctNames": 2,
+          "uniqueNameAndProductCount": 0,
+          "uniqueWithValidPrice": 0,
+          "matchingExamples": [
+            {
+              "name": "Sandevistan",
+              "catalogKeys": [
+                "showdown-s1:001",
+                "showdown-s1:003",
+                "showdown-s1:005"
+              ],
+              "candidateProductIds": [
+                920602
+              ]
+            },
+            {
+              "name": "Adam Smasher: Metal Over Meat",
+              "catalogKeys": [
+                "showdown-s1:002",
+                "showdown-s1:004"
+              ],
+              "candidateProductIds": [
+                920479,
+                920667
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6954,
+          "expansionNames": [],
+          "cardmarketProductCount": 5,
+          "matchingLocalPrintings": 5,
+          "matchingDistinctNames": 2,
+          "uniqueNameAndProductCount": 0,
+          "uniqueWithValidPrice": 0,
+          "matchingExamples": [
+            {
+              "name": "Sandevistan",
+              "catalogKeys": [
+                "showdown-s1:001",
+                "showdown-s1:003",
+                "showdown-s1:005"
+              ],
+              "candidateProductIds": [
+                922604,
+                922606,
+                922609
+              ]
+            },
+            {
+              "name": "Adam Smasher: Metal Over Meat",
+              "catalogKeys": [
+                "showdown-s1:002",
+                "showdown-s1:004"
+              ],
+              "candidateProductIds": [
+                922605,
+                922608
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6722,
+          "expansionNames": [],
+          "cardmarketProductCount": 35,
+          "matchingLocalPrintings": 3,
+          "matchingDistinctNames": 1,
+          "uniqueNameAndProductCount": 0,
+          "uniqueWithValidPrice": 0,
+          "matchingExamples": [
+            {
+              "name": "Sandevistan",
+              "catalogKeys": [
+                "showdown-s1:001",
+                "showdown-s1:003",
+                "showdown-s1:005"
+              ],
+              "candidateProductIds": [
+                904955
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6716,
+          "expansionNames": [],
+          "cardmarketProductCount": 20,
+          "matchingLocalPrintings": 3,
+          "matchingDistinctNames": 1,
+          "uniqueNameAndProductCount": 0,
+          "uniqueWithValidPrice": 0,
+          "matchingExamples": [
+            {
+              "name": "Sandevistan",
+              "catalogKeys": [
+                "showdown-s1:001",
+                "showdown-s1:003",
+                "showdown-s1:005"
+              ],
+              "candidateProductIds": [
+                905066
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6763,
+          "expansionNames": [],
+          "cardmarketProductCount": 20,
+          "matchingLocalPrintings": 3,
+          "matchingDistinctNames": 1,
+          "uniqueNameAndProductCount": 0,
+          "uniqueWithValidPrice": 0,
+          "matchingExamples": [
+            {
+              "name": "Sandevistan",
+              "catalogKeys": [
+                "showdown-s1:001",
+                "showdown-s1:003",
+                "showdown-s1:005"
+              ],
+              "candidateProductIds": [
+                920450
+              ]
+            }
+          ]
+        }
+      ],
+      "analysisNote": "Treffer sind Kandidaten, keine verifizierten Preiszuordnungen. Prüfe Set-Identität und Druckvariante."
+    },
+    {
+      "setId": "judge-promos",
+      "setTitle": "Judge Promos",
+      "catalogPrintings": 3,
+      "distinctCardNames": 3,
+      "candidateExpansions": [
+        {
+          "idExpansion": 6714,
+          "expansionNames": [],
+          "cardmarketProductCount": 172,
+          "matchingLocalPrintings": 3,
+          "matchingDistinctNames": 3,
+          "uniqueNameAndProductCount": 3,
+          "uniqueWithValidPrice": 3,
+          "matchingExamples": [
+            {
+              "name": "Secondhand Bombus",
+              "catalogKeys": [
+                "judge-promos:001"
+              ],
+              "candidateProductIds": [
+                905141
+              ]
+            },
+            {
+              "name": "MaxTac Squadron",
+              "catalogKeys": [
+                "judge-promos:002"
+              ],
+              "candidateProductIds": [
+                905170
+              ]
+            },
+            {
+              "name": "Delamain: Rideshare AI",
+              "catalogKeys": [
+                "judge-promos:003"
+              ],
+              "candidateProductIds": [
+                905199
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6761,
+          "expansionNames": [],
+          "cardmarketProductCount": 172,
+          "matchingLocalPrintings": 3,
+          "matchingDistinctNames": 3,
+          "uniqueNameAndProductCount": 3,
+          "uniqueWithValidPrice": 3,
+          "matchingExamples": [
+            {
+              "name": "Secondhand Bombus",
+              "catalogKeys": [
+                "judge-promos:001"
+              ],
+              "candidateProductIds": [
+                920491
+              ]
+            },
+            {
+              "name": "MaxTac Squadron",
+              "catalogKeys": [
+                "judge-promos:002"
+              ],
+              "candidateProductIds": [
+                920583
+              ]
+            },
+            {
+              "name": "Delamain: Rideshare AI",
+              "catalogKeys": [
+                "judge-promos:003"
+              ],
+              "candidateProductIds": [
+                920618
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6952,
+          "expansionNames": [],
+          "cardmarketProductCount": 3,
+          "matchingLocalPrintings": 3,
+          "matchingDistinctNames": 3,
+          "uniqueNameAndProductCount": 3,
+          "uniqueWithValidPrice": 0,
+          "matchingExamples": [
+            {
+              "name": "Secondhand Bombus",
+              "catalogKeys": [
+                "judge-promos:001"
+              ],
+              "candidateProductIds": [
+                922552
+              ]
+            },
+            {
+              "name": "MaxTac Squadron",
+              "catalogKeys": [
+                "judge-promos:002"
+              ],
+              "candidateProductIds": [
+                922553
+              ]
+            },
+            {
+              "name": "Delamain: Rideshare AI",
+              "catalogKeys": [
+                "judge-promos:003"
+              ],
+              "candidateProductIds": [
+                922554
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6953,
+          "expansionNames": [],
+          "cardmarketProductCount": 37,
+          "matchingLocalPrintings": 2,
+          "matchingDistinctNames": 2,
+          "uniqueNameAndProductCount": 0,
+          "uniqueWithValidPrice": 0,
+          "matchingExamples": [
+            {
+              "name": "Secondhand Bombus",
+              "catalogKeys": [
+                "judge-promos:001"
+              ],
+              "candidateProductIds": [
+                922565,
+                922586
+              ]
+            },
+            {
+              "name": "MaxTac Squadron",
+              "catalogKeys": [
+                "judge-promos:002"
+              ],
+              "candidateProductIds": [
+                922570,
+                922593
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6722,
+          "expansionNames": [],
+          "cardmarketProductCount": 35,
+          "matchingLocalPrintings": 1,
+          "matchingDistinctNames": 1,
+          "uniqueNameAndProductCount": 1,
+          "uniqueWithValidPrice": 1,
+          "matchingExamples": [
+            {
+              "name": "Secondhand Bombus",
+              "catalogKeys": [
+                "judge-promos:001"
+              ],
+              "candidateProductIds": [
+                904939
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6720,
+          "expansionNames": [],
+          "cardmarketProductCount": 15,
+          "matchingLocalPrintings": 1,
+          "matchingDistinctNames": 1,
+          "uniqueNameAndProductCount": 1,
+          "uniqueWithValidPrice": 1,
+          "matchingExamples": [
+            {
+              "name": "Secondhand Bombus",
+              "catalogKeys": [
+                "judge-promos:001"
+              ],
+              "candidateProductIds": [
+                905016
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6715,
+          "expansionNames": [],
+          "cardmarketProductCount": 20,
+          "matchingLocalPrintings": 1,
+          "matchingDistinctNames": 1,
+          "uniqueNameAndProductCount": 1,
+          "uniqueWithValidPrice": 1,
+          "matchingExamples": [
+            {
+              "name": "Secondhand Bombus",
+              "catalogKeys": [
+                "judge-promos:001"
+              ],
+              "candidateProductIds": [
+                905072
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6762,
+          "expansionNames": [],
+          "cardmarketProductCount": 20,
+          "matchingLocalPrintings": 1,
+          "matchingDistinctNames": 1,
+          "uniqueNameAndProductCount": 1,
+          "uniqueWithValidPrice": 1,
+          "matchingExamples": [
+            {
+              "name": "Secondhand Bombus",
+              "catalogKeys": [
+                "judge-promos:001"
+              ],
+              "candidateProductIds": [
+                920403
+              ]
+            }
+          ]
+        }
+      ],
+      "analysisNote": "Treffer sind Kandidaten, keine verifizierten Preiszuordnungen. Prüfe Set-Identität und Druckvariante."
+    },
+    {
+      "setId": "set1-promos",
+      "setTitle": "Set 1 Promos",
+      "catalogPrintings": 6,
+      "distinctCardNames": 4,
+      "candidateExpansions": [
+        {
+          "idExpansion": 6719,
+          "expansionNames": [],
+          "cardmarketProductCount": 3,
+          "matchingLocalPrintings": 4,
+          "matchingDistinctNames": 3,
+          "uniqueNameAndProductCount": 2,
+          "uniqueWithValidPrice": 1,
+          "matchingExamples": [
+            {
+              "name": "Rebecca: Having a Moment",
+              "catalogKeys": [
+                "set1-promos:005",
+                "set1-promos:007"
+              ],
+              "candidateProductIds": [
+                904772
+              ]
+            },
+            {
+              "name": "Misty Olszewski: Mender of Broken Spirits",
+              "catalogKeys": [
+                "set1-promos:006"
+              ],
+              "candidateProductIds": [
+                920528
+              ]
+            },
+            {
+              "name": "Adam Smasher: Ender of Legends",
+              "catalogKeys": [
+                "set1-promos:008"
+              ],
+              "candidateProductIds": [
+                905261
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6714,
+          "expansionNames": [],
+          "cardmarketProductCount": 172,
+          "matchingLocalPrintings": 2,
+          "matchingDistinctNames": 2,
+          "uniqueNameAndProductCount": 1,
+          "uniqueWithValidPrice": 1,
+          "matchingExamples": [
+            {
+              "name": "Misty Olszewski: Mender of Broken Spirits",
+              "catalogKeys": [
+                "set1-promos:006"
+              ],
+              "candidateProductIds": [
+                905207
+              ]
+            },
+            {
+              "name": "Adam Smasher: Ender of Legends",
+              "catalogKeys": [
+                "set1-promos:008"
+              ],
+              "candidateProductIds": [
+                905088,
+                905229
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6761,
+          "expansionNames": [],
+          "cardmarketProductCount": 172,
+          "matchingLocalPrintings": 2,
+          "matchingDistinctNames": 2,
+          "uniqueNameAndProductCount": 1,
+          "uniqueWithValidPrice": 1,
+          "matchingExamples": [
+            {
+              "name": "Misty Olszewski: Mender of Broken Spirits",
+              "catalogKeys": [
+                "set1-promos:006"
+              ],
+              "candidateProductIds": [
+                920626
+              ]
+            },
+            {
+              "name": "Adam Smasher: Ender of Legends",
+              "catalogKeys": [
+                "set1-promos:008"
+              ],
+              "candidateProductIds": [
+                920398,
+                920648
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6718,
+          "expansionNames": [],
+          "cardmarketProductCount": 11,
+          "matchingLocalPrintings": 1,
+          "matchingDistinctNames": 1,
+          "uniqueNameAndProductCount": 1,
+          "uniqueWithValidPrice": 1,
+          "matchingExamples": [
+            {
+              "name": "Adam Smasher: Ender of Legends",
+              "catalogKeys": [
+                "set1-promos:008"
+              ],
+              "candidateProductIds": [
+                905037
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6765,
+          "expansionNames": [],
+          "cardmarketProductCount": 11,
+          "matchingLocalPrintings": 1,
+          "matchingDistinctNames": 1,
+          "uniqueNameAndProductCount": 1,
+          "uniqueWithValidPrice": 1,
+          "matchingExamples": [
+            {
+              "name": "Adam Smasher: Ender of Legends",
+              "catalogKeys": [
+                "set1-promos:008"
+              ],
+              "candidateProductIds": [
+                920517
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6722,
+          "expansionNames": [],
+          "cardmarketProductCount": 35,
+          "matchingLocalPrintings": 2,
+          "matchingDistinctNames": 1,
+          "uniqueNameAndProductCount": 0,
+          "uniqueWithValidPrice": 0,
+          "matchingExamples": [
+            {
+              "name": "Lucyna Kushinada: Fresh Beginnings",
+              "catalogKeys": [
+                "set1-promos:004a",
+                "set1-promos:004b"
+              ],
+              "candidateProductIds": [
+                904914
+              ]
+            }
+          ]
+        }
+      ],
+      "analysisNote": "Treffer sind Kandidaten, keine verifizierten Preiszuordnungen. Prüfe Set-Identität und Druckvariante."
+    },
+    {
+      "setId": "heist-demo",
+      "setTitle": "The Heist – Demo Deck",
+      "catalogPrintings": 15,
+      "distinctCardNames": 15,
+      "candidateExpansions": [
+        {
+          "idExpansion": 6715,
+          "expansionNames": [],
+          "cardmarketProductCount": 20,
+          "matchingLocalPrintings": 15,
+          "matchingDistinctNames": 15,
+          "uniqueNameAndProductCount": 15,
+          "uniqueWithValidPrice": 15,
+          "matchingExamples": [
+            {
+              "name": "Viktor Vektor: Sit Down and Relax",
+              "catalogKeys": [
+                "heist-demo:001"
+              ],
+              "candidateProductIds": [
+                905068
+              ]
+            },
+            {
+              "name": "Dexter DeShawn: One Last Chance",
+              "catalogKeys": [
+                "heist-demo:002"
+              ],
+              "candidateProductIds": [
+                905069
+              ]
+            },
+            {
+              "name": "Secondhand Bombus",
+              "catalogKeys": [
+                "heist-demo:003"
+              ],
+              "candidateProductIds": [
+                905072
+              ]
+            },
+            {
+              "name": "Kiroshi Optics",
+              "catalogKeys": [
+                "heist-demo:004"
+              ],
+              "candidateProductIds": [
+                905074
+              ]
+            },
+            {
+              "name": "Mandibular Upgrade",
+              "catalogKeys": [
+                "heist-demo:005"
+              ],
+              "candidateProductIds": [
+                905075
+              ]
+            },
+            {
+              "name": "Afterparty at Lizzie's",
+              "catalogKeys": [
+                "heist-demo:006"
+              ],
+              "candidateProductIds": [
+                905077
+              ]
+            },
+            {
+              "name": "Jackie Welles: Pour One Out For Me",
+              "catalogKeys": [
+                "heist-demo:007"
+              ],
+              "candidateProductIds": [
+                905078
+              ]
+            },
+            {
+              "name": "V: Corporate Exile",
+              "catalogKeys": [
+                "heist-demo:008"
+              ],
+              "candidateProductIds": [
+                905079
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6762,
+          "expansionNames": [],
+          "cardmarketProductCount": 20,
+          "matchingLocalPrintings": 15,
+          "matchingDistinctNames": 15,
+          "uniqueNameAndProductCount": 15,
+          "uniqueWithValidPrice": 14,
+          "matchingExamples": [
+            {
+              "name": "Viktor Vektor: Sit Down and Relax",
+              "catalogKeys": [
+                "heist-demo:001"
+              ],
+              "candidateProductIds": [
+                920399
+              ]
+            },
+            {
+              "name": "Dexter DeShawn: One Last Chance",
+              "catalogKeys": [
+                "heist-demo:002"
+              ],
+              "candidateProductIds": [
+                920400
+              ]
+            },
+            {
+              "name": "Secondhand Bombus",
+              "catalogKeys": [
+                "heist-demo:003"
+              ],
+              "candidateProductIds": [
+                920403
+              ]
+            },
+            {
+              "name": "Kiroshi Optics",
+              "catalogKeys": [
+                "heist-demo:004"
+              ],
+              "candidateProductIds": [
+                920405
+              ]
+            },
+            {
+              "name": "Mandibular Upgrade",
+              "catalogKeys": [
+                "heist-demo:005"
+              ],
+              "candidateProductIds": [
+                920406
+              ]
+            },
+            {
+              "name": "Afterparty at Lizzie's",
+              "catalogKeys": [
+                "heist-demo:006"
+              ],
+              "candidateProductIds": [
+                920408
+              ]
+            },
+            {
+              "name": "Jackie Welles: Pour One Out For Me",
+              "catalogKeys": [
+                "heist-demo:007"
+              ],
+              "candidateProductIds": [
+                920409
+              ]
+            },
+            {
+              "name": "V: Corporate Exile",
+              "catalogKeys": [
+                "heist-demo:008"
+              ],
+              "candidateProductIds": [
+                920410
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6720,
+          "expansionNames": [],
+          "cardmarketProductCount": 15,
+          "matchingLocalPrintings": 15,
+          "matchingDistinctNames": 15,
+          "uniqueNameAndProductCount": 15,
+          "uniqueWithValidPrice": 4,
+          "matchingExamples": [
+            {
+              "name": "Viktor Vektor: Sit Down and Relax",
+              "catalogKeys": [
+                "heist-demo:001"
+              ],
+              "candidateProductIds": [
+                905014
+              ]
+            },
+            {
+              "name": "Dexter DeShawn: One Last Chance",
+              "catalogKeys": [
+                "heist-demo:002"
+              ],
+              "candidateProductIds": [
+                905015
+              ]
+            },
+            {
+              "name": "Secondhand Bombus",
+              "catalogKeys": [
+                "heist-demo:003"
+              ],
+              "candidateProductIds": [
+                905016
+              ]
+            },
+            {
+              "name": "Kiroshi Optics",
+              "catalogKeys": [
+                "heist-demo:004"
+              ],
+              "candidateProductIds": [
+                905017
+              ]
+            },
+            {
+              "name": "Mandibular Upgrade",
+              "catalogKeys": [
+                "heist-demo:005"
+              ],
+              "candidateProductIds": [
+                905018
+              ]
+            },
+            {
+              "name": "Afterparty at Lizzie's",
+              "catalogKeys": [
+                "heist-demo:006"
+              ],
+              "candidateProductIds": [
+                905019
+              ]
+            },
+            {
+              "name": "Jackie Welles: Pour One Out For Me",
+              "catalogKeys": [
+                "heist-demo:007"
+              ],
+              "candidateProductIds": [
+                905020
+              ]
+            },
+            {
+              "name": "V: Corporate Exile",
+              "catalogKeys": [
+                "heist-demo:008"
+              ],
+              "candidateProductIds": [
+                905021
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6722,
+          "expansionNames": [],
+          "cardmarketProductCount": 35,
+          "matchingLocalPrintings": 12,
+          "matchingDistinctNames": 12,
+          "uniqueNameAndProductCount": 9,
+          "uniqueWithValidPrice": 7,
+          "matchingExamples": [
+            {
+              "name": "Viktor Vektor: Sit Down and Relax",
+              "catalogKeys": [
+                "heist-demo:001"
+              ],
+              "candidateProductIds": [
+                904925,
+                904982
+              ]
+            },
+            {
+              "name": "Secondhand Bombus",
+              "catalogKeys": [
+                "heist-demo:003"
+              ],
+              "candidateProductIds": [
+                904939
+              ]
+            },
+            {
+              "name": "Kiroshi Optics",
+              "catalogKeys": [
+                "heist-demo:004"
+              ],
+              "candidateProductIds": [
+                904961
+              ]
+            },
+            {
+              "name": "Mandibular Upgrade",
+              "catalogKeys": [
+                "heist-demo:005"
+              ],
+              "candidateProductIds": [
+                904962
+              ]
+            },
+            {
+              "name": "Jackie Welles: Pour One Out For Me",
+              "catalogKeys": [
+                "heist-demo:007"
+              ],
+              "candidateProductIds": [
+                904916,
+                904978
+              ]
+            },
+            {
+              "name": "V: Corporate Exile",
+              "catalogKeys": [
+                "heist-demo:008"
+              ],
+              "candidateProductIds": [
+                904917,
+                904980
+              ]
+            },
+            {
+              "name": "Delamain Cab",
+              "catalogKeys": [
+                "heist-demo:009"
+              ],
+              "candidateProductIds": [
+                904935
+              ]
+            },
+            {
+              "name": "Evelyn Parker: Scheming Siren",
+              "catalogKeys": [
+                "heist-demo:010"
+              ],
+              "candidateProductIds": [
+                904936
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6714,
+          "expansionNames": [],
+          "cardmarketProductCount": 172,
+          "matchingLocalPrintings": 10,
+          "matchingDistinctNames": 10,
+          "uniqueNameAndProductCount": 10,
+          "uniqueWithValidPrice": 10,
+          "matchingExamples": [
+            {
+              "name": "Secondhand Bombus",
+              "catalogKeys": [
+                "heist-demo:003"
+              ],
+              "candidateProductIds": [
+                905141
+              ]
+            },
+            {
+              "name": "Kiroshi Optics",
+              "catalogKeys": [
+                "heist-demo:004"
+              ],
+              "candidateProductIds": [
+                905149
+              ]
+            },
+            {
+              "name": "Mandibular Upgrade",
+              "catalogKeys": [
+                "heist-demo:005"
+              ],
+              "candidateProductIds": [
+                905150
+              ]
+            },
+            {
+              "name": "Afterparty at Lizzie's",
+              "catalogKeys": [
+                "heist-demo:006"
+              ],
+              "candidateProductIds": [
+                905153
+              ]
+            },
+            {
+              "name": "Delamain Cab",
+              "catalogKeys": [
+                "heist-demo:009"
+              ],
+              "candidateProductIds": [
+                905200
+              ]
+            },
+            {
+              "name": "Evelyn Parker: Scheming Siren",
+              "catalogKeys": [
+                "heist-demo:010"
+              ],
+              "candidateProductIds": [
+                905201
+              ]
+            },
+            {
+              "name": "Psycho Squad",
+              "catalogKeys": [
+                "heist-demo:012"
+              ],
+              "candidateProductIds": [
+                905212
+              ]
+            },
+            {
+              "name": "Dying Night: V's Pistol",
+              "catalogKeys": [
+                "heist-demo:013"
+              ],
+              "candidateProductIds": [
+                905216
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6761,
+          "expansionNames": [],
+          "cardmarketProductCount": 172,
+          "matchingLocalPrintings": 10,
+          "matchingDistinctNames": 10,
+          "uniqueNameAndProductCount": 10,
+          "uniqueWithValidPrice": 10,
+          "matchingExamples": [
+            {
+              "name": "Secondhand Bombus",
+              "catalogKeys": [
+                "heist-demo:003"
+              ],
+              "candidateProductIds": [
+                920491
+              ]
+            },
+            {
+              "name": "Kiroshi Optics",
+              "catalogKeys": [
+                "heist-demo:004"
+              ],
+              "candidateProductIds": [
+                920499
+              ]
+            },
+            {
+              "name": "Mandibular Upgrade",
+              "catalogKeys": [
+                "heist-demo:005"
+              ],
+              "candidateProductIds": [
+                920500
+              ]
+            },
+            {
+              "name": "Afterparty at Lizzie's",
+              "catalogKeys": [
+                "heist-demo:006"
+              ],
+              "candidateProductIds": [
+                920503
+              ]
+            },
+            {
+              "name": "Delamain Cab",
+              "catalogKeys": [
+                "heist-demo:009"
+              ],
+              "candidateProductIds": [
+                920619
+              ]
+            },
+            {
+              "name": "Evelyn Parker: Scheming Siren",
+              "catalogKeys": [
+                "heist-demo:010"
+              ],
+              "candidateProductIds": [
+                920620
+              ]
+            },
+            {
+              "name": "Psycho Squad",
+              "catalogKeys": [
+                "heist-demo:012"
+              ],
+              "candidateProductIds": [
+                920631
+              ]
+            },
+            {
+              "name": "Dying Night: V's Pistol",
+              "catalogKeys": [
+                "heist-demo:013"
+              ],
+              "candidateProductIds": [
+                920635
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6953,
+          "expansionNames": [],
+          "cardmarketProductCount": 37,
+          "matchingLocalPrintings": 5,
+          "matchingDistinctNames": 5,
+          "uniqueNameAndProductCount": 0,
+          "uniqueWithValidPrice": 0,
+          "matchingExamples": [
+            {
+              "name": "Secondhand Bombus",
+              "catalogKeys": [
+                "heist-demo:003"
+              ],
+              "candidateProductIds": [
+                922565,
+                922586
+              ]
+            },
+            {
+              "name": "Mandibular Upgrade",
+              "catalogKeys": [
+                "heist-demo:005"
+              ],
+              "candidateProductIds": [
+                922566,
+                922587
+              ]
+            },
+            {
+              "name": "Delamain Cab",
+              "catalogKeys": [
+                "heist-demo:009"
+              ],
+              "candidateProductIds": [
+                922575,
+                922598
+              ]
+            },
+            {
+              "name": "Dying Night: V's Pistol",
+              "catalogKeys": [
+                "heist-demo:013"
+              ],
+              "candidateProductIds": [
+                922578,
+                922600
+              ]
+            },
+            {
+              "name": "Floor It",
+              "catalogKeys": [
+                "heist-demo:014"
+              ],
+              "candidateProductIds": [
+                922581,
+                922602
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6717,
+          "expansionNames": [],
+          "cardmarketProductCount": 6,
+          "matchingLocalPrintings": 3,
+          "matchingDistinctNames": 3,
+          "uniqueNameAndProductCount": 3,
+          "uniqueWithValidPrice": 3,
+          "matchingExamples": [
+            {
+              "name": "Viktor Vektor: Sit Down and Relax",
+              "catalogKeys": [
+                "heist-demo:001"
+              ],
+              "candidateProductIds": [
+                905032
+              ]
+            },
+            {
+              "name": "Jackie Welles: Pour One Out For Me",
+              "catalogKeys": [
+                "heist-demo:007"
+              ],
+              "candidateProductIds": [
+                905035
+              ]
+            },
+            {
+              "name": "V: Corporate Exile",
+              "catalogKeys": [
+                "heist-demo:008"
+              ],
+              "candidateProductIds": [
+                905036
+              ]
+            }
+          ]
+        }
+      ],
+      "analysisNote": "Treffer sind Kandidaten, keine verifizierten Preiszuordnungen. Prüfe Set-Identität und Druckvariante."
+    },
+    {
+      "setId": "embracing-demo",
+      "setTitle": "Embracing Power – Demo Deck",
+      "catalogPrintings": 14,
+      "distinctCardNames": 14,
+      "candidateExpansions": [
+        {
+          "idExpansion": 6716,
+          "expansionNames": [],
+          "cardmarketProductCount": 20,
+          "matchingLocalPrintings": 14,
+          "matchingDistinctNames": 14,
+          "uniqueNameAndProductCount": 14,
+          "uniqueWithValidPrice": 14,
+          "matchingExamples": [
+            {
+              "name": "Yorinobu Arasaka: Embracing Destruction",
+              "catalogKeys": [
+                "embracing-demo:001"
+              ],
+              "candidateProductIds": [
+                905048
+              ]
+            },
+            {
+              "name": "Minotaur",
+              "catalogKeys": [
+                "embracing-demo:002"
+              ],
+              "candidateProductIds": [
+                905050
+              ]
+            },
+            {
+              "name": "Swordwise Huscle",
+              "catalogKeys": [
+                "embracing-demo:003"
+              ],
+              "candidateProductIds": [
+                905052
+              ]
+            },
+            {
+              "name": "Mantis Blades",
+              "catalogKeys": [
+                "embracing-demo:004"
+              ],
+              "candidateProductIds": [
+                905054
+              ]
+            },
+            {
+              "name": "Satori: Sword of Saburo",
+              "catalogKeys": [
+                "embracing-demo:005"
+              ],
+              "candidateProductIds": [
+                905055
+              ]
+            },
+            {
+              "name": "Industrial Assembly",
+              "catalogKeys": [
+                "embracing-demo:006"
+              ],
+              "candidateProductIds": [
+                905056
+              ]
+            },
+            {
+              "name": "Over the Edge",
+              "catalogKeys": [
+                "embracing-demo:007"
+              ],
+              "candidateProductIds": [
+                905057
+              ]
+            },
+            {
+              "name": "Goro Takemura: Hands Unclean",
+              "catalogKeys": [
+                "embracing-demo:008"
+              ],
+              "candidateProductIds": [
+                905059
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6763,
+          "expansionNames": [],
+          "cardmarketProductCount": 20,
+          "matchingLocalPrintings": 14,
+          "matchingDistinctNames": 14,
+          "uniqueNameAndProductCount": 14,
+          "uniqueWithValidPrice": 10,
+          "matchingExamples": [
+            {
+              "name": "Yorinobu Arasaka: Embracing Destruction",
+              "catalogKeys": [
+                "embracing-demo:001"
+              ],
+              "candidateProductIds": [
+                920425
+              ]
+            },
+            {
+              "name": "Minotaur",
+              "catalogKeys": [
+                "embracing-demo:002"
+              ],
+              "candidateProductIds": [
+                920430
+              ]
+            },
+            {
+              "name": "Swordwise Huscle",
+              "catalogKeys": [
+                "embracing-demo:003"
+              ],
+              "candidateProductIds": [
+                920432
+              ]
+            },
+            {
+              "name": "Mantis Blades",
+              "catalogKeys": [
+                "embracing-demo:004"
+              ],
+              "candidateProductIds": [
+                920434
+              ]
+            },
+            {
+              "name": "Satori: Sword of Saburo",
+              "catalogKeys": [
+                "embracing-demo:005"
+              ],
+              "candidateProductIds": [
+                920435
+              ]
+            },
+            {
+              "name": "Industrial Assembly",
+              "catalogKeys": [
+                "embracing-demo:006"
+              ],
+              "candidateProductIds": [
+                920436
+              ]
+            },
+            {
+              "name": "Over the Edge",
+              "catalogKeys": [
+                "embracing-demo:007"
+              ],
+              "candidateProductIds": [
+                920437
+              ]
+            },
+            {
+              "name": "Goro Takemura: Hands Unclean",
+              "catalogKeys": [
+                "embracing-demo:008"
+              ],
+              "candidateProductIds": [
+                920439
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6721,
+          "expansionNames": [],
+          "cardmarketProductCount": 14,
+          "matchingLocalPrintings": 14,
+          "matchingDistinctNames": 14,
+          "uniqueNameAndProductCount": 14,
+          "uniqueWithValidPrice": 6,
+          "matchingExamples": [
+            {
+              "name": "Yorinobu Arasaka: Embracing Destruction",
+              "catalogKeys": [
+                "embracing-demo:001"
+              ],
+              "candidateProductIds": [
+                905000
+              ]
+            },
+            {
+              "name": "Minotaur",
+              "catalogKeys": [
+                "embracing-demo:002"
+              ],
+              "candidateProductIds": [
+                905001
+              ]
+            },
+            {
+              "name": "Swordwise Huscle",
+              "catalogKeys": [
+                "embracing-demo:003"
+              ],
+              "candidateProductIds": [
+                905002
+              ]
+            },
+            {
+              "name": "Mantis Blades",
+              "catalogKeys": [
+                "embracing-demo:004"
+              ],
+              "candidateProductIds": [
+                905003
+              ]
+            },
+            {
+              "name": "Satori: Sword of Saburo",
+              "catalogKeys": [
+                "embracing-demo:005"
+              ],
+              "candidateProductIds": [
+                905004
+              ]
+            },
+            {
+              "name": "Industrial Assembly",
+              "catalogKeys": [
+                "embracing-demo:006"
+              ],
+              "candidateProductIds": [
+                905005
+              ]
+            },
+            {
+              "name": "Over the Edge",
+              "catalogKeys": [
+                "embracing-demo:007"
+              ],
+              "candidateProductIds": [
+                905006
+              ]
+            },
+            {
+              "name": "Goro Takemura: Hands Unclean",
+              "catalogKeys": [
+                "embracing-demo:008"
+              ],
+              "candidateProductIds": [
+                905007
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6722,
+          "expansionNames": [],
+          "cardmarketProductCount": 35,
+          "matchingLocalPrintings": 11,
+          "matchingDistinctNames": 11,
+          "uniqueNameAndProductCount": 8,
+          "uniqueWithValidPrice": 5,
+          "matchingExamples": [
+            {
+              "name": "Yorinobu Arasaka: Embracing Destruction",
+              "catalogKeys": [
+                "embracing-demo:001"
+              ],
+              "candidateProductIds": [
+                904915,
+                904975
+              ]
+            },
+            {
+              "name": "Swordwise Huscle",
+              "catalogKeys": [
+                "embracing-demo:003"
+              ],
+              "candidateProductIds": [
+                904934
+              ]
+            },
+            {
+              "name": "Mantis Blades",
+              "catalogKeys": [
+                "embracing-demo:004"
+              ],
+              "candidateProductIds": [
+                904945
+              ]
+            },
+            {
+              "name": "Satori: Sword of Saburo",
+              "catalogKeys": [
+                "embracing-demo:005"
+              ],
+              "candidateProductIds": [
+                904947
+              ]
+            },
+            {
+              "name": "Industrial Assembly",
+              "catalogKeys": [
+                "embracing-demo:006"
+              ],
+              "candidateProductIds": [
+                904949
+              ]
+            },
+            {
+              "name": "Goro Takemura: Hands Unclean",
+              "catalogKeys": [
+                "embracing-demo:008"
+              ],
+              "candidateProductIds": [
+                904919,
+                904970
+              ]
+            },
+            {
+              "name": "Saburo Arasaka: Stubborn Patriarch",
+              "catalogKeys": [
+                "embracing-demo:009"
+              ],
+              "candidateProductIds": [
+                904922,
+                904968
+              ]
+            },
+            {
+              "name": "Corpo Security",
+              "catalogKeys": [
+                "embracing-demo:010"
+              ],
+              "candidateProductIds": [
+                904941
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6714,
+          "expansionNames": [],
+          "cardmarketProductCount": 172,
+          "matchingLocalPrintings": 9,
+          "matchingDistinctNames": 9,
+          "uniqueNameAndProductCount": 9,
+          "uniqueWithValidPrice": 9,
+          "matchingExamples": [
+            {
+              "name": "Swordwise Huscle",
+              "catalogKeys": [
+                "embracing-demo:003"
+              ],
+              "candidateProductIds": [
+                905107
+              ]
+            },
+            {
+              "name": "Mantis Blades",
+              "catalogKeys": [
+                "embracing-demo:004"
+              ],
+              "candidateProductIds": [
+                905113
+              ]
+            },
+            {
+              "name": "Satori: Sword of Saburo",
+              "catalogKeys": [
+                "embracing-demo:005"
+              ],
+              "candidateProductIds": [
+                905114
+              ]
+            },
+            {
+              "name": "Industrial Assembly",
+              "catalogKeys": [
+                "embracing-demo:006"
+              ],
+              "candidateProductIds": [
+                905121
+              ]
+            },
+            {
+              "name": "Over the Edge",
+              "catalogKeys": [
+                "embracing-demo:007"
+              ],
+              "candidateProductIds": [
+                905122
+              ]
+            },
+            {
+              "name": "Corpo Security",
+              "catalogKeys": [
+                "embracing-demo:010"
+              ],
+              "candidateProductIds": [
+                905164
+              ]
+            },
+            {
+              "name": "Emergency Atlus",
+              "catalogKeys": [
+                "embracing-demo:011"
+              ],
+              "candidateProductIds": [
+                905165
+              ]
+            },
+            {
+              "name": "Field Operator",
+              "catalogKeys": [
+                "embracing-demo:012"
+              ],
+              "candidateProductIds": [
+                905166
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6761,
+          "expansionNames": [],
+          "cardmarketProductCount": 172,
+          "matchingLocalPrintings": 9,
+          "matchingDistinctNames": 9,
+          "uniqueNameAndProductCount": 9,
+          "uniqueWithValidPrice": 9,
+          "matchingExamples": [
+            {
+              "name": "Swordwise Huscle",
+              "catalogKeys": [
+                "embracing-demo:003"
+              ],
+              "candidateProductIds": [
+                920457
+              ]
+            },
+            {
+              "name": "Mantis Blades",
+              "catalogKeys": [
+                "embracing-demo:004"
+              ],
+              "candidateProductIds": [
+                920463
+              ]
+            },
+            {
+              "name": "Satori: Sword of Saburo",
+              "catalogKeys": [
+                "embracing-demo:005"
+              ],
+              "candidateProductIds": [
+                920464
+              ]
+            },
+            {
+              "name": "Industrial Assembly",
+              "catalogKeys": [
+                "embracing-demo:006"
+              ],
+              "candidateProductIds": [
+                920471
+              ]
+            },
+            {
+              "name": "Over the Edge",
+              "catalogKeys": [
+                "embracing-demo:007"
+              ],
+              "candidateProductIds": [
+                920472
+              ]
+            },
+            {
+              "name": "Corpo Security",
+              "catalogKeys": [
+                "embracing-demo:010"
+              ],
+              "candidateProductIds": [
+                920577
+              ]
+            },
+            {
+              "name": "Emergency Atlus",
+              "catalogKeys": [
+                "embracing-demo:011"
+              ],
+              "candidateProductIds": [
+                920578
+              ]
+            },
+            {
+              "name": "Field Operator",
+              "catalogKeys": [
+                "embracing-demo:012"
+              ],
+              "candidateProductIds": [
+                920579
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6717,
+          "expansionNames": [],
+          "cardmarketProductCount": 6,
+          "matchingLocalPrintings": 3,
+          "matchingDistinctNames": 3,
+          "uniqueNameAndProductCount": 3,
+          "uniqueWithValidPrice": 3,
+          "matchingExamples": [
+            {
+              "name": "Yorinobu Arasaka: Embracing Destruction",
+              "catalogKeys": [
+                "embracing-demo:001"
+              ],
+              "candidateProductIds": [
+                905031
+              ]
+            },
+            {
+              "name": "Goro Takemura: Hands Unclean",
+              "catalogKeys": [
+                "embracing-demo:008"
+              ],
+              "candidateProductIds": [
+                905033
+              ]
+            },
+            {
+              "name": "Saburo Arasaka: Stubborn Patriarch",
+              "catalogKeys": [
+                "embracing-demo:009"
+              ],
+              "candidateProductIds": [
+                905034
+              ]
+            }
+          ]
+        },
+        {
+          "idExpansion": 6764,
+          "expansionNames": [],
+          "cardmarketProductCount": 6,
+          "matchingLocalPrintings": 3,
+          "matchingDistinctNames": 3,
+          "uniqueNameAndProductCount": 3,
+          "uniqueWithValidPrice": 3,
+          "matchingExamples": [
+            {
+              "name": "Yorinobu Arasaka: Embracing Destruction",
+              "catalogKeys": [
+                "embracing-demo:001"
+              ],
+              "candidateProductIds": [
+                920511
+              ]
+            },
+            {
+              "name": "Goro Takemura: Hands Unclean",
+              "catalogKeys": [
+                "embracing-demo:008"
+              ],
+              "candidateProductIds": [
+                920513
+              ]
+            },
+            {
+              "name": "Saburo Arasaka: Stubborn Patriarch",
+              "catalogKeys": [
+                "embracing-demo:009"
+              ],
+              "candidateProductIds": [
+                920514
+              ]
+            }
+          ]
+        }
+      ],
+      "analysisNote": "Treffer sind Kandidaten, keine verifizierten Preiszuordnungen. Prüfe Set-Identität und Druckvariante."
+    }
+  ],
+  "warning": "REINER DIAGNOSELAUF: KEINE Preis- oder Kartendaten geaendert. Ein Namensmatch allein beweist die Druckvariante nicht."
+}
