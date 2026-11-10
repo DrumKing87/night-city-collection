@@ -1,0 +1,77 @@
+name: Night City Collection - Artwork-Fix V2 (591 Karten)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: night-city-artwork-update
+  cancel-in-progress: false
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Repository laden
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Artwork-Skript reparieren ohne Workflow-Dateien zu bearbeiten
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          import re
+          from pathlib import Path
+
+          page = Path('index.html').read_text(encoding='utf-8')
+          m = re.search(r'const DB\s*=\s*(\{.*?\})\s*;\s*const CARDS', page, re.S)
+          if not m:
+              raise SystemExit('Katalogdaten fehlen; sicherer Abbruch')
+          catalog = json.loads(m.group(1))
+          keys = [c['key'] for c in catalog['cards']]
+          if len(keys) != 591 or len(set(keys)) != 591 or len(catalog['sets']) != 18:
+              raise SystemExit('Katalog nicht wie erwartet: 591 Karten / 18 Sets')
+          print('Katalog validiert: 591 eindeutige Karten / 18 Sets')
+
+          path = Path('scripts/fetch_artworks.py')
+          original = path.read_text(encoding='utf-8')
+          changed = original
+          patches = [
+              ("if len(cards) != 458 or len({c['key'] for c in cards}) != 458:",
+               "if len(cards) < 591 or len({c['key'] for c in cards}) != len(cards):"),
+              ("raise RuntimeError('Erwartet: 458 eindeutige Kartendrucke; bitte Katalog prüfen')",
+               "raise RuntimeError('Erwartet: mindestens 591 eindeutige Kartendrucke; bitte Katalog prüfen')"),
+              ("'cdn.exburst.dev', 'fixer-datapad.com'}",
+               "'cdn.exburst.dev', 'fixer-datapad.com', 'firebasestorage.googleapis.com'}"),
+          ]
+          for old, new in patches:
+              if new in changed:
+                  continue
+              if changed.count(old) != 1:
+                  raise SystemExit('Patchmuster nicht eindeutig: ' + old)
+              changed = changed.replace(old, new, 1)
+          changed = changed.replace('Drucke aus 10 Sets', 'Drucke insgesamt')
+          if changed != original:
+              path.write_text(changed, encoding='utf-8')
+          print('Artwork-Import aktualisiert; Firebase-Quellen fuer Promos erlaubt.')
+          PY
+          python -m py_compile scripts/fetch_artworks.py
+      - name: Nur das Python-Skript committen
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add scripts/fetch_artworks.py
+          git diff --cached --check
+          if git diff --cached --quiet; then
+            echo 'Artwork-Skript bereits korrekt.'
+            exit 0
+          fi
+          git commit -m 'Fix 591-card artwork sync and allow verified Firebase image host'
+          git push origin HEAD:main
