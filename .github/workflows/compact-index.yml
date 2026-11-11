@@ -1,0 +1,61 @@
+name: Night City - Infofelder entfernen
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  compact:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Ganze index.html ohne Infofelder erstellen
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          p = Path('index.html')
+          s = p.read_text(encoding='utf-8')
+          replacements = {
+            'Automatischer Preisabgleich:': '<div hidden aria-hidden="true"><span id="livePriceStatus" role="status"></span><button type="button" id="btnLivePrices">Aktualisieren</button></div>',
+            'Automatischer Artwork-Abgleich:': '<span id="artworkSyncStatus" hidden aria-hidden="true"></span>',
+            'Marktwerte:': '',
+            'Pre-Release richtig zählen:': '',
+            'Box Topper:': '',
+          }
+          for label, replacement in replacements.items():
+              marker = f'<div class="note-bar"><strong>{label}</strong>'
+              count = s.count(marker)
+              if count == 0:
+                  print(f'Bereits entfernt: {label}')
+                  continue
+              if count != 1:
+                  raise RuntimeError(f'Unerwartete Anzahl fuer {label}: {count}')
+              start = s.index(marker)
+              end = s.find('\n', start)
+              if end == -1 or not s[start:end].endswith('</div>'):
+                  raise RuntimeError(f'HTML-Struktur unerwartet bei {label}')
+              s = s[:start] + replacement + s[end:]
+          for required in ('id="livePriceStatus"', 'id="btnLivePrices"', 'id="artworkSyncStatus"', '<details class="price-tools" id="priceToolBox">', 'const DB='):
+              if required not in s:
+                  raise RuntimeError(f'Pflichtelement fehlt: {required}')
+          if s.count('const DB=') != 1 or len(s) < 200_000:
+              raise RuntimeError('Katalogdaten unvollstaendig')
+          p.write_text(s, encoding='utf-8')
+          print(f'index.html erstellt: {len(s)} Zeichen')
+          PY
+      - name: Änderungen speichern
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html
+          git diff --cached --check
+          if git diff --cached --quiet; then
+            echo 'Keine Änderungen erforderlich.'
+            exit 0
+          fi
+          git commit -m 'Remove large info panels from catalog'
+          git push origin HEAD:main
