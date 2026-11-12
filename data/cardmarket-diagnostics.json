@@ -34,8 +34,7 @@
     },
     "heist-retail": {
       "kein_Produkt_match": 1,
-      "kein_trend-foil": 1,
-      "mit_preis": 18
+      "mit_preis": 19
     },
     "judge-promos": {
       "kein_trend": 3
@@ -64,10 +63,10 @@
       "mit_preis": 165
     }
   },
-  "generatedAt": "2026-11-11T11:26:59+00:00",
-  "newOrUpdatedPrices": 448,
-  "savedPriceRecordsAfterUpdate": 454,
-  "sourceAsOf": "2026-11-11",
+  "generatedAt": "2026-11-12T11:50:27+00:00",
+  "newOrUpdatedPrices": 449,
+  "savedPriceRecordsAfterUpdate": 455,
+  "sourceAsOf": "2026-11-12",
   "total": 591,
   "unresolved": [
     {
@@ -233,16 +232,6 @@
       "key": "heist-beta:β018",
       "name": "Tetratronic Rippler",
       "reason": "kein_Produkt_match"
-    },
-    {
-      "candidateProductIds": [
-        920410
-      ],
-      "finish": "Holo",
-      "idProduct": 920410,
-      "key": "heist-retail:012",
-      "name": "V: Corporate Exile",
-      "reason": "kein_trend-foil"
     },
     {
       "candidateProductIds": [],
@@ -1452,5 +1441,5 @@
     }
   ],
   "withConfirmedProductMatch": 476,
-  "withValidCardmarketPrice": 448
+  "withValidCardmarketPrice": 449
 }
