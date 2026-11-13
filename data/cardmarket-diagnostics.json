@@ -1,5 +1,5 @@
 {
-  "alreadySavedPriceRecords": 454,
+  "alreadySavedPriceRecords": 455,
   "bySet": {
     "boxtopper-beta": {
       "mit_preis": 6
@@ -20,8 +20,8 @@
     },
     "embracing-retail": {
       "kein_trend": 1,
-      "kein_trend-foil": 3,
-      "mit_preis": 16
+      "kein_trend-foil": 1,
+      "mit_preis": 18
     },
     "heist-beta": {
       "kein_Produkt_match": 1,
@@ -63,10 +63,10 @@
       "mit_preis": 165
     }
   },
-  "generatedAt": "2026-11-12T11:50:27+00:00",
-  "newOrUpdatedPrices": 449,
-  "savedPriceRecordsAfterUpdate": 455,
-  "sourceAsOf": "2026-11-12",
+  "generatedAt": "2026-11-13T11:32:35+00:00",
+  "newOrUpdatedPrices": 451,
+  "savedPriceRecordsAfterUpdate": 457,
+  "sourceAsOf": "2026-11-13",
   "total": 591,
   "unresolved": [
     {
@@ -249,26 +249,6 @@
       "idProduct": 920425,
       "key": "embracing-retail:001",
       "name": "Yorinobu Arasaka: Embracing Destruction",
-      "reason": "kein_trend-foil"
-    },
-    {
-      "candidateProductIds": [
-        920439
-      ],
-      "finish": "Holo",
-      "idProduct": 920439,
-      "key": "embracing-retail:012",
-      "name": "Goro Takemura: Hands Unclean",
-      "reason": "kein_trend-foil"
-    },
-    {
-      "candidateProductIds": [
-        920441
-      ],
-      "finish": "Holo",
-      "idProduct": 920441,
-      "key": "embracing-retail:013",
-      "name": "Saburo Arasaka: Stubborn Patriarch",
       "reason": "kein_trend-foil"
     },
     {
@@ -1441,5 +1421,5 @@
     }
   ],
   "withConfirmedProductMatch": 476,
-  "withValidCardmarketPrice": 449
+  "withValidCardmarketPrice": 451
 }
