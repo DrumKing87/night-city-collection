@@ -1,0 +1,263 @@
+name: Cardmarket - Brawl V1 V2 V3 sicher abgleichen
+
+on:
+  workflow_dispatch:
+    inputs:
+      apply_inferred_mapping:
+        description: 'Unbestätigte V1/V2/V3-ID-Zuordnung anwenden? Standard NEIN.'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: night-city-price-updates
+  cancel-in-progress: false
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      APPLY_INFERRED_BRAWL_MAPPING: ${{ inputs.apply_inferred_mapping }}
+    steps:
+      - name: Repository laden
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Brawl-Drucke und offizielle Produkt-IDs pruefen
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat > /tmp/audit_brawl.py <<'PY_BRAWL'
+          from __future__ import annotations
+
+          from collections import defaultdict, Counter
+          from datetime import datetime, timezone
+          from pathlib import Path
+          from urllib.request import Request, urlopen
+          import json
+          import os
+          import re
+          import subprocess
+          import sys
+          import unicodedata
+
+          ROOT = Path.cwd()
+          PRODUCTS_URL = 'https://downloads.s3.cardmarket.com/productCatalog/productList/products_singles_23.json'
+          PRICE_URL = 'https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_23.json'
+          PREVIOUS_REVIEW = ROOT / 'data/cardmarket-brawl-variant-review.json'
+          OVERRIDES = ROOT / 'data/cardmarket-product-overrides.json'
+          REPORT = ROOT / 'data/cardmarket-brawl-v1-v2-review.json'
+          REPORT_MD = ROOT / 'data/cardmarket-brawl-v1-v2-review.md'
+          APPLY = os.environ.get('APPLY_INFERRED_BRAWL_MAPPING', 'false').strip().lower() == 'true'
+
+
+          def norm(x):
+              v = unicodedata.normalize('NFKD', str(x or ''))
+              v = ''.join(c for c in v if not unicodedata.combining(c))
+              return ' '.join(re.sub('[^a-z0-9]+', ' ', v.lower().replace('&', 'and')).split())
+
+
+          def read_official(url, arrname):
+              req = Request(url, headers={'User-Agent': 'NightCityCollection/6.0 (verified printing audit)', 'Accept': 'application/json'})
+              with urlopen(req, timeout=90) as resp:
+                  if resp.status != 200:
+                      raise ValueError('Official Cardmarket feed status ' + str(resp.status))
+                  content = resp.read(25_000_001)
+              if len(content) > 25_000_000:
+                  raise ValueError('Official Cardmarket feed exceeded 25MB')
+              o = json.loads(content)
+              if o.get('version') != 1 or not isinstance(o.get(arrname), list) or len(o[arrname]) < 500:
+                  raise ValueError('Official Cardmarket feed invalid')
+              return o
+
+
+          def cards_and_candidates():
+              site = (ROOT / 'index.html').read_text('utf-8')
+              m = re.search(r'const DB\s*=\s*(\{.*?\})\s*;\s*const CARDS', site, re.S)
+              if not m:
+                  raise ValueError('Card DB in index.html not recognized')
+              db = json.loads(m.group(1))
+              if len(db['cards']) != 591 or len({c['key'] for c in db['cards']}) != 591:
+                  raise ValueError('Expected 591 unique card printings')
+              cards = sorted((c for c in db['cards'] if c['setId'] == 'brawl-s1'), key=lambda c: int(c['no']))
+              if len(cards) != 37 or [int(c['no']) for c in cards] != list(range(1,38)):
+                  raise ValueError('Brawl must have collector numbers 001-037')
+              if [norm(c['name']) for c in cards[:18]] != [norm(c['name']) for c in cards[18:36]]:
+                  raise ValueError('Brawl pairs must match precisely')
+              if norm(cards[14]['name']) != norm(cards[36]['name']):
+                  raise ValueError('Brawl Judge card differs unexpectedly')
+              if any(c['finish'].lower() not in ('holo','foil') for c in cards):
+                  raise ValueError('Expected all Brawl printings to be Holo/Foil')
+              d = json.loads(PREVIOUS_REVIEW.read_text('utf-8'))
+              bykey = {r['key']: r for r in d.get('rows',[])}
+              if d.get('total') != 37 or d.get('cardometerListOrderConsistent') is not True or len(bykey) != 37:
+                  raise ValueError('Independent Cardometer first audit failed / absent')
+              return cards, bykey
+
+
+          def main():
+              cards, previous_bykey = cards_and_candidates()
+              prod = read_official(PRODUCTS_URL, 'products')
+              g = read_official(PRICE_URL, 'priceGuides')
+              brawl = [p for p in prod['products'] if int(p.get('idExpansion', -1)) == 6953]
+              if len(brawl) != 37 or len({p['idProduct'] for p in brawl}) != 37:
+                  raise ValueError('Expected 37 distinct official products in expansion 6953')
+              product_by_id = {int(p['idProduct']): p for p in brawl}
+              guide = {int(v['idProduct']):v for v in g['priceGuides'] if v.get('idProduct') is not None}
+              if any(p.get('categoryName') != 'Cyberpunk Single' for p in brawl):
+                  raise ValueError('Cardmarket category mismatch')
+              earlier = []
+              later = []
+              rows = []
+              for i,c in enumerate(cards):
+                  reference = previous_bykey.get(c['key'])
+                  if reference is None or str(reference['number']) != str(c['no']) or norm(reference['name']) != norm(c['name']):
+                      raise ValueError('Catalog vs. previous audited set mismatch: ' + c['key'])
+                  possible = [int(x['idProduct']) for x in reference['possibleCardmarketProductIds']]
+                  if len(possible) != (3 if int(c['no']) in (15, 33, 37) else 2):
+                      raise ValueError('Unexpected candidate multiplicity: ' + c['key'])
+                  if any(pid not in product_by_id or norm(product_by_id[pid]['name']) != norm(c['name']) for pid in possible):
+                      raise ValueError('Official product names differ from printing: ' + c['key'])
+                  proposed = reference.get('suggestedProductIdBySourceOrder_UNVERIFIED')
+                  if proposed is None or int(proposed) not in possible:
+                      raise ValueError('Previous independent ordering does not contain this candidate: ' + c['key'])
+                  pid = int(proposed)
+                  official = product_by_id[pid]
+                  price = guide.get(pid, {}).get('trend-foil')
+                  try:
+                      price = float(price)
+                      if price <= 0 or not price < 1000000:
+                          price = None
+                  except (TypeError, ValueError):
+                      price = None
+                  if i < 18:
+                      phase = 'Participation / vermutlich Cardmarket V1'
+                      earlier.append(official['dateAdded'])
+                  elif i < 36:
+                      phase = 'Brawl Champ / vermutlich Cardmarket V2'
+                      later.append(official['dateAdded'])
+                  else:
+                      phase = 'Judge / vermutlich Cardmarket V3'
+                      later.append(official['dateAdded'])
+                  rows.append({
+                      'key':c['key'], 'number':c['no'], 'name':c['name'], 'printing':phase,
+                      'proposedIdProduct_UNVERIFIED':pid, 'dateAdded':official['dateAdded'],
+                      'trendFoilAtSnapshot':price, 'allCandidateProductIds':possible,
+                      'sourceEvidence':'Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003',
+                      'collectorNumberToIdVerifiedDirectly':False,
+                  })
+              ids = [r['proposedIdProduct_UNVERIFIED'] for r in rows]
+              if len(set(ids)) != 37 or set(ids) != set(product_by_id):
+                  raise ValueError('Inferred product mapping is incomplete or duplicate')
+              for i in range(18):
+                  if rows[i]['dateAdded'] >= rows[i+18]['dateAdded']:
+                      raise ValueError('Expected earlier Product creation for Participation counterpart')
+              if rows[36]['dateAdded'] <= rows[14]['dateAdded']:
+                  raise ValueError('Judge product added before Participation product')
+              overrides = json.loads(OVERRIDES.read_text('utf-8'))
+              if not isinstance(overrides, dict):
+                  raise ValueError('Existing override schema invalid')
+              for row in rows:
+                  if row['key'] in overrides and int(overrides[row['key']]) != row['proposedIdProduct_UNVERIFIED']:
+                      raise ValueError('Conflicting verified override – nothing changed: ' + row['key'])
+              before = json.loads((ROOT/'data/prices.json').read_text('utf-8'))['prices']
+              if len(before) < 450:
+                  raise ValueError('Existing prices lower than 450 – refuse change')
+              if APPLY:
+                  # Use only when operator has explicitly accepted the inferred V1/V2 group ordering.
+                  for row in rows:
+                      overrides[row['key']] = row['proposedIdProduct_UNVERIFIED']
+                  OVERRIDES.write_text(json.dumps(overrides, ensure_ascii=False, indent=2, sort_keys=True)+'\n',encoding='utf-8')
+                  subprocess.run([sys.executable,'scripts/update_prices.py'],cwd=ROOT,check=True)
+                  after = json.loads((ROOT/'data/prices.json').read_text('utf-8'))['prices']
+                  if not set(before).issubset(after):
+                      raise ValueError('Previous price records lost; do not commit')
+              else:
+                  after = before
+              new_count = len(after) - len(before)
+              report = {
+                  'checkedAt':datetime.now(timezone.utc).isoformat(timespec='seconds'),
+                  'productExportCreatedAt':prod.get('createdAt'),
+                  'priceGuideCreatedAt':g.get('createdAt'),
+                  'mode':'MAPPING_APPLIED_EXPLICIT_OPT_IN' if APPLY else 'REVIEW_ONLY',
+                  'officialExpansion':6953, 'count':37,
+                  'allOfficialProductIdsAccountedFor':True,
+                  'sourceOrderConsistent':True,
+                  'consistentCreationTimeGroups':True,
+                  'proofStatus':'INFERRED_NOT_DIRECTLY_ID_VERIFIED',
+                  'newPriceRecords':new_count,
+                  'savedPriceRecordsAfter':len(after),
+                  'rows':rows,
+                  'warning':'The map is inferred from independently consistent catalog ordering; Cardmarket products do not disclose the collector number. No direct per-product ID proof exists. Default mode is review-only.'
+              }
+              REPORT.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+              lines = [
+                  '# Night City Brawl S1 – Cardmarket V1/V2/V3 Zuordnungspruefung','',
+                  '**Status:** '+ ('Produkt-ID-Overrides nach ausdruecklicher Freigabe aktiviert.' if APPLY else 'Nur Pruefung: keine Preisdatei veraendert.'),
+                  '',
+                  '**Sicherheitshinweis:** Die Zuordnung folgt einer konsistenten externen Reihenfolge und Zeitstempeln, ist aber KEINE direkte Cardmarket-Sammlernummer-zu-Produkt-ID-Bestaetigung. Satori 003 ist auf Cardmarket als V1 abgebildet, die korrespondierende ID ist aus dieser Webseite nicht auslesbar.',
+                  '',
+                  'Offizielle Cardmarket-Produktdatei: '+str(prod.get('createdAt')),
+                  'Offizielle Cardmarket-Preisdatei: '+str(g.get('createdAt')),
+                  '',
+                  f'Neue gespeicherte Preise: **{new_count}** · Bestand danach: **{len(after)}**',
+                  '',
+                  '| Nr. | Version | Name | ID-Vorschlag (nicht direkt bestaetigt) | Foil-Trend im Export |',
+                  '|---:|---|---|---:|---:|',
+              ]
+              for row in rows:
+                  label = 'V1 / Participation' if int(row['number']) <= 18 else 'V2 / Champion' if int(row['number']) <= 36 else 'V3 / Judge'
+                  price = ('%.2f €' % row['trendFoilAtSnapshot']) if row['trendFoilAtSnapshot'] is not None else '–'
+                  lines.append('| '+row['number']+' | '+label+' | '+row['name'].replace('|','/')+' | '+str(row['proposedIdProduct_UNVERIFIED'])+' | '+price+' |')
+              lines.extend(['','Quellen:','',
+                  '- Offizielles Organized Play: https://tcgcyberpunk.com/en/news/ncb-preview',
+                  '- ScanFlip-Checkliste: https://www.scanflip.fr/en/cyberpunk/expansions/ncb01?language=EN',
+                  '- Cardometer-Reihenfolge: https://cardometer.com/cyberpunk/sets/cyberpunk-night-city-brawl-season-1/',
+                  '- Nutzergezeigte V1-Seite: https://www.cardmarket.com/de/Cyberpunk/Products/Singles/Night-City-Brawl-S1/Satori-Sword-of-Saburo-V1',
+                  '',
+                  '**Das V1/V2-Zuordnungsschema ist eine starke Hypothese, kein direkter Produkt-ID-Nachweis.**'])
+              REPORT_MD.write_text('\n'.join(lines)+'\n',encoding='utf-8')
+              summary = os.environ.get('GITHUB_STEP_SUMMARY')
+              if summary:
+                  with open(summary,'a',encoding='utf-8') as fp:
+                      fp.write('\n'.join(lines[:18])+'\n')
+              print('BRAWL AUDIT:',report['mode'],'PRODUCTS:',len(ids),'PRICED CANDIDATES:',sum(x['trendFoilAtSnapshot'] is not None for x in rows),'NEW PRICES:',new_count)
+
+
+          if __name__ == '__main__':
+              main()
+          PY_BRAWL
+          python /tmp/audit_brawl.py
+      - name: Pruefbericht und bei Freigabe bestaetigte Aenderungen committen
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/cardmarket-brawl-v1-v2-review.json data/cardmarket-brawl-v1-v2-review.md
+          if [ "${APPLY_INFERRED_BRAWL_MAPPING}" = "true" ]; then
+            git add data/cardmarket-product-overrides.json data/prices.json data/cardmarket-diagnostics.json
+          fi
+          git diff --cached --check
+          if git diff --cached --quiet; then
+            echo 'Keine Aenderung erforderlich.'
+            exit 0
+          fi
+          git commit -m 'Audit Cardmarket Brawl V1 V2 mappings with guarded opt-in [skip ci]'
+          for n in 1 2 3 4 5; do
+            if git push origin HEAD:main; then exit 0; fi
+            if [ "$n" -eq 5 ]; then exit 1; fi
+            git fetch origin main
+            if ! git rebase origin/main; then
+              git rebase --abort || true
+              exit 1
+            fi
+          done
