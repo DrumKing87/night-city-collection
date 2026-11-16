@@ -55,176 +55,18 @@
       "mehrdeutiger_Sonderdruck": 5
     },
     "wnc-beta": {
-      "mehrdeutiger_Sonderdruck": 7,
-      "mit_preis": 165
+      "mit_preis": 172
     },
     "wnc-retail": {
-      "mehrdeutiger_Sonderdruck": 7,
-      "mit_preis": 165
+      "mit_preis": 172
     }
   },
-  "generatedAt": "2026-11-16T12:02:01+00:00",
-  "newOrUpdatedPrices": 451,
-  "savedPriceRecordsAfterUpdate": 457,
+  "generatedAt": "2026-11-16T21:08:51+00:00",
+  "newOrUpdatedPrices": 14,
+  "savedPriceRecordsAfterUpdate": 465,
   "sourceAsOf": "2026-11-16",
   "total": 591,
   "unresolved": [
-    {
-      "candidateProductIds": [
-        905092,
-        905093,
-        905232
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "beta:β005b",
-      "name": "V: Streetkid",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        905126,
-        905235
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "beta:β038",
-      "name": "Muamar Reyes: El Capitán",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        905196,
-        905245
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "beta:β108",
-      "name": "Judy Álvarez: Braindance Maestro",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        905204,
-        905260
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "beta:β116",
-      "name": "Judy Álvarez: Nothing to Doubt",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        905126,
-        905235
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "beta:β147",
-      "name": "Muamar Reyes: El Capitán",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        905196,
-        905245
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "beta:β157",
-      "name": "Judy Álvarez: Braindance Maestro",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        905204,
-        905260
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "beta:β171",
-      "name": "Judy Álvarez: Nothing to Doubt",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        920422,
-        920423,
-        920651
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "retail:005b",
-      "name": "V: Streetkid",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        920476,
-        920654
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "retail:038",
-      "name": "Muamar Reyes: El Capitán",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        920615,
-        920664
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "retail:108",
-      "name": "Judy Álvarez: Braindance Maestro",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        920623,
-        920678
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "retail:116",
-      "name": "Judy Álvarez: Nothing to Doubt",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        920476,
-        920654
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "retail:147",
-      "name": "Muamar Reyes: El Capitán",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        920615,
-        920664
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "retail:157",
-      "name": "Judy Álvarez: Braindance Maestro",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        920623,
-        920678
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "retail:171",
-      "name": "Judy Álvarez: Nothing to Doubt",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
     {
       "candidateProductIds": [],
       "finish": "Normal",
@@ -1420,6 +1262,6 @@
       "reason": "kein_trend"
     }
   ],
-  "withConfirmedProductMatch": 476,
-  "withValidCardmarketPrice": 451
+  "withConfirmedProductMatch": 490,
+  "withValidCardmarketPrice": 465
 }
