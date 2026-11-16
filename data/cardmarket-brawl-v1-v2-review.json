@@ -1,0 +1,575 @@
+{
+  "checkedAt": "2026-11-16T21:51:20+00:00",
+  "productExportCreatedAt": "2026-11-16T13:57:03+0100",
+  "priceGuideCreatedAt": "2026-11-16T02:49:16+0100",
+  "mode": "REVIEW_ONLY",
+  "officialExpansion": 6953,
+  "count": 37,
+  "allOfficialProductIdsAccountedFor": true,
+  "sourceOrderConsistent": true,
+  "consistentCreationTimeGroups": true,
+  "proofStatus": "INFERRED_NOT_DIRECTLY_ID_VERIFIED",
+  "newPriceRecords": 0,
+  "savedPriceRecordsAfter": 465,
+  "rows": [
+    {
+      "key": "brawl-s1:001",
+      "number": "001",
+      "name": "Kerry Eurodyne: The Last Rockerboy",
+      "printing": "Participation / vermutlich Cardmarket V1",
+      "proposedIdProduct_UNVERIFIED": 922559,
+      "dateAdded": "2026-11-06 19:47:45",
+      "trendFoilAtSnapshot": 4.81,
+      "allCandidateProductIds": [
+        922559,
+        922582
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:002",
+      "number": "002",
+      "name": "Minotaur",
+      "printing": "Participation / vermutlich Cardmarket V1",
+      "proposedIdProduct_UNVERIFIED": 922561,
+      "dateAdded": "2026-11-06 19:48:09",
+      "trendFoilAtSnapshot": 14.42,
+      "allCandidateProductIds": [
+        922561,
+        922583
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:003",
+      "number": "003",
+      "name": "Satori: Sword of Saburo",
+      "printing": "Participation / vermutlich Cardmarket V1",
+      "proposedIdProduct_UNVERIFIED": 922562,
+      "dateAdded": "2026-11-06 19:48:28",
+      "trendFoilAtSnapshot": 20.34,
+      "allCandidateProductIds": [
+        922562,
+        922584
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:004",
+      "number": "004",
+      "name": "Jackie Welles: Ride or Die Choom",
+      "printing": "Participation / vermutlich Cardmarket V1",
+      "proposedIdProduct_UNVERIFIED": 922563,
+      "dateAdded": "2026-11-06 19:48:45",
+      "trendFoilAtSnapshot": 23.91,
+      "allCandidateProductIds": [
+        922563,
+        922585
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:005",
+      "number": "005",
+      "name": "Secondhand Bombus",
+      "printing": "Participation / vermutlich Cardmarket V1",
+      "proposedIdProduct_UNVERIFIED": 922565,
+      "dateAdded": "2026-11-06 19:49:13",
+      "trendFoilAtSnapshot": 17.45,
+      "allCandidateProductIds": [
+        922565,
+        922586
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:006",
+      "number": "006",
+      "name": "Mandibular Upgrade",
+      "printing": "Participation / vermutlich Cardmarket V1",
+      "proposedIdProduct_UNVERIFIED": 922566,
+      "dateAdded": "2026-11-06 19:49:28",
+      "trendFoilAtSnapshot": 7.83,
+      "allCandidateProductIds": [
+        922566,
+        922587
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:007",
+      "number": "007",
+      "name": "Bootleg Black Sapphire Show",
+      "printing": "Participation / vermutlich Cardmarket V1",
+      "proposedIdProduct_UNVERIFIED": 922567,
+      "dateAdded": "2026-11-06 19:50:01",
+      "trendFoilAtSnapshot": 18.26,
+      "allCandidateProductIds": [
+        922567,
+        922589
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:008",
+      "number": "008",
+      "name": "Cyberpsychosis",
+      "printing": "Participation / vermutlich Cardmarket V1",
+      "proposedIdProduct_UNVERIFIED": 922568,
+      "dateAdded": "2026-11-06 19:50:14",
+      "trendFoilAtSnapshot": 4.27,
+      "allCandidateProductIds": [
+        922568,
+        922590
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:009",
+      "number": "009",
+      "name": "Corpo Security",
+      "printing": "Participation / vermutlich Cardmarket V1",
+      "proposedIdProduct_UNVERIFIED": 922569,
+      "dateAdded": "2026-11-06 19:50:27",
+      "trendFoilAtSnapshot": 4.88,
+      "allCandidateProductIds": [
+        922569,
+        922591
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:010",
+      "number": "010",
+      "name": "MaxTac Squadron",
+      "printing": "Participation / vermutlich Cardmarket V1",
+      "proposedIdProduct_UNVERIFIED": 922570,
+      "dateAdded": "2026-11-06 19:50:40",
+      "trendFoilAtSnapshot": 4.63,
+      "allCandidateProductIds": [
+        922570,
+        922593
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:011",
+      "number": "011",
+      "name": "Wraith Marauders",
+      "printing": "Participation / vermutlich Cardmarket V1",
+      "proposedIdProduct_UNVERIFIED": 922571,
+      "dateAdded": "2026-11-06 19:50:53",
+      "trendFoilAtSnapshot": 4.73,
+      "allCandidateProductIds": [
+        922571,
+        922594
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:012",
+      "number": "012",
+      "name": "(Don't Fear) The Reaper",
+      "printing": "Participation / vermutlich Cardmarket V1",
+      "proposedIdProduct_UNVERIFIED": 922573,
+      "dateAdded": "2026-11-06 19:51:07",
+      "trendFoilAtSnapshot": 8.41,
+      "allCandidateProductIds": [
+        922573,
+        922595
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:013",
+      "number": "013",
+      "name": "We Gotta Live Together",
+      "printing": "Participation / vermutlich Cardmarket V1",
+      "proposedIdProduct_UNVERIFIED": 922574,
+      "dateAdded": "2026-11-06 19:51:21",
+      "trendFoilAtSnapshot": 7.67,
+      "allCandidateProductIds": [
+        922574,
+        922596
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:014",
+      "number": "014",
+      "name": "Delamain Cab",
+      "printing": "Participation / vermutlich Cardmarket V1",
+      "proposedIdProduct_UNVERIFIED": 922575,
+      "dateAdded": "2026-11-06 19:51:35",
+      "trendFoilAtSnapshot": 7.52,
+      "allCandidateProductIds": [
+        922575,
+        922598
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:015",
+      "number": "015",
+      "name": "Maman Brigitte: Spirit of Death",
+      "printing": "Participation / vermutlich Cardmarket V1",
+      "proposedIdProduct_UNVERIFIED": 922577,
+      "dateAdded": "2026-11-06 19:51:58",
+      "trendFoilAtSnapshot": 7.08,
+      "allCandidateProductIds": [
+        922577,
+        922599,
+        922603
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:016",
+      "number": "016",
+      "name": "Dying Night: V's Pistol",
+      "printing": "Participation / vermutlich Cardmarket V1",
+      "proposedIdProduct_UNVERIFIED": 922578,
+      "dateAdded": "2026-11-06 19:52:17",
+      "trendFoilAtSnapshot": 5.4,
+      "allCandidateProductIds": [
+        922578,
+        922600
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:017",
+      "number": "017",
+      "name": "NetWatch Netdriver",
+      "printing": "Participation / vermutlich Cardmarket V1",
+      "proposedIdProduct_UNVERIFIED": 922579,
+      "dateAdded": "2026-11-06 19:52:30",
+      "trendFoilAtSnapshot": 5.64,
+      "allCandidateProductIds": [
+        922579,
+        922601
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:018",
+      "number": "018",
+      "name": "Floor It",
+      "printing": "Participation / vermutlich Cardmarket V1",
+      "proposedIdProduct_UNVERIFIED": 922581,
+      "dateAdded": "2026-11-06 19:54:14",
+      "trendFoilAtSnapshot": 15.16,
+      "allCandidateProductIds": [
+        922581,
+        922602
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:019",
+      "number": "019",
+      "name": "Kerry Eurodyne: The Last Rockerboy",
+      "printing": "Brawl Champ / vermutlich Cardmarket V2",
+      "proposedIdProduct_UNVERIFIED": 922582,
+      "dateAdded": "2026-11-06 19:54:38",
+      "trendFoilAtSnapshot": 35.0,
+      "allCandidateProductIds": [
+        922559,
+        922582
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:020",
+      "number": "020",
+      "name": "Minotaur",
+      "printing": "Brawl Champ / vermutlich Cardmarket V2",
+      "proposedIdProduct_UNVERIFIED": 922583,
+      "dateAdded": "2026-11-06 19:54:53",
+      "trendFoilAtSnapshot": 37.61,
+      "allCandidateProductIds": [
+        922561,
+        922583
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:021",
+      "number": "021",
+      "name": "Satori: Sword of Saburo",
+      "printing": "Brawl Champ / vermutlich Cardmarket V2",
+      "proposedIdProduct_UNVERIFIED": 922584,
+      "dateAdded": "2026-11-06 19:55:13",
+      "trendFoilAtSnapshot": null,
+      "allCandidateProductIds": [
+        922562,
+        922584
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:022",
+      "number": "022",
+      "name": "Jackie Welles: Ride or Die Choom",
+      "printing": "Brawl Champ / vermutlich Cardmarket V2",
+      "proposedIdProduct_UNVERIFIED": 922585,
+      "dateAdded": "2026-11-06 19:55:29",
+      "trendFoilAtSnapshot": null,
+      "allCandidateProductIds": [
+        922563,
+        922585
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:023",
+      "number": "023",
+      "name": "Secondhand Bombus",
+      "printing": "Brawl Champ / vermutlich Cardmarket V2",
+      "proposedIdProduct_UNVERIFIED": 922586,
+      "dateAdded": "2026-11-06 19:55:44",
+      "trendFoilAtSnapshot": 60.0,
+      "allCandidateProductIds": [
+        922565,
+        922586
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:024",
+      "number": "024",
+      "name": "Mandibular Upgrade",
+      "printing": "Brawl Champ / vermutlich Cardmarket V2",
+      "proposedIdProduct_UNVERIFIED": 922587,
+      "dateAdded": "2026-11-06 19:56:00",
+      "trendFoilAtSnapshot": 60.0,
+      "allCandidateProductIds": [
+        922566,
+        922587
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:025",
+      "number": "025",
+      "name": "Bootleg Black Sapphire Show",
+      "printing": "Brawl Champ / vermutlich Cardmarket V2",
+      "proposedIdProduct_UNVERIFIED": 922589,
+      "dateAdded": "2026-11-06 19:56:13",
+      "trendFoilAtSnapshot": 50.0,
+      "allCandidateProductIds": [
+        922567,
+        922589
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:026",
+      "number": "026",
+      "name": "Cyberpsychosis",
+      "printing": "Brawl Champ / vermutlich Cardmarket V2",
+      "proposedIdProduct_UNVERIFIED": 922590,
+      "dateAdded": "2026-11-06 19:56:26",
+      "trendFoilAtSnapshot": null,
+      "allCandidateProductIds": [
+        922568,
+        922590
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:027",
+      "number": "027",
+      "name": "Corpo Security",
+      "printing": "Brawl Champ / vermutlich Cardmarket V2",
+      "proposedIdProduct_UNVERIFIED": 922591,
+      "dateAdded": "2026-11-06 19:56:41",
+      "trendFoilAtSnapshot": 24.99,
+      "allCandidateProductIds": [
+        922569,
+        922591
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:028",
+      "number": "028",
+      "name": "MaxTac Squadron",
+      "printing": "Brawl Champ / vermutlich Cardmarket V2",
+      "proposedIdProduct_UNVERIFIED": 922593,
+      "dateAdded": "2026-11-06 19:57:07",
+      "trendFoilAtSnapshot": 30.0,
+      "allCandidateProductIds": [
+        922570,
+        922593
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:029",
+      "number": "029",
+      "name": "Wraith Marauders",
+      "printing": "Brawl Champ / vermutlich Cardmarket V2",
+      "proposedIdProduct_UNVERIFIED": 922594,
+      "dateAdded": "2026-11-06 19:57:21",
+      "trendFoilAtSnapshot": 50.0,
+      "allCandidateProductIds": [
+        922571,
+        922594
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:030",
+      "number": "030",
+      "name": "(Don't Fear) The Reaper",
+      "printing": "Brawl Champ / vermutlich Cardmarket V2",
+      "proposedIdProduct_UNVERIFIED": 922595,
+      "dateAdded": "2026-11-06 19:57:39",
+      "trendFoilAtSnapshot": 60.0,
+      "allCandidateProductIds": [
+        922573,
+        922595
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:031",
+      "number": "031",
+      "name": "We Gotta Live Together",
+      "printing": "Brawl Champ / vermutlich Cardmarket V2",
+      "proposedIdProduct_UNVERIFIED": 922596,
+      "dateAdded": "2026-11-06 19:57:50",
+      "trendFoilAtSnapshot": 19.99,
+      "allCandidateProductIds": [
+        922574,
+        922596
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:032",
+      "number": "032",
+      "name": "Delamain Cab",
+      "printing": "Brawl Champ / vermutlich Cardmarket V2",
+      "proposedIdProduct_UNVERIFIED": 922598,
+      "dateAdded": "2026-11-06 19:58:03",
+      "trendFoilAtSnapshot": 21.99,
+      "allCandidateProductIds": [
+        922575,
+        922598
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:033",
+      "number": "033",
+      "name": "Maman Brigitte: Spirit of Death",
+      "printing": "Brawl Champ / vermutlich Cardmarket V2",
+      "proposedIdProduct_UNVERIFIED": 922599,
+      "dateAdded": "2026-11-06 19:58:21",
+      "trendFoilAtSnapshot": 40.0,
+      "allCandidateProductIds": [
+        922577,
+        922599,
+        922603
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:034",
+      "number": "034",
+      "name": "Dying Night: V's Pistol",
+      "printing": "Brawl Champ / vermutlich Cardmarket V2",
+      "proposedIdProduct_UNVERIFIED": 922600,
+      "dateAdded": "2026-11-06 19:58:37",
+      "trendFoilAtSnapshot": 55.0,
+      "allCandidateProductIds": [
+        922578,
+        922600
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:035",
+      "number": "035",
+      "name": "NetWatch Netdriver",
+      "printing": "Brawl Champ / vermutlich Cardmarket V2",
+      "proposedIdProduct_UNVERIFIED": 922601,
+      "dateAdded": "2026-11-06 19:58:50",
+      "trendFoilAtSnapshot": 55.0,
+      "allCandidateProductIds": [
+        922579,
+        922601
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:036",
+      "number": "036",
+      "name": "Floor It",
+      "printing": "Brawl Champ / vermutlich Cardmarket V2",
+      "proposedIdProduct_UNVERIFIED": 922602,
+      "dateAdded": "2026-11-06 19:59:01",
+      "trendFoilAtSnapshot": 55.0,
+      "allCandidateProductIds": [
+        922581,
+        922602
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    },
+    {
+      "key": "brawl-s1:037",
+      "number": "037",
+      "name": "Maman Brigitte: Spirit of Death",
+      "printing": "Judge / vermutlich Cardmarket V3",
+      "proposedIdProduct_UNVERIFIED": 922603,
+      "dateAdded": "2026-11-06 19:59:21",
+      "trendFoilAtSnapshot": 8.6,
+      "allCandidateProductIds": [
+        922577,
+        922599,
+        922603
+      ],
+      "sourceEvidence": "Cardometer list order + ScanFlip collector-number groups + Cardmarket V1 user screenshot for Satori 003",
+      "collectorNumberToIdVerifiedDirectly": false
+    }
+  ],
+  "warning": "The map is inferred from independently consistent catalog ordering; Cardmarket products do not disclose the collector number. No direct per-product ID proof exists. Default mode is review-only."
+}
