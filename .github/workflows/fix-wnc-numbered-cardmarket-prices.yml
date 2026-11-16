@@ -1,0 +1,230 @@
+name: Cardmarket - 14 WNC Sonderdrucke anhand Kartennummer reparieren
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: night-city-price-updates
+  cancel-in-progress: false
+
+jobs:
+  fix-numbered-wnc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Repository mit allen Daten laden
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Python 3.12 einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verifizierte Kartennummern sicher zuordnen und offizielle Cardmarket-Preise einlesen
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat > /tmp/fix_wnc_numbered.py <<'PY_WNC'
+          from __future__ import annotations
+
+          from datetime import datetime, timezone
+          from pathlib import Path
+          from urllib.parse import urlparse
+          from urllib.request import Request, urlopen
+          from collections import defaultdict
+          import json
+          import re
+          import subprocess
+          import sys
+          import unicodedata
+
+          ROOT = Path.cwd()
+          CATALOG = ROOT / "index.html"
+          OVERRIDES_FILE = ROOT / "data/cardmarket-product-overrides.json"
+          PRICES_FILE = ROOT / "data/prices.json"
+          REPORT_FILE = ROOT / "data/cardmarket-wnc-numbered-overrides-report.json"
+          OFFICIAL_PRODUCTS_URL = "https://downloads.s3.cardmarket.com/productCatalog/productList/products_singles_23.json"
+
+          # Every URL below was independently checked against its exact collector number,
+          # set, card name, rarity, and Cardmarket product identifier on 2026-11-16.
+          # Luma provides the verified number <-> ID crosswalk, NOT our imported prices.
+          # Pricing remains exclusively the official Cardmarket trend/foil-trend export.
+          SOURCES = {
+            "beta:β005b": (905093,"https://lumatcg.com/de/cyberpunk-karte/v-streetkid-005b-welcome-to-night-city-beta-905093"),
+            "beta:β038": (905126,"https://lumatcg.com/de/cyberpunk-karte/muamar-reyes-el-capitan-038-welcome-to-night-city-beta-905126"),
+            "beta:β108": (905196,"https://lumatcg.com/de/cyberpunk-karte/judy-alvarez-braindance-maestro-108-welcome-to-night-city-beta-905196"),
+            "beta:β116": (905204,"https://lumatcg.com/de/cyberpunk-karte/judy-alvarez-nothing-to-doubt-116-welcome-to-night-city-beta-905204"),
+            "beta:β147": (905235,"https://lumatcg.com/de/cyberpunk-karte/muamar-reyes-el-capitan-147-welcome-to-night-city-beta-905235"),
+            "beta:β157": (905245,"https://lumatcg.com/de/cyberpunk-karte/judy-alvarez-braindance-maestro-157-welcome-to-night-city-beta-905245"),
+            "beta:β171": (905260,"https://lumatcg.com/de/cyberpunk-karte/judy-alvarez-nothing-to-doubt-171-welcome-to-night-city-beta-905260"),
+            "retail:005b": (920423,"https://lumatcg.com/de/cyberpunk-karte/v-streetkid-005b-welcome-to-night-city-retail-920423"),
+            "retail:038": (920476,"https://lumatcg.com/de/cyberpunk-karte/muamar-reyes-el-capitan-038-welcome-to-night-city-retail-920476"),
+            "retail:108": (920615,"https://lumatcg.com/de/cyberpunk-karte/judy-alvarez-braindance-maestro-108-welcome-to-night-city-retail-920615"),
+            "retail:116": (920623,"https://lumatcg.com/de/cyberpunk-karte/judy-alvarez-nothing-to-doubt-116-welcome-to-night-city-retail-920623"),
+            "retail:147": (920654,"https://lumatcg.com/de/cyberpunk-karte/muamar-reyes-el-capitan-147-welcome-to-night-city-retail-920654"),
+            "retail:157": (920664,"https://lumatcg.com/de/cyberpunk-karte/judy-alvarez-braindance-maestro-157-welcome-to-night-city-retail-920664"),
+            "retail:171": (920678,"https://lumatcg.com/de/cyberpunk-karte/judy-alvarez-nothing-to-doubt-171-welcome-to-night-city-retail-920678"),
+          }
+
+
+          def norm(v):
+              s = unicodedata.normalize("NFKD", str(v or ""))
+              s = "".join(c for c in s if not unicodedata.combining(c))
+              s = re.sub(r"\(\s*v\.?\s*[12]\s*\)", "", s.lower().replace("&", "and"), flags=re.I)
+              return " ".join(re.sub(r"[^a-z0-9]+", " ", s).split())
+
+
+          def load_cards():
+              source = CATALOG.read_text(encoding="utf-8")
+              match = re.search(r"const DB\s*=\s*(\{.*?\})\s*;\s*const CARDS", source, re.S)
+              if not match:
+                  raise ValueError("Katalog DB in index.html fehlt")
+              cards = json.loads(match.group(1))["cards"]
+              if len(cards) != 591 or len({c["key"] for c in cards}) != 591:
+                  raise ValueError("Katalog hat nicht mehr 591 eindeutige Karten; sicherer Abbruch")
+              return {x["key"]: x for x in cards}
+
+
+          def load_official_products():
+              request = Request(OFFICIAL_PRODUCTS_URL, headers={"Accept":"application/json", "User-Agent":"NightCityCollection/5.5 (confirmed numbered Cardmarket overrides)"})
+              with urlopen(request, timeout=90) as resp:
+                  if resp.status != 200:
+                      raise ValueError("Cardmarket hat den Produktkatalog nicht ausgeliefert")
+                  payload = resp.read(25_000_001)
+              if len(payload) > 25_000_000:
+                  raise ValueError("Offizieller Produktkatalog ist groesser als 25 MB")
+              document = json.loads(payload)
+              products = document.get("products")
+              if document.get("version") != 1 or not isinstance(products, list) or len(products) < 500:
+                  raise ValueError("Cardmarket-Produktkatalog ist unvollstaendig")
+              indexed = {int(p["idProduct"]):p for p in products}
+              if len(indexed) != len(products):
+                  raise ValueError("Doppelte offizielle Produkt-ID")
+              return indexed, document.get("createdAt")
+
+
+          def validate_url(card, pid, url):
+              u = urlparse(url)
+              if u.scheme != "https" or u.netloc != "lumatcg.com":
+                  raise ValueError("Unerwartete Nummern-Nachweisquelle")
+              m = re.fullmatch(r"/de/cyberpunk-karte/(?P<name>[a-z0-9-]+)-(?P<number>\d{3}[a-z]?)-welcome-to-night-city-(?P<edition>beta|retail)-(?P<id>\d{5,})", u.path)
+              if not m:
+                  raise ValueError("Unerwartetes Karten-URL-Format: " + url)
+              if (norm(m["name"]) != norm(card["name"]) or m["number"] != str(card["no"]).removeprefix("β") or
+                  m["edition"] != card["setId"].removeprefix("wnc-") or int(m["id"]) != pid):
+                  raise ValueError("Nummer, Edition, Name oder Produkt-ID passen nicht zusammen: " + card["key"])
+
+
+          def main():
+              cards = load_cards()
+              product_map, official_date = load_official_products()
+              previous = json.loads(PRICES_FILE.read_text(encoding="utf-8"))
+              before = previous.get("prices")
+              if not isinstance(before, dict) or len(before) < 457:
+                  raise ValueError("Bisherige Preisdatei fehlt / ist unerwartet unvollstaendig")
+              overrides = json.loads(OVERRIDES_FILE.read_text(encoding="utf-8"))
+              if not isinstance(overrides, dict) or len(overrides) < 100:
+                  raise ValueError("Bisherige bestaetigte Overrides fehlen")
+              existing_uses = defaultdict(set)
+              for key, pid in overrides.items():
+                  existing_uses[int(pid)].add(key)
+
+              rows = []
+              if len(SOURCES) != 14 or len({p for p, _ in SOURCES.values()}) != 14:
+                  raise ValueError("Erwartete 14 eindeutige, bestaetigte Produkt-IDs fehlen")
+              for key, (pid, url) in SOURCES.items():
+                  card = cards.get(key)
+                  if not card or card["setId"] not in ("wnc-beta", "wnc-retail"):
+                      raise ValueError("Unbekannte Karte: " + key)
+                  if card.get("finish") != "Holo":
+                      raise ValueError("Druckart hat sich geaendert: " + key)
+                  if key.startswith("beta:") and card["setId"] != "wnc-beta" or key.startswith("retail:") and card["setId"] != "wnc-retail":
+                      raise ValueError("Karte in falscher Edition: " + key)
+                  validate_url(card, pid, url)
+                  product = product_map.get(pid)
+                  if product is None:
+                      raise ValueError("Produkt-ID fehlt im offiziellen Cardmarket-Export: " + key)
+                  expansion = 6714 if card["setId"] == "wnc-beta" else 6761
+                  if (int(product["idExpansion"]) != expansion or norm(product.get("name")) != norm(card["name"]) or
+                      product.get("categoryName") != "Cyberpunk Single"):
+                      raise ValueError("Offizielles Produkt weicht von Karte oder Edition ab: " + key)
+                  other_uses = existing_uses.get(pid,set()) - {key}
+                  if other_uses:
+                      raise ValueError("Produkt-ID schon fuer andere Karte verwendet: " + str(pid) + ": " + str(other_uses))
+                  if key in overrides and int(overrides[key]) != pid:
+                      raise ValueError("Bestehender bestaetigter Override widerspricht neuer Quelle: " + key)
+                  rows.append({"key":key,"cardNumber":card["no"],"name":card["name"],"rarity":card["rarity"],"finish":card["finish"],"idProduct":pid,"sourceUrl":url,"idExpansion":expansion,"hadSavedPriceBefore":key in before})
+
+              for key, (pid, _) in SOURCES.items():
+                  overrides[key] = pid
+              # Preserve existing product overrides; add only the 14 independently verified mappings.
+              OVERRIDES_FILE.write_text(json.dumps(overrides, ensure_ascii=False, sort_keys=True, indent=2) + "\n", encoding="utf-8")
+              # Reuse existing, strictly validated daily importer. No Luma prices are copied.
+              subprocess.run([sys.executable, "scripts/update_prices.py"], check=True, cwd=ROOT)
+              after_doc = json.loads(PRICES_FILE.read_text(encoding="utf-8"))
+              after = after_doc.get("prices")
+              if (not isinstance(after, dict) or not set(before).issubset(set(after)) or
+                  after_doc.get("total") != 591 or len(after) < len(before)):
+                  raise ValueError("Sicherheitsstopp: gespeicherte Preis-Datensaetze wurden entfernt")
+              retail147 = after.get("retail:147",{})
+              if (retail147.get("source") != "Cardmarket (Direkt)" or retail147.get("idProduct") != 920654 or
+                  not isinstance(retail147.get("amount"), (int,float)) or retail147["amount"] <= 0):
+                  raise ValueError("Sicherheitsstopp: Retail Nr. 147 hat keinen gueltigen Cardmarket-Foil-Trend")
+              for row in rows:
+                  price = after.get(row["key"])
+                  row["savedPriceAfter"] = price.get("amount") if price else None
+                  row["savedPriceSourceAfter"] = price.get("source") if price else None
+                  row["officialProductIdAfter"] = price.get("idProduct") if price else None
+                  if price is not None and price.get("idProduct") != row["idProduct"]:
+                      raise ValueError("Sicherheitsstopp: falsche Produkt-ID bei " + row["key"])
+
+              report = {
+                  "schema":1,"generatedAt":datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                  "officialProductsDate":official_date,"officialPricesDate":after_doc.get("sourceAsOf"),
+                  "catalogPrintings":591,"verifiedMappings":len(SOURCES),
+                  "savedPricesBefore":len(before),"savedPricesAfter":len(after),
+                  "additionalSavedPrices":len(after)-len(before),
+                  "sourceOfMappings":"Individuelle Luma-Kartenseiten, Sammlernummer + Edition + Produkt-ID am 2026-11-16 verifiziert",
+                  "sourceOfPrices":"Offizieller Cardmarket-Cyberpunk-Tagesexport; trend/foil-trend je Druckart",
+                  "pricesOfOtherPrintingsProtected":True,
+                  "rows":rows,
+              }
+              REPORT_FILE.parent.mkdir(parents=True,exist_ok=True)
+              REPORT_FILE.write_text(json.dumps(report,ensure_ascii=False,sort_keys=True,indent=2)+"\n",encoding="utf-8")
+              print("WNC-FOIL-DRUCKE SICHER AKTIVIERT:", len(SOURCES))
+              print("Preise vorher:",len(before),"Preise nachher:",len(after),"Neue Preisdatensaetze:",len(after)-len(before))
+              print("Retail:147 - Cardmarket",retail147["amount"],"EUR, Produkt",retail147["idProduct"])
+
+          if __name__ == "__main__":
+              main()
+          PY_WNC
+          python /tmp/fix_wnc_numbered.py
+      - name: Neue IDs Preise und Pruefbericht sichern
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/cardmarket-product-overrides.json data/prices.json data/cardmarket-diagnostics.json data/cardmarket-wnc-numbered-overrides-report.json
+          git diff --cached --check
+          if git diff --cached --quiet; then
+            echo 'Nichts geaendert.'
+            exit 0
+          fi
+          git commit -m 'Map 14 numbered WNC printings to verified Cardmarket product IDs [skip ci]'
+          for attempt in 1 2 3 4 5; do
+            if git push origin HEAD:main; then
+              echo 'Offizielle WNC Preise und sichere Zuordnungen veroeffentlicht.'
+              exit 0
+            fi
+            if [ "$attempt" -eq 5 ]; then exit 1; fi
+            git fetch origin main
+            if ! git rebase origin/main; then
+              git rebase --abort || true
+              exit 1
+            fi
+            sleep $((attempt * 6))
+          done
