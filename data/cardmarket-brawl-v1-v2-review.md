@@ -1,13 +1,13 @@
 # Night City Brawl S1 – Cardmarket V1/V2/V3 Zuordnungspruefung
 
-**Status:** Nur Pruefung: keine Preisdatei veraendert.
+**Status:** Produkt-ID-Overrides nach ausdruecklicher Freigabe aktiviert.
 
 **Sicherheitshinweis:** Die Zuordnung folgt einer konsistenten externen Reihenfolge und Zeitstempeln, ist aber KEINE direkte Cardmarket-Sammlernummer-zu-Produkt-ID-Bestaetigung. Satori 003 ist auf Cardmarket als V1 abgebildet, die korrespondierende ID ist aus dieser Webseite nicht auslesbar.
 
 Offizielle Cardmarket-Produktdatei: 2026-11-16T13:57:03+0100
 Offizielle Cardmarket-Preisdatei: 2026-11-16T02:49:16+0100
 
-Neue gespeicherte Preise: **0** · Bestand danach: **465**
+Neue gespeicherte Preise: **34** · Bestand danach: **499**
 
 | Nr. | Version | Name | ID-Vorschlag (nicht direkt bestaetigt) | Foil-Trend im Export |
 |---:|---|---|---:|---:|

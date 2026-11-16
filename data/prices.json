@@ -1,9 +1,9 @@
 {
   "checkedThisRun": 591,
   "currency": "EUR",
-  "generatedAt": "2026-11-16T21:08:51+00:00",
-  "mapped": 490,
-  "noPriceThisRun": 126,
+  "generatedAt": "2026-11-16T22:11:20+00:00",
+  "mapped": 527,
+  "noPriceThisRun": 92,
   "note": "Cardmarket EUR Trendpreise der passenden Normal/Foil-Druckart; fehlende Werte bleiben unverändert.",
   "prices": {
     "beta:β001": {
@@ -13,7 +13,7 @@
       "finish": "foil",
       "idProduct": 905088,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β002": {
@@ -23,7 +23,7 @@
       "finish": "foil",
       "idProduct": 905089,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β003": {
@@ -33,7 +33,7 @@
       "finish": "foil",
       "idProduct": 905090,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β004": {
@@ -43,7 +43,7 @@
       "finish": "foil",
       "idProduct": 905091,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β005a": {
@@ -53,7 +53,7 @@
       "finish": "foil",
       "idProduct": 905092,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β005b": {
@@ -63,7 +63,7 @@
       "finish": "foil",
       "idProduct": 905093,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β006": {
@@ -73,7 +73,7 @@
       "finish": "normal",
       "idProduct": 905094,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β007": {
@@ -83,7 +83,7 @@
       "finish": "normal",
       "idProduct": 905095,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β008": {
@@ -93,7 +93,7 @@
       "finish": "normal",
       "idProduct": 905096,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β009": {
@@ -103,7 +103,7 @@
       "finish": "foil",
       "idProduct": 905097,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β010": {
@@ -113,7 +113,7 @@
       "finish": "normal",
       "idProduct": 905098,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β011": {
@@ -123,7 +123,7 @@
       "finish": "foil",
       "idProduct": 905099,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β012": {
@@ -133,7 +133,7 @@
       "finish": "normal",
       "idProduct": 905100,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β013": {
@@ -143,7 +143,7 @@
       "finish": "normal",
       "idProduct": 905101,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β014": {
@@ -153,7 +153,7 @@
       "finish": "foil",
       "idProduct": 905102,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β015": {
@@ -163,7 +163,7 @@
       "finish": "normal",
       "idProduct": 905103,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β016": {
@@ -173,7 +173,7 @@
       "finish": "normal",
       "idProduct": 905104,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β017": {
@@ -183,7 +183,7 @@
       "finish": "normal",
       "idProduct": 905105,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β018": {
@@ -193,7 +193,7 @@
       "finish": "normal",
       "idProduct": 905106,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β019": {
@@ -203,7 +203,7 @@
       "finish": "normal",
       "idProduct": 905107,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β020": {
@@ -213,7 +213,7 @@
       "finish": "foil",
       "idProduct": 905108,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β021": {
@@ -223,7 +223,7 @@
       "finish": "normal",
       "idProduct": 905109,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β022": {
@@ -233,7 +233,7 @@
       "finish": "foil",
       "idProduct": 905110,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β023": {
@@ -243,7 +243,7 @@
       "finish": "normal",
       "idProduct": 905111,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β024": {
@@ -253,7 +253,7 @@
       "finish": "normal",
       "idProduct": 905112,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β025": {
@@ -263,7 +263,7 @@
       "finish": "normal",
       "idProduct": 905113,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β026": {
@@ -273,7 +273,7 @@
       "finish": "normal",
       "idProduct": 905114,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β027": {
@@ -283,7 +283,7 @@
       "finish": "normal",
       "idProduct": 905115,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β028": {
@@ -293,7 +293,7 @@
       "finish": "normal",
       "idProduct": 905116,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β029": {
@@ -303,7 +303,7 @@
       "finish": "normal",
       "idProduct": 905117,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β030": {
@@ -313,7 +313,7 @@
       "finish": "normal",
       "idProduct": 905118,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β031": {
@@ -323,7 +323,7 @@
       "finish": "normal",
       "idProduct": 905119,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β032": {
@@ -333,7 +333,7 @@
       "finish": "normal",
       "idProduct": 905120,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β033": {
@@ -343,7 +343,7 @@
       "finish": "normal",
       "idProduct": 905121,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β034": {
@@ -353,7 +353,7 @@
       "finish": "normal",
       "idProduct": 905122,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β035": {
@@ -363,7 +363,7 @@
       "finish": "foil",
       "idProduct": 905123,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β036": {
@@ -373,7 +373,7 @@
       "finish": "foil",
       "idProduct": 905124,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β037": {
@@ -383,7 +383,7 @@
       "finish": "foil",
       "idProduct": 905125,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β038": {
@@ -393,7 +393,7 @@
       "finish": "foil",
       "idProduct": 905126,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β039": {
@@ -403,7 +403,7 @@
       "finish": "foil",
       "idProduct": 905127,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β040": {
@@ -413,7 +413,7 @@
       "finish": "foil",
       "idProduct": 905128,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β041": {
@@ -423,7 +423,7 @@
       "finish": "foil",
       "idProduct": 905129,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β042": {
@@ -433,7 +433,7 @@
       "finish": "foil",
       "idProduct": 905130,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β043": {
@@ -443,7 +443,7 @@
       "finish": "normal",
       "idProduct": 905131,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β044": {
@@ -453,7 +453,7 @@
       "finish": "foil",
       "idProduct": 905132,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β045": {
@@ -463,7 +463,7 @@
       "finish": "normal",
       "idProduct": 905133,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β046": {
@@ -473,7 +473,7 @@
       "finish": "foil",
       "idProduct": 905134,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β047": {
@@ -483,7 +483,7 @@
       "finish": "normal",
       "idProduct": 905135,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β048": {
@@ -493,7 +493,7 @@
       "finish": "foil",
       "idProduct": 905136,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β049": {
@@ -503,7 +503,7 @@
       "finish": "normal",
       "idProduct": 905137,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β050": {
@@ -513,7 +513,7 @@
       "finish": "normal",
       "idProduct": 905138,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β051": {
@@ -523,7 +523,7 @@
       "finish": "normal",
       "idProduct": 905139,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β052": {
@@ -533,7 +533,7 @@
       "finish": "normal",
       "idProduct": 905140,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β053": {
@@ -543,7 +543,7 @@
       "finish": "normal",
       "idProduct": 905141,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β054": {
@@ -553,7 +553,7 @@
       "finish": "normal",
       "idProduct": 905142,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β055": {
@@ -563,7 +563,7 @@
       "finish": "normal",
       "idProduct": 905143,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β056": {
@@ -573,7 +573,7 @@
       "finish": "normal",
       "idProduct": 905144,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β057": {
@@ -583,7 +583,7 @@
       "finish": "foil",
       "idProduct": 905145,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β058": {
@@ -593,7 +593,7 @@
       "finish": "normal",
       "idProduct": 905146,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β059": {
@@ -603,7 +603,7 @@
       "finish": "normal",
       "idProduct": 905147,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β060": {
@@ -613,7 +613,7 @@
       "finish": "normal",
       "idProduct": 905148,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β061": {
@@ -623,7 +623,7 @@
       "finish": "normal",
       "idProduct": 905149,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β062": {
@@ -633,7 +633,7 @@
       "finish": "normal",
       "idProduct": 905150,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β063": {
@@ -643,7 +643,7 @@
       "finish": "foil",
       "idProduct": 905151,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β064": {
@@ -653,7 +653,7 @@
       "finish": "normal",
       "idProduct": 905152,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β065": {
@@ -663,7 +663,7 @@
       "finish": "normal",
       "idProduct": 905153,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β066": {
@@ -673,7 +673,7 @@
       "finish": "normal",
       "idProduct": 905154,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β067": {
@@ -683,7 +683,7 @@
       "finish": "normal",
       "idProduct": 905155,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β068": {
@@ -693,7 +693,7 @@
       "finish": "normal",
       "idProduct": 905156,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β069": {
@@ -703,7 +703,7 @@
       "finish": "normal",
       "idProduct": 905157,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β070": {
@@ -713,7 +713,7 @@
       "finish": "normal",
       "idProduct": 905158,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β071": {
@@ -723,7 +723,7 @@
       "finish": "foil",
       "idProduct": 905159,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β072": {
@@ -733,7 +733,7 @@
       "finish": "foil",
       "idProduct": 905160,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β073": {
@@ -743,7 +743,7 @@
       "finish": "foil",
       "idProduct": 905161,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β074": {
@@ -753,7 +753,7 @@
       "finish": "foil",
       "idProduct": 905162,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β075": {
@@ -763,7 +763,7 @@
       "finish": "foil",
       "idProduct": 905163,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β076": {
@@ -773,7 +773,7 @@
       "finish": "normal",
       "idProduct": 905164,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β077": {
@@ -783,7 +783,7 @@
       "finish": "normal",
       "idProduct": 905165,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β078": {
@@ -793,7 +793,7 @@
       "finish": "normal",
       "idProduct": 905166,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β079": {
@@ -803,7 +803,7 @@
       "finish": "normal",
       "idProduct": 905167,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β080": {
@@ -813,7 +813,7 @@
       "finish": "normal",
       "idProduct": 905168,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β081": {
@@ -823,7 +823,7 @@
       "finish": "normal",
       "idProduct": 905169,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β082": {
@@ -833,7 +833,7 @@
       "finish": "normal",
       "idProduct": 905170,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β083": {
@@ -843,7 +843,7 @@
       "finish": "normal",
       "idProduct": 905171,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β084": {
@@ -853,7 +853,7 @@
       "finish": "normal",
       "idProduct": 905172,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β085": {
@@ -863,7 +863,7 @@
       "finish": "foil",
       "idProduct": 905173,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β086": {
@@ -873,7 +873,7 @@
       "finish": "normal",
       "idProduct": 905174,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β087": {
@@ -883,7 +883,7 @@
       "finish": "normal",
       "idProduct": 905175,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β088": {
@@ -893,7 +893,7 @@
       "finish": "foil",
       "idProduct": 905176,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β089": {
@@ -903,7 +903,7 @@
       "finish": "foil",
       "idProduct": 905177,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β090": {
@@ -913,7 +913,7 @@
       "finish": "normal",
       "idProduct": 905178,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β091": {
@@ -923,7 +923,7 @@
       "finish": "normal",
       "idProduct": 905179,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β092": {
@@ -933,7 +933,7 @@
       "finish": "normal",
       "idProduct": 905180,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β093": {
@@ -943,7 +943,7 @@
       "finish": "foil",
       "idProduct": 905181,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β094": {
@@ -953,7 +953,7 @@
       "finish": "normal",
       "idProduct": 905182,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β095": {
@@ -963,7 +963,7 @@
       "finish": "normal",
       "idProduct": 905183,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β096": {
@@ -973,7 +973,7 @@
       "finish": "normal",
       "idProduct": 905184,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β097": {
@@ -983,7 +983,7 @@
       "finish": "normal",
       "idProduct": 905185,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β098": {
@@ -993,7 +993,7 @@
       "finish": "foil",
       "idProduct": 905186,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β099": {
@@ -1003,7 +1003,7 @@
       "finish": "foil",
       "idProduct": 905187,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β100": {
@@ -1013,7 +1013,7 @@
       "finish": "normal",
       "idProduct": 905188,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β101": {
@@ -1023,7 +1023,7 @@
       "finish": "normal",
       "idProduct": 905189,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β102": {
@@ -1033,7 +1033,7 @@
       "finish": "normal",
       "idProduct": 905190,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β103": {
@@ -1043,7 +1043,7 @@
       "finish": "normal",
       "idProduct": 905191,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β104": {
@@ -1053,7 +1053,7 @@
       "finish": "normal",
       "idProduct": 905192,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β105": {
@@ -1063,7 +1063,7 @@
       "finish": "normal",
       "idProduct": 905193,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β106": {
@@ -1073,7 +1073,7 @@
       "finish": "foil",
       "idProduct": 905194,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β107": {
@@ -1083,7 +1083,7 @@
       "finish": "foil",
       "idProduct": 905195,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β108": {
@@ -1093,7 +1093,7 @@
       "finish": "foil",
       "idProduct": 905196,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β109": {
@@ -1103,7 +1103,7 @@
       "finish": "foil",
       "idProduct": 905197,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β110": {
@@ -1113,7 +1113,7 @@
       "finish": "foil",
       "idProduct": 905198,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β111": {
@@ -1123,7 +1123,7 @@
       "finish": "normal",
       "idProduct": 905199,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β112": {
@@ -1133,7 +1133,7 @@
       "finish": "normal",
       "idProduct": 905200,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β113": {
@@ -1143,7 +1143,7 @@
       "finish": "normal",
       "idProduct": 905201,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β114": {
@@ -1153,7 +1153,7 @@
       "finish": "normal",
       "idProduct": 905202,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β115": {
@@ -1163,7 +1163,7 @@
       "finish": "normal",
       "idProduct": 905203,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β116": {
@@ -1173,7 +1173,7 @@
       "finish": "foil",
       "idProduct": 905204,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β117": {
@@ -1183,7 +1183,7 @@
       "finish": "foil",
       "idProduct": 905205,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β118": {
@@ -1193,7 +1193,7 @@
       "finish": "normal",
       "idProduct": 905206,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β119": {
@@ -1203,7 +1203,7 @@
       "finish": "foil",
       "idProduct": 905207,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β120": {
@@ -1213,7 +1213,7 @@
       "finish": "normal",
       "idProduct": 905208,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β121": {
@@ -1223,7 +1223,7 @@
       "finish": "normal",
       "idProduct": 905209,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β122": {
@@ -1233,7 +1233,7 @@
       "finish": "normal",
       "idProduct": 905210,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β123": {
@@ -1243,7 +1243,7 @@
       "finish": "foil",
       "idProduct": 905211,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β124": {
@@ -1253,7 +1253,7 @@
       "finish": "normal",
       "idProduct": 905212,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β125": {
@@ -1263,7 +1263,7 @@
       "finish": "normal",
       "idProduct": 905213,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β126": {
@@ -1273,7 +1273,7 @@
       "finish": "foil",
       "idProduct": 905214,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β127": {
@@ -1283,7 +1283,7 @@
       "finish": "normal",
       "idProduct": 905215,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β128": {
@@ -1293,7 +1293,7 @@
       "finish": "foil",
       "idProduct": 905216,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β129": {
@@ -1303,7 +1303,7 @@
       "finish": "normal",
       "idProduct": 905217,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β130": {
@@ -1313,7 +1313,7 @@
       "finish": "normal",
       "idProduct": 905218,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β131": {
@@ -1323,7 +1323,7 @@
       "finish": "normal",
       "idProduct": 905219,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β132": {
@@ -1333,7 +1333,7 @@
       "finish": "normal",
       "idProduct": 905220,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β133": {
@@ -1343,7 +1343,7 @@
       "finish": "normal",
       "idProduct": 905221,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β134": {
@@ -1353,7 +1353,7 @@
       "finish": "foil",
       "idProduct": 905222,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β135": {
@@ -1363,7 +1363,7 @@
       "finish": "foil",
       "idProduct": 905223,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β136": {
@@ -1373,7 +1373,7 @@
       "finish": "normal",
       "idProduct": 905224,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β137": {
@@ -1383,7 +1383,7 @@
       "finish": "normal",
       "idProduct": 905225,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β138": {
@@ -1393,7 +1393,7 @@
       "finish": "foil",
       "idProduct": 905226,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β139": {
@@ -1403,7 +1403,7 @@
       "finish": "normal",
       "idProduct": 905227,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β140": {
@@ -1413,7 +1413,7 @@
       "finish": "normal",
       "idProduct": 905228,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β141": {
@@ -1423,7 +1423,7 @@
       "finish": "foil",
       "idProduct": 905229,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β142": {
@@ -1433,7 +1433,7 @@
       "finish": "foil",
       "idProduct": 905230,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β143": {
@@ -1443,7 +1443,7 @@
       "finish": "foil",
       "idProduct": 905231,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β144": {
@@ -1453,7 +1453,7 @@
       "finish": "foil",
       "idProduct": 905232,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β145": {
@@ -1463,7 +1463,7 @@
       "finish": "foil",
       "idProduct": 905233,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β146": {
@@ -1473,7 +1473,7 @@
       "finish": "foil",
       "idProduct": 905234,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β147": {
@@ -1483,7 +1483,7 @@
       "finish": "foil",
       "idProduct": 905235,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β148": {
@@ -1493,7 +1493,7 @@
       "finish": "foil",
       "idProduct": 905236,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β149": {
@@ -1503,7 +1503,7 @@
       "finish": "foil",
       "idProduct": 905237,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β150": {
@@ -1513,7 +1513,7 @@
       "finish": "foil",
       "idProduct": 905238,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β151": {
@@ -1523,7 +1523,7 @@
       "finish": "foil",
       "idProduct": 905239,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β152": {
@@ -1533,7 +1533,7 @@
       "finish": "foil",
       "idProduct": 905240,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β153": {
@@ -1543,7 +1543,7 @@
       "finish": "foil",
       "idProduct": 905241,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β154": {
@@ -1553,7 +1553,7 @@
       "finish": "foil",
       "idProduct": 905242,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β155": {
@@ -1563,7 +1563,7 @@
       "finish": "foil",
       "idProduct": 905243,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β156": {
@@ -1573,7 +1573,7 @@
       "finish": "foil",
       "idProduct": 905244,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β157": {
@@ -1583,7 +1583,7 @@
       "finish": "foil",
       "idProduct": 905245,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β158": {
@@ -1593,7 +1593,7 @@
       "finish": "foil",
       "idProduct": 905246,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β159": {
@@ -1603,7 +1603,7 @@
       "finish": "foil",
       "idProduct": 905248,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β160": {
@@ -1613,7 +1613,7 @@
       "finish": "foil",
       "idProduct": 905249,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β161": {
@@ -1623,7 +1623,7 @@
       "finish": "foil",
       "idProduct": 905250,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β162": {
@@ -1633,7 +1633,7 @@
       "finish": "foil",
       "idProduct": 905251,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β163": {
@@ -1643,7 +1643,7 @@
       "finish": "foil",
       "idProduct": 905252,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β164": {
@@ -1653,7 +1653,7 @@
       "finish": "foil",
       "idProduct": 905253,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β165": {
@@ -1663,7 +1663,7 @@
       "finish": "foil",
       "idProduct": 905254,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β166": {
@@ -1673,7 +1673,7 @@
       "finish": "foil",
       "idProduct": 905255,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β167": {
@@ -1683,7 +1683,7 @@
       "finish": "foil",
       "idProduct": 905256,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β168": {
@@ -1693,7 +1693,7 @@
       "finish": "foil",
       "idProduct": 905257,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β169": {
@@ -1703,7 +1703,7 @@
       "finish": "foil",
       "idProduct": 905258,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β170": {
@@ -1713,7 +1713,7 @@
       "finish": "foil",
       "idProduct": 905259,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "beta:β171": {
@@ -1723,7 +1723,7 @@
       "finish": "foil",
       "idProduct": 905260,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "boxtopper-beta:β001": {
@@ -1733,7 +1733,7 @@
       "finish": "foil",
       "idProduct": 905031,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "boxtopper-beta:β002": {
@@ -1743,7 +1743,7 @@
       "finish": "foil",
       "idProduct": 905032,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "boxtopper-beta:β003": {
@@ -1753,7 +1753,7 @@
       "finish": "foil",
       "idProduct": 905033,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "boxtopper-beta:β004": {
@@ -1763,7 +1763,7 @@
       "finish": "foil",
       "idProduct": 905034,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "boxtopper-beta:β005": {
@@ -1773,7 +1773,7 @@
       "finish": "foil",
       "idProduct": 905035,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "boxtopper-beta:β006": {
@@ -1783,7 +1783,7 @@
       "finish": "foil",
       "idProduct": 905036,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "boxtopper-retail:001": {
@@ -1793,7 +1793,7 @@
       "finish": "foil",
       "idProduct": 920511,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "boxtopper-retail:002": {
@@ -1803,7 +1803,7 @@
       "finish": "foil",
       "idProduct": 920512,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "boxtopper-retail:003": {
@@ -1813,7 +1813,7 @@
       "finish": "foil",
       "idProduct": 920513,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "boxtopper-retail:004": {
@@ -1823,7 +1823,7 @@
       "finish": "foil",
       "idProduct": 920514,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "boxtopper-retail:005": {
@@ -1833,7 +1833,7 @@
       "finish": "foil",
       "idProduct": 920515,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "boxtopper-retail:006": {
@@ -1843,7 +1843,347 @@
       "finish": "foil",
       "idProduct": 920516,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:001": {
+      "amount": 4.81,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922559,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:002": {
+      "amount": 14.42,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922561,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:003": {
+      "amount": 20.34,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922562,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:004": {
+      "amount": 23.91,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922563,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:005": {
+      "amount": 17.45,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922565,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:006": {
+      "amount": 7.83,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922566,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:007": {
+      "amount": 18.26,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922567,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:008": {
+      "amount": 4.27,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922568,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:009": {
+      "amount": 4.88,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922569,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:010": {
+      "amount": 4.63,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922570,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:011": {
+      "amount": 4.73,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922571,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:012": {
+      "amount": 8.41,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922573,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:013": {
+      "amount": 7.67,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922574,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:014": {
+      "amount": 7.52,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922575,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:015": {
+      "amount": 7.08,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922577,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:016": {
+      "amount": 5.4,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922578,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:017": {
+      "amount": 5.64,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922579,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:018": {
+      "amount": 15.16,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922581,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:019": {
+      "amount": 35.0,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922582,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:020": {
+      "amount": 37.61,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922583,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:023": {
+      "amount": 60.0,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922586,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:024": {
+      "amount": 60.0,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922587,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:025": {
+      "amount": 50.0,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922589,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:027": {
+      "amount": 24.99,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922591,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:028": {
+      "amount": 30.0,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922593,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:029": {
+      "amount": 50.0,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922594,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:030": {
+      "amount": 60.0,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922595,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:031": {
+      "amount": 19.99,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922596,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:032": {
+      "amount": 21.99,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922598,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:033": {
+      "amount": 40.0,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922599,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:034": {
+      "amount": 55.0,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922600,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:035": {
+      "amount": 55.0,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922601,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:036": {
+      "amount": 55.0,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922602,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
+      "source": "Cardmarket (Direkt)"
+    },
+    "brawl-s1:037": {
+      "amount": 8.6,
+      "currency": "EUR",
+      "date": "2026-11-16",
+      "finish": "foil",
+      "idProduct": 922603,
+      "priceAsOf": "2026-11-16",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-beta:β001": {
@@ -1853,7 +2193,7 @@
       "finish": "foil",
       "idProduct": 905048,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-beta:β002": {
@@ -1863,7 +2203,7 @@
       "finish": "normal",
       "idProduct": 905049,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-beta:β003": {
@@ -1873,7 +2213,7 @@
       "finish": "normal",
       "idProduct": 905050,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-beta:β004": {
@@ -1883,7 +2223,7 @@
       "finish": "normal",
       "idProduct": 905051,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-beta:β005": {
@@ -1893,7 +2233,7 @@
       "finish": "normal",
       "idProduct": 905052,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-beta:β006": {
@@ -1903,7 +2243,7 @@
       "finish": "normal",
       "idProduct": 905053,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-beta:β007": {
@@ -1913,7 +2253,7 @@
       "finish": "normal",
       "idProduct": 905054,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-beta:β008": {
@@ -1923,7 +2263,7 @@
       "finish": "normal",
       "idProduct": 905055,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-beta:β009": {
@@ -1933,7 +2273,7 @@
       "finish": "normal",
       "idProduct": 905056,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-beta:β010": {
@@ -1943,7 +2283,7 @@
       "finish": "normal",
       "idProduct": 905057,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-beta:β011": {
@@ -1953,7 +2293,7 @@
       "finish": "foil",
       "idProduct": 905058,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-beta:β012": {
@@ -1963,7 +2303,7 @@
       "finish": "foil",
       "idProduct": 905059,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-beta:β013": {
@@ -1973,7 +2313,7 @@
       "finish": "foil",
       "idProduct": 905060,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-beta:β014": {
@@ -1983,7 +2323,7 @@
       "finish": "normal",
       "idProduct": 905061,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-beta:β015": {
@@ -1993,7 +2333,7 @@
       "finish": "normal",
       "idProduct": 905062,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-beta:β016": {
@@ -2003,7 +2343,7 @@
       "finish": "normal",
       "idProduct": 905063,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-beta:β017": {
@@ -2013,7 +2353,7 @@
       "finish": "normal",
       "idProduct": 905064,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-beta:β018": {
@@ -2023,7 +2363,7 @@
       "finish": "normal",
       "idProduct": 905065,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-beta:β019": {
@@ -2033,7 +2373,7 @@
       "finish": "normal",
       "idProduct": 905066,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-beta:β020": {
@@ -2043,7 +2383,7 @@
       "finish": "normal",
       "idProduct": 905067,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-demo:002": {
@@ -2053,7 +2393,7 @@
       "finish": "normal",
       "idProduct": 905001,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-demo:004": {
@@ -2063,7 +2403,7 @@
       "finish": "normal",
       "idProduct": 905003,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-demo:005": {
@@ -2073,7 +2413,7 @@
       "finish": "normal",
       "idProduct": 905004,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-demo:011": {
@@ -2083,7 +2423,7 @@
       "finish": "normal",
       "idProduct": 905010,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-demo:012": {
@@ -2093,7 +2433,7 @@
       "finish": "normal",
       "idProduct": 905011,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-demo:013": {
@@ -2103,7 +2443,7 @@
       "finish": "normal",
       "idProduct": 905012,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-retail:002": {
@@ -2113,7 +2453,7 @@
       "finish": "normal",
       "idProduct": 920428,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-retail:003": {
@@ -2123,7 +2463,7 @@
       "finish": "normal",
       "idProduct": 920430,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-retail:004": {
@@ -2133,7 +2473,7 @@
       "finish": "normal",
       "idProduct": 920431,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-retail:005": {
@@ -2143,7 +2483,7 @@
       "finish": "normal",
       "idProduct": 920432,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-retail:006": {
@@ -2153,7 +2493,7 @@
       "finish": "normal",
       "idProduct": 920433,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-retail:007": {
@@ -2163,7 +2503,7 @@
       "finish": "normal",
       "idProduct": 920434,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-retail:008": {
@@ -2173,7 +2513,7 @@
       "finish": "normal",
       "idProduct": 920435,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-retail:009": {
@@ -2183,7 +2523,7 @@
       "finish": "normal",
       "idProduct": 920436,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-retail:010": {
@@ -2193,7 +2533,7 @@
       "finish": "normal",
       "idProduct": 920437,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-retail:011": {
@@ -2203,7 +2543,7 @@
       "finish": "foil",
       "idProduct": 920438,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-retail:012": {
@@ -2213,7 +2553,7 @@
       "finish": "foil",
       "idProduct": 920439,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-retail:013": {
@@ -2223,7 +2563,7 @@
       "finish": "foil",
       "idProduct": 920441,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-retail:014": {
@@ -2233,7 +2573,7 @@
       "finish": "normal",
       "idProduct": 920443,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-retail:015": {
@@ -2243,7 +2583,7 @@
       "finish": "normal",
       "idProduct": 920444,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-retail:016": {
@@ -2253,7 +2593,7 @@
       "finish": "normal",
       "idProduct": 920445,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-retail:017": {
@@ -2263,7 +2603,7 @@
       "finish": "normal",
       "idProduct": 920446,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-retail:018": {
@@ -2273,7 +2613,7 @@
       "finish": "normal",
       "idProduct": 920447,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "embracing-retail:019": {
@@ -2283,7 +2623,7 @@
       "finish": "normal",
       "idProduct": 920450,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-beta:β001": {
@@ -2293,7 +2633,7 @@
       "finish": "foil",
       "idProduct": 905068,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-beta:β002": {
@@ -2303,7 +2643,7 @@
       "finish": "normal",
       "idProduct": 905069,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-beta:β003": {
@@ -2313,7 +2653,7 @@
       "finish": "normal",
       "idProduct": 905070,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-beta:β004": {
@@ -2323,7 +2663,7 @@
       "finish": "normal",
       "idProduct": 905071,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-beta:β005": {
@@ -2333,7 +2673,7 @@
       "finish": "normal",
       "idProduct": 905072,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-beta:β006": {
@@ -2343,7 +2683,7 @@
       "finish": "normal",
       "idProduct": 905073,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-beta:β007": {
@@ -2353,7 +2693,7 @@
       "finish": "normal",
       "idProduct": 905074,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-beta:β008": {
@@ -2363,7 +2703,7 @@
       "finish": "normal",
       "idProduct": 905075,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-beta:β009": {
@@ -2373,7 +2713,7 @@
       "finish": "normal",
       "idProduct": 905076,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-beta:β010": {
@@ -2383,7 +2723,7 @@
       "finish": "normal",
       "idProduct": 905077,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-beta:β011": {
@@ -2393,7 +2733,7 @@
       "finish": "foil",
       "idProduct": 905078,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-beta:β012": {
@@ -2403,7 +2743,7 @@
       "finish": "foil",
       "idProduct": 905079,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-beta:β013": {
@@ -2413,7 +2753,7 @@
       "finish": "normal",
       "idProduct": 905080,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-beta:β014": {
@@ -2423,7 +2763,7 @@
       "finish": "normal",
       "idProduct": 905081,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-beta:β015": {
@@ -2433,7 +2773,7 @@
       "finish": "normal",
       "idProduct": 905082,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-beta:β016": {
@@ -2443,7 +2783,7 @@
       "finish": "normal",
       "idProduct": 905083,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-beta:β017": {
@@ -2453,7 +2793,7 @@
       "finish": "foil",
       "idProduct": 905084,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-beta:β019": {
@@ -2463,7 +2803,7 @@
       "finish": "normal",
       "idProduct": 905086,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-beta:β020": {
@@ -2473,7 +2813,7 @@
       "finish": "normal",
       "idProduct": 905087,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-demo:002": {
@@ -2483,7 +2823,7 @@
       "finish": "normal",
       "idProduct": 905015,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-demo:003": {
@@ -2493,7 +2833,7 @@
       "finish": "normal",
       "idProduct": 905016,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-demo:005": {
@@ -2503,7 +2843,7 @@
       "finish": "normal",
       "idProduct": 905018,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-demo:011": {
@@ -2513,7 +2853,7 @@
       "finish": "normal",
       "idProduct": 905024,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-retail:001": {
@@ -2523,7 +2863,7 @@
       "finish": "foil",
       "idProduct": 920399,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-retail:002": {
@@ -2533,7 +2873,7 @@
       "finish": "normal",
       "idProduct": 920400,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-retail:003": {
@@ -2543,7 +2883,7 @@
       "finish": "normal",
       "idProduct": 920401,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-retail:004": {
@@ -2553,7 +2893,7 @@
       "finish": "normal",
       "idProduct": 920402,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-retail:005": {
@@ -2563,7 +2903,7 @@
       "finish": "normal",
       "idProduct": 920403,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-retail:006": {
@@ -2573,7 +2913,7 @@
       "finish": "normal",
       "idProduct": 920404,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-retail:007": {
@@ -2583,7 +2923,7 @@
       "finish": "normal",
       "idProduct": 920405,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-retail:008": {
@@ -2593,7 +2933,7 @@
       "finish": "normal",
       "idProduct": 920406,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-retail:009": {
@@ -2603,7 +2943,7 @@
       "finish": "normal",
       "idProduct": 920407,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-retail:010": {
@@ -2613,7 +2953,7 @@
       "finish": "normal",
       "idProduct": 920408,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-retail:011": {
@@ -2623,7 +2963,7 @@
       "finish": "foil",
       "idProduct": 920409,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-retail:012": {
@@ -2633,7 +2973,7 @@
       "finish": "foil",
       "idProduct": 920410,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-retail:013": {
@@ -2643,7 +2983,7 @@
       "finish": "normal",
       "idProduct": 920411,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-retail:014": {
@@ -2653,7 +2993,7 @@
       "finish": "normal",
       "idProduct": 920412,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-retail:015": {
@@ -2663,7 +3003,7 @@
       "finish": "normal",
       "idProduct": 920413,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-retail:016": {
@@ -2673,7 +3013,7 @@
       "finish": "normal",
       "idProduct": 920414,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-retail:017": {
@@ -2683,7 +3023,7 @@
       "finish": "foil",
       "idProduct": 920415,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-retail:019": {
@@ -2693,7 +3033,7 @@
       "finish": "normal",
       "idProduct": 920417,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "heist-retail:020": {
@@ -2703,7 +3043,7 @@
       "finish": "normal",
       "idProduct": 920418,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "prerelease-beta:001": {
@@ -2713,7 +3053,7 @@
       "finish": "foil",
       "idProduct": 905037,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "prerelease-beta:002": {
@@ -2723,7 +3063,7 @@
       "finish": "foil",
       "idProduct": 905038,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "prerelease-beta:003": {
@@ -2733,7 +3073,7 @@
       "finish": "foil",
       "idProduct": 905039,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "prerelease-beta:004": {
@@ -2743,7 +3083,7 @@
       "finish": "foil",
       "idProduct": 905040,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "prerelease-beta:005": {
@@ -2753,7 +3093,7 @@
       "finish": "foil",
       "idProduct": 905041,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "prerelease-beta:006": {
@@ -2763,7 +3103,7 @@
       "finish": "foil",
       "idProduct": 905042,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "prerelease-beta:007": {
@@ -2773,7 +3113,7 @@
       "finish": "foil",
       "idProduct": 905043,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "prerelease-beta:008": {
@@ -2783,7 +3123,7 @@
       "finish": "foil",
       "idProduct": 905044,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "prerelease-beta:009": {
@@ -2793,7 +3133,7 @@
       "finish": "foil",
       "idProduct": 905045,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "prerelease-beta:010": {
@@ -2803,7 +3143,7 @@
       "finish": "foil",
       "idProduct": 905046,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "prerelease-beta:011": {
@@ -2813,7 +3153,7 @@
       "finish": "foil",
       "idProduct": 905047,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "prerelease-retail:001": {
@@ -2823,7 +3163,7 @@
       "finish": "foil",
       "idProduct": 920517,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "prerelease-retail:002": {
@@ -2833,7 +3173,7 @@
       "finish": "foil",
       "idProduct": 920518,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "prerelease-retail:003": {
@@ -2843,7 +3183,7 @@
       "finish": "foil",
       "idProduct": 920519,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "prerelease-retail:004": {
@@ -2853,7 +3193,7 @@
       "finish": "foil",
       "idProduct": 920520,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "prerelease-retail:005": {
@@ -2863,7 +3203,7 @@
       "finish": "foil",
       "idProduct": 920521,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "prerelease-retail:006": {
@@ -2873,7 +3213,7 @@
       "finish": "foil",
       "idProduct": 920522,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "prerelease-retail:007": {
@@ -2883,7 +3223,7 @@
       "finish": "foil",
       "idProduct": 920523,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "prerelease-retail:008": {
@@ -2893,7 +3233,7 @@
       "finish": "foil",
       "idProduct": 920524,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "prerelease-retail:009": {
@@ -2903,7 +3243,7 @@
       "finish": "foil",
       "idProduct": 920525,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "prerelease-retail:010": {
@@ -2913,7 +3253,7 @@
       "finish": "foil",
       "idProduct": 920526,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "prerelease-retail:011": {
@@ -2923,7 +3263,7 @@
       "finish": "foil",
       "idProduct": 920527,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:001": {
@@ -2933,7 +3273,7 @@
       "finish": "foil",
       "idProduct": 920398,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:002": {
@@ -2943,7 +3283,7 @@
       "finish": "foil",
       "idProduct": 920419,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:003": {
@@ -2953,7 +3293,7 @@
       "finish": "foil",
       "idProduct": 920420,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:004": {
@@ -2963,7 +3303,7 @@
       "finish": "foil",
       "idProduct": 920421,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:005a": {
@@ -2973,7 +3313,7 @@
       "finish": "foil",
       "idProduct": 920422,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:005b": {
@@ -2983,7 +3323,7 @@
       "finish": "foil",
       "idProduct": 920423,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:006": {
@@ -2993,7 +3333,7 @@
       "finish": "normal",
       "idProduct": 920424,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:007": {
@@ -3003,7 +3343,7 @@
       "finish": "normal",
       "idProduct": 920426,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:008": {
@@ -3013,7 +3353,7 @@
       "finish": "normal",
       "idProduct": 920427,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:009": {
@@ -3023,7 +3363,7 @@
       "finish": "foil",
       "idProduct": 920429,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:010": {
@@ -3033,7 +3373,7 @@
       "finish": "normal",
       "idProduct": 920440,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:011": {
@@ -3043,7 +3383,7 @@
       "finish": "foil",
       "idProduct": 920442,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:012": {
@@ -3053,7 +3393,7 @@
       "finish": "normal",
       "idProduct": 920448,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:013": {
@@ -3063,7 +3403,7 @@
       "finish": "normal",
       "idProduct": 920449,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:014": {
@@ -3073,7 +3413,7 @@
       "finish": "foil",
       "idProduct": 920452,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:015": {
@@ -3083,7 +3423,7 @@
       "finish": "normal",
       "idProduct": 920453,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:016": {
@@ -3093,7 +3433,7 @@
       "finish": "normal",
       "idProduct": 920454,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:017": {
@@ -3103,7 +3443,7 @@
       "finish": "normal",
       "idProduct": 920455,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:018": {
@@ -3113,7 +3453,7 @@
       "finish": "normal",
       "idProduct": 920456,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:019": {
@@ -3123,7 +3463,7 @@
       "finish": "normal",
       "idProduct": 920457,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:020": {
@@ -3133,7 +3473,7 @@
       "finish": "foil",
       "idProduct": 920458,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:021": {
@@ -3143,7 +3483,7 @@
       "finish": "normal",
       "idProduct": 920459,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:022": {
@@ -3153,7 +3493,7 @@
       "finish": "foil",
       "idProduct": 920460,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:023": {
@@ -3163,7 +3503,7 @@
       "finish": "normal",
       "idProduct": 920461,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:024": {
@@ -3173,7 +3513,7 @@
       "finish": "normal",
       "idProduct": 920462,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:025": {
@@ -3183,7 +3523,7 @@
       "finish": "normal",
       "idProduct": 920463,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:026": {
@@ -3193,7 +3533,7 @@
       "finish": "normal",
       "idProduct": 920464,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:027": {
@@ -3203,7 +3543,7 @@
       "finish": "normal",
       "idProduct": 920465,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:028": {
@@ -3213,7 +3553,7 @@
       "finish": "normal",
       "idProduct": 920466,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:029": {
@@ -3223,7 +3563,7 @@
       "finish": "normal",
       "idProduct": 920467,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:030": {
@@ -3233,7 +3573,7 @@
       "finish": "normal",
       "idProduct": 920468,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:031": {
@@ -3243,7 +3583,7 @@
       "finish": "normal",
       "idProduct": 920469,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:032": {
@@ -3253,7 +3593,7 @@
       "finish": "normal",
       "idProduct": 920470,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:033": {
@@ -3263,7 +3603,7 @@
       "finish": "normal",
       "idProduct": 920471,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:034": {
@@ -3273,7 +3613,7 @@
       "finish": "normal",
       "idProduct": 920472,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:035": {
@@ -3283,7 +3623,7 @@
       "finish": "foil",
       "idProduct": 920473,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:036": {
@@ -3293,7 +3633,7 @@
       "finish": "foil",
       "idProduct": 920474,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:037": {
@@ -3303,7 +3643,7 @@
       "finish": "foil",
       "idProduct": 920475,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:038": {
@@ -3313,7 +3653,7 @@
       "finish": "foil",
       "idProduct": 920476,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:039": {
@@ -3323,7 +3663,7 @@
       "finish": "foil",
       "idProduct": 920477,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:040": {
@@ -3333,7 +3673,7 @@
       "finish": "foil",
       "idProduct": 920478,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:041": {
@@ -3343,7 +3683,7 @@
       "finish": "foil",
       "idProduct": 920479,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:042": {
@@ -3353,7 +3693,7 @@
       "finish": "foil",
       "idProduct": 920480,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:043": {
@@ -3363,7 +3703,7 @@
       "finish": "normal",
       "idProduct": 920481,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:044": {
@@ -3373,7 +3713,7 @@
       "finish": "foil",
       "idProduct": 920482,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:045": {
@@ -3383,7 +3723,7 @@
       "finish": "normal",
       "idProduct": 920483,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:046": {
@@ -3393,7 +3733,7 @@
       "finish": "foil",
       "idProduct": 920484,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:047": {
@@ -3403,7 +3743,7 @@
       "finish": "normal",
       "idProduct": 920485,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:048": {
@@ -3413,7 +3753,7 @@
       "finish": "foil",
       "idProduct": 920486,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:049": {
@@ -3423,7 +3763,7 @@
       "finish": "normal",
       "idProduct": 920487,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:050": {
@@ -3433,7 +3773,7 @@
       "finish": "normal",
       "idProduct": 920488,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:051": {
@@ -3443,7 +3783,7 @@
       "finish": "normal",
       "idProduct": 920489,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:052": {
@@ -3453,7 +3793,7 @@
       "finish": "normal",
       "idProduct": 920490,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:053": {
@@ -3463,7 +3803,7 @@
       "finish": "normal",
       "idProduct": 920491,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:054": {
@@ -3473,7 +3813,7 @@
       "finish": "normal",
       "idProduct": 920492,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:055": {
@@ -3483,7 +3823,7 @@
       "finish": "normal",
       "idProduct": 920493,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:056": {
@@ -3493,7 +3833,7 @@
       "finish": "normal",
       "idProduct": 920494,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:057": {
@@ -3503,7 +3843,7 @@
       "finish": "foil",
       "idProduct": 920495,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:058": {
@@ -3513,7 +3853,7 @@
       "finish": "normal",
       "idProduct": 920496,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:059": {
@@ -3523,7 +3863,7 @@
       "finish": "normal",
       "idProduct": 920497,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:060": {
@@ -3533,7 +3873,7 @@
       "finish": "normal",
       "idProduct": 920498,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:061": {
@@ -3543,7 +3883,7 @@
       "finish": "normal",
       "idProduct": 920499,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:062": {
@@ -3553,7 +3893,7 @@
       "finish": "normal",
       "idProduct": 920500,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:063": {
@@ -3563,7 +3903,7 @@
       "finish": "foil",
       "idProduct": 920501,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:064": {
@@ -3573,7 +3913,7 @@
       "finish": "normal",
       "idProduct": 920502,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:065": {
@@ -3583,7 +3923,7 @@
       "finish": "normal",
       "idProduct": 920503,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:066": {
@@ -3593,7 +3933,7 @@
       "finish": "normal",
       "idProduct": 920504,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:067": {
@@ -3603,7 +3943,7 @@
       "finish": "normal",
       "idProduct": 920505,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:068": {
@@ -3613,7 +3953,7 @@
       "finish": "normal",
       "idProduct": 920506,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:069": {
@@ -3623,7 +3963,7 @@
       "finish": "normal",
       "idProduct": 920507,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:070": {
@@ -3633,7 +3973,7 @@
       "finish": "normal",
       "idProduct": 920508,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:071": {
@@ -3643,7 +3983,7 @@
       "finish": "foil",
       "idProduct": 920509,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:072": {
@@ -3653,7 +3993,7 @@
       "finish": "foil",
       "idProduct": 920510,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:073": {
@@ -3663,7 +4003,7 @@
       "finish": "foil",
       "idProduct": 920571,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:074": {
@@ -3673,7 +4013,7 @@
       "finish": "foil",
       "idProduct": 920573,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:075": {
@@ -3683,7 +4023,7 @@
       "finish": "foil",
       "idProduct": 920575,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:076": {
@@ -3693,7 +4033,7 @@
       "finish": "normal",
       "idProduct": 920577,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:077": {
@@ -3703,7 +4043,7 @@
       "finish": "normal",
       "idProduct": 920578,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:078": {
@@ -3713,7 +4053,7 @@
       "finish": "normal",
       "idProduct": 920579,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:079": {
@@ -3723,7 +4063,7 @@
       "finish": "normal",
       "idProduct": 920580,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:080": {
@@ -3733,7 +4073,7 @@
       "finish": "normal",
       "idProduct": 920581,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:081": {
@@ -3743,7 +4083,7 @@
       "finish": "normal",
       "idProduct": 920582,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:082": {
@@ -3753,7 +4093,7 @@
       "finish": "normal",
       "idProduct": 920583,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:083": {
@@ -3763,7 +4103,7 @@
       "finish": "normal",
       "idProduct": 920584,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:084": {
@@ -3773,7 +4113,7 @@
       "finish": "normal",
       "idProduct": 920591,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:085": {
@@ -3783,7 +4123,7 @@
       "finish": "foil",
       "idProduct": 920592,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:086": {
@@ -3793,7 +4133,7 @@
       "finish": "normal",
       "idProduct": 920593,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:087": {
@@ -3803,7 +4143,7 @@
       "finish": "normal",
       "idProduct": 920594,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:088": {
@@ -3813,7 +4153,7 @@
       "finish": "foil",
       "idProduct": 920595,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:089": {
@@ -3823,7 +4163,7 @@
       "finish": "foil",
       "idProduct": 920596,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:090": {
@@ -3833,7 +4173,7 @@
       "finish": "normal",
       "idProduct": 920597,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:091": {
@@ -3843,7 +4183,7 @@
       "finish": "normal",
       "idProduct": 920598,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:092": {
@@ -3853,7 +4193,7 @@
       "finish": "normal",
       "idProduct": 920599,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:093": {
@@ -3863,7 +4203,7 @@
       "finish": "foil",
       "idProduct": 920600,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:094": {
@@ -3873,7 +4213,7 @@
       "finish": "normal",
       "idProduct": 920601,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:095": {
@@ -3883,7 +4223,7 @@
       "finish": "normal",
       "idProduct": 920602,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:096": {
@@ -3893,7 +4233,7 @@
       "finish": "normal",
       "idProduct": 920603,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:097": {
@@ -3903,7 +4243,7 @@
       "finish": "normal",
       "idProduct": 920604,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:098": {
@@ -3913,7 +4253,7 @@
       "finish": "foil",
       "idProduct": 920605,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:099": {
@@ -3923,7 +4263,7 @@
       "finish": "foil",
       "idProduct": 920606,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:100": {
@@ -3933,7 +4273,7 @@
       "finish": "normal",
       "idProduct": 920607,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:101": {
@@ -3943,7 +4283,7 @@
       "finish": "normal",
       "idProduct": 920608,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:102": {
@@ -3953,7 +4293,7 @@
       "finish": "normal",
       "idProduct": 920609,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:103": {
@@ -3963,7 +4303,7 @@
       "finish": "normal",
       "idProduct": 920610,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:104": {
@@ -3973,7 +4313,7 @@
       "finish": "normal",
       "idProduct": 920611,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:105": {
@@ -3983,7 +4323,7 @@
       "finish": "normal",
       "idProduct": 920612,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:106": {
@@ -3993,7 +4333,7 @@
       "finish": "foil",
       "idProduct": 920613,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:107": {
@@ -4003,7 +4343,7 @@
       "finish": "foil",
       "idProduct": 920614,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:108": {
@@ -4013,7 +4353,7 @@
       "finish": "foil",
       "idProduct": 920615,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:109": {
@@ -4023,7 +4363,7 @@
       "finish": "foil",
       "idProduct": 920616,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:110": {
@@ -4033,7 +4373,7 @@
       "finish": "foil",
       "idProduct": 920617,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:111": {
@@ -4043,7 +4383,7 @@
       "finish": "normal",
       "idProduct": 920618,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:112": {
@@ -4053,7 +4393,7 @@
       "finish": "normal",
       "idProduct": 920619,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:113": {
@@ -4063,7 +4403,7 @@
       "finish": "normal",
       "idProduct": 920620,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:114": {
@@ -4073,7 +4413,7 @@
       "finish": "normal",
       "idProduct": 920621,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:115": {
@@ -4083,7 +4423,7 @@
       "finish": "normal",
       "idProduct": 920622,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:116": {
@@ -4093,7 +4433,7 @@
       "finish": "foil",
       "idProduct": 920623,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:117": {
@@ -4103,7 +4443,7 @@
       "finish": "foil",
       "idProduct": 920624,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:118": {
@@ -4113,7 +4453,7 @@
       "finish": "normal",
       "idProduct": 920625,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:119": {
@@ -4123,7 +4463,7 @@
       "finish": "foil",
       "idProduct": 920626,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:120": {
@@ -4133,7 +4473,7 @@
       "finish": "normal",
       "idProduct": 920627,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:121": {
@@ -4143,7 +4483,7 @@
       "finish": "normal",
       "idProduct": 920628,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:122": {
@@ -4153,7 +4493,7 @@
       "finish": "normal",
       "idProduct": 920629,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:123": {
@@ -4163,7 +4503,7 @@
       "finish": "foil",
       "idProduct": 920630,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:124": {
@@ -4173,7 +4513,7 @@
       "finish": "normal",
       "idProduct": 920631,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:125": {
@@ -4183,7 +4523,7 @@
       "finish": "normal",
       "idProduct": 920632,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:126": {
@@ -4193,7 +4533,7 @@
       "finish": "foil",
       "idProduct": 920633,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:127": {
@@ -4203,7 +4543,7 @@
       "finish": "normal",
       "idProduct": 920634,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:128": {
@@ -4213,7 +4553,7 @@
       "finish": "foil",
       "idProduct": 920635,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:129": {
@@ -4223,7 +4563,7 @@
       "finish": "normal",
       "idProduct": 920636,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:130": {
@@ -4233,7 +4573,7 @@
       "finish": "normal",
       "idProduct": 920637,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:131": {
@@ -4243,7 +4583,7 @@
       "finish": "normal",
       "idProduct": 920638,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:132": {
@@ -4253,7 +4593,7 @@
       "finish": "normal",
       "idProduct": 920639,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:133": {
@@ -4263,7 +4603,7 @@
       "finish": "normal",
       "idProduct": 920640,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:134": {
@@ -4273,7 +4613,7 @@
       "finish": "foil",
       "idProduct": 920641,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:135": {
@@ -4283,7 +4623,7 @@
       "finish": "foil",
       "idProduct": 920642,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:136": {
@@ -4293,7 +4633,7 @@
       "finish": "normal",
       "idProduct": 920643,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:137": {
@@ -4303,7 +4643,7 @@
       "finish": "normal",
       "idProduct": 920644,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:138": {
@@ -4313,7 +4653,7 @@
       "finish": "foil",
       "idProduct": 920645,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:139": {
@@ -4323,7 +4663,7 @@
       "finish": "normal",
       "idProduct": 920646,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:140": {
@@ -4333,7 +4673,7 @@
       "finish": "normal",
       "idProduct": 920647,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:141": {
@@ -4343,7 +4683,7 @@
       "finish": "foil",
       "idProduct": 920648,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:142": {
@@ -4353,7 +4693,7 @@
       "finish": "foil",
       "idProduct": 920649,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:143": {
@@ -4363,7 +4703,7 @@
       "finish": "foil",
       "idProduct": 920650,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:144": {
@@ -4373,7 +4713,7 @@
       "finish": "foil",
       "idProduct": 920651,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:145": {
@@ -4383,7 +4723,7 @@
       "finish": "foil",
       "idProduct": 920652,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:146": {
@@ -4393,7 +4733,7 @@
       "finish": "foil",
       "idProduct": 920653,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:147": {
@@ -4403,7 +4743,7 @@
       "finish": "foil",
       "idProduct": 920654,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:148": {
@@ -4413,7 +4753,7 @@
       "finish": "foil",
       "idProduct": 920655,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:149": {
@@ -4423,7 +4763,7 @@
       "finish": "foil",
       "idProduct": 920656,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:150": {
@@ -4433,7 +4773,7 @@
       "finish": "foil",
       "idProduct": 920657,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:151": {
@@ -4443,7 +4783,7 @@
       "finish": "foil",
       "idProduct": 920658,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:152": {
@@ -4453,7 +4793,7 @@
       "finish": "foil",
       "idProduct": 920659,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:153": {
@@ -4463,7 +4803,7 @@
       "finish": "foil",
       "idProduct": 920660,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:154": {
@@ -4473,7 +4813,7 @@
       "finish": "foil",
       "idProduct": 920661,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:155": {
@@ -4483,7 +4823,7 @@
       "finish": "foil",
       "idProduct": 920662,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:156": {
@@ -4493,7 +4833,7 @@
       "finish": "foil",
       "idProduct": 920663,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:157": {
@@ -4503,7 +4843,7 @@
       "finish": "foil",
       "idProduct": 920664,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:158": {
@@ -4513,7 +4853,7 @@
       "finish": "foil",
       "idProduct": 920665,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:159": {
@@ -4523,7 +4863,7 @@
       "finish": "foil",
       "idProduct": 920666,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:160": {
@@ -4533,7 +4873,7 @@
       "finish": "foil",
       "idProduct": 920667,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:161": {
@@ -4543,7 +4883,7 @@
       "finish": "foil",
       "idProduct": 920668,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:162": {
@@ -4553,7 +4893,7 @@
       "finish": "foil",
       "idProduct": 920669,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:163": {
@@ -4563,7 +4903,7 @@
       "finish": "foil",
       "idProduct": 920670,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:164": {
@@ -4573,7 +4913,7 @@
       "finish": "foil",
       "idProduct": 920671,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:165": {
@@ -4583,7 +4923,7 @@
       "finish": "foil",
       "idProduct": 920672,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:166": {
@@ -4593,7 +4933,7 @@
       "finish": "foil",
       "idProduct": 920673,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:167": {
@@ -4603,7 +4943,7 @@
       "finish": "foil",
       "idProduct": 920674,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:168": {
@@ -4613,7 +4953,7 @@
       "finish": "foil",
       "idProduct": 920675,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:169": {
@@ -4623,7 +4963,7 @@
       "finish": "foil",
       "idProduct": 920676,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:170": {
@@ -4633,7 +4973,7 @@
       "finish": "foil",
       "idProduct": 920677,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "retail:171": {
@@ -4643,7 +4983,7 @@
       "finish": "foil",
       "idProduct": 920678,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     },
     "set1-promos:006": {
@@ -4653,7 +4993,7 @@
       "finish": "foil",
       "idProduct": 920528,
       "priceAsOf": "2026-11-16",
-      "retrievedAt": "2026-11-16T21:08:51+00:00",
+      "retrievedAt": "2026-11-16T22:11:20+00:00",
       "source": "Cardmarket (Direkt)"
     }
   },
@@ -4661,5 +5001,5 @@
   "schema": 1,
   "sourceAsOf": "2026-11-16",
   "total": 591,
-  "updatedThisRun": 14
+  "updatedThisRun": 34
 }

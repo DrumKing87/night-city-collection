@@ -1,5 +1,5 @@
 {
-  "alreadySavedPriceRecords": 457,
+  "alreadySavedPriceRecords": 465,
   "bySet": {
     "boxtopper-beta": {
       "mit_preis": 6
@@ -8,7 +8,8 @@
       "mit_preis": 6
     },
     "brawl-s1": {
-      "mehrdeutiger_Sonderdruck": 37
+      "kein_trend-foil": 3,
+      "mit_preis": 34
     },
     "embracing-beta": {
       "mit_preis": 20
@@ -61,9 +62,9 @@
       "mit_preis": 172
     }
   },
-  "generatedAt": "2026-11-16T21:08:51+00:00",
-  "newOrUpdatedPrices": 14,
-  "savedPriceRecordsAfterUpdate": 465,
+  "generatedAt": "2026-11-16T22:11:20+00:00",
+  "newOrUpdatedPrices": 34,
+  "savedPriceRecordsAfterUpdate": 499,
   "sourceAsOf": "2026-11-16",
   "total": 591,
   "unresolved": [
@@ -529,235 +530,14 @@
     },
     {
       "candidateProductIds": [
-        922559,
-        922582
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:001",
-      "name": "Kerry Eurodyne: The Last Rockerboy",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922561,
-        922583
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:002",
-      "name": "Minotaur",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
         922562,
         922584
       ],
       "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:003",
-      "name": "Satori: Sword of Saburo",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922563,
-        922585
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:004",
-      "name": "Jackie Welles: Ride or Die Choom",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922565,
-        922586
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:005",
-      "name": "Secondhand Bombus",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922566,
-        922587
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:006",
-      "name": "Mandibular Upgrade",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922567,
-        922589
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:007",
-      "name": "Bootleg Black Sapphire Show",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922568,
-        922590
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:008",
-      "name": "Cyberpsychosis",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922569,
-        922591
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:009",
-      "name": "Corpo Security",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922570,
-        922593
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:010",
-      "name": "MaxTac Squadron",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922571,
-        922594
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:011",
-      "name": "Wraith Marauders",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922573,
-        922595
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:012",
-      "name": "(Don't Fear) The Reaper",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922574,
-        922596
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:013",
-      "name": "We Gotta Live Together",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922575,
-        922598
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:014",
-      "name": "Delamain Cab",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922577,
-        922599,
-        922603
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:015",
-      "name": "Maman Brigitte: Spirit of Death",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922578,
-        922600
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:016",
-      "name": "Dying Night: V's Pistol",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922579,
-        922601
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:017",
-      "name": "NetWatch Netdriver",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922581,
-        922602
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:018",
-      "name": "Floor It",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922559,
-        922582
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:019",
-      "name": "Kerry Eurodyne: The Last Rockerboy",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922561,
-        922583
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:020",
-      "name": "Minotaur",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922562,
-        922584
-      ],
-      "finish": "Holo",
-      "idProduct": null,
+      "idProduct": 922584,
       "key": "brawl-s1:021",
       "name": "Satori: Sword of Saburo",
-      "reason": "mehrdeutiger_Sonderdruck"
+      "reason": "kein_trend-foil"
     },
     {
       "candidateProductIds": [
@@ -765,43 +545,10 @@
         922585
       ],
       "finish": "Holo",
-      "idProduct": null,
+      "idProduct": 922585,
       "key": "brawl-s1:022",
       "name": "Jackie Welles: Ride or Die Choom",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922565,
-        922586
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:023",
-      "name": "Secondhand Bombus",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922566,
-        922587
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:024",
-      "name": "Mandibular Upgrade",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922567,
-        922589
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:025",
-      "name": "Bootleg Black Sapphire Show",
-      "reason": "mehrdeutiger_Sonderdruck"
+      "reason": "kein_trend-foil"
     },
     {
       "candidateProductIds": [
@@ -809,133 +556,10 @@
         922590
       ],
       "finish": "Holo",
-      "idProduct": null,
+      "idProduct": 922590,
       "key": "brawl-s1:026",
       "name": "Cyberpsychosis",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922569,
-        922591
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:027",
-      "name": "Corpo Security",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922570,
-        922593
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:028",
-      "name": "MaxTac Squadron",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922571,
-        922594
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:029",
-      "name": "Wraith Marauders",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922573,
-        922595
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:030",
-      "name": "(Don't Fear) The Reaper",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922574,
-        922596
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:031",
-      "name": "We Gotta Live Together",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922575,
-        922598
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:032",
-      "name": "Delamain Cab",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922577,
-        922599,
-        922603
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:033",
-      "name": "Maman Brigitte: Spirit of Death",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922578,
-        922600
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:034",
-      "name": "Dying Night: V's Pistol",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922579,
-        922601
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:035",
-      "name": "NetWatch Netdriver",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922581,
-        922602
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:036",
-      "name": "Floor It",
-      "reason": "mehrdeutiger_Sonderdruck"
-    },
-    {
-      "candidateProductIds": [
-        922577,
-        922599,
-        922603
-      ],
-      "finish": "Holo",
-      "idProduct": null,
-      "key": "brawl-s1:037",
-      "name": "Maman Brigitte: Spirit of Death",
-      "reason": "mehrdeutiger_Sonderdruck"
+      "reason": "kein_trend-foil"
     },
     {
       "candidateProductIds": [
@@ -1262,6 +886,6 @@
       "reason": "kein_trend"
     }
   ],
-  "withConfirmedProductMatch": 490,
-  "withValidCardmarketPrice": 465
+  "withConfirmedProductMatch": 527,
+  "withValidCardmarketPrice": 499
 }

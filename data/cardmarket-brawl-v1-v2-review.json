@@ -1,16 +1,16 @@
 {
-  "checkedAt": "2026-11-16T21:51:20+00:00",
+  "checkedAt": "2026-11-16T22:11:20+00:00",
   "productExportCreatedAt": "2026-11-16T13:57:03+0100",
   "priceGuideCreatedAt": "2026-11-16T02:49:16+0100",
-  "mode": "REVIEW_ONLY",
+  "mode": "MAPPING_APPLIED_EXPLICIT_OPT_IN",
   "officialExpansion": 6953,
   "count": 37,
   "allOfficialProductIdsAccountedFor": true,
   "sourceOrderConsistent": true,
   "consistentCreationTimeGroups": true,
   "proofStatus": "INFERRED_NOT_DIRECTLY_ID_VERIFIED",
-  "newPriceRecords": 0,
-  "savedPriceRecordsAfter": 465,
+  "newPriceRecords": 34,
+  "savedPriceRecordsAfter": 499,
   "rows": [
     {
       "key": "brawl-s1:001",
