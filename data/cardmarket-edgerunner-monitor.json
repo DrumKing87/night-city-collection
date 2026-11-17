@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-16T13:46:37+00:00",
+  "checkedAt": "2026-11-17T14:38:03+00:00",
   "localPrintings": 53,
   "nearestExpansions": [
     {
@@ -78,8 +78,8 @@
   "officialProductCatalogCreatedAt": "2026-11-16T13:57:03+0100",
   "officialProductCatalogUrl": "https://downloads.s3.cardmarket.com/productCatalog/productList/products_singles_23.json",
   "officialProductCount": 570,
-  "previousSavedPrices": 457,
-  "savedPricesAfter": 457,
+  "previousSavedPrices": 499,
+  "savedPricesAfter": 499,
   "schema": 1,
   "status": "not_listed",
   "verifiedExpansionId": null,
