@@ -8,8 +8,8 @@
       "mit_preis": 6
     },
     "brawl-s1": {
-      "kein_trend-foil": 3,
-      "mit_preis": 34
+      "kein_trend-foil": 1,
+      "mit_preis": 36
     },
     "embracing-beta": {
       "mit_preis": 20
@@ -62,10 +62,10 @@
       "mit_preis": 172
     }
   },
-  "generatedAt": "2026-11-18T12:14:37+00:00",
-  "newOrUpdatedPrices": 0,
-  "savedPriceRecordsAfterUpdate": 499,
-  "sourceAsOf": "2026-11-17",
+  "generatedAt": "2026-11-19T12:08:32+00:00",
+  "newOrUpdatedPrices": 501,
+  "savedPriceRecordsAfterUpdate": 501,
+  "sourceAsOf": "2026-11-19",
   "total": 591,
   "unresolved": [
     {
@@ -530,17 +530,6 @@
     },
     {
       "candidateProductIds": [
-        922562,
-        922584
-      ],
-      "finish": "Holo",
-      "idProduct": 922584,
-      "key": "brawl-s1:021",
-      "name": "Satori: Sword of Saburo",
-      "reason": "kein_trend-foil"
-    },
-    {
-      "candidateProductIds": [
         922563,
         922585
       ],
@@ -548,17 +537,6 @@
       "idProduct": 922585,
       "key": "brawl-s1:022",
       "name": "Jackie Welles: Ride or Die Choom",
-      "reason": "kein_trend-foil"
-    },
-    {
-      "candidateProductIds": [
-        922568,
-        922590
-      ],
-      "finish": "Holo",
-      "idProduct": 922590,
-      "key": "brawl-s1:026",
-      "name": "Cyberpsychosis",
       "reason": "kein_trend-foil"
     },
     {
@@ -887,5 +865,5 @@
     }
   ],
   "withConfirmedProductMatch": 527,
-  "withValidCardmarketPrice": 499
+  "withValidCardmarketPrice": 501
 }
