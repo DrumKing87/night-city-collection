@@ -1,5 +1,5 @@
 {
-  "alreadySavedPriceRecords": 499,
+  "alreadySavedPriceRecords": 501,
   "bySet": {
     "boxtopper-beta": {
       "mit_preis": 6
@@ -8,8 +8,7 @@
       "mit_preis": 6
     },
     "brawl-s1": {
-      "kein_trend-foil": 1,
-      "mit_preis": 36
+      "mit_preis": 37
     },
     "embracing-beta": {
       "mit_preis": 20
@@ -21,8 +20,7 @@
     },
     "embracing-retail": {
       "kein_trend": 1,
-      "kein_trend-foil": 1,
-      "mit_preis": 18
+      "mit_preis": 19
     },
     "heist-beta": {
       "kein_Produkt_match": 1,
@@ -62,10 +60,10 @@
       "mit_preis": 172
     }
   },
-  "generatedAt": "2026-11-19T12:08:32+00:00",
-  "newOrUpdatedPrices": 501,
-  "savedPriceRecordsAfterUpdate": 501,
-  "sourceAsOf": "2026-11-19",
+  "generatedAt": "2026-11-20T12:10:41+00:00",
+  "newOrUpdatedPrices": 503,
+  "savedPriceRecordsAfterUpdate": 503,
+  "sourceAsOf": "2026-11-20",
   "total": 591,
   "unresolved": [
     {
@@ -83,16 +81,6 @@
       "key": "heist-retail:018",
       "name": "Tetratronic Rippler",
       "reason": "kein_Produkt_match"
-    },
-    {
-      "candidateProductIds": [
-        920425
-      ],
-      "finish": "Holo",
-      "idProduct": 920425,
-      "key": "embracing-retail:001",
-      "name": "Yorinobu Arasaka: Embracing Destruction",
-      "reason": "kein_trend-foil"
     },
     {
       "candidateProductIds": [
@@ -530,17 +518,6 @@
     },
     {
       "candidateProductIds": [
-        922563,
-        922585
-      ],
-      "finish": "Holo",
-      "idProduct": 922585,
-      "key": "brawl-s1:022",
-      "name": "Jackie Welles: Ride or Die Choom",
-      "reason": "kein_trend-foil"
-    },
-    {
-      "candidateProductIds": [
         922604,
         922606,
         922609
@@ -865,5 +842,5 @@
     }
   ],
   "withConfirmedProductMatch": 527,
-  "withValidCardmarketPrice": 501
+  "withValidCardmarketPrice": 503
 }
