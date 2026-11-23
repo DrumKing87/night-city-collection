@@ -1,5 +1,5 @@
 {
-  "alreadySavedPriceRecords": 503,
+  "alreadySavedPriceRecords": 504,
   "bySet": {
     "boxtopper-beta": {
       "mit_preis": 6
@@ -60,10 +60,10 @@
       "mit_preis": 172
     }
   },
-  "generatedAt": "2026-11-22T11:58:41+00:00",
+  "generatedAt": "2026-11-23T13:39:06+00:00",
   "newOrUpdatedPrices": 504,
   "savedPriceRecordsAfterUpdate": 504,
-  "sourceAsOf": "2026-11-22",
+  "sourceAsOf": "2026-11-23",
   "total": 591,
   "unresolved": [
     {
