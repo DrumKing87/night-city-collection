@@ -1,6 +1,6 @@
 # Cardmarket: Edgerunner Open S1 – automatische Ueberwachung
 
-**Pruefdatum (UTC):** 2026-11-23T16:08:12+00:00
+**Pruefdatum (UTC):** 2026-11-24T15:58:20+00:00
 
 **Ergebnis:** Noch keine exakt passende Cardmarket-Expansion im offiziellen Produktkatalog.
 
