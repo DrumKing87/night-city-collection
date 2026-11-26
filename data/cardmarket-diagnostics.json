@@ -19,8 +19,7 @@
       "mit_preis": 6
     },
     "embracing-retail": {
-      "kein_trend": 1,
-      "mit_preis": 19
+      "mit_preis": 20
     },
     "heist-beta": {
       "kein_Produkt_match": 1,
@@ -60,10 +59,10 @@
       "mit_preis": 172
     }
   },
-  "generatedAt": "2026-11-25T13:29:47+00:00",
-  "newOrUpdatedPrices": 504,
-  "savedPriceRecordsAfterUpdate": 504,
-  "sourceAsOf": "2026-11-25",
+  "generatedAt": "2026-11-26T13:08:22+00:00",
+  "newOrUpdatedPrices": 505,
+  "savedPriceRecordsAfterUpdate": 505,
+  "sourceAsOf": "2026-11-26",
   "total": 591,
   "unresolved": [
     {
@@ -81,16 +80,6 @@
       "key": "heist-retail:018",
       "name": "Tetratronic Rippler",
       "reason": "kein_Produkt_match"
-    },
-    {
-      "candidateProductIds": [
-        920451
-      ],
-      "finish": "Normal",
-      "idProduct": 920451,
-      "key": "embracing-retail:020",
-      "name": "Corporate Surveillance",
-      "reason": "kein_trend"
     },
     {
       "candidateProductIds": [],
@@ -832,5 +821,5 @@
     }
   ],
   "withConfirmedProductMatch": 527,
-  "withValidCardmarketPrice": 504
+  "withValidCardmarketPrice": 505
 }
