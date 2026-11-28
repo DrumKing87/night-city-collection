@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Night City Collection: daily official Cardmarket Cyberpunk price import.
 
-Matches ALL 458 local printings to the Cardmarket singles catalog (game 23).
+Matches all local printings to the official Cardmarket singles catalog (game 23).
 Only a uniquely matched product ID in the correct expansion and the exact
-normal/foil price field is eligible. Existing valid prices survive missing data.
+normal/foil price field is eligible. Missing prices are not replaced with stale or third-party fallback values.
 
 Duplicate card names require explicit *verified* product IDs in optional
 `data/cardmarket-product-overrides.json`, e.g. {"beta:β001": 123456}.
@@ -27,7 +27,6 @@ BASE = 'https://downloads.s3.cardmarket.com/productCatalog'
 PRODUCTS_URL = BASE + '/productList/products_singles_23.json'
 PRICES_URL = BASE + '/priceGuide/price_guide_23.json'
 SOURCE = 'Cardmarket (Direkt)'
-LEGACY_SOURCE = 'PokéWallet / Cardmarket (Online)'
 CARD_EXPANSION = {
     'wnc-beta': 6714, 'wnc-retail': 6761,
     'heist-beta': 6715, 'heist-retail': 6762,
@@ -149,7 +148,7 @@ def main() -> int:
     previous = read_json(DATA / 'prices.json', {})
     if not isinstance(previous, dict) or not isinstance(previous.get('prices', {}), dict):
         raise ValueError('Bestehende Preisdatei ungültig; nichts überschrieben')
-    result = dict(previous.get('prices', {}))
+    result = {}  # Strictly today's official Cardmarket export; no persisted fallback prices.
     statistics = defaultdict(Counter)
     diagnostics = []
     product_to_card = {}
@@ -208,20 +207,18 @@ def main() -> int:
                         'source': SOURCE,
                         'idProduct': int(pid),
                     }
-                    old = result.get(key, {})
-                    # Do not replace any future-dated price or a custom source
-                    # already stored on the server. Local browser custom prices
-                    # are independently protected in index.html.
-                    if isinstance(old, dict) and old.get('source') not in (None, LEGACY_SOURCE, SOURCE):
-                        reason = 'serverseitiger_Eigenpreis_geschützt'
-                    elif isinstance(old, dict) and str(old.get('date', '')) > as_of:
-                        reason = 'bisheriger_Preis_ist_neuer'
+                    old = previous.get('prices', {}).get(key)
+                    # Count changes, but never reuse server/browser/third-party prices.
+                    if (not isinstance(old, dict)
+                            or old.get('amount') != rec['amount']
+                            or old.get('date') != as_of
+                            or old.get('source') != SOURCE
+                            or old.get('idProduct') != rec['idProduct']
+                            or old.get('finish') != rec['finish']):
+                        new_values += 1
                     else:
-                        if not isinstance(old, dict) or old.get('amount') != rec['amount'] or old.get('date') != as_of or old.get('source') != SOURCE:
-                            new_values += 1
-                        else:
-                            unchanged += 1
-                        result[key] = rec
+                        unchanged += 1
+                    result[key] = rec
         if reason:
             statistics[sid][reason] += 1
             if len(diagnostics) < 458:
@@ -235,7 +232,7 @@ def main() -> int:
         raise ValueError('Weniger als 250 gültige Cardmarket-Preise: Kein Schreibzugriff')
     result_meta = {
         'schema': 1, 'currency': 'EUR', 'provider': 'Cardmarket Direkt (offizieller Tagesexport)',
-        'note': 'Cardmarket EUR Trendpreise der passenden Normal/Foil-Druckart; fehlende Werte bleiben unverändert.',
+        'note': 'Nur gültige Cardmarket-EUR-Trendpreise der passenden Normal/Foil-Druckart aus dem aktuellen Tagesexport. Fehlende Werte bleiben ohne Preis.',
         'generatedAt': NOW.isoformat(timespec='seconds'), 'sourceAsOf': as_of,
         'checkedThisRun': checked, 'mapped': len(product_to_card), 'total': len(cards),
         'updatedThisRun': new_values, 'noPriceThisRun': checked - sum(x['mit_preis'] for x in statistics.values()),

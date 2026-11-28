@@ -26,9 +26,9 @@
       "mit_preis": 19
     },
     "heist-demo": {
-      "kein_trend": 6,
+      "kein_trend": 5,
       "kein_trend-foil": 4,
-      "mit_preis": 5
+      "mit_preis": 6
     },
     "heist-retail": {
       "kein_Produkt_match": 1,
@@ -59,10 +59,10 @@
       "mit_preis": 172
     }
   },
-  "generatedAt": "2026-11-27T13:06:38+00:00",
-  "newOrUpdatedPrices": 0,
-  "savedPriceRecordsAfterUpdate": 505,
-  "sourceAsOf": "2026-11-26",
+  "generatedAt": "2026-11-28T00:03:26+00:00",
+  "newOrUpdatedPrices": 506,
+  "savedPriceRecordsAfterUpdate": 506,
+  "sourceAsOf": "2026-11-27",
   "total": 591,
   "unresolved": [
     {
@@ -711,16 +711,6 @@
     },
     {
       "candidateProductIds": [
-        905025
-      ],
-      "finish": "Normal",
-      "idProduct": 905025,
-      "key": "heist-demo:012",
-      "name": "Psycho Squad",
-      "reason": "kein_trend"
-    },
-    {
-      "candidateProductIds": [
         905026
       ],
       "finish": "Holo",
@@ -821,5 +811,5 @@
     }
   ],
   "withConfirmedProductMatch": 527,
-  "withValidCardmarketPrice": 505
+  "withValidCardmarketPrice": 506
 }
