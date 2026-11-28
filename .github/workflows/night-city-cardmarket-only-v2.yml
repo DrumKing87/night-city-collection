@@ -1,0 +1,339 @@
+name: Night City - Nur Cardmarket Preise V2 (Fix + Zusatzabgleich)
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Zusätzlicher Abendabgleich; der bestehende tägliche Workflow bleibt aktiv.
+    - cron: '17 17 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: night-city-price-updates
+  cancel-in-progress: false
+
+jobs:
+  strict-cardmarket:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Repository laden
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Katalog, Kartenbestand und Import-Code auf Cardmarket umstellen
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat > /tmp/repair_cardmarket_only.py <<'PY_CARDMARKET_ONLY'
+          #!/usr/bin/env python3
+          """One-off Night City Collection migration to Cardmarket-only pricing.
+
+          Fail closed: assert exact anchors, back up nothing in repository, and do not
+          modify inventory/card database. GitHub Actions commits changes only on success.
+          """
+          from pathlib import Path
+          import hashlib
+          import json
+          import re
+          import subprocess
+          import sys
+
+          ROOT = Path.cwd()
+          HTML = ROOT / 'index.html'
+          IMPORTER = ROOT / 'scripts/update_prices.py'
+
+
+          def replace_exact(s, old, new, label):
+              n = s.count(old)
+              if n != 1:
+                  raise ValueError(f'{label}: exact anchor found {n} times, expected 1; no write')
+              return s.replace(old, new, 1)
+
+
+          def replace_region(s, begin, end, new, label):
+              i = s.find(begin)
+              j = s.find(end, i + len(begin)) if i >= 0 else -1
+              if i < 0 or j < 0 or s.find(begin, i + len(begin)) >= 0:
+                  raise ValueError(f'{label}: start/end anchor missing or ambiguous; no write')
+              return s[:i] + new + s[j:]
+
+
+          def replace_regex(s, pattern, substitution, label, flags=0):
+              out,n = re.subn(pattern, substitution, s, flags=flags)
+              if n != 1:
+                  raise ValueError(f'{label}: pattern matched {n} times, expected 1; no write')
+              return out
+
+
+          def patch_html(s):
+              match = re.search(r'const DB\s*=\s*(\{.*?\})\s*;\s*const CARDS',s,re.S)
+              if not match:
+                  raise ValueError('Cannot find card database')
+              db_before = match.group(1)
+              cards = json.loads(db_before)['cards']
+              if len(cards) != 591 or len({c['key'] for c in cards}) != 591:
+                  raise ValueError('Expected 591 unique cards: refusing migration')
+
+              s = replace_exact(
+                  s,
+                  '<div hidden aria-hidden="true"><span id="livePriceStatus" role="status"></span><button type="button" id="btnLivePrices">Aktualisieren</button></div>',
+                  '<div class="price-snapshot" style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:12px 0 16px"><span id="livePriceStatus" role="status" aria-live="polite">Cardmarket-Preise werden abgerufen …</span><button type="button" class="button" id="btnLivePrices">↻ Cardmarket aktualisieren</button></div>',
+                  'visible status')
+
+              s = replace_regex(s, r'<details class="price-tools" id="priceToolBox">.*?</details>\s*', '', 'remove third-party/manual price imports', re.S)
+              s = replace_regex(s, r'<div class="inventory-import-note">.*?</div>\s*', '', 'remove optional price backup imports', re.S)
+              s = replace_regex(s, r'<section class="price-modal" aria-label="Marktpreis dieser Karte">.*?</section>',
+                  '<section class="price-modal" aria-label="Cardmarket-Marktpreis dieser Karte">\n<h3>Cardmarket-Trendpreis pro Exemplar</h3><div id="dlgPriceSummary" class="price-line">Cardmarket-Preis wird geladen …</div>\n</section>',
+                  'price modal readonly', re.S)
+
+              s = replace_exact(s,
+                  'Sammlung und Euro-Preise werden lokal im Browser gespeichert; sichere beides regelmäßig als JSON',
+                  'Dein Kartenbestand wird lokal im Browser gespeichert; die Marktpreise stammen ausschließlich aus dem offiziellen Cardmarket-Tagesexport. Sichere den Bestand regelmäßig als JSON',
+                  'footer price description')
+
+              # Replace the entire local-price subsystem with in-memory prices only.
+              norm_start = s.find('function normalizePriceInput(s){')
+              norm_end = s.find('function cleanPriceRecord(v){', norm_start)
+              if norm_start < 0 or norm_end < 0:
+                  raise ValueError('normalizePriceInput block missing')
+              normalize_function = s[norm_start:norm_end].rstrip()
+              new_price_code = '''// Nur offizieller Cardmarket-Tagesexport. Browserpreise und alte Snapshots werden ignoriert.\nconst LIVE_SOURCE='Cardmarket (Direkt)';\nlet prices=Object.create(null);\nconst eur=n=>Number(n).toLocaleString('de-DE',{style:'currency',currency:'EUR'});\nconst priceItem=c=>prices[c.key]||null;\nconst amountOf=c=>{const p=priceItem(c);return p&&Number.isFinite(+p.amount)&&+p.amount>0?+p.amount:null};\nconst priceValue=c=>(amountOf(c)||0)*qty(c);\n''' + normalize_function + '\n'
+              s = replace_region(s,
+                  '// Preise bewusst getrennt vom Besitz gespeichert:',
+                  'function valuationText(c)',new_price_code,'replace price state')
+              s = replace_region(s,
+                  'function updatePriceModal(c){',
+                  'function toast(message)',
+                  '''function updatePriceModal(c){\n const p=priceItem(c);\n $('dlgPriceSummary').textContent=p\n   ?`${eur(p.amount)} pro Karte · bei ${qty(c)} Exemplaren: ${eur(priceValue(c))} · Offizieller Cardmarket-${p.finish==='foil'?'Foil-':'Normal-'}Trendpreis · Stand ${p.date}`\n   :'Kein aktueller Cardmarket-Trendpreis verfügbar. Diese Karte wird nicht mit einem Ersatzpreis bewertet.';\n}\n\n''',
+                  'readonly price detail / remove 228 snapshots')
+
+              s = replace_regex(s, r"\$\('dlgSavePrice'\)\.onclick=.*?;\n", '', 'remove manual price save handler')
+              s = replace_regex(s, r"\$\('dlgDeletePrice'\)\.onclick=.*?;\n", '', 'remove price delete/reset handler')
+              s = replace_exact(s, 'owned:sanitize(owned),prices:sanitizePrices(prices)', 'owned:sanitize(owned)', 'backup inventory only')
+              s = replace_exact(s,'Cyberpunk_TCG_Alle_10_Sets_Sammlung_mit_Marktpreisen_Backup.json',
+                  'Cyberpunk_TCG_Sammlung_Backup.json', 'backup filename')
+              s = replace_exact(s,"toast('Sammlung und hinterlegte Marktpreise gesichert')", "toast('Kartenbestand gesichert. Marktpreise werden ausschließlich von Cardmarket geladen.')", 'backup toast')
+
+              s = replace_region(s,
+                  '// Ein Bestands-Backup ist nicht automatisch eine gültige neue Preisliste.',
+                  "$('backupFile').addEventListener('change',async e=>{",
+                  '// Ältere JSON-Backups bleiben für den Kartenbestand importierbar; alte Preise werden ignoriert.\n',
+                  'remove custom backup price importer')
+
+              s = replace_region(s,
+                  "  const withCustom=$('importPersonalPrices').checked",
+                  '  for(const c of affected)delete owned[c.key];',
+                  "  if(!confirm(`Backup importieren? ${desc}. Es werden ausschließlich Kartenbestände übernommen, keine Preise. Vorher bei Bedarf eine Sicherung erstellen.`))return;\n",
+                  'ignore backup prices')
+              s = replace_region(s,
+                  '  const extra=withCustom?importCustomBackupPrices(v.prices):0;',
+                  " }catch(err){alert('Import fehlgeschlagen:",
+                  "  render();\n  toast('Kartenbestand importiert. Preise stammen ausschließlich von Cardmarket.');\n",
+                  'remove backup price merging')
+
+              s = replace_region(s,
+                  '// Preisvorlage und CSV-Import:',
+                  '// Preis-Feed: öffentlich abrufbare Datei, niemals API-Schlüssel im Browser.',
+                  '',
+                  'remove manual CSV price import')
+
+              live_code = r'''// Ausschließlich der offizielle Cardmarket-Tagesexport; keine Luma-, CSV- oder Browserpreise.\nconst LIVE_URL='https://raw.githubusercontent.com/DrumKing87/night-city-collection/main/data/prices.json';\nlet liveInProgress=false;\nasync function loadLivePrices(){\n if(liveInProgress)return;\n liveInProgress=true;\n const status=$('livePriceStatus'),btn=$('btnLivePrices');\n btn.disabled=true;\n prices=Object.create(null); // niemals veraltete Werte während des Ladens zeigen\n render();\n status.textContent='Offizieller Cardmarket-Tagesexport wird geladen …';\n const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),15000);\n try{\n  const response=await fetch(LIVE_URL+'?t='+Date.now(),{cache:'no-store',signal:controller.signal});\n  if(!response.ok)throw Error('HTTP '+response.status);\n  const feed=await response.json();\n  if(feed.schema!==1||feed.currency!=='EUR'||!feed.prices||typeof feed.prices!=='object'||Array.isArray(feed.prices))\n   throw Error('Ungültiges Preisdatei-Format');\n  if(typeof feed.sourceAsOf!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(feed.sourceAsOf))throw Error('Datum des Cardmarket-Exports fehlt');\n  const stamp=Date.parse(feed.sourceAsOf+'T00:00:00Z');\n  if(!Number.isFinite(stamp)||Date.now()-stamp>4*86400000||stamp-Date.now()>86400000)\n   throw Error('Cardmarket-Export ist älter als vier Tage oder hat ein Zukunftsdatum');\n  const updated=Object.create(null);\n  let invalid=0;\n  for(const [key,item] of Object.entries(feed.prices)){\n   const card=BY.get(key);\n   if(!card){invalid++;continue;}\n   const amount=normalizePriceInput(item?.amount);\n   const finish=String(card.finish||'').toLowerCase();\n   const expectedFinish=finish.includes('holo')||finish.includes('foil')?'foil':'normal';\n   if(amount===null||item?.source!==LIVE_SOURCE||item.currency!=='EUR'||\n      item.date!==feed.sourceAsOf||item.priceAsOf!==feed.sourceAsOf||\n      item.finish!==expectedFinish||!Number.isSafeInteger(item.idProduct)||item.idProduct<=0){invalid++;continue;}\n   updated[key]={amount,source:LIVE_SOURCE,date:item.date,finish:item.finish,idProduct:item.idProduct};\n  }\n  if(Object.keys(updated).length<250)throw Error('Zu wenige geprüfte Cardmarket-Preise');\n  prices=updated;\n  render();\n  const asOf=new Date(stamp).toLocaleDateString('de-DE',{timeZone:'UTC'});\n  const runAt=feed.generatedAt?new Date(feed.generatedAt).toLocaleString('de-DE'):'nicht bekannt';\n  status.textContent=`Cardmarket · Trendpreise Stand ${asOf} · ${Object.keys(updated).length} von ${CARDS.length} Karten · letzter Abgleich ${runAt}`+(invalid?` · ${invalid} ungültige Einträge ignoriert`:'');\n }catch(err){\n  prices=Object.create(null);\n  render();\n  status.textContent='Keine aktuellen Cardmarket-Preise verfügbar ('+String(err.message).slice(0,100)+'). Es werden keine älteren Ersatzpreise angezeigt.';\n }finally{clearTimeout(timer);btn.disabled=false;liveInProgress=false;}\n}\n$('btnLivePrices').addEventListener('click',loadLivePrices);\n'''.replace('\\n','\n')
+              s = replace_region(s,
+                  '// Preis-Feed: öffentlich abrufbare Datei, niemals API-Schlüssel im Browser.',
+                  '// Luma-Listenimport: separat gewähltes Set;',
+                  live_code,
+                  'strict Cardmarket feed loader')
+
+              s = replace_region(s,
+                  '// Luma-Listenimport: separat gewähltes Set;',
+                  '\nrender();\nloadLivePrices();',
+                  '',
+                  'remove Luma price parser')
+
+              # One-source safety checks. Luma URLs for card images/catalog attribution remain untouched.
+              for forbidden in ('START_PRICES','isSnapshotPrice','reconcileReferencePrices','PRICE_KEY',
+                                'LEGACY_LIVE_SOURCE','sanitizePrices(',"$('dlgSavePrice')","$('dlgDeletePrice')",
+                                'setPrice(',"$('lumaSet')", "$('lumaPaste')", 'importCustomBackupPrices',
+                                'importPriceCsv(',"$('btnPriceImport')", "$('importPersonalPrices')",
+                                'Luma / Cardmarket', 'Sparkl / Cardmarket', 'PokéWallet / Cardmarket'):
+                  if forbidden in s:
+                      raise ValueError('Alternative price source remains in code: '+forbidden)
+              m2 = re.search(r'const DB\s*=\s*(\{.*?\})\s*;\s*const CARDS',s,re.S)
+              if not m2 or m2.group(1)!=db_before:
+                  raise ValueError('Card database changed; abort')
+              if s.count('loadLivePrices();') != 1 or s.count('loadArtworkManifest();') != 1:
+                  raise ValueError('Page initialization broken')
+              if 'const LIVE_SOURCE=' not in s or 'let prices=Object.create(null)' not in s:
+                  raise ValueError('Cardmarket-only state missing')
+              return s
+
+
+          def patch_importer(s):
+              s = replace_exact(s, 'Matches ALL 458 local printings to the Cardmarket singles catalog (game 23).',
+                                'Matches all local printings to the official Cardmarket singles catalog (game 23).', 'docstring count')
+              s = replace_exact(s, 'Existing valid prices survive missing data.',
+                                'Missing prices are not replaced with stale or third-party fallback values.', 'docstring stale')
+              s = replace_exact(s,"LEGACY_SOURCE = 'PokéWallet / Cardmarket (Online)'\n",'', 'legacy backend source')
+              s = replace_exact(s, "result = dict(previous.get('prices', {}))",
+                                "result = {}  # Strictly today's official Cardmarket export; no persisted fallback prices.", 'discard stale values')
+              s = replace_exact(s,
+                  '''                    old = result.get(key, {})
+                              # Do not replace any future-dated price or a custom source
+                              # already stored on the server. Local browser custom prices
+                              # are independently protected in index.html.
+                              if isinstance(old, dict) and old.get('source') not in (None, LEGACY_SOURCE, SOURCE):
+                                  reason = 'serverseitiger_Eigenpreis_geschützt'
+                              elif isinstance(old, dict) and str(old.get('date', '')) > as_of:
+                                  reason = 'bisheriger_Preis_ist_neuer'
+                              else:
+                                  if not isinstance(old, dict) or old.get('amount') != rec['amount'] or old.get('date') != as_of or old.get('source') != SOURCE:
+                                      new_values += 1
+                                  else:
+                                      unchanged += 1
+                                  result[key] = rec''',
+                  '''                    old = previous.get('prices', {}).get(key)
+                              # Count changes, but never reuse server/browser/third-party prices.
+                              if (not isinstance(old, dict)
+                                      or old.get('amount') != rec['amount']
+                                      or old.get('date') != as_of
+                                      or old.get('source') != SOURCE
+                                      or old.get('idProduct') != rec['idProduct']
+                                      or old.get('finish') != rec['finish']):
+                                  new_values += 1
+                              else:
+                                  unchanged += 1
+                              result[key] = rec''',
+                  'strict Cardmarket records')
+              s = replace_exact(s,
+                  "'note': 'Cardmarket EUR Trendpreise der passenden Normal/Foil-Druckart; fehlende Werte bleiben unverändert.',",
+                  "'note': 'Nur gültige Cardmarket-EUR-Trendpreise der passenden Normal/Foil-Druckart aus dem aktuellen Tagesexport. Fehlende Werte bleiben ohne Preis.',",
+                  'backend metadata')
+              if 'LEGACY_SOURCE' in s or 'Sparkl' in s or 'Luma' in s:
+                  raise ValueError('Legacy price source remains in backend')
+              compile(s,'scripts/update_prices.py','exec')
+              return s
+
+
+          def main():
+              html=HTML.read_text(encoding='utf-8')
+              importer=IMPORTER.read_text(encoding='utf-8')
+              new_html=patch_html(html)
+              new_importer=patch_importer(importer)
+              # No modifications happen until ALL assertions and patches have passed.
+              HTML.write_text(new_html,encoding='utf-8')
+              IMPORTER.write_text(new_importer,encoding='utf-8')
+              print(f'Cardmarket-only HTML: {len(html):,} → {len(new_html):,} chars')
+              print(f'Cardmarket-only importer: {len(importer):,} → {len(new_importer):,} chars')
+              print('581+ DB cards retained; 591 unique printings unchanged. Inventory remains untouched.')
+
+
+          if __name__=='__main__':
+              main()
+          PY_CARDMARKET_ONLY
+          python /tmp/repair_cardmarket_only.py
+      - name: JavaScript Syntax und Kartendaten unveraendert pruefen
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY_TEST_FRONTEND'
+          from pathlib import Path
+          import json,re
+          s=Path('index.html').read_text(encoding='utf-8')
+          scripts=re.findall(r'<script(?:\s[^>]*)?>(.*?)</script>',s,re.S|re.I)
+          candidates=[x for x in scripts if 'const DB=' in x and 'loadLivePrices' in x]
+          assert len(candidates)==1, f'Expected one application script; found {len(candidates)}'
+          Path('/tmp/night-city-cardmarket.js').write_text(candidates[0],encoding='utf-8')
+          db=json.loads(re.search(r'const DB\s*=\s*(\{.*?\})\s*;\s*const CARDS',s,re.S).group(1))
+          assert len(db['cards']) == 591
+          assert all(c.get('key') and c.get('setId') for c in db['cards'])
+          assert 'Luma / Cardmarket' not in s and 'START_PRICES' not in s
+          assert 'livePriceStatus' in s and 'loadArtworkManifest();' in s
+          print('Pruefung bestanden: 591 Karten, keine alten Preisquellen, Artwork-Loader erhalten.')
+          PY_TEST_FRONTEND
+          node --check /tmp/night-city-cardmarket.js
+      - name: Alle verfuegbaren Preise sofort neu aus Cardmarket exportieren
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/update_prices.py
+          python - <<'PY_PRICES'
+          from pathlib import Path
+          import json, datetime
+          d=json.loads(Path('data/prices.json').read_text(encoding='utf-8'))
+          p=d['prices']
+          assert len(p)>=250, f'Price coverage too low: {len(p)}'
+          assert all(x.get('source')=='Cardmarket (Direkt)' for x in p.values())
+          assert all(x.get('date')==d['sourceAsOf'] and x.get('priceAsOf')==d['sourceAsOf'] for x in p.values())
+          assert all(x.get('currency')=='EUR' and x.get('finish') in ('normal','foil') for x in p.values())
+          assert all(isinstance(x.get('idProduct'),int) and x['idProduct']>0 for x in p.values())
+          print(f"Offizieller Cardmarket-Datenstand: {d['sourceAsOf']} | {len(p)}/{d['total']} Preise")
+          PY_PRICES
+      - name: Gepruefte Aenderungen in main veroeffentlichen
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html scripts/update_prices.py data/prices.json data/cardmarket-diagnostics.json
+          git diff --cached --check
+          if git diff --cached --quiet; then
+            echo 'Bereits aktuell – keine Aenderung notwendig.'
+            exit 0
+          fi
+          git commit -m 'Show only latest official Cardmarket trend prices; remove Luma price fallbacks [skip ci]'
+          for n in 1 2 3 4 5; do
+            if git push origin HEAD:main; then
+              echo 'Cardmarket-only Katalog veroeffentlicht.'
+              exit 0
+            fi
+            if [ "$n" -eq 5 ]; then exit 1; fi
+            git fetch origin main
+            if ! git rebase origin/main; then git rebase --abort || true; exit 1; fi
+          done
+
+  # Läuft automatisch einmal abends; die bestehende tägliche Preisaktion bleibt aktiv.
+  # Keine Änderungen an YAML-Dateien, daher keine GitHub-"workflows"-Berechtigung nötig.
+  abendlicher-cardmarket-abgleich:
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Repository laden
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Offiziellen Cardmarket Tagesexport aktualisieren
+        run: python scripts/update_prices.py
+      - name: Nur die Preisdateien veröffentlichen
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/prices.json data/cardmarket-diagnostics.json
+          git diff --cached --check
+          if git diff --cached --quiet; then
+            echo 'Keine Preisänderungen erforderlich.'
+            exit 0
+          fi
+          git commit -m 'Update Cardmarket-only price feed (evening) [skip ci]'
+          for n in 1 2 3 4 5; do
+            if git push origin HEAD:main; then
+              echo 'Aktuelle Cardmarket-Tagespreise veröffentlicht.'
+              exit 0
+            fi
+            if [ "$n" -eq 5 ]; then exit 1; fi
+            git fetch origin main
+            if ! git rebase origin/main; then git rebase --abort || true; exit 1; fi
+          done
